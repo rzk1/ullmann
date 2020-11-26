@@ -38,7 +38,7 @@ prb,
 %prstab,
 %prstper,
 %floatfix,
-]{revtex4-1}
+]{revtex4-2}
 
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -403,10 +403,10 @@ The simulation of surface Ullmann coupling reaction was conducted with chloroben
 
 The periodic Density Functional Theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
-%RZK: \si is undefiend
-%The Cu(111) surface used in all surface Ullmann coupling was modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15 \si{\angstrom} of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times 1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than 2$\times$ $10^{-2} eV/\si{\angstrom}^{2}$. 
+The Cu(111) surface used in all surface Ullmann coupling was 
+modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15 \si{\angstrom} of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than 2$\times$ $10^{-2} eV/\si{\angstrom}^{2}$. 
 
-%Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than 0.1 eV$\si{\angstrom}^{2}$ in CI-NEB calculations.
+Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than 0.1 eV$\si{\angstrom}^{2}$ in CI-NEB calculations.
 
 \section{Results and Discussion}
 
@@ -496,7 +496,7 @@ Here, we investigated two possibilities separately.
 %R1111: comparison to existing calculations. Comparison between different metals (and halogens?) in our own calculations.
 In Path I, the formation of C--C bond started from the dimerized organometallic intermediate in which the copper atom was partially lifted (notated as $IS_{path1}$). Then the two carbons which would construct a new bond later slope closer to each other, while the copper atom was less lifted on the surface (notated as $TS_{path1}$). Finally, a new C-C bond was formed and the surface went back to original configuration, no adatom forms after the coupling reaction finished (notated as $FS_{path1}$).
 
-%In Fig.~\ref{fig:bondformlift}, along the potential energy surface, 6 intermediates were interpolated between $IS_{path1}$ and $FS_{path1}$. The tilt angle of phenyl species in respect to the Cu(111) surface was $50^\circ$ in $IS_{path1}$ and flattened to $35^\circ$ in $TS_{path1}$ and ended at $0^\circ$ in $FS_{path1}$. The distance between the two carbon atoms which would construct a bond varied from 3.10 \AA\ to 2.28 \AA\ and ended at 1.49 \AA\.
+In Fig.~\ref{fig:bondformlift}, along the potential energy surface, 6 intermediates were interpolated between $IS_{path1}$ and $FS_{path1}$. The tilt angle of phenyl species in respect to the Cu(111) surface was $50^\circ$ in $IS_{path1}$ and flattened to $35^\circ$ in $TS_{path1}$ and ended at $0^\circ$ in $FS_{path1}$. The distance between the two carbon atoms which would construct a bond varied from 3.10 \AA\ to 2.28 \AA\ and ended at 1.49 \AA\.
 
 Path I reaction is exothermic, the enthalpy $\Delta H$ is -2.00 eV, and $E_{barrier}$ is 0.50 eV.
 %R1111: This results agree with the computational study of the C--C formation of dibromobenzene species. Reference.
