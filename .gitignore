@@ -1,0 +1,9 @@
+*.aux
+*.bbl
+*.pdf
+*.blg
+*.log
+*.out
+*.dvi
+*.synctex.gz
+*Notes.bib
