@@ -46,7 +46,8 @@ prb,
 \usepackage{hyperref}% add hypertext capabilities
 \hypersetup{colorlinks=true,urlcolor={blue},citecolor={blue}, linkcolor={blue}}
 \usepackage{amsmath} % or simply amstext
-\newcommand{\angstrom}{\textup{\AA}}
+%\newcommand{\angstrom}{\textup{\AA}}
+\usepackage{siunitx}
 %\usepackage{url}            % simple URL typesetting
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -63,7 +64,7 @@ prb,
 
 \preprint{APS/123-QED}
 
-\title{Adatoms in the surface Ullmann couplingk}% Force line breaks with \\
+\title{Adatoms in the surface Ullmann coupling}% Force line breaks with \\
 %\thanks{A footnote to the article title}%
 
 \author{Zhenzhe Zhang}
@@ -82,74 +83,61 @@ prb,
 
 \begin{abstract}
 This manuscript reviews the results of experimental and computational studies of the surface Ullmann coupling that shed light on the role of surface adatoms in its mechanism. A particular focus is on the early stages of the polymerization and coupling of two monomers.
-%\begin{description}
-%\item[Usage]
-%Secondary publications and information retrieval purposes.
-%\item[Structure]
-%You may use the \texttt{description} environment to structure %your abstract;
-%use the optional argument of the \verb+\item+ command to give the category of each item. 
-%\end{description}
 \end{abstract}
 
-%\keywords{Suggested keywords}%Use showkeys class option if keyword
-                              %display desired
 \maketitle
 
 %\tableofcontents
 
-\section{\label{sec:level1}Introduction\protect\\ %The line
-%break was forced \lowercase{via} \textbackslash\textbackslash
-}
+\section{Introduction}
 
-\subsection{\label{sec:level2}Ullmann coupling in solution}
+\subsection{Ullmann coupling in solution}
 
-%ZZ:(Cu is called ac active species in the whole manuscript, cause I found it is oxidized)
-%ZZ:(only refer to C-C bond)
-Cu-containing arylation which mainly referred to the formation of C--C and C--X(heteroatom) bonds has acquired great importance in the last decades. This type of reactions could trace back to one of the oldest reactions, named Ullmann reactions.
-In 1901, Fritz Ullmann discovered~\cite{ullmann_01} a coupling reaction that results in the construction of a C--C bond between two aryl halides in the presence of an equivalent amount of Cu powder.
-%RZK is the previous statement correct? or should we use the alternative ending below?: in the presence of Cu-containing catalysts. (%ZZ: in Ullmann's disvocery, he used Cu powder)
+In 1901, Fritz Ullmann discovered~\cite{ullmann_01} a coupling reaction that creates a C--C bond between two aryl halides in the presence of a stoichiometric amount of Cu powder. 
+%Currently, the scope of Ullmann coupling reaction is being widened with an increasing number of substrates, leaving groups, and active metal species being investigated for constructing various C--X bonds. 
+Because of its ability to form C--C bonds, the Ullmann coupling has become one of the key reactions in organic synthesis with its scope extended to new reactants and catalysts. 
+Today, the classical Ullmann or simply Ullmann reaction refers to a family of nucleophilic substitution reactions between aromatic nucleophiles that proceed in the presence of metals and lead to the formation of C--C and C--heteroatom bonds such as C--N~\cite{ullmann_02, ullmann_03}, C--O~\cite{ullmann_04}, C--S~\cite{ullmann_05} and C--P~\cite{ullmann_21,ullmann_22} bonds (Fig.~\ref{fig:UllmannCoupling}). 
+%RZK: In Ullmann coupling, metals can serve as reactants or as catalysts.
+%RZK: Cu or metal?
 
-Today, terms ``classical'' Ullmann, Ullmann-type or simply Ullmann reaction refers to a family of Cu-containing compounds utilized to initialize nucleophilic aromatic substitution between various aromatic nucleophiles such as aryl halides.
-%(RZK: aromatic?) %(ZZ: solved) 
-%RZZK-original: The ``classical'' Ullmann reaction, named after Fritz Ullmann who discovered it in 1901~\cite{ullmann_01}, is a coupling reaction between two aryl halides that results in the creation of a C--C bond between the aromatic rings in the presence of Cu-containing catalysts (figure.~\ref{fig:classical}).
-With increasing understanding of the mechanism towards transition-metal mediated reactions, the scope of the Ullmann coupling reaction has been extended to new reactants and active species, to construct other covalent bonds like C--N~\cite{ullmann_02, ullmann_03}, C--O~\cite{ullmann_04}, C--S~\cite{ullmann_05} and C--P~\cite{ullmann_21,ullmann_22} bonds, as shown in Fig.~\ref{fig:UllmannCoupling}\cite{ullmann_30}.
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.75\columnwidth]{Fig/classical.png}% Here is how to import EPS art
-%RZZK: "Cu source" -> "Cu source"; "high T" -> "high T"(ZZ: could I use the full sentence: high temperature?)
-\caption{Examples of Ullmann coupling reaction which could construct C--C, C--O and C--N bonds.}
+\includegraphics[width=0.90\columnwidth]{Fig/classical.png}
+\caption{Examples of the Ullmann coupling reactions.}
 \label{fig:UllmannCoupling}
 \end{figure}
-%RZK: diary ether??? phosphines and/or phosphites? (%ZZ: solved, typo)
 
-Depending on the type of bonds created, reactants in the Ullmann coupling reaction include aromatic amines~\cite{ullmann_17,ullmann_18} and amides~\cite{ullmann_19,ullmann_20} for the C--N bond creation; phosphines~\cite{ullmann_21,ullmann_22} to achieve the arylation of phosphines; carboxylic acids~\cite{ullmann_23}, diaryl ether~\cite{ullmann_24}, phenols~\cite{ullmann_25} and other oxygen-containing species~\cite{ullmann_26,ullmann_27,ullmann_28} to obtain C--O bond products.
+Depending on the type of bonds created, reactants in the Ullmann coupling can be aromatic amines~\cite{ullmann_17,ullmann_18}, amides~\cite{ullmann_19,ullmann_20}, phosphines~\cite{ullmann_21,ullmann_22}, carboxylic acids~\cite{ullmann_23}, diaryl ethers~\cite{ullmann_24}, phenols~\cite{ullmann_25} and other oxygen-containing species~\cite{ullmann_26,ullmann_27,ullmann_28}. 
+While halides, especially iodides and bromides, serve as typical leaving groups, the usage of the tosylate leaving group has also been reported~\cite{ullmann_15}. 
+Cu-containing compounds are most widely used as activating agents. In addition to traditional Cu(0), different Cu(I) and Cu(II) salts and oxides -- including CuI~\cite{ullmann_07,ullmann_08,ullmann_09}, CuBr~\cite{ullmann_10,ullmann_11}, CuCl~\cite{ullmann_13}, Cu$_2$O~\cite{ullmann_12}, Cu(acca)$_2$~\cite{ullmann_14}, Cu(OTf)$_2$~\cite{ullmann_15}, CuO~\cite{ullmann_16} -- have been used. 
+Apart from Cu agents, Pd--Fe~\cite{ullmann_35} and Au--Pd~\cite{ullmann_36} nanocomplexes have been proven to participate in the Ullmann coupling reaction. 
+%RZK: it is unclear what Pd--Fe, Au--Pd means. Is it a range in the periodic table? Again, Ullmann==Cu?
 
-Halogens are highly popular leaving groups in the substitutions. While iodine and bromine serve as most often leaving groups in Ullmann coupling, the usage of the tosylate as leaving group has also been reported~\cite{ullmann_15}. 
+Cu-containing Ullmann coupling has acquired great significance in the last decade due to its advantages such as (1) Cu is a cheaper alternative to palladium, platinum or rhodium,  (2) avoidance of the halogen side-product; and (3) air or oxygen can act as oxidants~\cite{ullmann_38,ullmann_39,ullmann_40,ullmann_41}. However, drawbacks still exit for large-scale development: (1) harsh conditions are necessary like high temperature and polar solvents with high boiling point; (2) poor solubility of many Cu compounds in solvent; (3) poor functional group tolerance leading to limited substrate scope~\cite{ullmann_31}. Despite a variety of limitations ranging from harsh reaction conditions and erratic yields, [used:: the Ullmann coupling has become and still remains one of the key reactions to build C-C bonds in organic synthesis. ]
 
-As to the active metal species, Cu-containing compounds are most widely used among all type of metals. In addition to Cu(0), different Cu(I) and Cu(II) salts and oxides -- including CuI~\cite{ullmann_07,ullmann_08,ullmann_09}, $CuBr$~\cite{ullmann_10,ullmann_11}, $CuCl$~\cite{ullmann_13}, $Cu_2O$~\cite{ullmann_12}, $Cu(acca)_2$~\cite{ullmann_14}, $Cu(OTf)_2$~\cite{ullmann_15}, $CuO$~\cite{ullmann_16} -- have also been used. Apart from Cu-containing compounds, Pd–Fe~\cite{ullmann_35} and Au–Pd~\cite{ullmann_36} Nanocomplexes have also been proven to participate in Ullmann coupling reaction efficiently. The Ullmann coupling reactions discussed above occur mostly in organic solvents. 
+Although these reactions are bestowed with widespread applications, they suffer from major limitations such as harsh reaction conditions,18–21 utilization of stoichiometric amounts of toxic metal catalysts, costly ligands17,18 and difficulty in recyclability of these catalysts. Moreover, stringent conditions are to be maintained, as these catalysts are sensitive to air and moisture.17,22 Thus, the usage of transition metals does not meet the prerequisite of sustainable development.
 
-Currently, the scope of Ullmann coupling reaction is being widened with an increasing number of substrates, leaving groups, and active metal species being investigated for constructing various C--X bonds. 
-
-% RZZK: other metals as catalysts? Yes. But is it called Ullmann in this case? (%ZZ: yeah, I listed all the metal compounds used)
-
-%RZZK, our next major task is to describe the mechanism using the commonly accepted terminology. (%ZZ: Cu(I) actually is the catalyst species)
-The mechanism of Ullmann coupling reaction in solution is well developed. It is widely accepted that the Ullmann coupling proceeds via the formation of an organometallic intermediate. Taking the Ullmann coupling of bromobenzene with Cu as instance, the bromobenzene molecule firstly approaches the copper species to form an aryl organometallic intermediate. Then this intermediate would react with another precursor to form a diaryl organometallic intermediate. Followed by a reductive elimination, the product biaryl moiety is obtained, the general mechanism is shown in Fig.~\ref{fig:classical}.~\cite{ullmann_37}.
+The mechanism of the classical Ullmann coupling is relatively well understood (Fig.~\ref{fig:classical}).
+It is widely accepted that an aryl halides molecule reacts with metallic species to form an organometallic [organocuprate] intermediate. This intermediate then reacts with a second aryl molecule through oxidative addition producing a diaryl organomitallic intermediate, which subsequently undergoes reductive elimination to form a covalent bond between the two aryls. 
+%The Ullmann coupling reactions discussed above occur mostly in organic solvents. 
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.90\columnwidth]{Fig/classical-mechanism.png}
-% RZZK: This looks like a very clear figure that explains the mechanism. Some modifications will be necessary LATER: 
-% * convert into a one-line page-wide scheme. (%ZZ: done)
+\includegraphics[width=1.0\columnwidth]{Fig/classical-mechanism.png}
+% RZK: This looks like a very clear figure that explains the mechanism. Some modifications will be necessary LATER: 
+% * convert into a one-line page-wide scheme. (%ZZ: done, RZK: not done yet)
 % * clarify whether Cu is a reactant or catalyst. If latter, it is unclear how Cu returns to its initial Cu(0) form. (%ZZ:I call it active species, then this issue solved)
 % * why Cu(0) is shown with two electrons? Is it better to show Cu without its electrons?
 % * define SET: single-electron transfer? (%ZZ: add in figure caption)
 % * How is it possible to use Cu(II) salts as catalysts/reagents? 
-\caption{General mechanism of the Ullmann coupling reaction with Cu active species. (SET: single-electron transfer; the black dots are referred to the electrons around Cu which could distinguish $Cu[0]$, $Cu[I]$, $Cu[II]$)}
+\caption{Mechanism of the Ullmann coupling with Cu active species. SET stands for single-electron transfer. %Black dots refer to electrons around Cu to distinguish Cu(0), Cu(I), Cu(II).
+}
+%RZK: Is it better to use Scheme 2 from ullmann_29? Less details makes it easier to understand.
 \label{fig:classical}
 \end{figure}
-Cu-containing Ullmann coupling has acquired great significance in the last decade due to its advantages such as (1) Cu is a cheaper alternative to palladium, platinum or rhodium,  (2) avoidance of the halogen side-product; and (3) air or oxygen can act as oxidants~\cite{ullmann_38,ullmann_39,ullmann_40,ullmann_41}. However, drawbacks still exit for large-scale development: (1) harsh conditions are necessary like high temperature and polar solvents with high boiling point; (2) poor solubility of many Cu compounds in solvent; (3) poor functional group tolerance~\cite{ullmann_31}. Despite a variety of limitations ranging from harsh reaction conditions and erratic yields, the Ullmann coupling has become and still remains one of the key reactions to build C-C bonds in organic synthesis. 
 
-Recent advances in the traditional Ullmann coupling reaction in solution have been reviewed by several authors~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32}.
+Recent advances in the classical Ullmann coupling reaction have been reviewed by several authors~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32}.
+
 
 %RZK: Reaction mechanism figure for Cu(I) or Cu(II). Catalyst regeneration.
 %ZZ: actually there is in investigation that Cu(I) is the real catalyst in Ullmann coupling reaction~\cite{ullmann_31}, we should discuss in details or just use active species?)
@@ -160,21 +148,18 @@ A recent surge of interest in electronic devices based on low-dimensional organi
 In the case of low-dimensional materials, the well-established ability of the Ullmann coupling to create bonds between aromatic carbon atoms and couple their $\pi$ systems have been transferred from solution to metal surfaces, which serve as both a low-dimensional confining template and catalyst.
 
 The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, one- and two-dimensional organic polymers with high degree control of their electronic properties~\cite{ullmann_33}. 
-In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on metals other than Cu, such as silver and gold. 
+%In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on metals other than Cu, such as silver and gold. 
+%RZK: the last sentence only makes sence if classical coupling is limited to copper.
 
-% RZZK. They say, phenyl is parallel to the surface. Was it confirmed later?
 One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Xi and Bent~\cite{sur_sci01} in 1992.
 %
-The intermediate species of the same reaction were inspected using STM imaging by Weiss \textit{et al.}~\cite{langm01} in 1998.
-% RZZK: I removed the following reference because it cannot be classified as Ullmann coupling
-% STM tip was further utilized to achieve a chain polymerization, which result in polydiacetylene from diacetylene compounds in 2000~\cite{ullmann_34}.
-%
-
-In 2004, it was demonstrated that linear \emph{protopolymers} (aligned monomer units of a polymer that have not yet reacted to form the final polymer) could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. This breakthrough provided a new insight that not only could simple organic molecule be synthesized by surface Ullmann coupling, but periodic polymer as well.
+The intermediate species of the same reaction were inspected using STM imaging by Weiss \textit{et al.}~\cite{langm01} in 1998. 
+In 2004, it was demonstrated that linear \emph{protopolymers}---aligned monomer units of a polymer that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
+This insight showed that the Ullmann coupling can be used not only to synthesize organic molecules but periodic polymers as well.
 Remarkably, the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces under vacuum has employed the Ullmann reaction: the coupling between brominated tetraphenyl-porphyrins on the Au(111) surface was performed by Grill \textit{et al.}~\cite{Naturenano2007} in 2007.
 
 Since then, surface Ullmann coupling has become one of the most representative on-surface synthesis scheme and has been utilized to create a variety of covalently-linked extended aromatic systems from halogenated aryl precursors on multiple metal surfaces~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
-%RZK: more reviews from our list must be cited here (%ZZ: done)
+
 
 \subsection{Mechanism of surface Ullmann coupling}
 
@@ -210,7 +195,7 @@ As shown in Fig.~\ref{fig_mecha}, the mechanism is also involved in the formatio
     %%\item Diffusion of Coupling Product []
 %%\end{enumerate}  
 
-\subsubsection{\label{sec:level3}Dehalogenation}
+\subsubsection{Dehalogenation}
 
 %RZZK: carbon or heteroatom? 
 %RZZK: no reference to the figure steps (which figure steps?)
@@ -290,7 +275,7 @@ After further annealing, the metal atoms are released from the dimerized organom
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/Dimer_trimer.png}
 %R1111: What metal is this. Better captions are required for all figures. Chemical identity of all species must be clear from the figure.
-\caption{Coupling barriers between (a) two monomers (dimerization) and (f) a monomer and a dimer (trimerization), respectively. The length (r) indicated in angstrom is the distance between the centers of the aromatic rings which undergo covalent coupling. The geometries of the most significant states (initial, organometallic intermediate, transient, and final) are reported in panels b−e and panels g−i for the dimerization and trimerization, respectively. The colors of the frames correspond to the arrows in panels a and f.}
+\caption{Coupling barriers between (a) two monomers (dimerization) and (f) a monomer and a dimer (trimerization), respectively. The length (r) indicated in angstrom is the distance between the centers of the aromatic rings which undergo covalent coupling. The geometries of the most significant states (initial, organometallic intermediate, transient, and final) are reported in panels b--e and panels g--i for the dimerization and trimerization, respectively. The colors of the frames correspond to the arrows in panels a and f.}
 \label{fig:dimer}
 \end{figure*}
 %
@@ -335,7 +320,7 @@ In following section, the nature of metal atoms participating in each step of su
 %\label{fig:2Dgas}
 %\end{figure}
 
-\subsubsection{\label{sec:level3}Dehalogenation of precursors}
+\subsubsection{Dehalogenation of precursors}
 
 Evidences have already been presented that metal adatoms participate in the process of dehalogenation. 
 In 2017, Barton \textit{et al.}~\cite{chemeurope2017} explored the role of adatoms in the dehalogenation step with iodobenzene on Au(111), Ag(111) and Cu(111) surface based on DFT calculations. The energy profile of adatom formation on pristine surface was compared with the profile of formation on surface with the presence of iodobenzene, the latter case is referred to as adatom formation of $origin(2)$. The comparison has shown that the energy of extracting a metal atom from the pristine surface was in the 1.12 - 1.71~eV range. While in the dehalogenation step, the dehalogenated iodobenzene would interact with the metal atom of $nature(1)$ on metal surface, which would possibly form a new adatom of $origin(2)$. This step required a dramatically lower energy of 0.16-0.60~eV range. Furthermore, the calculations have shown that the energy released in the process of adsorption of idobenzene on metal surface and formation of organometallic intermediates in the process of surface Ullmann coupling is sufficient to compensate the energy required for a metal atom extraction to form a new adatom of $origin(2)$, as shown in Fig.~\ref{fig:3}.
@@ -370,7 +355,7 @@ In 2017, Zint \textit{et al.}~\cite{acsnano2017} analyzed structures of intermed
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=0.75\columnwidth]{Fig/distance.png}
-\caption{(a) AFM frequency shift image of intermediate with fit of structural model. (b) Zoom on intermediate bond ($cf$. blue box in a) imaged with decreased tip−sample distance ($\Delta$z = −70 pm with respect to image a). (c−f) DFT-D3 calculations [PBE-D3/ pw (PAW P)] for two different organometallic intermediate states (surface atom (c,d) vs adatom (e,f)).}
+\caption{(a) AFM frequency shift image of intermediate with fit of structural model. (b) Zoom on intermediate bond ($cf$. blue box in a) imaged with decreased tip-sample distance ($\Delta$z = -70 pm with respect to image a). (c--f) DFT-D3 calculations [PBE-D3/ pw (PAW P)] for two different organometallic intermediate states (surface atom (c,d) vs adatom (e,f)).}
 \label{fig:5}
 \end{figure}
 
@@ -380,7 +365,7 @@ The origin the adatoms were later explored after the metal atoms in dimerized or
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.75\columnwidth]{Fig/AFM_prove.png}
-\caption{Molecular structures (top row), STM (middle row), and AFM images (bottom row) of 4‐Bromoterphenyl dimers on Cu(111). Two different types of dimers are observed, which are denoted as unlinked (left column) and linked dimers (right column). The STM image of the unlinked dimer reveals a dark region between the two molecules that separates them. Between the two molecules of the linked dimer a bright protrusion is observed in the STM scan that directly links them. The red dashed circles in (c) and (f) indicate the twisted phenyl rings, which lost their iodine atoms. Imaging parameters: (b) 200 mV, 30 pA, (e) 200 mV, 10 pA, tip height z = −100 pm (c) and z = −24 pm (f) with respect to a tunneling set point of 200 mV and 10 pA on Cu(111).}
+\caption{Molecular structures (top row), STM (middle row), and AFM images (bottom row) of 4‐Bromoterphenyl dimers on Cu(111). Two different types of dimers are observed, which are denoted as unlinked (left column) and linked dimers (right column). The STM image of the unlinked dimer reveals a dark region between the two molecules that separates them. Between the two molecules of the linked dimer a bright protrusion is observed in the STM scan that directly links them. The red dashed circles in (c) and (f) indicate the twisted phenyl rings, which lost their iodine atoms. Imaging parameters: (b) 200 mV, 30 pA, (e) 200 mV, 10 pA, tip height z = -100 pm (c) and z = -24 pm (f) with respect to a tunneling set point of 200 mV and 10 pA on Cu(111).}
 \label{fig:6}
 \end{figure}
 
@@ -394,6 +379,7 @@ The nature of metal atoms in dimerized organometallic intermediates has been pro
 %\caption{STM simulations and DFT reaction profile for the (a) direct %dechlorination reaction (red lines) and (b) Cu adatom-mediated Ullmann coupling reaction (blue lines). For each process the energy are plotted of the (i, ii) precursors, (iii, iv) intermediates, (v) and final species (gray circles) and two transition states (white circles).}
 %\label{fig:prophyrin}
 %\end{figure}
+
 \section{Methods}
 %\subsection{Computation Models}
 
@@ -404,9 +390,9 @@ The simulation of surface Ullmann coupling reaction was conducted with chloroben
 The periodic Density Functional Theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
 The Cu(111) surface used in all surface Ullmann coupling was 
-modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15 \si{\angstrom} of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than 2$\times$ $10^{-2} eV/\si{\angstrom}^{2}$. 
+modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15~\AA of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than 2$\times$ $10^{-2} eV/\si{\angstrom}^{2}$. 
 
-Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than 0.1 eV$\si{\angstrom}^{2}$ in CI-NEB calculations.
+Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than 0.1~\si{\eV\square\angstrom} in CI-NEB calculations.
 
 \section{Results and Discussion}
 
@@ -496,9 +482,11 @@ Here, we investigated two possibilities separately.
 %R1111: comparison to existing calculations. Comparison between different metals (and halogens?) in our own calculations.
 In Path I, the formation of C--C bond started from the dimerized organometallic intermediate in which the copper atom was partially lifted (notated as $IS_{path1}$). Then the two carbons which would construct a new bond later slope closer to each other, while the copper atom was less lifted on the surface (notated as $TS_{path1}$). Finally, a new C-C bond was formed and the surface went back to original configuration, no adatom forms after the coupling reaction finished (notated as $FS_{path1}$).
 
-In Fig.~\ref{fig:bondformlift}, along the potential energy surface, 6 intermediates were interpolated between $IS_{path1}$ and $FS_{path1}$. The tilt angle of phenyl species in respect to the Cu(111) surface was $50^\circ$ in $IS_{path1}$ and flattened to $35^\circ$ in $TS_{path1}$ and ended at $0^\circ$ in $FS_{path1}$. The distance between the two carbon atoms which would construct a bond varied from 3.10 \AA\ to 2.28 \AA\ and ended at 1.49 \AA\.
+%In Fig.~\ref{fig:bondformlift}, along the potential energy surface, 6 intermediates were interpolated between $IS_{path1}$ and $FS_{path1}$. The tilt angle of phenyl species in respect to the Cu(111) surface was $50^\circ$ in $IS_{path1}$ and flattened to $35^\circ$ in $TS_{path1}$ and ended at $0^\circ$ in $FS_{path1}$. The distance between the two carbon atoms which would construct a bond varied from 3.10~\si{\angstrom} to 2.28 \AA\ and ended at 1.49 \AA\.
 
-Path I reaction is exothermic, the enthalpy $\Delta H$ is -2.00 eV, and $E_{barrier}$ is 0.50 eV.
+In Fig.~\ref{fig:bondformlift}, along the potential energy surface, 6 intermediates were interpolated between $IS_{path1}$ and $FS_{path1}$. The tilt angle of phenyl species in respect to the Cu(111) surface was 50\si{\celsius} in $IS_{path1}$ and flattened to $35^\circ$ in $TS_{path1}$ and ended at $0^\circ$ in $FS_{path1}$. The distance between the two carbon atoms which would construct a bond varied from 3.10~\si{\angstrom} to 2.28~\si{\angstrom} and ended at 1.49~\si{\angstrom}.
+
+Path I reaction is exothermic, the enthalpy $\Delta H$ is -2.00~\si{\eV}, and $E_{barrier}$ is 0.50 eV.
 %R1111: This results agree with the computational study of the C--C formation of dibromobenzene species. Reference.
 
 %R1111: LATER. It is important to discuss the zero-energy for this step. Would it be more informative to use a common zero from the entire energy profile?
@@ -586,29 +574,13 @@ However, as is shown in Fig.~\ref{fig:completeenergy}, the presence of organomet
 
 \section{acknowledgements}
 
-
-
-
-
-
-List of additional reference, not yet encorporated into the manuscript:
+\section{Articles to read}
 
 \href{https://doi.org/10.1016/j.apsusc.2020.145797}{Ullmann coupling of 2,7-dibromopyrene on Au(1 1 1) assisted by surface adatoms}
-
-
-
-
-
-
-
-
-
 
 \nocite{*}
 
 \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
-\bibliography{references}% Produces the bibliography via BibTeX.
+\bibliography{main}% Produces the bibliography via BibTeX.
 
 \end{document}
-%
-% ****** End of file apssamp.tex ******
