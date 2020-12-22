@@ -51,6 +51,7 @@ prb,
 %\usepackage{url}            % simple URL typesetting
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
+%\usepackage{nameref}
 
 %\usepackage[showframe,%Uncomment any one of the following lines to test 
 %%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
@@ -59,6 +60,9 @@ prb,
 %%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
 %%height=10in,a5paper,hmargin={3cm,0.8in},
 %]{geometry}
+
+%RZK: do not edit red text
+\newcommand{\lock}{\color{red}}
 
 \begin{document}
 
@@ -95,6 +99,8 @@ This manuscript reviews the results of experimental and computational studies of
 %RZZK - can be ignored, these labels keep track of my own revision process
 
 \section{Introduction}
+
+{\lock
 
 \subsection{Ullmann coupling in solution}
 
@@ -144,7 +150,7 @@ A recent surge of interest in electronic devices based on low-dimensional organi
 In the case of low-dimensional materials, the well-established ability of the Ullmann coupling to create bonds between aromatic carbon atoms and couple their $\pi$ systems have been transferred from solution to metal surfaces, which serve as both a low-dimensional confining template and catalyst.
 
 The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, one- and two-dimensional organic polymers with high degree control of their electronic properties~\cite{ullmann_33}. 
-In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on metals other than Cu, such as silver and gold. 
+In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on metals other than copper, such as silver and gold. 
 
 One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Xi and Bent~\cite{sur_sci01} in 1992.
 %
@@ -154,7 +160,6 @@ This insight showed that the Ullmann coupling can be used not only to synthesize
 Remarkably, the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces under vacuum has employed the Ullmann reaction: the coupling between brominated tetraphenyl-porphyrins on the Au(111) surface was performed by Grill \textit{et al.}~\cite{Naturenano2007} in 2007.
 
 Since then, surface Ullmann coupling has become one of the most representative on-surface synthesis schemes. It has been utilized to create covalently-linked extended aromatic systems on a variety of metal surfaces starting from halogenated aryl precursors~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
-
 
 \subsection{Mechanism of surface Ullmann coupling}
 
@@ -170,6 +175,8 @@ The overall coupling process can be divided into elementary steps depicted in Fi
 \end{figure*}
 %(ZZ: I suggest we change the mechanism figure here, maybe emphasize the possible intermediates in the text?)
 %RZK1219: Agreed. This needs to be discussed in detail, but this is not yet a high-priority task.
+
+%RZZK: Summarize the focus of the following review: halogens as the leaving group, Cu,Ag,Au metals, narrower focus on monohalogenated benzene. Emphasize that we review C--C bond formation, not carbon-heteroatom bond formation.
 
 %%\begin{enumerate}[align=left, itemindent=2em, label=(\roman*)]
     %%\item Dehalogenation of Precursors [The fundamental step is the %%disassociate of halogens, the cleavage of C-X bonds (X = halogens) is %%usually activated by thermal, electron-induced and photon-simulated. %%The energy will vary from 0.05 ~ 0.80 eV with different X on different %%coinage surfaces.]
@@ -220,6 +227,8 @@ The same trend has been observed for bromobenzene with a higher temperature on a
 
 DFT calculations have estimated the activation barrier for the exothermic dehalogenation of bromobenzene and iodobenzene on (111) metal surfaces to be 0.4--1.0~eV~\cite{jacs2013}. As shown in Fig.~\ref{fig:dehalo}, the activation barrier and reaction energy decrease in the order Au $>$ Ag $>$ Cu and are 0.1--0.5 eV lower for iodobenzene than bromobenzene. The latter is due to the dissociation energy of a C--I bond being $\sim$0.65~eV lower than that of a C--Br bond~\cite{Arpc1982}.
 
+} %lock
+
 %%%%%%%%%% old text %%%%%%%%%%%%%%%
 %RZK1219.
 \rule{\columnwidth}{0.4pt}
@@ -269,16 +278,24 @@ Björk \textit{et al.} ~\cite{jacs2013} proposed an activation barrier of 0.4-1.
 
 \subsubsection{Diffusion}
 
+{\lock
+
 The dehalogenation step produces organometallic intermediates with carbon atoms covalently bonded directly to surface metal atoms. 
 %RZZK: These species are often referred to as radicals even though it remains unclear whether their possess unpaired electrons.
 The diffusion of these species, which has been observed experimentally and studied computationally, plays a decisive role in the further coupling process. 
 The ease diffusion increases the probability that two molecules move closer to each other resulting in the creation of the bond between them.
 
-An STM imaging has revealed that dehalogenated phenyl groups diffuse on Cu(111) at 77~K~\cite{langm01}. The calculated energy barrier of phenyl groups' diffusion was $\sim$0.09~eV. 
+An STM imaging has revealed that dehalogenated phenyl groups diffuse on Cu(111) at [temperatures as low as] 77~K~\cite{langm01}. The energy barrier of the diffusion has been calculated to be approximately 0.09~eV. 
 %RZK1220: It appears that you discuss 3 things: overturn, sliding, flipping. How overturning is different from flipping? What is sliding? Better structure, sequence of thoughts, is needed.
-It has also shown that phenyl groups, which were tilted at $\sim 36^\circ$ with respect to the surface~\cite{pccp2010}, overturn during the diffusion and then bind to a nearby metal atom as shown in Figure.~\ref{fig:4}. This was also discussed by Björk \textit{et al.}~\cite{jacs2013}. Phenyl was proposed to diffuse either by sliding or flipping. In sliding fashion, phenyl stayed the same orientation in initial state and final state, the energy barriers of diffusion on different metal surface followed the order: Cu(111) $>$ Ag(111) $>$ Au(111). While in flipping pattern, the order of diffusion barriers changed to Au(111) $>$ Cu(111) $>$ Ag(111). Since the flipping pattern on these metals all possessed a lower energy barrier for diffusion, it was considered as a more plausible fashion for phenyl to diffuse on metal surfaces. 
-
-Besides the phenyl groups, halogens are also dissociated from the original precursors and chemisorbed by the surface metal atoms. In 2013, Björk \textit{et al.}~\cite{jacs2013} investigated the binding energy and the diffusion barrier of dissociated halogens on metal surface using DFT calculations. Bromine and Iodine atoms will both display a mobility at experimental temperature due to a small diffusion energy barrier in the range of 50-100 mv on Cu(111), Ag(111), and Au(111). The barrier is largest on Au(111) while smallest on Cu(111). 
+%RZK1221: I have stated this before and I have to emphasize this one more time that you should use PRESENT PERFECT tense, not PAST SIMPLE when you report previous findings. Do not use PAST tense to report hings that are universally TRUE, use PRESENT SIMPLE. For example, "The energy barriers follow", not ""The energy barriers followed"
+It has been shown that phenyl groups, which are tilted at $\sim 36^\circ$ with respect to the surface~\cite{pccp2010, jacs2013}, overturn during the diffusion and then bind to a nearby metal atom as shown in Fig.~\ref{fig:4}. 
+%RZK1221. You still use Figure instead of Fig. in your text. Search the entire text for figure and relace where appropriate.
+Phenyl has been proposed to diffuse either by sliding or flipping. In the sliding mechanism, phenyl groups keep their surface orientation in the initial and final states and the energy barriers of diffusion on different metal surface follow the order Cu(111) $>$ Ag(111) $>$ Au(111). For the flipping mechanism, the height of diffusion barriers decreases Au(111) $>$ Cu(111) $>$ Ag(111). 
+%RZK1221: why different order? Is it something that can be understood from simple bonding arguments?
+Since the flipping mechanism has a lower energy barrier, it has been proposed as the most plausible mechanism for the diffusion of phenyl groups on metal surfaces. 
+%RZK1221: Since you compare barriers, is it important to write the barrier heights for the sliding/flipping mechaniss?
+%RZK1221: There are no references to flipping/sliding mechanisms.
+%RZK1221: I disagree that the mechanism with the lowest barrier of diffusion is the dominant mechanism. If both barriers are low then both mechanism will contribute.
 
 \begin{figure}[htb]
 \centering
@@ -287,31 +304,58 @@ Besides the phenyl groups, halogens are also dissociated from the original precu
 \label{fig:4}
 \end{figure}
 
-%RZZK do we need to keep the following or is it too obvious?: The diffusion energy barrier and the tilt angle between single radical and substrate will change with the size increasing of reactant molecules.(%ZZ: True, I think we don't need to mention this)
+%RZZK: The following needs to be stated in the end. The diffusion energy barrier and the tilt angle between single radical and substrate will change with the size increasing of reactant molecules.
 
-\subsubsection{Formation of dimerized organometallic intermediates}
+%RZK1221: Do not mention the year of publication if you do not describe the history of research. Do not mention authors unless this is important.
+Besides the organometallic intermediates, halogen atoms chemisorbed on the surface undergo the diffusion process. 
+The binding energy of halogens and their diffusion barriers have been investigated using DFT calculations~\cite{jacs2013}.
+%RZK1221: Do not capitalize names of elements.
+%RZK1221: How do we know that they display high mobility? Is it observed or is it inferred from calculations?
+Bromine and iodine atoms [are expected to?] display high mobility at experimental temperature due to small energy barriers in the range of 50-100 mv on Cu(111), Ag(111), and Au(111). The barrier for the halogen diffusion is the highest on Au(111) and lowest on Cu(111). 
+%RZK1221: mv is not a unit of energy, check, convert to eV and report properly. Do we know the barriers for all three surfaces? If yes, report them here.
 
-%RZK: "close" or do they have to be bonded to the same metal atom? (%ZZ: solved)
-A dimerized organometallic intermediate based on carbon-metal-carbon interlinks forms when two single phenyl groups diffuse adjacent to each other and then interact with the same metal atom. These carbon-metal-carbon bridges have been revealed in related research works. 
+} %lock
 
-In 2011, Wang \textit{et al.}~\cite{jacs2011} studied the organometallic intermediate of surface Ullmann coupling from dibromoterphenyl to polyphenylene using STM and DFT calculations. When the temperature went to 300 K, both Br atoms were dissociated from the phenyl group. However, the length of linear periodic structure formed in reaction (characterized by STM) was 4.8 \AA\ longer than the length of DFT calculated terphenyl group (ph)$_{3}$, which indicated the possibility that copper atoms were inserted and served as linkage parts inside terphenyl groups. Besides, performed tunneling spectra (dI/dV) of one periodic unit of the experimental formed structure and the calculated projected density of states (PDOS) of (ph)$_{3}$/Cu atom both showed the same value at ~2.7 eV, which further proved the existence of C-Cu-C bridges in organometallic intermediate structures, all the evidences are shown in Fig.~\ref{fig:organ}. Similar methods have been used by Chung \textit{et al.}~\cite{PCCP2012} with the same molecules on Ag(111). C-Ag-C bridges were observed and demonstrated in the organometallic intermediates.
+\subsubsection{Formation of dimerized intermediates} \label{sec:dimerized}
+%RZZK: Dimerization???
+
+{\lock
+
+Dimerized organometallic intermediates form when two organic fragments diffuse close to each other and become bound to the same metal atom, without yet creating a direct covalent bond. Since the distance between two carbon atoms in such carbon-metal-carbon bridges is significantly larger than in a covalent bond, their existence has been confirmed in multiple STM~\cite{jacs2011}, tunneling RZK~\cite{RZK} and other experimental studies, typically accompanied by DFT calculations~\cite{RZK}.
+
+}
+
+ 
+%RZK1221: Is there any specific reason you want to provide such a detailed description here. You do not describe research in such a level of detail for other steps. So, unless there is a good reason to provide details, this must be reduced just to key facts about this step. What facts do you want to emphasize?
+%Temperature required for this step to occur is higher that temperature for dehalogenation. How general is this trend?
+%Au is different from Cu and Ag. Again, how general is the trend?
+
+In 2011, Wang \textit{et al.}~\cite{jacs2011} studied the organometallic intermediate of surface Ullmann coupling from dibromoterphenyl to polyphenylene using STM and DFT calculations [on copper?]. 
+When the temperature went to 300~K, both Br atoms were dissociated from the phenyl group. However, the length of linear periodic structure formed in reaction (characterized by STM) was 4.8~\AA\ longer than the length of DFT calculated terphenyl group (ph)$_{3}$, which indicated the possibility that copper atoms were inserted and served as linkage parts inside terphenyl groups. Besides, performed tunneling spectra (dI/dV) of one periodic unit of the experimental formed structure and the calculated projected density of states (PDOS) of (ph)$_{3}$/Cu atom both showed the same value at ~2.7 eV, which further proved the existence of C-Cu-C bridges in organometallic intermediate structures, all the evidences are shown in Fig.~\ref{fig:organ}. Similar methods have been used by Chung \textit{et al.}~\cite{PCCP2012} with the same molecules on Ag(111). C-Ag-C bridges were observed and demonstrated in the organometallic intermediates.
 
 The C-Ag-C and C-Cu-C structures were both obtained at 300 K, which revealed that the barrier for two terphenyl
 coordinated with Ag and Cu are close. Compared to the dehalogenation, this step requires a higher temperature condition (still near room temperature). On Cu and Ag surface, the dimerized organometallic intermediates are always observed, but on Au surface are occasionally reported. This is explained by a relatively low barrier conversion from this state to covalent bond formation on Au surface, resulting in a very short life time of C-Au-C existence~\cite{ullmann_33}.
-%
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.75\columnwidth]{Fig/Organometallic.png}
-\caption{(a) High-resolution STM image of the intermediate (8 $\times$ 4 $nm^2$, 1.0 V, 0.5 nA). (Inset) Simulated STM image at +2.7 V on the same scale. (b) dI/dV spectra measured at (ph)$_3$ (black dot) and Cu atom (blue square) sites as marked in (a). (c) Top and side views of the optimized structure of the intermediate obtained by the DFT calculation. (d) Calculated PDOS of (ph)$_3$ unit (black) and Cu atom (blue) as marked by the crosses in (a).}
-\label{fig:organ}
-\end{figure}
+
+%RZK1221: Since the focus here is on mono-substituted benzene, is there anything known about this step for Ph-Hal?
+
+%RZK1221: It is not worth diplaying this figure. It is not ver informative. If we are to place a figure here, it is better to use one that clearly shows the structure of the dimerized intermediate, perhaps from simulations.
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=0.75\columnwidth]{Fig/Organometallic.png}
+%\caption{(a) High-resolution STM image of the intermediate (8 $\times$ 4 $nm^2$, 1.0 V, 0.5 nA). (Inset) Simulated STM image at +2.7 V on the same scale. (b) dI/dV spectra measured at (ph)$_3$ (black dot) and Cu atom (blue square) sites as marked in (a). (c) Top and side views of the optimized structure of the intermediate obtained by the DFT calculation. (d) Calculated PDOS of (ph)$_3$ unit (black) and Cu atom (blue) as marked by the crosses in (a).}
+%\label{fig:organ}
+%\end{figure}
 
 \subsubsection{Formation of the C--C bond}
 
-%RZK: it is not clear when you describe calculations and when you describe experiments. (ZZ: solved)
-%RZK: There are lots of symbols that are not displayed correctly in a pdf. (ZZ: solved)
-After further annealing, the metal atoms are released from the dimerized organometallic intermediates, spontaneously a covalent bond will be irreversibly constructed between two carbon atoms. The formation of C--C bond in this state has also been widely explored in experiment and theoretically as well. In 2016, Di Giovannantonio \textit{et al.}~\cite{jacs2016} reported the dimerization and trimerization of 1,4-dibromobenzene on Cu(100) in UHV condition and related simulations with DFT methods. DFT results predicted that the dimerized organometallic intermediate was a relatively stable phase in potential energy surface. A 0.7 eV of activation energy was required from the dimerized organometallic intermediate to the coupling dimer. And a 0.2 eV of activation was needed for the coupling dimer to produce the trimer product, the data could be reviewed in Fig.~\ref{fig:dimer}. These data are consistent with Di Giovannantonio's another experiment work~\cite{acsnano2013} in 2013. Same precursor 1,4-dibromobenzene was deposited on Cu(100) surface and the surface Ullmann coupling process was pictured in STM image. It was reported that organometallic intermediates were formed at room temperature, nevertheless the final formation of C--C bond needed an annealing temperature up to 500 K.
-%
+After further annealing, the metal atoms are released from the dimerized organometallic intermediates, spontaneously a covalent bond will be irreversibly constructed between two carbon atoms. The formation of C--C bond in this state has also been widely explored in experiment and theoretically as well.
+
+%RZK1221: Results for phenyl-halogens must be described here first.
+
+It has been reported~\textit{et al.}~\cite{jacs2016} that the dimerization and trimerization of 1,4-dibromobenzene on Cu(100) in UHV condition and related simulations with DFT methods. DFT results show that the dimerized organometallic intermediate is a  stable phase in the potential energy surface. A 0.7 eV of activation energy was required from the dimerized organometallic intermediate to the coupling dimer. And a 0.2 eV of activation was needed for the coupling dimer to produce the trimer product, the data could be reviewed in Fig.~\ref{fig:dimer}. 
+%RZK1221: Again, you give to many irrelevant details for a short review. If the 2013 work gives the same results, combine it with the previous sentence.
+These data are consistent with Di Giovannantonio's another experiment work~\cite{acsnano2013} in 2013. Same precursor 1,4-dibromobenzene was deposited on Cu(100) surface and the surface Ullmann coupling process was pictured in STM image. It was reported that organometallic intermediates were formed at room temperature, nevertheless the final formation of C--C bond needed an annealing temperature up to 500 K.
+
 \begin{figure*}[ht]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/Dimer_trimer.png}
@@ -321,7 +365,13 @@ After further annealing, the metal atoms are released from the dimerized organom
 \end{figure*}
 %
 
-This final step requires a higher annealing temperature, range from 330 to 420 K on Ag surface and from 500 to 600 K on Au surface~\cite{ullmann_51}, and on Cu, the temperature range is usually lower than on Au but higher than on Ag. This indicates that the energy barrier of the formation of C--C bond step on three metal surfaces should follow Au $>$ Cu $>$ Ag. And since  there were limited reports on the formation of C-Au-C intermediates, it could be safely speculated that a high energy barrier exists in the formation of C-Au-C dimerized organometallic intermediates and a low barrier exists in the  covalent bond formation. After the formation of C--C bond, a surface Ullmann coupling would be completed between two monomers, resulting in a dimer. If there are more than one functional group on a monomer, this dimer could further diffuse and couple to obtain a trimer~\cite{jacs2016}, and oligomer~\cite{ullmann_53, ullmann_56} or polymer~\cite{ullmann_43, ullmann_54, ullmann_55}.
+%RZK1221: Higher than what?
+%RZK1212: Is it important what surface? 111 or other or it does not matter.
+This final step requires a higher annealing temperature, ranging from 330 to 420~K on Ag surface and from 500 to 600~K on Au surface~\cite{ullmann_51}. On Cu, the temperature range is usually lower than on Au but higher than on Ag. This indicates that the energy barrier of the formation of C--C bond step on three metal surfaces should follow Au $>$ Cu $>$ Ag. 
+%RZK1221: Is it your speculation? If yes, it should be in Results and Discussion. If not, a reference should be given.
+And since there were limited reports on the formation of C-Au-C intermediates, it could be safely speculated that a high energy barrier exists in the formation of C-Au-C dimerized organometallic intermediates and a low barrier exists in the covalent bond formation. 
+
+After the formation of C--C bond, a surface Ullmann coupling would be completed between two monomers, resulting in a dimer. If there are more than one functional groups on a monomer, this dimer could further diffuse and couple to obtain a trimer~\cite{jacs2016}, and oligomers~\cite{ullmann_53, ullmann_56} or polymers~\cite{ullmann_43, ullmann_54, ullmann_55}.
 
 \subsubsection{Summary on mechanism of surface Ullmann Coupling}
 
@@ -340,31 +390,43 @@ Although halogens are free to move, they possess a relatively high binding energ
 
 \subsection{Role of adatoms in the surface Ullmann coupling} 
 
-It is worth tracking the pathway that metal atoms participate in the coupling process. Since all reactants and intermediates are adsorbed on the metal substrate in surface Ullmann coupling, it is apparently that the active metal species come directly from the substrate. However, the face of metal crystal is not a perfect, well-ordered shape in reality, there exits various of defect, adatoms, vacancies, as shown in Fig.~\ref{cyrstal_surface}~\cite{ullmann_49}. Figuring out the effect of these imperfections on the surface Ullmann coupling would consummate the utilization of various surface. Here we will mainly investigate how adatoms participate in surface Ullmann coupling reaction mechanism, details will be discussed in next section.
+%RZK1221: Better introductory sentences about surface defects. 2-3 sentences: types of defects 3D, 2D, 1D.
+Metal surfaces are not perfect, well-ordered structures. There exist various defects ranging from two-dimensional defect such as RZK to line defects such as RZK and point defects such as adatoms, vacancies, RZK shown in Fig.~\ref{cyrstal_surface}. 
+%RZK1221: Cite modern review on surface defects, desirably on Cu, Ag, Au. Previously used citation: ~\cite{ullmann_49}
+
+{\lock
+
+In the process of the Ullmann coupling, reactants, intermediates and final products interact directly with metal atoms on the surface and, therefore, are affected by surface defects. Quantifying the extent to which imperfections of the metal surface influence the thermodynamics and kinetics of the Ullman coupling can suggest new strategies for surface optimization, leading, in turn, to higher yields of desirable perfectly-organized [defect-free] two-dimensional polymers. 
+
+The focus of this work is on the role of adatoms in the surface Ullmann reaction, exemplified by the coupling of two phenyl rings -- one of the most studied and simple model of the Ullmann process.
+%RZZK: Further limitations of this article.
+
+%RZZK: as well as the microscopic mechanisms of interaction of all species with various defects
+
+} %lock
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.4\textwidth]{Fig/Crystal_surface.jpg}
-\caption{A model of crystal surface}
+\caption{A model of crystal surface. Adapted from Ref.~\onlinecite{ullmann_49}.}
+%RZK1221: Remove the figure or find/create better figure. The text is almost invisible in this figure. 
 \label{cyrstal_surface}
 \end{figure}
 
-Metal atoms are involved in many steps of the mechanism of surface Ullmann coupling reaction discussed above. Investigation into the role of metal atoms in this process delivered a long-existence argument.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%The metal atoms may come from: (1) adatoms residing on metal surface; %%(2) metal atoms reside inside the metal surface. These two possibilities %%have been explored both experimentally and computationally in first %%three steps. \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%RZK1221: Do not use math mode to emphasize text. Use \emph{text}.
+%RZK1221: The idea to use origin(x) and nature(y) notation is inacceptable. I have never seen anyone doing this in the literature. It makes your text unreadable -- readers will have hard time remembering what your numbers stand for. Go over your text and replace all instances with simple phrases describing your metal atoms.
 Here the two terminology $Nature$ and $Origin$ will be used to distinguish the metal atoms which participate in suface Ullmann coupling.
-The %Nature% of metal atoms means metal atoms can come from (1) surface atom which is located at the first layer on metal surface, is indistinguishable from other surface atoms and has no relation with surface defect, or (2) adatoms which is related to the surface defect, it will lie above the first layer of metal surface and free to diffuse.
+The $Nature$ of metal atoms means metal atoms can come from (1) surface atom which is located at the first layer on metal surface, is indistinguishable from other surface atoms and has no relation with surface defect, or (2) adatoms which is related to the surface defect, it will lie above the first layer of metal surface and free to diffuse.
 Thus, the $nature$ mainly divide the metal atoms from a surface into two categories, the first kind is indistinguishable and locate in the lattice of metal crystal, while the second kind is adatoms, which is a production of common non-order defect appeared on metal surface. 
 The process that gives birth to $nature(2)$, adatoms in surface Ullmann coupling reaction is also of great interest. It can be split into two different kinds with notation $origin$: adatoms in surface Ullmann coupling may come from (1) pre-exsiting adatoms before the occurrence of surface Ullmann coupling due to the surface defect, thermal punctuation or (2)pulled out by the intermediates produced in surface Ullmann coupling, and then fully sit above the first layer of metal surface to become a new adatom. For the second origin of adatoms, it can also be expressed that the surface Ullmann coupling create this adatom which used to be a $nature(1)$ atom. The nature of metal atoms and the origin of adatoms have been explored experimentally and computationally.
 %For origin(1), it has been reported that the onset of the vacancy-adatom formation take place on Cu(111) surface was around 900 K by molecular dynamics~\cite{ullmann_50} , which is much higher than the temperature required by surface Ullmann coupling reaction, as shown in Fig.~\ref{fig:2Dgasn}~\cite{ullmann_50}. This could be the evidence that there would not be new adatoms formation due to the thermal fluctuations as the surface Ullmann coupling proceeds. 
 
 %discuss that adatoms could exit on metal surface due to the thermal evaporation
 For $origin(1)$, it has been explored that the number of mobile adatoms on copper surface are high at room temperature~\cite{ullmann_58}, especially near various surface defect, which provide a feasible view that the formation of organometallic intermediates in surface Ullmann coupling may directly make use of $origin(1)$ adatom. Thus, it is safely suspected that there is an comparison between $nature(1)$ and $nature(2)$ metal atoms which will be made use of in the process of surface Ullmann coupling reaction and also decide whether surface Ullmann coupling reaction will be a method to create $origin(2)$ adatoms in experiment. These possibilities are detailed discussed in following sections.
-
-
-
-
 
 %\begin{figure}[ht]
 %\centering
@@ -373,7 +435,7 @@ For $origin(1)$, it has been explored that the number of mobile adatoms on coppe
 %\label{fig:2Dgas}
 %\end{figure}
 
-\subsubsection{Dehalogenation of precursors}
+\subsubsection{Dehalogenation}
 
 Evidences have already been presented that metal adatoms participate in the process of dehalogenation. 
 In 2017, Barton \textit{et al.}~\cite{chemeurope2017} explored the role of adatoms in the dehalogenation step with iodobenzene on Au(111), Ag(111) and Cu(111) surface based on DFT calculations. The energy profile of adatom formation on pristine surface was compared with the profile of formation on surface with the presence of iodobenzene, the latter case is referred to as adatom formation of $origin(2)$. The comparison has shown that the energy of extracting a metal atom from the pristine surface was in the 1.12 - 1.71~eV range. While in the dehalogenation step, the dehalogenated iodobenzene would interact with the metal atom of $nature(1)$ on metal surface, which would possibly form a new adatom of $origin(2)$. This step required a dramatically lower energy of 0.16-0.60~eV range. Furthermore, the calculations have shown that the energy released in the process of adsorption of idobenzene on metal surface and formation of organometallic intermediates in the process of surface Ullmann coupling is sufficient to compensate the energy required for a metal atom extraction to form a new adatom of $origin(2)$, as shown in Fig.~\ref{fig:3}.
@@ -386,7 +448,7 @@ In 2017, Barton \textit{et al.}~\cite{chemeurope2017} explored the role of adato
 
 It is clear that metal atoms of $nature(1)$ have a great chance to participate in dehalogenation, the first step of surface Ullmann coupling. And the construction of organometallic intermediate in the dehalogenation could possibly be a feasible pathway to form adatom of $origin(2)$. Metal atoms of $nature(2)$ in the dehalogenation had few related reports to date.
 
-\subsubsection{Diffusion of two dehalogenated phenyl groups}
+\subsubsection{Diffusion}
 
 The diffusion process is involved in the interaction between single precursor group and metal atom. 
 In 2018, Nagoya \textit{et al.}~\cite{jpcc2018} investigated the mechanism of Ullmann coupling of 7,10-dibromofluoranthene (Br$_{2}$FL) on Au(111) via DFT calculations. Compared to simple phenyl rings that tend to form ~$36^\circ$ tilt angle with Cu(111) surface~\cite{pccp2010}, the monobromo FL with one Br atom removed would stay almost parallel to Au(111) surface due to steric repulsion between the large backbone of BrFL group and the substrate. And BrFL group was found to lift surface Au atom out by 1.9 \AA\ from its initial position, which is much larger than 0.16 \AA\ height lifted by a simpole phenyl ring, as shown in Fig.~\ref{fig:diff}.
@@ -400,7 +462,7 @@ Ebeling \textit{et al.}~\cite{acsnano2019} also indicated 4-bromo-3$^{''}$-iodo-
 
 Metal atoms of $nature(1)$ were proven to play a significant role in the diffusion of dehalogenated phenyl groups, the metal atoms that interact with phenly groups will be partially lifted from its original position, the lifting height is affected by the intensity of interaction between the phenyl group and metal atom. Formation of adatom of $origin(2)$ has not been reported in diffusion, which indicates that the interaction between phenyl group and metal atom in this step is not in the magnitude to fully extract a metal atom of $nature(1)$. 
 
-\subsubsection{Formation of dimerized organometallic intermediates from two precursor groups}
+\subsubsection{Formation of dimerized intermediates} \label{sec:dimerized-adatom}
 
 The nature of the metal atoms in dimerized organometallic intermediate has been investigated through multiple approaches. Besides, it can be deduced that an metal atom of $nature(2)$, which is also an adatom of $origin(1)$ will exit above the first layer of surface before the surface Ullmann coupling reacion occurs. And this atom can attract two phenyl groups diffuse close to it and form the dimerized organometallic intermediate in this step. This type of formation might require less energy compared to the situation that two phenyl groups both interact with the same metal atom of $nature(1)$. The arguments on the nature and origin of metal atoms in this step are intense in the mechanism of surface Ullmann coupling.
 
@@ -440,10 +502,11 @@ The nature of metal atoms in dimerized organometallic intermediates has been pro
 
 \subsection{Computational Details}
 
-The periodic Density Functional Theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
+%RZK: learn how to use si package and correct all units here.
+The periodic density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
 The Cu(111) surface used in all surface Ullmann coupling was 
-modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15~\AA of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than 2$\times$ $10^{-2} eV/\si{\angstrom}^{2}$. 
+modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15~\AA of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2} eV/\si{\angstrom}^{2}$. 
 
 Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than 0.1~\si{\eV\square\angstrom} in CI-NEB calculations.
 
