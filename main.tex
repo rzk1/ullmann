@@ -94,7 +94,7 @@ This manuscript reviews the results of experimental and computational studies of
 %\tableofcontents
 
 %RZK. What a variety of RZK labels mean. 
-%RZKmmdd - mm denotes month, dd - denotes day
+%R1111 or RZKmmdd - mm denotes month, dd - denotes day
 %RZKX - these are low priority comments, which will be promoted to regular labels later 
 %RZZK - can be ignored, these labels keep track of my own revision process
 
@@ -108,7 +108,7 @@ In 1901, Fritz Ullmann discovered~\cite{ullmann_01} a coupling reaction that cre
 %Currently, the scope of Ullmann coupling reaction is being widened with an increasing number of substrates, leaving groups, and active metal species being investigated for constructing various C--X bonds. 
 Because of its ability to form C--C bonds, the Ullmann coupling has become one of the key reactions in organic synthesis with its scope extended to new reactants and catalysts. 
 Today, the \emph{classical} Ullmann or simply Ullmann reaction refers to a family of nucleophilic substitution reactions between aromatic nucleophiles that proceed in the presence of copper and lead to the formation of C--C and C--heteroatom bonds such as C--N~\cite{ullmann_02, ullmann_03}, C--O~\cite{ullmann_04}, C--S~\cite{ullmann_05} and C--P~\cite{ullmann_21,ullmann_22} bonds (Fig.~\ref{fig:UllmannCoupling}). 
-%RZK1217: In Ullmann coupling, metals can serve as reactants or as catalysts.
+%RZZK: In Ullmann coupling, metals can serve as reactants or as catalysts.
 
 \begin{figure}[htb]
 \centering
@@ -206,10 +206,10 @@ The following trends in the bond strength have been derived from model molecular
 \end{eqnarray}
 %
 The bond dissociation energy of diatomic and CX$_4$ molecules have been used in the cases of the metal-halogen bonds~\cite{ullmann_62} and carbon-halogen bonds~\cite{ullmann_63}, respectively. The relative strength of metal-carbon bond strength has been estimated using the metal-carbon bond distances in M-(CH$_3$)$_2$ molecules~\cite{ullmann_61}.
-%RZK1219: references above are missing
+%RZK1219: references above are missing from the bib file.
 
 For the surface Ullmann coupling reaction, the metal-halogen bond strength can be arranged in the following series.
-%RZK1219: What is the origin of this series? It is completely unclear from your description. Experiments or theory? Temperature measurements? You do not cite where this series came from.
+%RZZK: What is the origin of this series? It is completely unclear from your description. Experiments or theory? Temperature measurements? You do not cite where this series came from. This is the last three rows above combined.
 %
 \begin{gather*}
 \text{Cu--Cl} > \text{Cu--Br} > \text{Au--Cl} \approx \text{Au--I} \approx \text{Ag--Br} \approx \\
@@ -285,16 +285,21 @@ The dehalogenation step produces organometallic intermediates with carbon atoms 
 The diffusion of these species, which has been observed experimentally and studied computationally, plays a decisive role in the further coupling process. 
 The ease diffusion increases the probability that two molecules move closer to each other resulting in the creation of the bond between them.
 
-An STM imaging has revealed that dehalogenated phenyl groups diffuse on Cu(111) at [temperatures as low as] 77~K~\cite{langm01}. The energy barrier of the diffusion has been calculated to be approximately 0.09~eV. 
+}
+
+
+An STM imaging has revealed that dehalogenated phenyl groups diffuse on Cu(111) at [temperatures as low as] 77~K~\cite{langm01}. The energy barrier of the diffusion has been calculated to be approximately 0.09~eV. %RZK1223: citation is missing for calculations
+
+%RZK1221. You still use Figure instead of Fig. in your text. Search the entire text for figure and relace where appropriate.
+%RZK1221: There are no references to flipping/sliding mechanisms.
+Phenyl has been proposed to diffuse either by sliding or flipping. In the sliding mechanism, phenyl groups keep their surface orientation in the initial and final states and the energy barriers of diffusion on different metal surface follow the order Cu(111) $>$ Ag(111) $>$ Au(111). 
 %RZK1220: It appears that you discuss 3 things: overturn, sliding, flipping. How overturning is different from flipping? What is sliding? Better structure, sequence of thoughts, is needed.
 %RZK1221: I have stated this before and I have to emphasize this one more time that you should use PRESENT PERFECT tense, not PAST SIMPLE when you report previous findings. Do not use PAST tense to report hings that are universally TRUE, use PRESENT SIMPLE. For example, "The energy barriers follow", not ""The energy barriers followed"
-It has been shown that phenyl groups, which are tilted at $\sim 36^\circ$ with respect to the surface~\cite{pccp2010, jacs2013}, overturn during the diffusion and then bind to a nearby metal atom as shown in Fig.~\ref{fig:4}. 
-%RZK1221. You still use Figure instead of Fig. in your text. Search the entire text for figure and relace where appropriate.
-Phenyl has been proposed to diffuse either by sliding or flipping. In the sliding mechanism, phenyl groups keep their surface orientation in the initial and final states and the energy barriers of diffusion on different metal surface follow the order Cu(111) $>$ Ag(111) $>$ Au(111). For the flipping mechanism, the height of diffusion barriers decreases Au(111) $>$ Cu(111) $>$ Ag(111). 
+For the flipping mechanism, it has been shown that phenyl groups, which are tilted at $\sim 36^\circ$ with respect to the surface~\cite{pccp2010, jacs2013}, overturn during the diffusion and then bind to a nearby metal atom as shown in Fig.~\ref{fig:4}.
+For the this type of diffusion, the height of diffusion barriers decreases Au(111) $>$ Cu(111) $>$ Ag(111). 
 %RZK1221: why different order? Is it something that can be understood from simple bonding arguments?
 Since the flipping mechanism has a lower energy barrier, it has been proposed as the most plausible mechanism for the diffusion of phenyl groups on metal surfaces. 
 %RZK1221: Since you compare barriers, is it important to write the barrier heights for the sliding/flipping mechaniss?
-%RZK1221: There are no references to flipping/sliding mechanisms.
 %RZK1221: I disagree that the mechanism with the lowest barrier of diffusion is the dominant mechanism. If both barriers are low then both mechanism will contribute.
 
 \begin{figure}[htb]
@@ -313,8 +318,6 @@ The binding energy of halogens and their diffusion barriers have been investigat
 %RZK1221: How do we know that they display high mobility? Is it observed or is it inferred from calculations?
 Bromine and iodine atoms [are expected to?] display high mobility at experimental temperature due to small energy barriers in the range of 50-100 mv on Cu(111), Ag(111), and Au(111). The barrier for the halogen diffusion is the highest on Au(111) and lowest on Cu(111). 
 %RZK1221: mv is not a unit of energy, check, convert to eV and report properly. Do we know the barriers for all three surfaces? If yes, report them here.
-
-} %lock
 
 \subsubsection{Formation of dimerized intermediates} \label{sec:dimerized}
 %RZZK: Dimerization???
@@ -500,6 +503,9 @@ The nature of metal atoms in dimerized organometallic intermediates has been pro
 
 \subsection{Objectives}
 
+{\lock
+%RZK1223 I will write this one.
+
 The focus of this work is on the role of adatoms in the surface Ullmann reaction, exemplified by the coupling of two phenyl rings -- one of the most studied and simple model of the Ullmann process.
 
 %RZZK: Further limitations of this article.
@@ -507,6 +513,7 @@ Cu(111). Three halogens.
 
 %RZZK: as well as the microscopic mechanisms of interaction of all species with various defects, energy profile
 
+}
 
 \section{Methods}
 %\subsection{Computation Models}
@@ -546,9 +553,7 @@ The precursors of surface Ullmann coupling are physisorped on the Cu(111) surfac
 %RZK1223: We do not seem to need this energy at this point.
 %(In the literature, they mentioned that in the gas phase, the dissociation reaction are highly endothermic (3.85 eV for bromobenzene and 3.33 eV for iodobenzene), we can get the energy for this reaction too)
 
-RZK: The first statement is obvious. Remove. 
-
-The dehalogenation occurs after the physisorption of precursors. Fig.~\ref{fig:dissociation_Cl}, Fig.~\ref{fig:dissociation_Br} and Fig.~\ref{fig:dissociation_I} shows the initial, transition and final states (notated as IM1, TS1 and IM2 in Fig.~\ref{fig:completeenergy}, respectively) of chlorobenzene, bromobenzene and iodobenzene dehalogenation on Cu(111), respectively. 
+Fig.~\ref{fig:dissociation_Cl}, Fig.~\ref{fig:dissociation_Br} and Fig.~\ref{fig:dissociation_I} shows the initial, transition and final states (notated as IM1, TS1 and IM2 in Fig.~\ref{fig:completeenergy}, respectively) of chlorobenzene, bromobenzene and iodobenzene dehalogenation on Cu(111), respectively. 
 
 RZK: First state reaction energies. Negative energies already mean that the reaction is exothermic, there is no need to state this.
 
