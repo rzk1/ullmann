@@ -398,11 +398,6 @@ Metal surfaces are not perfect, well-ordered structures. There exist various def
 
 In the process of the Ullmann coupling, reactants, intermediates and final products interact directly with metal atoms on the surface and, therefore, are affected by surface defects. Quantifying the extent to which imperfections of the metal surface influence the thermodynamics and kinetics of the Ullman coupling can suggest new strategies for surface optimization, leading, in turn, to higher yields of desirable perfectly-organized [defect-free] two-dimensional polymers. 
 
-The focus of this work is on the role of adatoms in the surface Ullmann reaction, exemplified by the coupling of two phenyl rings -- one of the most studied and simple model of the Ullmann process.
-%RZZK: Further limitations of this article.
-
-%RZZK: as well as the microscopic mechanisms of interaction of all species with various defects
-
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.4\textwidth]{Fig/Crystal_surface.jpg}
@@ -503,10 +498,18 @@ The nature of metal atoms in dimerized organometallic intermediates has been pro
 %\label{fig:prophyrin}
 %\end{figure}
 
+\subsection{Objectives}
+
+The focus of this work is on the role of adatoms in the surface Ullmann reaction, exemplified by the coupling of two phenyl rings -- one of the most studied and simple model of the Ullmann process.
+
+%RZZK: Further limitations of this article.
+Cu(111). Three halogens.
+
+%RZZK: as well as the microscopic mechanisms of interaction of all species with various defects, energy profile
+
+
 \section{Methods}
 %\subsection{Computation Models}
-
-
 
 \subsection{Computational Details}
 
@@ -527,17 +530,29 @@ In the dehalogenation step, the CI-NEB method was used in chlorobenzene, bromobe
 
 \section{Results and Discussion}
 
+\subsection{Physisorption}
+
+{\lock
+
+The precursors of surface Ullmann coupling are physisorped on the Cu(111) surface before the initialization of the chemical process. The calculated adsorption energies are -1.06~eV, -1.18~eV and -1.37~eV for chlorobenzene, bromobenzene and iodobenzene, respectively. 
+
+} %lock
+
+%RZK1223: Numbers from previous calculations. What computational methods have been used before?
+
+
 \subsection{Dehalogenation}
 
-The precursors of surface Ullmann coupling will be physisorped by metal surface before the initialization of chemical process. The adsorption energy are -1.06 eV, -1.18 eV and -1.37 eV, respectively for chlorobenzene, bromobenzene and iodobenzene on Cu(111) surface. It indicates that the iodobenzene will be adsorbed most strongly on Cu(111) surface.
-%The dehalogenation is the initialization of surface Ullmann coupling. 
-%R1111: The rest of this paragraph does not belong in Results, it belongs in Methods. Move it there. (%ZZ: solved)
-%We utilized CI-NEB in this step with three molecular precursors: chlorobenzene, bromobenzene and iodobenzene on the Cu(111) surface to study how different halogens will affect in this step. CI-NEB method offered us energy profile diagram as well the transition state.
-(In the literature, they mentioned that in the gas phase, the dissociation reaction are highly endothermic (3.85 eV for bromobenzene and 3.33 eV for iodobenzene), we can get the energy for this reaction too)
-The dehalogenation will occur after the physisorption of precursors. Fig.~\ref{fig:dissociation_Cl}, Fig.~\ref{fig:dissociation_Br} and Fig.~\ref{fig:dissociation_I} shows the initial, transition and final states (notated as IM1, TS1 and IM2 in Fig.~\ref{fig:completeenergy}, respectively) of chlorobenzene, bromobenzene and iodobenzene dehalogenation on Cu(111), respectively. 
+%RZK1223: We do not seem to need this energy at this point.
+%(In the literature, they mentioned that in the gas phase, the dissociation reaction are highly endothermic (3.85 eV for bromobenzene and 3.33 eV for iodobenzene), we can get the energy for this reaction too)
 
-%R1111: Describe how thermodynamics functions like enthalpy are calculated from energies in Methods. Do not describe it here.
-Firstly, dehalogenation reactions of three precursors are all exothermic, which in reverse, are endothermic in gas phase according to the DFT calculated energies. This is due to the formation of energetically unstable radical in gas phase, but copper surface can donate electrons to stable these intermediate species.
+RZK: The first statement is obvious. Remove. 
+
+The dehalogenation occurs after the physisorption of precursors. Fig.~\ref{fig:dissociation_Cl}, Fig.~\ref{fig:dissociation_Br} and Fig.~\ref{fig:dissociation_I} shows the initial, transition and final states (notated as IM1, TS1 and IM2 in Fig.~\ref{fig:completeenergy}, respectively) of chlorobenzene, bromobenzene and iodobenzene dehalogenation on Cu(111), respectively. 
+
+RZK: First state reaction energies. Negative energies already mean that the reaction is exothermic, there is no need to state this.
+
+Dehalogenation reactions of three precursors are all exothermic, which in reverse, are endothermic in gas phase according to the DFT calculated energies. This is due to the formation of energetically unstable radical in gas phase, but copper surface can donate electrons to stable these intermediate species.
 %R1111: Do you mean our calculated enthalpies or experimental values? (%ZZ: add descriptions)
 %R1111: Why your state lalbels (IM2, IM1) disagree with those in the final energy profile?(%ZZ: changed)
 The energy change ($\Delta E$ = $E_{IM2} - E_{IM1}$) of dehalogenation of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are -0.58 eV, -0.8 eV and -0.94 eV, respectively. As seen from the Figures~\ref{fig:dissociation_Cl}--\ref{fig:dissociation_I}, the halogens always occupy the hollow site of Cu(111) surface after the carbon-halogen bond (C-X) is broken. 
@@ -655,6 +670,7 @@ Taking the data of Path I and Path II into consideration, finally, a feasible C-
 
 
 \subsection{Energy diagram of complete Surface Ullmann Coupling Reaction}
+
 In this section, the summary of thermodynamic data of all intermediates in surface Ullmann coupling reaction is present in one diagram. As is shown in Fig.~\ref{fig:completeenergy}.
 
 Here taking the surface Ullmann coupling between two bromobenzene as example, the physisorption of two bromobenzene on Cu(111) surface decrease the energy of the whole system by 2.35 eV, which is widely recognized in experiment because adsorbing aromatic species on copper surface as a fast procedure. 
@@ -678,6 +694,10 @@ In total, the red line is more energetically favourable than green line, that ca
 %R1111: Should we add one more TS between IM2 and IM3? LATER.
 %R1111: How does the vacancy affect the energy? LATER.
 %R1111: Halogen filling the vacancy or sitting on top of the adatom? PRIORITY5.
+
+%RZK1222: This important effect needs to be properly described. The height of TS2-1 means that IM5, once formed will not undergo the C--C bond formation and can be viewed as an undesirable by-product of the reaction (unless it exists in quick equilibrium with IM4, which can be entropically hindered -- hard to find that vacancy again).
+
+%RZK1222: How difficult is it to push the adatom (with attached organic radicals) DOWN?
 
 \begin{figure*}[hbt]
 \centering
