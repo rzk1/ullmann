@@ -48,6 +48,7 @@ prb,
 \usepackage{amsmath} % or simply amstext
 %\newcommand{\angstrom}{\textup{\AA}}
 \usepackage{siunitx}
+\usepackage{color}
 %\usepackage{url}            % simple URL typesetting
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -276,6 +277,48 @@ Björk \textit{et al.} ~\cite{jacs2013} proposed an activation barrier of 0.4-1.
 \label{fig:dehalo}
 \end{figure}
 
+{\color{blue}
+%RZK1217: Have we ever discussed carbon--heteroatom bond formation on the SURFACE in this review? If not, I will make a comment in the text about this. (%ZZ1225: no, we did not discuss on this)
+The first fundamental step of surface Ullmann coupling is the dissociative dehalogenation of organic precursors adsorbed on the surface. In this step, the carbon-halogen bonds of the precursor are broken whereas the carbon-metal and halogen-metal bonds are formed. The thermodynamics and kinetics of the process are primarily determined by the relative strength of the broken and formed bonds, shown below. 
+
+
+The following trends in the bond strength have been derived from model molecular systems.
+%
+\begin{eqnarray}
+\begin{split}
+\text{C--Cl} > \text{C--Br} > \text{C--I} \\ 
+\text{Cu--C} > \text{Au--C} > \text{Ag--C} \\
+\text{Cu--Cl} > \text{Cu--Br} > \text{Cu--I}\\
+\text{Ag--Cl} \approx \text{Ag--Br} > \text{Ag--I} \\
+\text{Au--Cl} > \text{Au--I} > \text{Au--Br}
+\end{split}
+\end{eqnarray}
+%
+The bond dissociation energy of diatomic and CX$_4$ molecules have been used in the cases of the metal-halogen bonds~\cite{ullmann_62} and carbon-halogen bonds~\cite{ullmann_63}, respectively. The relative strength of metal-carbon bond strength has been estimated using the metal-carbon bond distances in M-(CH$_3$)$_2$ molecules~\cite{ullmann_61}.
+%RZK1219: references above are missing from the bib file. (%ZZ: solved)
+
+If the strength of all kinds of metal-halogen bonds shown above are compared in conjunction, the order can be arranged in the following series.
+%RZZK: What is the origin of this series? It is completely unclear from your description. Experiments or theory? Temperature measurements? You do not cite where this series came from. This is the last three rows above combined.
+%
+\begin{gather*}
+\text{Cu--Cl} > \text{Cu--Br} > \text{Au--Cl} \approx \text{Au--I} \approx \text{Ag--Br} \approx \\
+ \approx \text{Ag--Cl} > \text{Ag--I} > \text{Au--Br} > \text{Cu--I}
+\end{gather*}
+%RZK1219: Is the series above sufficient to predict differences in the thermodynamics and kinetics of the first step? How? Metal-halogen is just one of the factors mentions above.
+%RZK1219: What of the two factors influence this step more: the nature of the halogen or the nature of the metal? It is possible to do a whole study on the predicting the energetics of this step based on bond energies. This can be done in the results and discussion, if necessary.
+
+This data illuminates the strong influence of surfaces on the first step of the reaction. % which has been proven in experiment of bromobenzene and iodobenzene. 
+For instance, the dissociaton of iodobenzene occurs at $\sim$\SI{175}{\kelvin} on Cu(111)~\cite{sur_sci01}, $\sim$\SI{200}{\kelvin} on Ag(111)~\cite{sur_sci02} and $\sim$\SI{250}{\kelvin} on Au (111)~\cite{sur_sci03}. 
+%RZK1221: It is unclear what "occurs" refers to. Dissociation happens even at very low temperature but to a lesser degree. 
+%RZK1221: The strengths of bonds actually predict the opposite order in temperatures.
+The same trend has been observed for bromobenzene with a higher temperature on all surfaces.
+%RZK1221: For Br-Metal, the trend in strength is reversed. How this can be explained?
+
+DFT calculations have also estimated the activation barrier for the exothermic dehalogenation of bromobenzene and iodobenzene on (111) metal surfaces to be \SIrange{0.4}{1.0}{\electronvolt}~\cite{jacs2013}. As shown in Fig.~\ref{fig:dehalo}, the activation barrier and reaction energy decrease in the order Au $>$ Ag $>$ Cu and are \SIrange{0.1}{0.5}{\electronvolt} lower for iodobenzene than bromobenzene. The latter is due to the dissociation energy of a C--I bond being $\sim$\SI{0.65}{\electronvolt} lower than that of a C--Br bond~\cite{Arpc1982}.
+
+}
+
+
 \subsubsection{Diffusion}
 
 {\lock
@@ -318,6 +361,43 @@ The binding energy of halogens and their diffusion barriers have been investigat
 %RZK1221: How do we know that they display high mobility? Is it observed or is it inferred from calculations?
 Bromine and iodine atoms [are expected to?] display high mobility at experimental temperature due to small energy barriers in the range of 50-100 mv on Cu(111), Ag(111), and Au(111). The barrier for the halogen diffusion is the highest on Au(111) and lowest on Cu(111). 
 %RZK1221: mv is not a unit of energy, check, convert to eV and report properly. Do we know the barriers for all three surfaces? If yes, report them here.
+
+{\color{blue}
+The dehalogenation step produces organometallic intermediates with carbon atoms covalently bonded directly to surface metal atoms. 
+%RZZK: These species are often referred to as radicals even though it remains unclear whether their possess unpaired electrons.
+The diffusion of these intermediates, which has been observed experimentally and studied computationally, plays a decisive role in the further coupling process. Species on surface Prone to diffuse will enable them to move closer to each other then results in the construction of new bonds. 
+
+
+%It has been observed that dehalogenated phenyl groups diffuse on Cu(111) at temperatures as low as \SI{77}{\kelvin}~\cite{langm01} in STM. The energy barrier of the diffusion has also been calculated to be $\sim$\SI{0.09}{\electronvolt}~\cite{pccp2010}.
+%RZK1223: citation is missing for calculations{%ZZ: solved}
+
+%RZK1221. You still use Figure instead of Fig. in your text. Search the entire text for figure and replace where appropriate.
+%RZK1221: There are no references to flipping/sliding mechanisms.
+Among all the delogenated precursors, phenyl groups were studied the most widely. Phenyl has been proposed to diffuse either by sliding or flipping fashions~\cite{jacs2013}. In the sliding mechanism, phenyl groups remain their orientation to the surface in the initial and final states and the energy barriers of diffusion on different metal surface follow the order Cu(111) $>$ Ag(111) $>$ Au(111). It has been observed that dehalogenated phenyl groups can diffuse on Cu(111) at temperatures as low as \SI{77}{\kelvin}~\cite{langm01} in STM.
+%RZK1220: It appears that you discuss 3 things: overturn, sliding, flipping. How overturning is different from flipping? What is sliding? Better structure, sequence of thoughts, is needed.
+%RZK1221: I have stated this before and I have to emphasize this one more time that you should use PRESENT PERFECT tense, not PAST SIMPLE when you report previous findings. Do not use PAST tense to report hings that are universally TRUE, use PRESENT SIMPLE. For example, "The energy barriers follow", not ""The energy barriers followed"
+For the flipping mechanism, it has been shown that phenyl groups, which are tilted at $\sim$\SI{36}{\degree} with respect to the surface~\cite{pccp2010, jacs2013} at the beginning, will overturn during the diffusion and then bind to an adjacent metal atom as shown in Fig.~\ref{fig:4}.
+For this type of diffusion, the magnitude of diffusion barriers decreases Au(111) $>$ Cu(111) $>$ Ag(111). 
+%RZK1221: why different order? Is it something that can be understood from simple bonding arguments? (%ZZ: I did not find any comments on original paper, should we add our own explanation?)
+For simple phenyl groups, the flipping diffusion is concerned with a smaller energy barrier compared to the sliding diffusion. On Cu(111), Ag(111) and Au(111) surface, the barrier of flipping was reported to be $\sim$\SI{0.4}{\electronvolt}, $\sim$\SI{0.25}{\electronvolt} and $\sim$\SI{0.05}{\electronvolt} lower than sliding fashion respectively~\cite{jacs2013}. 
+In experiments, the diffusion of phenyl groups always occurs at a very low temperature~\cite{langm01}. Since the energy barriers of sliding and flipping mechanism are realistically low, we can consider that both fashions will take place in nature. However, the flipping mechanism may not be favorable for precursor in larger size, the stronger physisorption between the larger molecules and surface will drive the molecule plane more parallel to the surface, such as cyclohexa-m-phenylene~\cite{ullmann_65}.
+%RZK1221: Since you compare barriers, is it important to write the barrier heights for the sliding/flipping mechaniss?
+%RZK1221: I disagree that the mechanism with the lowest barrier of diffusion is the dominant mechanism. If both barriers are low then both mechanism will contribute.
+
+%RZZK: The following needs to be stated in the end. The diffusion energy barrier and the tilt angle between single radical and substrate will change with the size increasing of reactant molecules.
+
+%RZK1221: Do not mention the year of publication if you do not describe the history of research. Do not mention authors unless this is important.
+In addition to organometallic intermediates, halogen atoms dissociated from the precursors will be chemisorbed by the surface and undergo the diffusion process. 
+The energy barriers for halogens to diffuse on metal surface have been investigated using DFT calculations~\cite{jacs2013}.
+%RZK1221: Do not capitalize names of elements.
+%RZK1221: How do we know that they display high mobility? Is it observed or is it inferred from calculations?
+Atomic bromine is reported to have a diffusion energy barrier of \SI{0.09}{\electronvolt}, \SI{0.07}{\electronvolt} and \SI{0.07}{\electronvolt} on Au(111), Ag(111) and Cu(111) respectively. And Atomic Iodine have a barrier of \SI{0.11}{\electronvolt}, \SI{0.06}{\electronvolt} and \SI{0.06}{\electronvolt} on Au(111), Ag(111) and Cu(111) respectively. The diffusion barrier for atomic halogens are very low, which is expected to lead to a high mobility of halogen species on metal surface.
+
+%Bromine and iodine atoms [are expected to?] display high mobility at experimental temperature due to small energy barriers in the range of 50-100 mv on Cu(111), Ag(111), and Au(111). The barrier for the halogen diffusion is the highest on Au(111) and lowest on Cu(111). 
+%RZK1221: mv is not a unit of energy, check, convert to eV and report properly. Do we know the barriers for all three surfaces? If yes, report them here.
+
+
+}
 
 \subsubsection{Formation of dimerized intermediates} \label{sec:dimerized}
 %RZZK: Dimerization???
@@ -736,6 +816,6 @@ However, as is shown in Fig.~\ref{fig:completeenergy}, the presence of organomet
 \nocite{*}
 
 \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
-\bibliography{main}% Produces the bibliography via BibTeX.
+\bibliography{references}% Produces the bibliography via BibTeX.
 
 \end{document}
