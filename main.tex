@@ -531,12 +531,15 @@ Besides, as we mentioned in the diffusion section that the energy barrier for ha
 \subsection{Role of adatoms in the surface Ullmann coupling} 
 
 %RZK1221: Better introductory sentences about surface defects. 2-3 sentences: types of defects 3D, 2D, 1D.
-Metal surfaces are not perfect, well-ordered structures. There exist various defects ranging from two-dimensional defect such as RZK to line defects such as RZK and point defects such as adatoms, vacancies, RZK shown in Fig.~\ref{cyrstal_surface}. 
+{\color{blue}
+Metal surfaces are not perfect, well-ordered structures. There exists various defects ranging from three-dimensional defect such as pores~\cite{ullmann_72}, cracks~\cite{ullmann_73} to planar defects such as twin boundaries~\cite{ullmann_74}, stacking faults~\cite{ullmann_75} line defects such as dislocations~\cite{Ullmann_76} and point defects such as adatoms~\cite{Ullmann_77}, vacancies~\cite{ullmann_78} shown in Fig.~\ref{cyrstal_surface}~\cite{ullmann_49}. 
 %RZK1221: Cite modern review on surface defects, desirably on Cu, Ag, Au. Previously used citation: ~\cite{ullmann_49}
+
+}
 
 {\lock
 
-In the process of the Ullmann coupling, reactants, intermediates and final products interact directly with metal atoms on the surface and, therefore, are affected by surface defects. Quantifying the extent to which imperfections of the metal surface influence the thermodynamics and kinetics of the Ullman coupling can suggest new strategies for surface optimization, leading, in turn, to higher yields of desirable perfectly-organized [defect-free] two-dimensional polymers. 
+In the process of the Ullmann coupling, reactants, intermediates and final products interact directly with metal atoms on the surface and, therefore, are affected by surface defects. Quantifying the extent to which imperfections of the metal surface influence the thermodynamics and kinetics of the Ullmann coupling can suggest new strategies for surface optimization, leading, in turn, to higher yields of desirable perfectly-organized [defect-free] two-dimensional polymers. 
 
 \begin{figure}[htb]
 \centering
@@ -565,11 +568,18 @@ Atom's nature describes its immediate environment. Atoms located in the first la
 
 } %lock
 
+
+{\color{blue}
+
 The nature of metal atoms and the origin of adatoms have been explored experimentally and computationally.
 %For origin(1), it has been reported that the onset of the vacancy-adatom formation take place on Cu(111) surface was around 900 K by molecular dynamics~\cite{ullmann_50} , which is much higher than the temperature required by surface Ullmann coupling reaction, as shown in Fig.~\ref{fig:2Dgasn}~\cite{ullmann_50}. This could be the evidence that there would not be new adatoms formation due to the thermal fluctuations as the surface Ullmann coupling proceeds. 
 
 %discuss that adatoms could exit on metal surface due to the thermal evaporation
-For $origin(1)$, it has been explored that the number of mobile adatoms on copper surface are high at room temperature~\cite{ullmann_58}, especially near various surface defect, which provide a feasible view that the formation of organometallic intermediates in surface Ullmann coupling may directly make use of $origin(1)$ adatom. Thus, it is safely suspected that there is an comparison between $nature(1)$ and $nature(2)$ metal atoms which will be made use of in the process of surface Ullmann coupling reaction and also decide whether surface Ullmann coupling reaction will be a method to create $origin(2)$ adatoms in experiment. These possibilities are detailed discussed in following sections.
+For \emph{pre-existing} adatoms, it has been explored that Cu adatoms can be released on Cu(111) surface by thermal activation~\cite{ullmann_79, ullmann_58}, silver and gold adatoms can be released on silver and gold surface respectively as well~\cite{ullmann_84, ullmann_85}, especially near surface defects. These adatoms have also been previously observed to
+participate in metal organic coordination networks~\cite{ullmann_80, ullmann_81, ullmann_82, ullmann_83}. This coordination phenomena provides a feasible 
+possibility that the formation of organometallic intermediates in surface Ullmann coupling can directly make use of \emph{pre-existing} adatoms.
+Thus, it can be naturally derived that there is a competition between \emph{ideal-surface} atoms and \emph{adatoms} which actually take part in the structure of intermediates in Ullmann coupling. Also if it is \emph{ideal-surface} atoms that comprise intermediates, these \emph{ideal-surface} atoms can also be fully extracted out from the first layer and become \emph{extracted adatoms}, which can be regarded as an approach to create adatoms on metal surface.
+The details of the these arguments are discussed in following sections.
 
 %\begin{figure}[ht]
 %\centering
@@ -577,6 +587,9 @@ For $origin(1)$, it has been explored that the number of mobile adatoms on coppe
 %\caption{Schematic diagram of 2D adatom gas phase and condensed phase (islands) %coexisting at elevated temperatures for metal-on-metal systems.}
 %\label{fig:2Dgas}
 %\end{figure}
+
+
+}
 
 \subsubsection{Dehalogenation}
 
@@ -590,6 +603,22 @@ In 2017, Barton \textit{et al.}~\cite{chemeurope2017} explored the role of adato
 \end{figure}
 
 It is clear that metal atoms of $nature(1)$ have a great chance to participate in dehalogenation, the first step of surface Ullmann coupling. And the construction of organometallic intermediate in the dehalogenation could possibly be a feasible pathway to form adatom of $origin(2)$. Metal atoms of $nature(2)$ in the dehalogenation had few related reports to date.
+
+{\color{blue}
+
+A multitude of evidences have been presented that metal atoms will participate in dehalogenation as discussed in above section. However, it is still unclear whether \emph{ideal-surface} atoms or \emph{adatoms} are involved in this process. DFT calculations demonstrated that dehalogenation, as the first step of Ullmann coupling, can potentially originate an absolute new adatom by fully extracting an \emph{ideal-surface} atom out from the first layer~\cite{chemeurope2017}. As shown in Fig.~\ref{fig:3}, formation of an adatom on ideal, perfect Cu(111), Ag(111) and Au(111) surface require \SI{1.71}{\electronvolt}, \SI{1.12}{\electronvolt} and \SI{1.15}{\electronvolt} respectively. Dehalogenation of iodobenzene will result in phenyl-metal species, this interaction will decrease the full extraction of \emph{ideal-surface} atom by \SI{1.07}{\electronvolt}, \SI{0.72}{\electronvolt} and \SI{0.99}{\electronvolt} on Cu(111), Ag(111) and Au(111) surface, respectively. The significant reduction in energy indicates that a new adatom can probably be created from an \emph{ideal-surface} atom by organometallic intermediates produced in dehalogenation. 
+
+But it has also been reported that the interaction between single phenyl groups and copper atoms are not adequate enough to fully extract an \emph{ideal-surface} atom out. These phenyl groups produced after dehalogenation will start to diffuse on Cu(111) surface and interact with different \emph{ideal-surface} atoms to form organometallic intermediates~\cite{pccp2010} while all \emph{ideal-surface} atoms involved will stay on their original locations.
+
+Till now it can be concluded that dehalogenation lowers the energy required for creation of adatoms from \emph{ideal-surface} atoms on a metal surface. The direct use of \emph{pre-existing} adatoms should ideally cut down the energy needed for this step compared to \emph{ideal-surface} atoms. However, there are few related work on \emph{pre-existing} adatoms in dehalogenation.
+
+
+
+}
+
+
+
+
 
 \subsubsection{Diffusion}
 
@@ -605,7 +634,17 @@ Ebeling \textit{et al.}~\cite{acsnano2019} also indicated 4-bromo-3$^{''}$-iodo-
 
 Metal atoms of $nature(1)$ were proven to play a significant role in the diffusion of dehalogenated phenyl groups, the metal atoms that interact with phenly groups will be partially lifted from its original position, the lifting height is affected by the intensity of interaction between the phenyl group and metal atom. Formation of adatom of $origin(2)$ has not been reported in diffusion, which indicates that the interaction between phenyl group and metal atom in this step is not in the magnitude to fully extract a metal atom of $nature(1)$. 
 
-\subsubsection{Formation of dimerized intermediates} \label{sec:dimerized-adatom}
+{\color{blue}
+
+There were no apparent proof that diffusion of dehalogenated species on metal surface can form new adatoms from \emph{ideal-surface} atoms. Most reports were focused on the interaction between the dehalogenated intermediates with \emph{ideal-surface} atoms in diffusion process. The magnitude of this type of interaction is determined by the geometry of intermediates and type of metal atoms.
+
+For single phenyl groups diffusing on Cu(111), it will form \SI{36}{\degree} tile angle with respect to the surface, and the ring structure will flip when it moves between two adjacent copper atoms. Phenly group will lift the \emph{ideal-surface} copper atom by \SI{0.16}{\angstrom} from its original position in diffusion~\cite{pccp2010}. When it comes to the bromofluoranthene molecule diffuse on Au(111) surface, DFT calculation reveals that this aryl group will stay almost parallel to the surface~\cite{jpcc2018}. And the \emph{ideal-surface} gold atom will raise up to \SI{1.9}{\angstrom} from the first layer, \SI{1.74}{\angstrom} higher than phenyl-cooper, owing to the stronger interaction between bromofluoranthene and gold atom.
+
+Whether \emph{pre-existing} adatoms are involved in this step is rarely reported. It can be concluded that diffusion of aryl groups on metal surface can seldom create adatoms since the intensity of interaction between these single dehalogenated species and metal atoms is not sufficient to fully extract \emph{ideal-surface} atoms out.
+
+}
+
+\subsubsection{Formation of C--M--C structure intermediates} \label{sec:dimerized-adatom}
 
 The nature of the metal atoms in dimerized organometallic intermediate has been investigated through multiple approaches. Besides, it can be deduced that an metal atom of $nature(2)$, which is also an adatom of $origin(1)$ will exit above the first layer of surface before the surface Ullmann coupling reacion occurs. And this atom can attract two phenyl groups diffuse close to it and form the dimerized organometallic intermediate in this step. This type of formation might require less energy compared to the situation that two phenyl groups both interact with the same metal atom of $nature(1)$. The arguments on the nature and origin of metal atoms in this step are intense in the mechanism of surface Ullmann coupling.
 
@@ -637,6 +676,21 @@ The nature of metal atoms in dimerized organometallic intermediates has been pro
 %\caption{STM simulations and DFT reaction profile for the (a) direct %dechlorination reaction (red lines) and (b) Cu adatom-mediated Ullmann coupling reaction (blue lines). For each process the energy are plotted of the (i, ii) precursors, (iii, iv) intermediates, (v) and final species (gray circles) and two transition states (white circles).}
 %\label{fig:prophyrin}
 %\end{figure}
+
+{\color{blue}
+The mechanism of metal atoms participating in the formation of C--M--C bridges structure are most intensively investigated among all other steps in surface Ullmann coupling. Multiple approaches have been used to figure out it is \emph{adatoms} or \emph{ideal surface} atoms that actually constitute the C--M--C bridge. 
+
+DFT calculation results state that two phenyl groups, after diffusing to adjacent position, will bind to the same \emph{ideal surface} copper atom and form C--Cu--C structure on Cu(111)~\cite{pccp2010}. Similar structure will be constructed on Ag(111) and Au(111) surface from phenyls and \emph{ideal surface} silver and gold atoms.
+
+However, disagreement has been proposed with other precursors. Fig.~\ref{fig:5} describes the process that two triphenylene groups with a copper atom form a C--Cu--C structure on Cu(111) surface using AFM and DFT methods~\cite{acsnano2017}. Two distinct simulation models are shown: (1) the copper atom in C--Cu--C structure comes from \emph{ideal surface} atom as shown in (c) and (d). This \emph{ideal surface} atom is partially lifted up from it original position in the first layer of metal; and (2) the copper atom in C--Cu--C is an \emph{adatom} as pictured in (e) and (f). Two model are compared with AFM image on atomic properties. The distance between carbon and carbon in this C--Cu--C bridge in AFM, \emph{ideal surface} model and \emph{adatom} model are \SI{3.90}{\angstrom}, \SI{3.42}{\angstrom} and \SI{3.86}{\angstrom} respectively, which proves that the \emph{adatom} model is more consistent with the molecule geometry in experiment. In addition, the energy required to form the C--Cu--C bridge structure from these precursors with \emph{adatom} is estimated to be \SI{1.74}{\electronvolt} lower than with \emph{ideal surface} atom. The metal atoms in C--M--C intermediate structure were proven to be adatoms with clear evidence for the first time. Then the pathway of emerging such adatoms was also reported.
+
+In Fig.~\ref{fig:6}, the STM and simulated AFM image of forming C--Cu--C intermediate structure from 4‐bromoterphenyl and copper atom are displayed~\cite{acsnano2019}. Based on the comparison of the experimental STM and simulated AFM image data, the metal atom participated in the C--Cu--C structure is again, proven to be adatoms. Furthermore, these adatoms, according to the statistic data, are created during the surface Ullmann coupling reaction by extracting the \emph{ideal surface} atoms out instead of \emph{pre-existing} adatoms before the coupling process.
+
+In this step, the confusion on the origin of metal atoms is approaching to be clear. Previously works suggest that the metal atoms in C--M--C intermediate structures are most likely to be adatoms. And the formation of such a bridge structure is expected to be a feasible strategy to create adatoms on Cu(111) surface. However, as discussed in former section, the intensity of interaction between aryl groups and metal atoms will be determined both by the molecule geometry of aryl group as well as the type of metal atoms. Whether surface Ullmann coupling of all possible precursors on different surfaces will obey the same mechanism still remains adequate space for further exploration and discussion.
+
+The  effect  of  metal  atoms  in  the  last  step  —  formation of C-–C bond was not investigated widely compared to previous steps.
+}
+
 
 \subsection{Objectives}
 
