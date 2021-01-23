@@ -202,6 +202,10 @@ RZK0108: This subsection needs much more work following the guidelines discussed
 
 RZK0122: This is the data I found in pccp2010. At sub-monolayer coverage, the C6H5–I dissociation occurs at 175 K on Cu(111), [5,6] at 200–250 K on Au(111) [9] and below 200 K on Ag(111) [8]. By contrast, the biphenyl formation temperatures are higher on Cu(111) (over 300 K) [5,6], and lower on Au(111) (165--180 K) [9] and on Ag(111) (110 K) [4].
 
+RZK0122: This is your paragraph from the mechanism summary. It belongs here.
+
+On dehalogenation step, it has been shown that the reactivity trend decrease in the order Ar--I $>$ Ar--Br $>$ Ar--Cl both in experiment and theoretically~\cite{ullmann_52}. This also means that the dissociation of Ar--I bond on metal surface requires the lowest temperature. In addition, the energy barrier of dehalogenation is the highest on Au(111) surface, the lowest on Cu(111) surface both in experiment and in theoretical calculations~\cite{jacs2013}. It has also reported that the miller index of metal surface will also influence the reaction energy of dehalogenation~\cite{ullmann_57}. 
+
 {\lock
 
 The first fundamental step of surface Ullmann coupling is the dissociative dehalogenation of organic precursors adsorbed on the surface. In this step, the carbon-halogen bonds of the precursor are broken whereas the carbon-metal and halogen-metal bonds are formed. The thermodynamics and kinetics of the process are primarily determined by the relative strength of the broken and formed bonds, shown below. 
@@ -268,7 +272,7 @@ It should be noted that the flipping diffusion may not contribute significantly 
 %RZZK: This is from jacs2013
 %Furthermore, the presence of Cu adatoms may impact the self-assembly more than the poor diffusion on the atomically flat Cu(111) surface. These adatoms are known to have a great influence on selfassembly on Cu(111), where in many cases coordination bonds are formed instead of covalent networks.21 The Cu adatoms can also contribute to the covalent bonding of the nanostructure.22,23
 
-Halogen atoms chemisorbed on the surface also undergo the diffusion process. The binding energy of halogens and their diffusion barriers have been investigated using DFT calculations~\cite{jacs2013}, which show that halogens hop between fcc and hcp hollow sites with the transition state being the bridge site. The diffusion barriers for a variety of metal-halogen combinations have been found to be in the \SIrange{0.05}{0.1}{\eV} range, implying that the halogens are highly mobile on the three metal surfaces at experimental temperatures. The barrier tends to be largest on Au(111) and smallest on Cu(111). 
+Halogen atoms chemisorbed on the surface also undergo the diffusion process. The binding energy of halogens and their diffusion barriers have been investigated using DFT calculations~\cite{jacs2013}, which show that halogens hop between fcc and hcp hollow sites with the transition state being the bridge site. The diffusion barriers for a variety of metal-halogen combinations have been found to be in the \SIrange{0.05}{0.1}{\eV} range, implying that the halogens are highly mobile on the three metal surfaces at experimental temperatures. The barrier tends to be largest on Au(111) and smallest on Cu(111). At high surface coverage, halogens atoms bonded to the surface might hinder the diffusion of organic precursors preventing them from approaching each other and hence slowing down the coupling process. 
 
 %RZK0122: Should we add the following citation to the previous paragaph?
 %There are few experiment works related to the diffusion of halogen atoms on metal surface, but it is much better investigated theoretically using DFT calculations~\cite{ullmann_66}.
@@ -298,6 +302,7 @@ The observation of the bridge structures on both metals at \SI{300}{\kelvin} imp
 Compared to the dehalogenation, this step [which step? see above] requires generally \SIrange{150}{200}{\kelvin} higher temperature condition (still lower than room temperature). It is remarkable that while organometallic bridges are common on Cu and Ag surfaces they are only occasionally reported on the Au surface [RZK: reference]. This phenomenon is explained by a relatively low energy barrier for the C--C bond formation between precursors on the Au surface that results in a very short life-time of the bridges~\cite{ullmann_33}.
 
 }
+
 
 \begin{figure}[ht]
 \centering
@@ -353,7 +358,14 @@ Comparative analysis of different metal surfaces shows that the C--C bond format
 
 \subsubsection{Summary on mechanism of surface Ullmann Coupling}
 
-%RZK0122: This is a useful figure. We need more details on this reaction. What is the organic molecule? Data for Cu?
+{\lock
+
+The effect of halogens and metals on each step of the surface Ullmann coupling reaction mechanism has been investigated both experimentally and computationally. 
+
+} %lock
+
+RZK0122: This is a very useful figure. We need to create our own for phenyl groups: 3 halogens and 3 metals.
+
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.75\columnwidth]{Fig/steptemp.png}
@@ -361,21 +373,18 @@ Comparative analysis of different metal surfaces shows that the C--C bond format
 \label{fig:temp}
 \end{figure}
 
-{\color{blue}
-Overall, the effect of halogens and metal types on each step of surface Ullmann coupling reaction mechanism have been exhaustively explored. 
+{\lock
 
-On dehalogenation step, it has been shown that the reactivity trend decrease in the order Ar--I $>$ Ar--Br $>$ Ar--Cl both in experiment and theoretically~\cite{ullmann_52}. This also means that the dissociation of Ar--I bond on metal surface requires the lowest temperature. In addition, the energy barrier of dehalogenation is the highest on Au(111) surface, the lowest on Cu(111) surface both in experiment and in theoretical calculations~\cite{jacs2013}. It has also reported that the miller index of metal surface will also influence the reaction energy of dehalogenation~\cite{ullmann_57}. 
-
-Then considering the next step, it has been discussed that the diffusion of phenyl group on Au(111) surface is the most energetically favorable, while on Ag(111) is the least. The halogens are supposed to have little influence on the diffusion step, but it might hinder the two phenyl group to diffuse close to each other. 
-
-When it comes to the formation of C--M--C bridge intermediates, it is concluded that C--Au--C structure is the hardest to obtain, the construction of C--Ag--C and C--Cu--C should have close energy barrier due to the similar temperature condition of this step in experiments. 
-
-The covalent bond formation is the last step, different precursors will complete the C--C construction at various annealing temperature on different surfaces. The certain point is this step requires the highest temperature in the whole surface Ullmann coupling procedure.
-
-%RZK1220: What comes next is not relevant to diffusion. Should be discussed in the summary of the mechanism. Or perhaps create a separate subsection "Desorption"
-Besides, as we mentioned in the diffusion section that the energy barrier for halogens to diffuse on all metal surfaces are very low, which means halogens may have a high mobility after dissociation. Although halogens are free to move, they possess a relatively high binding energy to metals. The lowest binding energy is halogens on Au(111), around \SI{2.8}{\electronvolt} and the highest is on Cu(111), around \SI{3.1}{\electronvolt}, which indicates that the halogens are even harder to desorb than those dehalogenated phenyl groups. Research also showed that the halogens remained on metal surface will further hinder the diffusion, coupling and polymerization of all kinds of phenyl species~\cite{ullmann_64,ullmann_65}. Removing the byproducts of on-surface Ullmann coupling is also of great significance.
+%RZK0122: The idea and references are taken from jacs2016. Check Cu(111) trend.
+The onset temperatures of the dehalogenation and C--C bond formation steps are ultimately determined by the surface reactivity. Since carbon-metal steps are formed during the first step and broken during the second step the energy barriers for these two steps are often anticorrelated~\cite{jacs2016:34}. On surfaces such as Au(111) where the dehalogenation barrier is high the barrier for ejecting the metal atom from the organometallic bridge structure is often so low that the bridge state is rarely detected. In contrast, on surfaces such as Cu(110) [and Cu(111)?] where the dehalogenation barrier is low, high temperature is required to convert the intermediate states into dimers, oligomers or polymers.
 
 }
+
+RZK0122: Do not reiterate what you said for each step. Any other correlations between observed trends to describe. Also describe any general remarks. Problems that can be resolved by learning the mechanism?
+
+RZK1220: What comes next is not relevant to diffusion. Should be discussed in the summary of the mechanism. Or perhaps create a separate subsection "Desorption"?
+
+Besides, as we mentioned in the diffusion section that the energy barrier for halogens to diffuse on all metal surfaces are very low, which means halogens may have a high mobility after dissociation. Although halogens are free to move, they possess a relatively high binding energy to metals. The lowest binding energy is halogens on Au(111), around \SI{2.8}{\electronvolt} and the highest is on Cu(111), around \SI{3.1}{\electronvolt}, which indicates that the halogens are even harder to desorb than those dehalogenated phenyl groups. Research also showed that the halogens remained on metal surface will further hinder the diffusion, coupling and polymerization of all kinds of phenyl species~\cite{ullmann_64,ullmann_65}. Removing the byproducts of on-surface Ullmann coupling is also of great significance.
 
 \subsection{Role of adatoms in the surface Ullmann coupling} 
 
@@ -556,10 +565,10 @@ Cu(111). Three halogens.
 \subsection{Computational Details}
 
 %RZK: learn how to use si package and correct all units here.
-The periodic density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
+Density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
-The Cu(111) surface used in all surface Ullmann coupling was 
-modeled by a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15~\AA of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2} eV/\si{\angstrom}^{2}$. 
+%RZK0122: If other metals are included replace with "Metal surfaces chraacterized with (111) Miller indices were moddeled with ..."
+The Cu(111) surface used in all surface Ullmann coupling was modeled with a four-layered slab consisting of 192 Cu atoms (a p($48\times 4$) unit cell) and at least 15~\AA of vacuum. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to 800 eV and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2} eV/\si{\angstrom}^{2}$. 
 
 Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than 0.1~\si{\eV\square\angstrom} in CI-NEB calculations.
 
