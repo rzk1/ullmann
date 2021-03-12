@@ -746,7 +746,6 @@ Limitation: Cu(111) only? Three halogens.
 
 \subsection{Computational Details}
 
-%RZK: learn how to use si package and correct all units here.
 The periodic density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
 The Cu(111) surface used in all Ullmann coupling was 
@@ -761,27 +760,28 @@ The simulation of surface Ullmann coupling reaction was conducted with chloroben
 
 In the dehalogenation step, the CI-NEB method was used in chlorobenzene, bromobenzene and iodobenzene precursors to study how different halogens will affect on the dissociation of carbon-halogen bonds. CI-NEB method offered us energy profile diagram as well the transition state.
 
+Choice for the zero-energy state.
+
 \section{Results and Discussion}
 
 \subsection{Physisorption}
 
 {\lock
 
-The precursors of surface Ullmann coupling are physisorped on the Cu(111) surface before the initialization of the chemical process. The calculated adsorption energies are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. 
-} %lock
-{\color{blue}
-It has been reported previously that the adsorption energy for bromobenzene and iodobenzene on Cu(111) are \SI{-0.95}{\electronvolt}, \SI{-1.12}{\electronvolt} with optB86b correlation-exchange functional in DFT and a smaller slab size~\cite{jacs2013}. The iodine atom diminishes the adsorption energy by \SI{0.17}{\electronvolt} compared to bromine atom. This decrease is consistent with our calculation results (\SI{0.19}{\electronvolt}). 
+Before organic precursors undergo chemical transformations, they are first physisorbed on a metal surface. 
+The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively. 
+The predicted binding is \SI{0.24}{\electronvolt} stronger than that obtained previously using the optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. The difference in the strength of adsorption between iodobenzene and bromobenzene is almost exactly the same ($\sim$\SI{0.18}{\electronvolt}) in this and previous works.
+
 }
-
-%RZK1223: Numbers from previous calculations. What computational methods have been used before? 
-
 
 \subsection{Dehalogenation}
 
 {\color{blue}
 
-%RZK1223: We do not seem to need this energy at this point.
-%(In the literature, they mentioned that in the gas phase, the dissociation reaction are highly endothermic (3.85 eV for bromobenzene and 3.33 eV for iodobenzene), we can get the energy for this reaction too)
+RZK0312: Put Figures~\ref{fig:dissociation_Cl}, \ref{fig:dissociation_Br} and \ref{fig:dissociation_I} into supplementary information (SI). Keep only the structures (not the energy profile) for bromobenzene in the main text. Learn how to make references to a different document in LaTeX and make references to the figures in the SI.
+Note that these figures are of low quality. Atoms are pixilated -- higher resolution in VMD is necessary. Ball-and-stick is a poor choice to show alongated bonds in transition states. Graphs are poorly formatted (as discussed today). For all figures that remain in the main text much better formatting is necessary. Please look at figures in other articles (for example atoms in figure~\ref{fig:7}
+) and make ours of the same quality. 
+
 
 Fig.~\ref{fig:dissociation_Cl}, Fig.~\ref{fig:dissociation_Br} and Fig.~\ref{fig:dissociation_I} 
 %ZZ: I is under recalculation
