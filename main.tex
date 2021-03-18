@@ -51,6 +51,7 @@ floatfix,
 \usepackage{color}
 \usepackage[normalem]{ulem}
 \usepackage{diagbox}
+\usepackage{import}
 
 %\usepackage{url}            % simple URL typesetting
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -823,22 +824,29 @@ Summarizing the dehalogenation results, the reaction mechanism of chlorobenzene,
 %R1111: All figures must be formatted to make text readable. It might be desirable to place all profiles into one figure. 
 \begin{figure*}[hbt]
 \centering
+\includegraphics[width=1.0\textwidth]{Fig/Cl-Br-I_all.png}
+\caption{Dechlorination, debromination and deiodination on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations of three dissociations. Yellow line with circle points is dechlorination, pink line with square points is debromination, and red line with triangle points are deiodination. The $IS$ of three dissociation are one monohalo-benzene adsorbed on Cu(111) surface. Right side are the side view of the geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atoms, with cyan color is carbon atom, with white color is hydrogen atom, with yellow color is chlorine atom, with pink color is bromine atom and with red color is iodine atom.)}
+\label{fig:dissociation_all}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_Cl.png}
-\caption{The dissociation of C-Cl bond on Cu(111) surface, left is the energy diagram of the CI-NEB calculations, right side are the top and side view of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atoms, with cyan color is carbon atoms, with white color is hydrogen atoms. Same in below models. Sphere with yellow color is chlorine atom)}
+\caption{The dissociation of C-Cl bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atoms, with cyan color is carbon atoms, with white color is hydrogen atoms, sphere with yellow color is chlorine atom)}
 \label{fig:dissociation_Cl}
 \end{figure*}
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_Br.png}
-\caption{The dissociation of C-Br bond on Cu(111) surface. (Sphere with lime color is bromine atoms)}
+\caption{The dissociation of C-Br bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atom, with cyan color is carbon atom, with white color is hydrogen atom, sphere with lime color is bromine atom)}
 \label{fig:dissociation_Br}
 \end{figure*}
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_I.png}
-\caption{The dissociation of C-I bond on Cu(111) surface. (Sphere with red color is iodine atoms)}
+\caption{The dissociation of C-I bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atom, with cyan color is carbon atom, with white color is hydrogen atom, sphere with red color is iodine atoms)}
 \label{fig:dissociation_I}
 \end{figure*}
 
@@ -855,7 +863,7 @@ Formation of C--Cu--C bridge structure has been proven to play a significant ste
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=0.45\textwidth]{Fig/FormingC-Cu-C.png}
-\caption{Energy diagram of forming C--Cu--C bridge intermediates structures from chlorobenzene, bromobenzene and Iodobenzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine and iodine atoms respectively in three situations.}
+\caption{Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
 \label{fig:formingBridge}
 \end{figure}
 }
@@ -914,7 +922,7 @@ Path I reaction is exothermic, the enthalpy $\Delta H$ is -2.00~\si{\eV}, and $E
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/bondformlift.png}
-\caption{C-C bond formation through lifting Cu atom Path I}
+\caption{C-C bond formation through lifting Cu atom Path I. Left diagram is CI-NEB calculation, right part is the top and side view of $IM4$, $TS-g$, and $Dim-g$ in Fig.~\ref{fig:completeenergy}, sphere colors are set same as above.}
 \label{fig:bondformlift}
 \end{figure*}
 
@@ -945,21 +953,21 @@ Path II reaction is slightly exothermic, the enthalpy $\Delta H$ is -0.17 eV, an
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=0.45\textwidth]{Fig/onlysurface.png}
-\caption{Energy diagram of IM3, IM4 and IM-r1, top line is the energy of pure surface geometry and the bottom line is the energy of Ullmann reaction species on surface.}
+\caption{Energy diagram of IM3, IM4 and IM-r1, top line is the energy of pure Cu(111) surface geometry in IM3, IM4 and IM-r1, and the bottom line is the energy of Ullmann reaction species on surface.}
 \label{fig:onlysurface}
 \end{figure}
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/IM4_IM_r1.png}
-\caption{Full extraction of an ideal surface Cu atom out in Path II}
+\caption{Full extraction of an ideal surface Cu atom out in Path II. Left diagram is CI-NEB calculation, right part is the top and side view of $IM4$, $TS-r1$, and $IM-r1$ in Fig.~\ref{fig:completeenergy}, sphere colors are set same as above.}
 \label{fig:IM4_TS}
 \end{figure*}
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/bondformadatom.png}
-\caption{C-C bond formation through new formed adatom Path II}
+\caption{C-C bond formation through new formed adatom Path II. Left diagram is CI-NEB calculation, right part is the top and side view of $IM-r1$, $TS-r2$, and $Dim-r1$ in Fig.~\ref{fig:completeenergy}, sphere colors are set same as above.}
 \label{fig:bondformadatom}
 \end{figure*}
 
@@ -1020,22 +1028,34 @@ In total, the red line is more energetically favourable than green line, that ca
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/Chlorine-all.png}
-\caption{The Energy Diagram of chlorobenzene on Cu(111) Surface Ullmann Coupling Reaction. The red line is the surface Ullmann Coupling reaction following Path II, the green line is following Path I. Finally, red line ended with a adatom-vacancy pair on Cu(111) surface and the green line ended same as the original Cu(111) surface.(red circle means bromine atoms)}
+\caption{The energy diagram of chlorobenzene on Cu(111) surface Ullmann coupling reaction. The red line is the surface Ullmann coupling reaction following Path II, the green line is following Path I. Finally, red line ends with an adatom-vacancy pair on Cu(111) surface and the green line ends same as the original Cu(111) surface. (Yellow circle represents chlorine atom).}
 \label{fig:Clfinal}
 \end{figure*}
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/completeenergy.png}
-\caption{The Energy Diagram of bromobenzene on Cu(111) Surface Ullmann Coupling Reaction. The red line is the surface Ullmann Coupling reaction following Path II, the green line is following Path I. Finally, red line ended with a adatom-vacancy pair on Cu(111) surface and the green line ended same as the original Cu(111) surface.(red circle means bromine atoms)}
+\caption{The energy diagram of bromobenzene on Cu(111) surface Ullmann coupling reaction. The red line is the surface Ullmann coupling reaction following Path II, the green line is following Path I. Finally, red line ends with an adatom-vacancy pair on Cu(111) surface and the green line ends same as the original Cu(111) surface. (Scarlet circle represents bromine atom).}
 \label{fig:completeenergy}
 \end{figure*}
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/Iodine-all.png}
-\caption{The Energy Diagram of iodobenzene on Cu(111) Surface Ullmann Coupling Reaction. The red line is the surface Ullmann Coupling reaction following Path II, the green line is following Path I. Finally, red line ended with a adatom-vacancy pair on Cu(111) surface and the green line ended same as the original Cu(111) surface.(red circle means bromine atoms)}
+\caption{The energy diagram of iodobenzene on Cu(111) surface Ullmann coupling reaction. The red line is the surface Ullmann coupling reaction following Path II, the green line is following Path I. Finally, red line ends with an adatom-vacancy pair on Cu(111) surface and the green line ends same as the original Cu(111) surface. (Red circle represents bromine atom).}
 \label{fig:Ifinal}
+\end{figure*}
+
+\subsection{Surface Ullmann coupling with a pre-existing adatom}
+In addition to two paths in surface Ullmann coupling, we also consider the copper atom involved in surface Ullmann coupling is a pre-existing adatom on Cu(111). It is a superficial evaluation since in the calculations, a vacancy always exsits next to the adatom, the interaction between the adatom and the vacancy has been ignored to presume an adatom has formed on Cu(111) before any surface Ullmann coupling related species are adsorbed.
+
+In the diagram, the initial state (0 energy state), Cu(111) with an adatom and vacancy is different from the one in previous calculation (non-defect surface). Thermodynamically it can be concluded that \SI{5.73}{\electronvolt} heat will be released in a completion of surface Ullmann coupling with a pre-exsting adatom on Cu(111). It is a energetically favorable and exothermic process, which can be considered as a highly plausible pathway due to non-defect metal surface in nature. 
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.98\textwidth]{Fig/ullmann_adatom.png}
+\caption{The energy diagram of bromobenzene on Cu(111) surface Ullmann coupling reaction with a pre-existing adatom. (Scarlet circle represents bromine atom).}
+\label{fig:adatomullmann}
 \end{figure*}
 
 \subsection{Formation of Adatom on Pure Cu Surface}
@@ -1053,11 +1073,15 @@ However, as is shown in Fig.~\ref{fig:completeenergy}, the presence of organomet
 \end{figure*}
 
 \section{conclusions}
-We have computationally investigated the surface Ullmann coupling reaction of chlorobenzene, bromobenzene and iodobenzene on commonly employed Cu(111) surface. Also the nature and origin of metal atom involved in each elementary step of forming biphenyl molecule are studied. Mainly the energy and molecular geometry of two different pathways: (1) a partially lifted up copper atom takes part in the formation of C--Cu--C bridge structure and back to it original position in first layer of surface with the construction of new C--C bond; (2) a copper atom and a vacancy is formed by fully extraction of C--Cu--C bridge structure, and a new adatom is created with forming C--C bond on copper surface are compared based on DFT calculation results.
+We have systematically studied the surface Ullmann coupling reaction of chlorobenzene, bromobenzene and iodobenzene on commonly employed Cu(111) surface with computation methods. Also the role of metal atom involved in each elementary step of forming biphenyl molecule are studied. Mainly the energy and molecular geometry of two different pathways: (1) a partially lifted up copper atom takes part in the formation of C--Cu--C bridge structure and back to it original position in first layer of surface with the construction of new C--C bond; (2) a copper atom and a vacancy is formed by fully extraction of C--Cu--C bridge structure, and a new adatom is created with forming C--C bond on copper surface are compared based on DFT calculation results. A simple discussion on the circumstance that an adatom exists before the surface Ullmann coupling occurs and interact with coupling-related species has also been constructed.
 
-It can be concluded that different halogens will mainly influence the dehalogenation step and produce little effect on later steps. The activation of dechlorination is the highest, debromination and deiodination are relatively lower, the data are consistent with the dehalogenation temperature in experiments. After forming C--Cu--C bridge intermediate structure, the path of partially lifting ideal surface atom is much more energetically favorable both in thermodynamics and kinetics, compared with the path of creating a new adatom. This suggests that Ullmann coupling on copper surface is more likely to occur through a non-adatom formation pathway, the metal atom will be partially lifted up while the C--Cu--C organometallic intermediates forms and back to its original position after completing the coupling reaction.
+The effect of different halogens mostly agree with the results descried in previous works. It can be concluded that halogens will mainly influence the dehalogenation step and produce little effect on later steps. After forming C--Cu--C bridge intermediate structure, the path of partially lifting ideal surface atom is much more energetically favorable both in thermodynamics and kinetics, compared with the path of creating a new adatom. This suggests that Ullmann coupling on copper surface is more likely to occur through a non-adatom formation pathway, the metal atom will be partially lifted up while the C--Cu--C organometallic intermediates forms and back to its original position after completing the coupling reaction. However, it is also worthwhile to mention that the possibility that adatoms will take part in the Ullmann coupling process should not be ruled out. The heat released from the hehalogenation step is sufficient to compensate either C--C coupling through a non-adatom surface metal atom or through an adatom creating path. It means both of these two procedure can occur in nature but occupy different proportions and proceed in different velocity.
 
-It should not rule out the possibility that adatoms will take part in the Ullmann coupling process. The path that adatom already exists from thermal fluctuation or defect before the coupling is not discussed. Pre-existing adatom is still a plausible source for organometallic intermediates in surface Ullmann coupling on metal surface.
+The path that adatom already exists from thermal fluctuation or defect before the coupling is roughly discussed. Pre-existing adatom can be regarded as a exceedingly plausible source for organometallic intermediates in surface Ullmann coupling on metal surface.
+
+% \input{silver_gold.tex}
+
+% \input{2D-equation.tex}
 
 \section{acknowledgements}
 
