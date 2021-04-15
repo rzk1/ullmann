@@ -771,13 +771,13 @@ Choice for the zero-energy state.
 
 \subsection{Physisorption}
 
-RZK0324: Almost all sections contain blue and black text, with the black being an old copy of the blue. Why keep old text? Erase all unused parts of the old text.
-
 {\lock
 
 Before organic precursors undergo chemical transformations, they are first physisorbed on a metal surface. 
 The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively. 
 The predicted binding is \SI{0.24}{\electronvolt} stronger than that obtained previously using the optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. The difference in the strength of adsorption between iodobenzene and bromobenzene is almost exactly the same ($\sim$\SI{0.18}{\electronvolt}) in this and previous works.
+
+%RZK0415: The strong binding between the surface and halogenated benzenes is primarily due to the interaction of (a) the $\pi$-system (b) halogen and . For example, the energy of interaction between biphenyl and the metal is ZZZ whereas Br$_2$ molecule interacts with the surface by ZZZ.
 
 }
 
@@ -789,15 +789,16 @@ The predicted binding is \SI{0.24}{\electronvolt} stronger than that obtained pr
 
 %RZK0317: Too many numbers in the text are difficult to read. Energies and energy barriers for all steps can be easier to compare if they are shown in a table or a figure (discussion is needed). Table might show, for each elementary step, energy of the forward reaction and it energy barrier. This data can also be shown in the figure, if halogens are kept separate.
 
-%RZK0317: State labels must be discussed and changed.
-
 %RZK0317: Energy profiles for all three halogens (or even five halogen-metal combinations) must be presented in the same plot (details to be discussed).
+
+%RZK0415: I am not sure about the relevance of the NEB profiles in the figures. If we never discuss the shapes of the profiles then we should report only energies of the initial, transition and product states. If only the three states are reported on the energy profile, then it is NOT necessary to repeat data from the main energy figure.
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_Br.pdf}
-\caption{Dissociation of the C--Br bond on the Cu(111) surface. Yellow, cyan, white, red, RYK spheres represent copper, carbon, hydrogen, bromine, RYK atoms, respectively. RZK0326: All figures with atoms need further work. The sideways view is not necessary here because it does not provide any useful info. Hydrogen and carbon spheres must be visible. Copper spheres are way too small: your choice of Cu radius makes Cu metal look like a layered material. The resolution of spheres is terrible -- they do not look like sphere but more as polygons. There should be no lines on sphere surfaces. If in doubt about the choice of parameters, see Fig.~\ref{fig:7} as an example of an excellent figure. In addition to this, all your figures and graphs have inappropriately low resolution. Do not use raster figures for your images, use vector formats: eps or pdf (zoom in Fig.~\ref{fig:completeenergy} to see how great vector format looks like.). If you cannot print a true vector figure, increase the resolution of all raster figures to at least 600 dpi. Journals do not accept anything raster images with the resolution lower than 300 dpi.}
-%RZK0326: Use meaningful names for figure labels. For example, fig:7 is a bad label.
+\caption{Dissociation of the C--Br bond on the Cu(111) surface. Yellow, cyan, white, red, RYK spheres represent copper, carbon, hydrogen, bromine, RYK atoms, respectively. 
+%RZK0326: All figures with atoms need further work. The sideways view is not necessary here because it does not provide any useful info. Hydrogen and carbon spheres must be visible. Copper spheres are way too small: your choice of Cu radius makes Cu metal look like a layered material. The resolution of spheres is terrible -- they do not look like sphere but more as polygons. There should be no lines on sphere surfaces. If in doubt about the choice of parameters, see Fig.~\ref{fig:7} as an example of an excellent figure. In addition to this, all your figures and graphs have inappropriately low resolution. Do not use raster figures for your images, use vector formats: eps or pdf (zoom in Fig.~\ref{fig:completeenergy} to see how great vector format looks like.). If you cannot print a true vector figure, increase the resolution of all raster figures to at least 600 dpi. Journals do not accept anything raster images with the resolution lower than 300 dpi. 
+RZK0415: The energy profile mostly duplicates the main figure. I suppose it should be moved to SI. Without the energy graph the figure fits into one column. The top-view figure contains edge effects, which is highly undesirable. The side-view does not need four layers. All states should be labeled in the corner of the slab.}
 \label{fig:dissociation_Br}
 \end{figure*}
 
@@ -809,7 +810,7 @@ Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition a
 
 [RZK0317: The logic of the paragraph below is not clear]
 
-The energy change of the dehalogenation step is computed to be \SI{-0.58}{\electronvolt}, \SI{-0.80}{\electronvolt} and \SI{-0.94}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. [RZK0317: Unlike analogous reactions in the solution?], dehalogenation reactions on the copper surface are all exothermic. [RZK:] DFT results have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.18}{\electronvolt}~\cite{ullmann_86}. The discrepancy in energy indicates that the dehalogenation reaction should go through different mechanisms on Cu(111) surface and in solution. 
+The energy change in the dehalogenation step is computed to be \SI{-0.58}{\electronvolt}, \SI{-0.80}{\electronvolt} and \SI{-0.94}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. [RZK0317: Unlike analogous reactions in the solution?], dehalogenation reactions on the copper surface are all exothermic. [RZK:] DFT results have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.18}{\electronvolt}~\cite{ullmann_86}. The discrepancy in energy indicates that the dehalogenation reaction should go through different mechanisms on Cu(111) surface and in solution. 
 Contrary to surface-confined condition, dehalogenation of bromobenzene and iodobenzene in gas phase require \SI{3.85}{\electronvolt} and \SI{3.33}{\electronvolt} energy to accomplish~\cite{jacs2013}. This means copper surface can denote electrons to and stabilize dissociated species, which will make this reaction energetically favourable on Cu(111).  
 
 }{\lock
@@ -820,26 +821,41 @@ dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at \SI{1
 
 RZK0317: Bell-Evans-Polanyi principle?
 
-It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously~\cite{jacs2013} using optB86b exchange-correlation functional and smaller slab size. The energy change and barrirer of this step are \SI{-0.70}{\electronvolt} (bromobenzene), \SI{-0.82}{\electronvolt} (iodobenzene) and \SI{0.72}{\electronvolt} (bromobenzene), \SI{0.40}{\electronvolt} (iodobenzene). 
+It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously~\cite{jacs2013} using optB86b exchange-correlation functional and smaller slab size. The energy change and barrirer of this step are \SI{-0.70}{\electronvolt} (bromobenzene), \SI{-0.82}{\electronvolt} (iodobenzene) and \SI{0.72}{\electronvolt} (bromobenzene)  RZK: the correct value appears to be 0.66 eV, \SI{0.40}{\electronvolt} (iodobenzene). 
 RZK0317: Any comments?
+RZK0415: Did they study the same orientation of the molecule? 
 ZZ added: The trend of enthalpy and activation energy data for different halogens are consistent with our conclusion, the difference between enthalpy and activation energy are also close to our results, which could be supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and our larger slab model for computation.
 
 }
 
 \begin{table}
 \centering
-\begin{tabular}{ |p{2.3cm}|p{1.6cm}|p{1.1cm}|p{1.1cm}|p{1.1cm}|  }
+\begin{tabular}{ llccccc  }
  \hline
- \multirow{2}{*}{Precursor} & \multirow{2}{*}{Bond type} & \multicolumn{3}{|c|}{Intermediate states (\si{\angstrom})} \\ \cline{3-5} & & \textbf{PHYS} & \textbf{DHAL$\ddagger$} & \textbf{DHAL} \\ \cline{1-5}
- \multirow{2}{*}{Chlorobenzene} & C--Cl & 1.74 & 2.18 & 3.99 \\ \cline{2-5}
- & C--Cu &3.54 & & 2.01 \\ \cline{1-5}
- \multirow{2}{*}{Bromobenzene} & C--Br & 1.91 & 2.46 & 4.10 \\ \cline{2-5}
- & C--Cu &3.40 & & 2.01 \\ \cline{1-5}
- \multirow{2}{*}{Iodobenzene} & C--Br &2.12 & 2.61 & 5.10 \\ \cline{2-5}
- & C--Cu &3.42 & & 2.01 \\ \cline{1-5}
-
+ \hline
+ Property & X & \textbf{PHYS} & Increase & \textbf{DHAL$\ddagger$} & \textbf{DHAL} & Change \\ 
+ \hline 
+ \multirow{3}{*}{C--X (\si{\angstrom})} & Cl & 1.74 & +0.44 & 2.18 & 3.99 & \\ 
+ %\cline{2-5}
+ & Br & 1.91 & +0.55 & 2.46 & 4.10 & \\ 
+ %\cline{2-5}
+ & I & 2.12 & +0.49 & 2.61 & 5.10 & \\ 
+ %\cline{2-5}
+ \hline
+ \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & 3.54 & minus & & 2.01 & \\ 
+ & Br & 3.40 & & & 2.01 & \\ 
+ & I &3.42 & & & 2.01 & \\ 
+ \hline
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl &  & 1.25 & & & -0.58\\ 
+ & Br & & 0.92 & & & -0.80\\ 
+ & I  &  & 0.68 & & & -0.94 \\ 
+ \hline
+ \multirow{2}{*}{E (\si{\electronvolt})~\cite{jacs2013}} & Br & & 0.66 & & & -0.70 \\ 
+ & I & & 0.40 & & & -0.82 \\ 
+ \hline
+ \hline
 \end{tabular}
-\caption{Bond length of intermediates states in dehalogenation}
+\caption{Geometric and energetic characterization of the dehalogenation step. X denotes the halogen atom. Energies are reported relative to the \textbf{SURF} state. RZK0415: Why some distance cells are empty? Add distance Cu* to X? Any other state-related data in addition to bond lengths, perhaps energies? Deltas between states: TS-PHYS (increase) and DHAL-PHYS (last column)? Deltas between halogens (in parenthesis) are also important.}
 \label{table:bondlength}
 \end{table}
 
@@ -847,17 +863,18 @@ ZZ added: The trend of enthalpy and activation energy data for different halogen
 
 %RZK0317: In the paragraph below, more numerical data must be presented in a Table and less in the text. Text should discuss main trends. (ZZ: added table)
 
-In addition to the energy data, the geometry of intermediates in dehalogenation are also obtained and summarized in Table~\ref{table:bondlength}. As shown in Fig.~\ref{fig:dissociation_Br}, the distances between carbon and halogen which are going to break a covalent bond, the angle of phenyl ring with respect to surface are both suffering successively changes. In \textbf{PHYP} of halobenzene, the distances between carbon and halogen are consistent with the calculated bond length of C--Cl (\SI{1.76}{\angstrom}), C--Br (\SI{1.91}{\angstrom}) C--I (\SI{2.14}{\angstrom})in gas phase based on B3LYP functional DFT calculations. These distances will show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms occupy the hollow site on Cu(111) surface in the end of dehalogenation. Interestingly, in the \textbf{DHAL$\ddagger$} transition states of all three halobenzene precursors, C--X distance shows a consistent approximately \SI{0.5}{\angstrom} longer than C--X in \textbf{PHYP}, suggesting that different dehalogenation reactions on Cu(111) follow identical mechanism.
-The phenyl ring part of three halobenzenes are all mostly parallel to surface with adsorbed on copper before the dehalogenation. And in the dissociation, the phenyl ring starts to become tilt on surface, then finalize at a large slope. This indicates that the unsaturated carbon atom is interacting with copper atom in Cu(111) during the dehalogenation process. The interaction also changes the distance between the unsaturated carbon and the copper atom involved in dehalogenaiton from different values in \textbf{PHYP} to the same \SI{2.01}{\angstrom} in \textbf{DHAL} states, and the copper atom involved in dehalogenation are all raised by \SI{0.10}{\angstrom} from their original positions. The same C--Cu distance in the end of dehalogenation of chlorobenzene, bromobenzene and iodobenzene suggest that the dissociated halogen atoms have little effect on the interaction of unsaturated carbon and copper atoms. However, halogen atoms have a much larger influence on phenyl ring, resulting in different tilt angles of dehalogenated aromatic species, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
-
-Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species.
+Selected geometric parameters of the intermediates summarized in Table~\ref{table:bondlength}. As shown in Fig.~\ref{fig:dissociation_Br}, the distances between carbon and halogen which are going to break a covalent bond, the angle of phenyl ring with respect to surface are both suffering successively changes. In \textbf{PHYS} of halobenzene, the distances between carbon and halogen are consistent with the calculated bond length of C--Cl (\SI{1.76}{\angstrom}), C--Br (\SI{1.91}{\angstrom}) C--I (\SI{2.14}{\angstrom})in gas phase based on B3LYP functional DFT calculations. These distances will show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms occupy the hollow site on Cu(111) surface in the end of dehalogenation. Interestingly, in the \textbf{DHAL$\ddagger$} transition states of all three halobenzene precursors, C--X distance shows a consistent approximately \SI{0.5}{\angstrom} longer than C--X in \textbf{PHYS}, suggesting that different dehalogenation reactions on Cu(111) follow identical mechanism.
+The phenyl ring part of three halobenzenes are all mostly parallel to surface with adsorbed on copper before the dehalogenation. And in the dissociation, the phenyl ring starts to become tilt on surface, then finalize at a large slope. This indicates that the unsaturated carbon atom is interacting with copper atom in Cu(111) during the dehalogenation process. The interaction also changes the distance between the unsaturated carbon and the copper atom involved in dehalogenaiton from different values in \textbf{PHYS} to the same \SI{2.01}{\angstrom} in \textbf{DHAL} states, and the copper atom involved in dehalogenation are all raised by \SI{0.10}{\angstrom} from their original positions. The same C--Cu distance in the end of dehalogenation of chlorobenzene, bromobenzene and iodobenzene suggest that the dissociated halogen atoms have little effect on the interaction of unsaturated carbon and copper atoms. However, halogen atoms have a much larger influence on phenyl ring, resulting in different tilt angles of dehalogenated aromatic species, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
 
 }
 
 RZK0317: Discuss our results on adatom role.
 
-RZK0317: Do we need any of the black text of this section below? 
+{\color{blue}
 
+Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species.
+
+}
 %R1111: Do you mean our calculated enthalpies or experimental values? (%ZZ: add descriptions)
 %R1111: Why your state lalbels (IM2, IM1) disagree with those in the final energy profile?(%ZZ: changed)
 %R1111: Physisorption must be described before dissociation. Negative, not positive adsorption energies must be used
@@ -914,13 +931,13 @@ Formation of C--Cu--C bridge structure has been proven to play a significant rol
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=0.45\textwidth]{Fig/FormingC-Cu-C.pdf}
-\caption{Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
+\caption{RZK0415: This figure is now obsolete and must be removed. It does not report any info complementary to the main energy profile.
+Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
 \label{fig:formingBridge}
 \end{figure}
 }
 
 %R1111: do not use "would". State facts with certainty. "To for a C--C bond the diffusion MUST brings two phenyl groups together." (%ZZ: ok)
-
 
 %R1111: Why chlorobenzene is so different? Halogen does not participate in this step at all. How come that the reaction energy is so different? (%ZZ data rechecked, the data for Cl is wrong)
 
