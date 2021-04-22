@@ -1,0 +1,119 @@
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+prb,
+%rmp,
+%prstab,
+%prstper,
+floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}% add hypertext capabilities
+\hypersetup{colorlinks=true,urlcolor={blue},citecolor={blue}, linkcolor={blue}}
+\usepackage{amsmath} % or simply amstext
+%\newcommand{\angstrom}{\textup{\angstrom}}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage[normalem]{ulem}
+\usepackage{diagbox}
+\usepackage{import}
+\usepackage{multirow}
+
+%\usepackage{url}            % simple URL typesetting
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+%\usepackage{nameref}
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+%RZK: do not edit red text
+\newcommand{\lock}{\color{red}}
+
+
+\begin{document}
+
+\title{RZK0422: Add title when the manuscript is ready}% Force line breaks with \\
+%\thanks{A footnote to the article title}%
+
+\author{Zhenzhe Zhang}
+\author{Dmitrii F. Perepichka}%
+\email{dmitrii.perepichka@mcgill.ca}
+\author{Rustam Z. Khaliullin}
+\email{rustam.khaliullin@mcgill.ca}
+\affiliation{%
+ Department of Chemistry, McGill University, 801 Sherbrooke St West, Montreal, QC H3A 0B8, Canada
+ %This line break forced with \textbackslash\textbackslash
+}%
+
+%\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\maketitle
+
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=1.0\textwidth]{Fig/pureadatomform.pdf}
+\caption{Energetics of an adatom formation on the clean Cu(111) surface.}
+\label{fig:cleanatomform}
+\end{figure*}
+
+% \begin{figure*}[hbt]
+% \centering
+% \includegraphics[width=1.0\textwidth]{Fig/dissociation_Cl.png}
+% \caption{The dissociation of C-Cl bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atoms, with cyan color is carbon atoms, with white color is hydrogen atoms, sphere with yellow color is chlorine atom)}
+% \label{fig:dissociation_Cl}
+% \end{figure*}
+
+
+
+% \begin{figure*}[hbt]
+% \centering
+% \includegraphics[width=1.0\textwidth]{Fig/dissociation_I.png}
+% \caption{The dissociation of C-I bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atom, with cyan color is carbon atom, with white color is hydrogen atom, sphere with red color is iodine atoms)}
+% \label{fig:dissociation_I}
+% \end{figure*}
+
+% \begin{figure}[hbt]
+% \centering
+% \includegraphics[width=0.45\textwidth]{Fig/FormingC-Cu-C.pdf}
+% \caption{RZK0415: This figure is now obsolete and must be removed. It does not report any info complementary to the main energy profile.
+% Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
+% \label{fig:formingBridge}
+% \end{figure}
+}
+
+
+\bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
+\bibliography{references}% Produces the bibliography via BibTeX.
+
+\end{document}
+
+
+
+
+
+
+
+
