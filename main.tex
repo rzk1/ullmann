@@ -92,6 +92,7 @@ floatfix,
              %  but any date may be explicitly specified
 
 \begin{abstract}
+There is a mounting evidence from experimental and modeling studies that metal atoms can be raised above or completely extracted from a metal surface during the Ullmann reaction. 
 This manuscript reviews the results of experimental and computational studies of the surface Ullmann coupling that shed light on the role of surface adatoms in its mechanism. A particular focus is on the early stages of the polymerization and coupling of two monomers.
 \end{abstract}
 
@@ -113,40 +114,54 @@ This manuscript reviews the results of experimental and computational studies of
 
 %RZK: Detailed description of the figure. Take a look at the original publication. Reprinted from~\cite{RZK} with permission of American Chemical Society or PUBLISHER. See the LaTeX comment below. If you take a figure from a publication it is very important to cite the work and obtain publisher's permission. We need to make sure that all our borrowed figures satisfy copyright permissions. For example, see: https://www.stm-assoc.org/2016_01_05_Guidelines_for_Quotation_From_Journal_Articles.pdf
 
-%RZK. Use Figure instead of Fig. in your text.
-
-%RZK: Do not capitalize names of elements.
-
-%RZK1221: Do not use math mode to emphasize text. Use \emph{text}.
 
 \section{Introduction}
 
-%RZK0108: The lock on the first sections is lifted so Dima can see it in black. Your modifications should be inserted in blue.
+%RZK0423: The detailed review of the classical Ullmann reaction is saved in the branch named Review-Intro. Dima's comments from January 2021 have not been fully incorporated into the saved version.
 
-\subsection{Ullmann coupling in solution}
+\subsection{On-surface Ullmann coupling}
 
-In 1901, Fritz Ullmann discovered~\cite{ullmann_01} a coupling reaction that creates a C--C bond between aryl halide molecules in the presence of a stoichiometric amount of Cu powder. 
-%Currently, the scope of Ullmann coupling reaction is being widened with an increasing number of substrates, leaving groups, and active metal species being investigated for constructing various C--X bonds. 
-Because of its ability to form C--C bonds, Ullmann coupling has become one of the key reactions in organic synthesis with its scope extended to new reactants and catalysts. 
-Today, the \emph{classical} Ullmann or simply Ullmann reaction refers to a family of nucleophilic substitution reactions between aromatic nucleophiles that proceed in the presence of copper and lead to the formation of C--C and C--heteroatom bonds such as C--N~\cite{ullmann_02, ullmann_03}, C--O~\cite{ullmann_04}, C--S~\cite{ullmann_05} and C--P~\cite{ullmann_21,ullmann_22} bonds (Fig.~\ref{fig:UllmannCoupling}). 
-%RZZK: In Ullmann coupling, metals can serve as reactants or as catalysts.
+RZK0423: This is Dima's comment: ``You should start with a more extended discussion of the goal of on-surface Ullmann. Discuss GNRs and 2D polymers, give some key figures - to tell the reader why they should care to read the rest of the paper.'' I think figures will be useful in the thesis but not in the article. I have outlined a plan for the first introductory sentences:
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.90\columnwidth]{Fig/classical.png}
-\caption{Examples of the Ullmann coupling reactions. Adapted from Ref.~\cite{ullmann_30}}
-\label{fig:UllmannCoupling}
-\end{figure}
+* Unique ZZZ properties of one- and two-dimensional materials such as GNRs and 2D polymers make them promising candidates to produce a variety of electronic devices such as ZZZ.
 
-Depending on the type of bonds created, reactants in the Ullmann coupling can be aromatic amines~\cite{ullmann_17,ullmann_18}, amides~\cite{ullmann_19,ullmann_20}, phosphines~\cite{ullmann_21,ullmann_22}, carboxylic acids~\cite{ullmann_23}, diaryl ethers~\cite{ullmann_24}, phenols~\cite{ullmann_25} and other oxygen-containing species~\cite{ullmann_26,ullmann_27,ullmann_28}. 
-While halides, especially iodides and bromides served as typical leaving groups, the usage of the tosylate leaving group has also been reported~\cite{ullmann_15}. 
-Cu-containing compounds are most widely used as activating agents. In addition to traditional Cu(0), different Cu(I) and Cu(II) salts and oxides -- including CuI~\cite{ullmann_07,ullmann_08,ullmann_09}, CuBr~\cite{ullmann_10,ullmann_11}, CuCl~\cite{ullmann_13}, Cu$_2$O~\cite{ullmann_12}, Cu(acca)$_2$~\cite{ullmann_14}, Cu(OTf)$_2$~\cite{ullmann_15}, CuO~\cite{ullmann_16} -- have been used {\color{blue}as well}. 
-Apart from Cu agents, Pd nanocomplexes~\cite{ullmann_35, ullmann_36}  have been proven effective in the Ullmann coupling reaction. 
+* Main challenges: (a) tuning properties of these materials to the desired range by modifying their atomic composition and structure, (b) cost-effective synthesis of large quantities of these materials free of defects [or with the desired amount of defects], (c) ask Dima.
 
-Ullmann coupling has been acquiring greater significance in the last decade because Cu is a cheaper alternative to Pd, Pt and Rh, because halogen side-product can be avoided and because air or oxygen can act as oxidants~\cite{ullmann_38,ullmann_39,ullmann_40,ullmann_41}. Despite widespread applications, Ullmann reaction suffers from several limitations including the necessity of high temperature and polar solvents with high boiling point, low solubility of many Cu compounds, erratic yields, and poor functional group tolerance leading to a limited substrate scope~\cite{ullmann_31}. %Apart from this, the usage of Cu does not meet the prerequisite of sustainable development.
+{\lock
 
-The mechanism of classical Ullmann coupling is relatively well understood (Fig.~\ref{fig:classical}).
-It is widely accepted that an aryl halides molecule reacts with Cu species to form an organometallic intermediate. This intermediate then reacts with a second aryl molecule through oxidative addition producing a diaryl organomitallic intermediate, which subsequently undergoes reductive elimination to form a covalent bond between the two aryls. 
+The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, one- and two-dimensional organic polymers with high degree of control over their electronic properties~\cite{ullmann_33}. 
+%
+%A recent surge of interest in electronic devices based on low-dimensional organic nanostructures with $\pi$-conjugated backbones has led to a renewed attention to the Ullmann process.
+%The recent surge of interest in bottom-up fabrication of functional nanostructures on surfaces....
+%
+The on-surface Ullmann reaction has been developed from its classical version -- a family of nucleophilic substitution reactions between aromatic halides that proceed in solution in the presence of metallic copper and lead to the formation of a carbon-carbon bond. 
+Since its discovery in 1901~\cite{ullmann_01}, the classical Ullmann coupling has rapidly become one of the key reactions in organic synthesis with its scope extended to multiple reactants and Cu-containing catalysts~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32}.
+%RZK0423: Any other reviews to add to the citation list above? 
+The well-established ability of the Ullmann reaction to create bonds between aromatic carbon atoms and couple their $\pi$ systems have been repurposed/adapted to perform synthesis on metal surfaces, which serve as both a low-dimensional confining template and catalyst.
+In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on (a) a variety of metals, most often copper, silver and gold OR (b) metals in the copper group: copper, silver and gold (ask Dima).
+
+%RZK0423: Dima's comment about the following sentence: "there was a series of Bent's papers on Ullmann. cite others, too." If necessary change to "by Brent~\textit{et al.}~\cite{sur_sci01, others}." Do not include the year.
+One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Xi and Bent~\cite{sur_sci01} in 1992.
+%
+The intermediate species of the same reaction were inspected using STM imaging by Weiss \textit{et al.}~\cite{langm01} in 1998. 
+In 2004, it was demonstrated that linear \emph{protopolymers}---aligned monomer units that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
+%
+This insight showed that the Ullmann coupling can be used not only to synthesize organic molecules but periodic polymers as well. 
+The protopolymers have later been identified by Lipton-Duffin \textit{et al.} as periodic organometallic intermediates linked \textit{via} carbon-metal-carbon bonds~\cite{lipton2009synthesis}.
+%RZK0423: Cite lipton2009synthesis: Lipton-Duffin, J. A.; Ivasenko, O.; Perepichka, D. F.; Rosei, F., Synthesis of Polyphenylene Molecular Wires by Surface-Confined Polymerization. Small 2009, 5, 592−597.
+Remarkably, the Ullmann reaction has been employed for the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces.
+In 2007, Grill \textit{et al.} have prepared patches of a two-dimensional polymer from \textit{tetrakis}(bromophenyl)porphyrin on the Au(111) surface.
+%the coupling between brominated tetraphenyl-porphyrins on the Au(111) surface was performed by Grill \textit{et al.}~\cite{Naturenano2007} in 2007.
+%
+Since then, surface Ullmann coupling has become one of the most representative on-surface synthesis schemes. It has been utilized to create covalently-linked extended aromatic systems on a variety of metal surfaces starting from halogenated aryl precursors~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
+
+}
+
+\subsection{Mechanism of on-surface Ullmann coupling}
+
+{\lock
+
+[The mechanism of classical Ullmann coupling is relatively well understood (Fig.~\ref{fig:classical}). ]
 %The Ullmann coupling reactions discussed above occur mostly in organic solvents. 
 
 \begin{figure}[htb]
@@ -157,37 +172,19 @@ It is widely accepted that an aryl halides molecule reacts with Cu species to fo
 \label{fig:classical}
 \end{figure}
 
-Recent advances in the classical Ullmann coupling reaction have been reviewed by several authors~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32}.
-
-\subsection{Surface Ullmann coupling}
-
-A recent surge of interest in electronic devices based on low-dimensional organic nanostructures with $\pi$-conjugated backbones has led to a renewed attention to the Ullmann coupling reaction. 
-In the case of low-dimensional materials, the well-established ability of Ullmann coupling to create bonds between aromatic carbon atoms and couple their $\pi$ systems have been transferred from solution to metal surfaces, which serve as both a low-dimensional confining template and catalyst.
-
-The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, one- and two-dimensional organic polymers with high degree control of their electronic properties~\cite{ullmann_33}. 
-In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on metals other than copper, such as silver and gold. 
-
-One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Xi and Bent~\cite{sur_sci01} in 1992.
-%
-The intermediate species of the same reaction were inspected using STM imaging by Weiss \textit{et al.}~\cite{langm01} in 1998. 
-In 2004, it was demonstrated that linear \emph{protopolymers}---aligned monomer units of a polymer that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
-This insight showed that the Ullmann coupling can be used not only to synthesize organic molecules but periodic polymers as well.
-Remarkably, the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces under vacuum has employed the Ullmann reaction: the coupling between brominated tetraphenyl-porphyrins on the Au(111) surface was performed by Grill \textit{et al.}~\cite{Naturenano2007} in 2007.
-
-Since then, surface Ullmann coupling has become one of the most representative on-surface synthesis schemes. It has been utilized to create covalently-linked extended aromatic systems on a variety of metal surfaces starting from halogenated aryl precursors~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
-
-\subsection{Mechanism of on-surface Ullmann coupling}
-
-Although multiple covalently-bonded nanostructures have been obtained on metal surfaces via Ullmann coupling, our knowledge of the mechanism of the surface processes still remains fragmentary. 
-A thorough understanding of the mechanism of surface Ullmann coupling reaction is essential for rational and more precise design of reaction conditions and polymer matching a chosen metal surface.
-The overall coupling process can be divided into elementary steps depicted in Fig.~\ref{fig_mecha} and described in details below. It should be noted that the surface Ullmann coupling proceeds through the formation of the organometallic intermediates similar to those encountered in the reaction in solution (Fig.~\ref{fig:classical}).
+Although multiple covalently-bonded nanostructures have been obtained on metal surfaces via Ullmann coupling, our knowledge of the mechanism of the surface processes still remains incomplete/fragmentary. 
+A thorough understanding of the mechanism of surface Ullmann coupling reaction is essential for tuning reaction conditions and for rational, more precise design of monomers that produce polymers perfectly matching a chosen metal surface.
 
 The focus of the following review of the Ullmann coupling mechanism is entirely on the formation of a carbon-carbon bond from halogen-containing precursors on Cu, Ag and Au surfaces. A particular attention is paid to the monohalogenated benzenes. 
+
+The overall coupling process can be divided into elementary steps depicted in Fig.~\ref{fig_mecha} and described in details below. It should be noted that the surface Ullmann coupling proceeds through the formation of the organometallic intermediates similar to those encountered in the reaction in solution (Fig.~\ref{fig:classical}).
+
+It is widely accepted that an aryl halides molecule reacts with Cu species to form an organometallic intermediate. This intermediate then reacts with a second aryl molecule through oxidative addition producing a diaryl organomitallic intermediate, which subsequently undergoes reductive elimination to form a covalent bond between the two aryls.
 
 \begin{figure*}[tb]
 \centering
 \includegraphics[width=0.9\textwidth]{Fig/mechanism.png}
-\caption{Schematic represnetation of elementary steps of a surface Ullmann coupling process. RZK0108: This figure needs further discussion.}
+\caption{Schematic representation of elementary steps of a surface Ullmann coupling process. RZK0422: This figure needs significant improvement.}
 \label{fig_mecha}
 \end{figure*}
 
@@ -199,6 +196,7 @@ The focus of the following review of the Ullmann coupling mechanism is entirely 
     %%\item Diffusion of Coupling Product []
 %%\end{enumerate}  
 
+}%end lock
 
 \subsubsection{Dehalogenation}
 
