@@ -71,6 +71,7 @@ floatfix,
 
 %RZK: do not edit red text
 \newcommand{\lock}{\color{red}}
+\newcommand{\sinfo}{Supplementary Information}
 
 % Use Supp Info labels with SI- prefix
 \externaldocument[SI-]{SI}
@@ -162,12 +163,12 @@ A thorough understanding of the mechanism of on-surface Ullmann reaction is esse
 
 %RZK-REVIEW: The focus of the following review of the Ullmann coupling mechanism is entirely on the formation of a carbon-carbon bond from halogen-containing precursors on Cu, Ag and Au surfaces. A particular attention is paid to the monohalogenated benzenes. 
 
-The overall coupling process can be divided into the elementary steps (Fig.~\ref{fig_mecha}) described in detail below. It is widely accepted that aryl halide molecules physisorbed on metal surface lose their halogens forming organometallic intermediates. These intermediates diffuse on the surface and, once sufficiently close to each other, combine with the formation of a carbon-metal-carbon bridge. This intermediate undergoes reductive elimination to form a covalent carbon-carbon bond between the two aryls. It should be noted that the surface Ullmann coupling proceeds through the formation of the organometallic intermediates similar to those encountered in the reaction in solution (Fig.~\ref{SI-fig:classical}).
+The overall coupling process can be divided into the elementary steps (Fig.~\ref{fig_mecha}) described in detail below. It is widely accepted that aryl halide molecules physisorbed on metal surface lose their halogens forming organometallic intermediates. These intermediates diffuse on the surface and, once sufficiently close to each other, combine with the formation of a carbon-metal-carbon bridge. This intermediate undergoes reductive elimination to form a covalent carbon-carbon bond between the two aryls. It should be noted that the surface Ullmann coupling proceeds through the formation of the organometallic intermediates similar to those encountered in the reaction in solution (Fig.~\ref{SI-fig:classical} in \sinfo).
 
 \begin{figure*}[tb]
 \centering
 \includegraphics[width=0.9\textwidth]{Fig/mechanism.png}
-\caption{Schematic representation of elementary steps of a surface Ullmann coupling process. The following steps are shown: physisorption, dehalogenation, diffusion, bridge and C--C bond formation. RZK0422: This figure needs significant improvement or it can be removed altogether. If we decide to keep it, use new pictograms and labels. Do not show adatom pathways.}
+\caption{Schematic representation of elementary steps of a surface Ullmann coupling process. The following steps are shown: physisorption, dehalogenation, diffusion, formation of the organometallic bridge and then carbon-carbon bond. RZK0422: This figure needs significant improvement or it can be removed altogether. If we decide to keep it, use new pictograms and labels. It is unclear whether the adatom pathway should be shown.}
 \label{fig_mecha}
 \end{figure*}
 
@@ -177,19 +178,19 @@ The overall coupling process can be divided into the elementary steps (Fig.~\ref
 
 {\lock
 
-\sout{The first fundamental step of surface Ullmann coupling is the dissociative dehalogenation of organic precursors adsorbed on the surface. In this step, the carbon-halogen bonds of the precursor are broken whereas the carbon-metal and halogen-metal bonds are formed. The thermodynamics and kinetics of the process are primarily determined by the relative strength of the broken and formed bonds. 
-(delete last sentence in blue)}
+The first fundamental step of surface Ullmann coupling is the dissociative dehalogenation of organic precursors adsorbed on the surface. In this step, the carbon-halogen bonds of the precursor are broken whereas the carbon-metal and halogen-metal bonds are formed. 
+
+%RZK0426: Find new place for the sentence below: The thermodynamics and kinetics of the process are primarily determined by the relative strength of the broken and formed bonds. 
+
 }%lock
 
-\textcolor{blue}{
-The first fundamental step of surface Ullmann coupling is the dissociative dehalogenation of organic precursors adsorbed on the surface. In this step, the carbon-halogen bonds of the precursor are broken whereas the carbon-metal and halogen-metal bonds are formed.
-}
-
-RZK0108: This subsection needs more work following the guidelines discussed in December. Trends in experimental data should be presented first, desirably for Ph-X. Your review will be particularly strong if the trends are discussed across all three metals and three halogens for Ph-X. After experiments, discuss if the trends can be reproduced from simple bond-strength models. Then, present a short summary of DFT calculations to say if the experimental trends can be reproduced using electronic structure methods. I only rearranged your text a bit, you must work on it extensively.
+%RZK0108: This subsection needs more work following the guidelines discussed in December. Trends in experimental data should be presented first, desirably for Ph-X. Your review will be particularly strong if the trends are discussed across all three metals and three halogens for Ph-X. After experiments, discuss if the trends can be reproduced from simple bond-strength models. Then, present a short summary of DFT calculations to say if the experimental trends can be reproduced using electronic structure methods. I only rearranged your text a bit, you must work on it extensively.
 
 %ZZ0223 delete: The following data illuminates the strong influence of surfaces and halogens on the first step of the Ullmann coupling of two Ph-X. For instance, the dissociaton of iodobenzene occurs at \SI{175}{\kelvin} on Cu(111)~\cite{sur_sci01}, \SI{200}{\kelvin} on Ag(111)~\cite{sur_sci02} and \SIrange{200}{250}{\kelvin} on Au (111)~\cite{sur_sci03}.
 %The same trend has been observed for bromobenzene with a higher temperature on all surfaces. RZK0122: Find temperatures for bromo and chloro-benzene.
 %ZZ: no experiment data to exact bromo- and chlorobenzne)
+
+%RZK0426: You keep using wrong tenses despite my repetitive recommendations to pay attention to this. This is because you do not invest sufficient time to re-read your writing. 
 
 \textcolor{blue}{
 The type of halogens and surfaces have been illuminated of strong influence on this first step of the Ullmann coupling of two Ph--X. In experiment, the break of most Ph--X bonds will occur at different temperature based on the halogens and the metal substrates. For instance, the dissociation of iodobenzene will be fulfilled at \SI{175}{\kelvin} on Cu(111)~\cite{sur_sci01}, \SI{200}{\kelvin} on Ag(111)~\cite{sur_sci02} and \SIrange{200}{250}{\kelvin} on Au (111)~\cite{sur_sci03}. 
@@ -197,9 +198,8 @@ Theoretical work also proves the same trend of iodobenzene on these three surfac
 %RZK0123: Any data on chlorobenzene? (ZZ: I did not find for chlorobenzene)
 
 
-RZK0122: The following paragraph is taken from your mechanism summary. It should be discussed here instead. 
-
-%ZZ0223 delete: The dehalogination of other organic precursors follow the same trends observed for Ph-X. it has been observed that the reactivity trend decrease in the order Ar--I $>$ Ar--Br $>$ Ar--Cl both in experiment and theoretically~\cite{ullmann_52}. This also means that the dissociation of Ar--I bond on metal surface requires the lowest temperature. In addition, the energy barrier of dehalogenation is the highest on Au(111) surface, the lowest on Cu(111) surface both in experiment and in theoretical calculations~\cite{jacs2013}. It has also reported that the miller index of metal surface will also influence the reaction energy of dehalogenation~\cite{ullmann_57}. 
+%RZK0122: The following paragraph is taken from your mechanism summary. It should be discussed here instead. 
+%ZZ0223 delete: The dehalogenation of other organic precursors follow the same trends observed for Ph-X. it has been observed that the reactivity trend decrease in the order Ar--I $>$ Ar--Br $>$ Ar--Cl both in experiment and theoretically~\cite{ullmann_52}. This also means that the dissociation of Ar--I bond on metal surface requires the lowest temperature. In addition, the energy barrier of dehalogenation is the highest on Au(111) surface, the lowest on Cu(111) surface both in experiment and in theoretical calculations~\cite{jacs2013}. It has also reported that the miller index of metal surface will also influence the reaction energy of dehalogenation~\cite{ullmann_57}. 
 
 {\color{blue}
 Dehalogenation of a variety of other precursors have also been reported, not only limited to Ph--X. For 1,4-dihalobenzene molecules on Cu(110) surface, XPS spectra revealed that dechlorination of dichlorobenzene will be completed at temperature above \SI{400}{\kelvin}~\cite{ullmann_52}, while the cleavage of C--Br, C--I bonds of dibromobenzene, diiodobenzene on Cu(110) will finish under room temperature and deiodination is estimated to require a lower temperature than debromination. Similar trend as Ph--X on difference surface also show for other presursors. The onset temperature for debromination of 1,3,5-tris(4-bromophenyl)benzene on Ag(111) is \SI{75}{\kelvin} lower than on Au(111), and on Au(111) surface the temperature need to be above \SI{325}{\kelvin}. In addition, the molecule hexaiodo-substituted macrocycle cyclohexa-m-phenylene is demonstrated to complete dehalogenation on Cu(111), Ag(111) and Au(111) surface all at room temperature~\cite{ullmann_65}, which indicates that the size of molecule and the quantity of halogens on molecule also possess effect on the dehalogenation conditions.
@@ -246,33 +246,26 @@ RZK0108: Why you are ordering the strength of metal-halogen bonds? Is it uselful
 
 The dehalogenation step produces organometallic intermediates with carbon atoms covalently bonded directly to metal atoms. 
 The diffusion of these species, which has been observed experimentally and studied computationally, plays a decisive role in the further coupling process. 
-A high mobility of molecules increases the chances of two molecules moving closer to each and forming a bond. Therefore, low energy barriers for diffusion process are a prerequisite for the self-assembly of well-ordered networks
+A high mobility of molecules increases the chances of two molecules moving closer to each and forming a bond. Therefore, low energy barriers for diffusion process are a prerequisite for the self-assembly of well-ordered networks.
 
 Among dehalogenated precursors, the diffusion of a phenyl group has been studied most thoroughly. 
 Computational studies have considered sliding or flipping mechanisms of diffusion. 
-In the sliding diffusion, a phenyl group keeps its orientation to the surface in the initial, transition and final states. The energy barrier of the sliding diffusion on (111)metal surfaces decreases from \SI{0.44}{\electronvolt} on Cu to \SI{0.29}{\electronvolt} on Ag and to \SI{0.22}{\electronvolt} on Au\cite{jacs2013}. 
+In the sliding diffusion, a phenyl group keeps its orientation to the surface in the initial, transition and final states. The energy barrier of the sliding diffusion on (111)metal surfaces decreases from \SI{0.44}{\electronvolt} on Cu to \SI{0.29}{\electronvolt} on Ag and to \SI{0.22}{\electronvolt} on Au~\cite{jacs2013}. 
 In the flipping diffusion, a phenyl group increases its tilting angle, achieves the upright configuration and then overturns to bind to an adjacent metal atom. 
 For this diffusion mechanism, the change in the magnitude of the diffusion barriers follows a different trend and decreases from \SI{0.19}{\electronvolt} on Au to \SI{0.07}{\electronvolt} on Cu and to \SI{0.06}{\electronvolt} on Ag~\cite{pccp2010, jacs2013}. 
 The low calculated barriers agree with STM studies that have revealed that dehalogenated phenyl groups diffuse on the Cu (111) surface at temperatures as low as \SI{77}{\kelvin}~\cite{langm01}.
 
-It should be noted that the flipping diffusion may not contribute significantly for larger precursor molecules, especially those anchored to the surface by several covalent bonds. The stronger surface-molecule interaction will favor diffusion mechanism with the molecular plane remaining parallel to the surface. 
-{\color{blue}
-For example, dehalogenated cyclohexa-m-phenylene diffuse on copper and silver surface will remain in sliding pattern due to its large steric size. In addition, the diffusion is also affected by the kind of substrate. DFT calculation shows a higher energy barrier of this molecule diffusing on Cu(111) than Ag(111) by \SI{1.4}{\electronvolt}~\cite{ullmann_65}, this is due to the stronger interaction between this molecule and copper atom compared to silver atom.
-}
-%RZZK: This is from jacs2013
-%Furthermore, the presence of Cu adatoms may impact the self-assembly more than the poor diffusion on the atomically flat Cu(111) surface. These adatoms are known to have a great influence on selfassembly on Cu(111), where in many cases coordination bonds are formed instead of covalent networks.21 The Cu adatoms can also contribute to the covalent bonding of the nanostructure.22,23 (%ZZ maybe we should add this in the diffusion section in adatom part)
+It should be noted that the flipping mechanism may not contribute significantly to the diffusion of large precursor molecules, especially those anchored to the surface by several covalent bonds. The stronger surface-molecule interaction will favor diffusion mechanism with the molecular plane remaining parallel to the surface. 
+For example, dehalogenated cyclohexa-\textit{m}-phenylene diffusing on copper and silver remains parallel to the surface ~\cite{RZK0426:reference-is-needed}. %RZZK: Is the reason clear? ``because of the multiple covalent bonds with metal atoms and stong interactions between its $\pi$-electrons and metal atoms.''
+In addition, the diffusion is often affected by the nature of the substrate. For cyclohexa-\textit{m}-phenylene, the DFT calculated diffusion energy barrier on Cu(111) is \SI{1.4}{\electronvolt} higher than that on Ag(111)~\cite{ullmann_65}. This is due to stronger molecule-surface interactions with copper atoms compared to silver atoms.
 
-Halogen atoms chemisorbed on the surface can also undergo the diffusion process. The binding energy of halogens and their diffusion barriers have been investigated using DFT calculations~\cite{jacs2013}, which show that halogens hop between fcc and hcp hollow sites with the transition state being the bridge site. The diffusion barriers for a variety of metal-halogen combinations have been found to be in the \SIrange{0.05}{0.10}{\eV} range, implying that the halogens are highly mobile on the three metal surfaces at coupling experimental temperatures. The barrier tends to be largest on Au(111) and smallest on Cu(111). At high surface coverage, halogens atoms bonded to the surface can hinder the diffusion of organic precursors preventing them from approaching each other and hence slowing down the coupling process. 
-
-The energy barrier of chlorine, bromine and iodine diffusing on Cu(111), Ag(111) and Au(111) are listed in Table~\ref{table:1}.
-
-%RZK0122: Should we add the following citation to the previous paragaph?
-%There are few experiment works related to the diffusion of halogen atoms on metal surface, but it is much better investigated theoretically using DFT calculations~\cite{ullmann_66}.
-
-%RZK0122: The following data can be added but only as a table, not text.
-%Atomic bromine has been reported to have a diffusion energy barrier of \SI{0.09}{\electronvolt}, \SI{0.07}{\electronvolt} and \SI{0.06}{\electronvolt} on Au(111), Ag(111) and Cu(111) respectively. Atomic iodine have a barrier of \SI{0.11}{\electronvolt}, \SI{0.06}{\electronvolt} and \SI{0.06}{\electronvolt} on Au(111), Ag(111) and Cu(111) respectively. And atomic chlorine have a barrier of \SI{0.02}{\electronvolt} and \SI{0.08}{\electronvolt} on Au(111) and Cu(111) respectively. 
+Halogen atoms chemisorbed on the surface can also undergo the diffusion process. The binding energy of halogens and their diffusion barriers have been investigated using DFT calculations~\cite{jacs2013}, which show that halogens hop between fcc and hcp hollow sites with the the bridge site being the transition state. The diffusion barriers for a variety of metal-halogen combinations have been found to be in the \SIrange{0.02}{0.11}{\eV} range (Table~\ref{table:1}), implying that halogen atoms are highly mobile on the three metal surfaces at experimental temperatures. The barrier is largest on Au(111) and smallest on Cu(111). 
+At high surface coverage, halogens atoms bonded to the surface can hinder the diffusion of organic precursors preventing them from approaching each other and hence slowing down the coupling process. 
 
 }
+
+RZK0426: Dima's comment: "I think we should also disucss diffusion of multifunctional monomers (eg, our JACS2016 and Bieri et al)". Imo, it is relevant only if when we prepare the review manuscript.
+
 \begin{table}[h!]
 \centering
 \begin{tabular}{ |p{3cm}||p{1.5cm}|p{1.5cm}|p{1.5cm}|  }
@@ -286,12 +279,11 @@ The energy barrier of chlorine, bromine and iodine diffusing on Cu(111), Ag(111)
  Iodine     &0.06   &0.06  &0.11\\
  \hline
 \end{tabular}
-\caption{Energy barrier of halogens diffusing on different metal surfaces}
+\caption{Energy barrier of halogens diffusing on different metal surfaces. RZK0426: The origin of this data (experiment, calculations?) is unclear, citation is missing. RZK0426: As Dima and I both said, all figure captions must contain references and, if required, publisher's permission.}
 \label{table:1}
 \end{table}
 
 \subsubsection{Formation of carbon--metal--carbon intermediates} \label{sec:dimerized}
-%RZZK: Dimerization??? (%ZZ two organometallic intermediates bond together)
 
 {\lock
 
@@ -676,7 +668,11 @@ Fig.~\ref{fig:5} describes the C--Cu--C structure formed by two triphenylene moi
 In Fig.~\ref{fig:6}, the STM and simulated AFM image of forming C--Cu--C intermediate structure from 4‐bromoterphenyl and copper atom are displayed~\cite{acsnano2019}. Based on the comparison of the experimental STM and simulated AFM image data, the metal atom participated in the C--Cu--C structure is again, proven to be adatoms rather than an partially lifted ideal surface atom. Furthermore, these adatoms, according to the statistic data, are created during the surface Ullmann coupling reaction by extracting the ideal surface atoms out instead of pre-existing adatoms before the coupling process.
 
 In this step, the actual state of origin and nature of metal atoms involved still remains unclear. Previously works suggest that for some intermediates, there is compelling evidence to consider adatoms taking part in C--M--C intermediate structures. And the formation of such a bridge structure can serve as a feasible strategy to create adatoms on Cu(111) surface. However, as discussed in former section, the strength of interaction between aryl groups and metal atoms is defined both by the structure of aryl group as well as the type of metal atoms. Whether surface Ullmann coupling on different surfaces will proceed via the same adatom based mechanism still remains an open question.
+
 }
+
+%RZK0426: Has the statement below from jacs2013 been incorporated? 
+%Furthermore, the presence of Cu adatoms may impact the self-assembly more than the poor diffusion on the atomically flat Cu(111) surface. These adatoms are known to have a great influence on selfassembly on Cu(111), where in many cases coordination bonds are formed instead of covalent networks.21 The Cu adatoms can also contribute to the covalent bonding of the nanostructure.22,23 (%ZZ maybe we should add this in the diffusion section in adatom part)
 
 \subsubsection{Formation of the C--C bond}
 {\color{blue}
