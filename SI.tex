@@ -50,10 +50,15 @@ floatfix,
 %RZK: do not edit red text
 \newcommand{\lock}{\color{red}}
 
+\renewcommand{\figurename}{Supporting Figure}
+\renewcommand{\tablename}{Supporting Table}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
 
 \begin{document}
 
-\title{RZK0422: Add title when the manuscript is ready}% Force line breaks with \\
+\title{Supporting Information for \\
+RZK0422: Add title when the manuscript is ready}% Force line breaks with \\
 %\thanks{A footnote to the article title}%
 
 \author{Zhenzhe Zhang}
@@ -70,6 +75,20 @@ floatfix,
              %  but any date may be explicitly specified
 
 \maketitle
+
+The mechanism of classical Ullmann coupling is relatively well understood (Fig.~\ref{fig:classical}).
+%The Ullmann coupling reactions discussed above occur mostly in organic solvents. 
+It is widely accepted that an aryl halides molecule reacts with Cu species to form an organometallic intermediate. 
+This intermediate then reacts with a second aryl molecule through oxidative addition producing a diaryl organomitallic intermediate, which subsequently undergoes reductive elimination to form a covalent bond between the two aryls.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\columnwidth]{Fig/ullmann_mechanism.png}
+\caption{Mechanism of the Ullmann coupling reaction. SET stands for single-electron transfer.
+}
+\label{fig:classical}
+\end{figure}
+
 
 
 \begin{figure*}[h!]
@@ -102,7 +121,6 @@ floatfix,
 % Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
 % \label{fig:formingBridge}
 % \end{figure}
-}
 
 
 \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
