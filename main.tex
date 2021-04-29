@@ -704,35 +704,38 @@ Limitation: Cu(111) only? Three halogens.
 \section{Methods}
 %\subsection{Computation Models}
 
-\subsection{Computational Details}
-
+\subsection{Computational details}
+{\color{blue}
 The periodic density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
 The Cu(111) surface used in all Ullmann coupling was 
-modeled by a four-layered slab consisting of 192 Cu atoms and at least \SI{15}{\angstrom} of vacuum. Each layer is made up with 48 ($8\times 6$) Cu atoms. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to \SI{800}{\electronvolt} and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2}$ \si{\electronvolt}$/$\si{\angstrom}$^{2}$. 
+modeled by a four-layered slab consisting of 192 Cu atoms and at least \SI{15}{\angstrom} of vacuum. Each layer is made up with 48 (8 in X-axis and 6 in Y-axis) Cu atoms. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to \SI{800}{\electronvolt} and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2}$ \si{\electronvolt}$/$\si{\angstrom}$^{2}$. 
 
 Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60, ullmann_99} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than \SI{0.1}{\electronvolt}/\si{\angstrom}$^{2}$ in CI-NEB calculations.
 
 Generally the value of most thermodynamic functions can be derived from our DFT optimization results. 
-(%ZZ1215: still miss the math part, will add later)
+{\comm ZZ: Need more details about the math derivation, added later
+}
+
 
 The simulation of surface Ullmann coupling reaction was conducted with chlorobenzene, bromobenzene and iodobenzene on Cu(111) surface. We explored the mechanism discussed above step by step including the least reported step --- formation of C--C bond.
 
-In the dehalogenation step, the CI-NEB method was used in chlorobenzene, bromobenzene and iodobenzene precursors to study how different halogens will affect on the dissociation of carbon-halogen bonds. CI-NEB method offered us energy profile diagram as well the transition state.
+In the dehalogenation step, the CI-NEB method was used in chlorobenzene, bromobenzene and iodobenzene precursors to study how different halogens will affect on the dissociation of carbon-halogen bonds. CI-NEB method provides energy profile diagram as well the transition state.
 
-Choice for the zero-energy state.
-
+%Choice for the zero-energy state.
+Clean, ideal Cu(111) surface with a halobenzene in gas phase (not physisorbed) is chosen to be zero-energy state among all intermediates involved in surface Ullmann coupling process. Energies of other intermediates are presented with relative values.
+}
 \section{Results and Discussion}
 
 RZK0422: Re-read several times, make corrections, make sure it is clear to a reader new to the field. Polish English. Present data clearly.
 
 \subsection{Physisorption}
 
-{\lock
+{\color{blue}
 
 Before organic precursors undergo chemical transformations, they are first physisorbed on a metal surface. 
-The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively (Fig.~\ref{fig:completeenergy}). 
-The predicted binding is \SI{0.24}{\electronvolt} stronger than that obtained previously using the optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. The difference in the strength of adsorption between iodobenzene and bromobenzene is almost exactly the same ($\sim$\SI{0.18}{\electronvolt}) in this and previous works.
+The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively (notated as \textbf{PHYS} in Fig.~\ref{fig:completeenergy}). 
+The predicted binding interaction is slightly stronger than the ones obtained previously using optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. It is worthy to mention that the difference in the strength of binding between iodobenzene and bromobenzene on Cu(111) is almost the same in our and previous works.
 
 %RZK0415: The strong binding between the surface and halogenated benzenes is primarily due to the interaction of (a) the $\pi$-system (b) halogen and . For example, the energy of interaction between biphenyl and the metal is ZZZ whereas Br$_2$ molecule interacts with the surface by ZZZ.
 
