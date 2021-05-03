@@ -54,6 +54,7 @@ floatfix,
 \usepackage{import}
 \usepackage{multirow}
 \usepackage{xr} % referencing across multiple files
+\usepackage{cleveref} % cite figures in SI
 \usepackage[dvipsnames]{xcolor}
 
 %\usepackage{url}            % simple URL typesetting
@@ -844,20 +845,21 @@ The phenyl ring parts of three halobenzenes are all mostly parallel to surface o
 
 }
 
-RZK0317: Discuss the role of adatoms in the dehalogenation step. Our results and/or old results can be discussed. Old results can be discussed briefly since they are already presented in the introduction.
+{\comm RZK0317: Discuss the role of adatoms in the dehalogenation step. Our results and/or old results can be discussed. Old results can be discussed briefly since they are already presented in the introduction. }
 
 %RZK0422: Do not capitalize all words in titles, including section titles. Capitalize only the first word.
 
 {\color{blue}
 
-The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher/lower/similar activation energy of \SI{2.04}{\electronvolt} than/to . On the clean surface, the extracted adatom is located at the RYZ site (Fig.~\ref{SI-fig:cleanatomform}). Compare to the dehalogenation geometry. And so on.
+(This paragraph is not finished) It has been proposed that the adatom could be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously due to previous work\cite{chemeurope2017}. On the clean surface, the extracted adatom is located at the hollow site right new the vacancy (Fig.~\cref{SI-fig:cleanatomform}). The site occupied by the adatom is highly similar compared to the dehalogenation geometry. It can be concluded that extracting an metal atom out to create an adatom require much less energy compared to creating it on clean surface. It can be noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation should occur simultaneously on Cu(111) surface.
+
 
 }
 
 
 {\color{blue}
 
-Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species.
+Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species. And dehalogenation step is highly likely to create an adatom on Cu(111) surface.
 
 }
 %R1111: Do you mean our calculated enthalpies or experimental values? (%ZZ: add descriptions)
@@ -893,7 +895,7 @@ Formation of C--Cu--C bridge structure has been proven to play a significant rol
 
 }
 
-RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively. (ZZ: added)
+{\comm RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively. (ZZ: added)}
 
 \subsection{Formation of the C--C bond}
 
@@ -1006,11 +1008,11 @@ RZK0422: The alternative transition states must be described. What is the energy
 The desorption of the reaction products have also been observed experimentally with temperature programmed desorption. Biphenyl has been reported to complete the desorpion on Cu(111) surface at \SIrange{400}{450}{\kelvin}\cite{ullmann_104}, which is nearly \SI{100}{\kelvin} higher than the coupling temperature.
 The dissociated halogen atoms on surface will desorb even at much higher temperature. For instance, bromine atoms start to leave Cu(111) surface at \SI{900}{\kelvin} and higher, iodine atoms start at \SI{800}{\kelvin} \cite{jacs2013, ullmann_104}. 
 
-Energy change of desorping formed biphenyl molecule is \SI{1.72}{\electronvolt}, and of desorping two chlorine atoms to chlorine gas molecule, two bromine atoms bromine gas molecule and two iodine atoms to iodine gas molecule are \SI{4.18}{\electronvolt}, \SI{4.08}{\electronvolt} and \SI{3.95}{\electronvolt}, respectively. 
+Energy change of desorping formed biphenyl molecule is \SI{1.72}{\electronvolt}, and of desorping two chlorine atoms to chlorine gas molecule, two bromine atoms to bromine gas molecule and two iodine atoms to iodine gas molecule are \SI{4.18}{\electronvolt}, \SI{4.08}{\electronvolt} and \SI{3.95}{\electronvolt}, respectively. 
 %RZK0422: As suggested before, calculate the energy of PROD state and report desorption energy of Halogen$_2$ molecule, not two separate atoms.
-Desorping biphenyl molecule requires \SI{1.72}{\electronvolt} of energy, corresponding to increasing the annealing temperature \SI{100}{\kelvin} higher than coupling temperature to remove biphenyl on Cu(111). 
+Desorping biphenyl molecule requires \SI{1.72}{\electronvolt} of energy, corresponding to increase the annealing temperature \SI{100}{\kelvin} higher than coupling temperature to remove biphenyl on Cu(111). 
 And desorping bromine atoms require higher energy than iodine atoms, which is well matched to the higher temperature for bromine in experimental observation. 
-Such a high energy requirement becomes a nasty issue for practical surface Ullmann coupling. The dissociated halogen atoms will remain on metal surface and impedes the further diffusion of chemical species for coupling. Removing the halogens can effectively optimize the speed and quality of synthesizing polymer structure using surface Ullmann coupling.
+Such a high desorption energy for halogen atoms becomes a nasty issue for practical surface Ullmann coupling. The dissociated halogen atoms will remain on metal surface and impede the further diffusion of chemical species for coupling. Removing the halogens can effectively optimize the speed and quality of synthesizing polymer structure in surface Ullmann coupling.
 }
 
 
@@ -1025,32 +1027,39 @@ Such a high energy requirement becomes a nasty issue for practical surface Ullma
 %RZK1222: How difficult is it to push the adatom (with attached organic radicals) DOWN?
 
 \subsection{Coupling catalyzed by an existing adatom}
+{\color{blue}
+In addition to two paths discussed above in surface Ullmann coupling, we also consider the copper atom involved in surface Ullmann coupling is a pre-existing adatom on Cu(111). It is a superficial evaluation since in the calculations, a vacancy always exists next to the adatom, the interaction between the adatom and the vacancy has been ignored to presume an adatom has formed on Cu(111) before any surface Ullmann coupling precursors are adsorbed.
 
-In addition to two paths discussed above in surface Ullmann coupling, we also consider the copper atom involved in surface Ullmann coupling is a pre-existing adatom on Cu(111). It is a superficial evaluation since in the calculations, a vacancy always exists next to the adatom, the interaction between the adatom and the vacancy has been ignored to presume an adatom has formed on Cu(111) before any surface Ullmann coupling related species are adsorbed.
+In the diagram, the initial state is the same as the one in Fig.~\ref{fig:completeenergy}. Overall the reaction is highly exothermic with a pre-existing adatom (from \textbf{X-SURF}). This adatom displays a high availability of interaction to various intermediate species in surface Ullmann coupling. Can an existing adatom revert back to its original ``clean'' form to catalyze another event? The answer to this question will provide the prediction on the sustained catalytic ability of pre-existing adatoms. However, it seems negative from our results. First, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. Second, adatom-coordinated species are anchored to the adatom can relocate inside a pre-existing vacancy at a defect site on surface and back to \textbf{CMC}, then complete the coupling reaction with the ideal surface path. Example: the activation barrier of reverse \textbf{CMC} to \textbf{X-CMC} is lower than C--C bond formation on top of an adatom.
 
-In the diagram, the initial state is the same as the one in Fig.~\ref{fig:completeenergy}. Overall the reaction is highly exothermic with a pre-existing adatom (from \textbf{X-SURF}). This adatom displays a high availability of interaction to various intermediate species in surface Ullmann coupling. However, once the \textbf{X-CMC} is formed on copper surface, \textbf{X-DIM$\ddagger$} with high energy barrier will extensively retard the final coupling reaction, even the phenyl--Cu--phenyl intermediate may diffuse on Cu(111) surface to seek a random vacancy and back to \textbf{CMC} in Fig.~\ref{fig:completeenergy}, then completed the C--C bond construction with an ideal surface copper atom. This high activation energy suggests that once the pre-existing adatom capture the surface Ullmann coupling intermediate species, it can neither diffuse individually longer nor react with these species till the formation of covalent C--C bond. It will be interrupted at C--Cu--C organometallic intermediate.
+It suggests that the reaction will be interrupted at C--Cu--C organometallic intermediate with a pre-existing adatom. Compared to forming C--C bond, it prefers to diffuse to nearby vacancy site, refill it and catalyze the final production synthesize.
+}
+{\comm back to reform the halogen bond will be discussed once the transition state is done}
+
+
+
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/ullmann_adatom.pdf}
-\caption{The energy diagram of bromobenzene on Cu(111) surface Ullmann coupling reaction with a pre-existing adatom. (Scarlet circle represents bromine atom). RZK0324: important transition state(s) are missing. ZZ: This figure needs to reformat! adding one more transistion state and the labels need to redraw}
+\caption{The energy diagram of bromobenzene on Cu(111) surface Ullmann coupling reaction with a pre-existing adatom. (Scarlet circle represents bromine atom). ZZ: reformat this figure will be done in the future } 
 \label{fig:adatomullmann}
 \end{figure*}
 
-RZK0422: Can an existing adatom revert back to its original ``clean'' form to catalyze another event? It does not look plausible. First, adatom-coordinated species are anchored to the adatom too strongly to simply diffuse away. Examples. Second, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. C--Halogen bond formation?
+{\comm (from Rustam)RZK0422: Can an existing adatom revert back to its original ``clean'' form to catalyze another event? It does not look plausible. First, adatom-coordinated species are anchored to the adatom too strongly to simply diffuse away. Examples. Second, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. C--Halogen bond formation? (ZZ: added in main text)}
 
 \section{Entropy correction and free energy calculation}
+{\color{blue}
+An unignorable disagreement exits between the experimental data and our DFT results. The calculated energy barrier of dehalogenation is \SI{0.89}{\electronvolt} (\textbf{PHYS}-\textbf{DHAL$\ddagger$}), which is  higher than the energy barrier from two dehalogenated phenyls to the biphenyl (\textbf{DHAL-2}-\textbf{DIM$\ddagger$}). In experiment, the latter step always require a higher temperature to accomplish than dehalogenation step, which has been descried by the data in Table.~\ref{table:exp-temp}. This issue has also existed in other works~\cite{jacs2013, pccp2010}. We are considering this general discrepancy aroused from the ignorance of entropy in theoretical calculations. 
 
-An unignorable disagreement exits between the experimental data and our DFT results. The calculated energy barrier of dehalogenation is \SI{0.89}{\electronvolt} (\textbf{PHYS}-\textbf{DHAL$\ddagger$}), which is  higher than the energy barrier from two dehalogenated phenyls to the biphenyl (\textbf{DHAL-2}-\textbf{DIM$\ddagger$}). In experiment, the latter step always require a higher temperature to accomplish than dehalogenation step, which has been validated by the data in Table.~\ref{fig:temp}. This issue has also been observed in other works~\cite{jacs2013, pccp2010}. We are considering this general discrepancy aroused from the ignorance of entropy in theoretical calculations. 
+DFT calculations make a useful contribution to elucidating the mechanism behind the adsorption of molecules on surface, and allow precise prediction on energy and geometry. However, DFT calculations are basically limited to \SI{0}{\kelvin} temperature, describing potential energy and trend, instead of free energy change. Specifically in surface Ullmann coupling reaction, the formation of dimer consists of the combination of two dehalogenated species, which will lead to an effective decrease in entropy and make a non-negligible contribution to free energy change. Thus, to bridge the gap between experiments and simulation data in surface Ullmann coupling at finite temperature, entropy must be taken into consideration. 
 
-DFT calculations make a useful contribution to elucidating the mechanism behind the adsorption of molecules on surface, and allow precise prediction on energy and geometry. However, DFT calculations are basically limited to \SI{0}{\kelvin} temperature, describing potential energy and trend, instead of free energy change. Specifically in surface Ullman coupling reaction, the formation of dimer consists of the combination of two dehalogenated species, which will lead to an effective decrease in entropy and make a non-negligible contribution to free energy change. Thus, to bridge the gap between experiments and simulation data in surface Ullmann coupling at finite temperature, entropy must be taken into consideration. 
-
-Here the free energy diagram (Fig.\ref{fig:entropy}) is obtained after the entropy correction is done to our previous potential energy data. We treated three dimensional free gas molecules and two dimensional adsorbed species both with transnational motion exclusively, the temperature condition for all species are at \SI{200}{\kelvin} and \SI{400}{\kelvin}, respectively labeled in Fig.\ref{fig:entropy}, pressure of gas molecule is $10^{-10}$ mba, which is widely used ultra high vacuum condition in surface Ullmann coupling, and the concentration of adsorbed molecules is \SI{10e-16}{\per\metre\squared}, which is validated by STM image in Ref.~\cite{ullmann_67}. Details are discussed in Supplementary Information.
+Here the free energy diagram (Fig.\ref{fig:entropy}) is obtained after the entropy correction is done to our previous potential energy data. We treated three dimensional free gas molecules and two dimensional adsorbed species both with transnational motion exclusively, the temperature condition for all species are at \SI{200}{\kelvin} and \SI{400}{\kelvin}, respectively labeled in Fig.\ref{fig:entropy}, pressure of gas molecule is $10^{-10}$ mba, which is widely used ultra high vacuum condition in surface Ullmann coupling, and the concentration of adsorbed molecules is \SI{10e-16}{\per\metre\squared}, which is validated by STM image in Ref.~\cite{ullmann_67}. Details are discussed in \sinfo.
 
 Zero energy state is fluctuated up in free energy due to including the entropy correction of gas bromobenzene. At \SI{400}{\kelvin}, the free energy barrier stay unchanged as \SI{0.89}{\electronvolt}, while the free energy barrier from \textbf{DHAL-2} to \textbf{DIM$\ddagger$} changes to \SI{1.09}{\electronvolt} from previous \SI{0.66}{\electronvolt}. The energy required for C--C coupling from two dehalogenated species has effectively increased in free energy calculations, which is further matched with the experimentally higher temperature in second step.
 
 Our study suggests that the entropy contribution to free energy will affect the process of surface Ullmann coupling.The entropy calculation depends much on surface coverage, temperature and pressure, a highly consistent reaction condition parameter setup will allow more accurate results in DFT calculations. However, our model for two dimensional lattice adsorption is a superficial model, aimed at providing insight into narrowing the gap between theoretical calculation and experiment. 
-
+}
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/entropy-correction.pdf}
@@ -1060,13 +1069,14 @@ Our study suggests that the entropy contribution to free energy will affect the 
 
 
 \section{Conclusions}
+{\color{blue}
 We have systematically studied the surface Ullmann coupling reaction of chlorobenzene, bromobenzene and iodobenzene on commonly employed Cu(111) surface with computation methods. Also the role of metal atom involved in each elementary step of forming biphenyl molecule are studied. Mainly the energy and molecular geometry of two different pathways: (1) a partially lifted up copper atom takes part in the formation of C--Cu--C bridge structure and back to it original position in first layer of surface with the construction of new C--C bond; (2) a copper atom and a vacancy is formed by fully extraction of C--Cu--C bridge structure, and a new adatom is created with forming C--C bond on copper surface are compared based on DFT calculation results. A simple discussion on the circumstance that an adatom exists before the surface Ullmann coupling occurs and interact with coupling-related species has also been constructed.
 
 The effect of different halogens mostly agree with the results descried in previous works. It can be concluded that halogens will mainly influence the dehalogenation step and produce little effect on later steps. After forming C--Cu--C bridge intermediate structure, the path of partially lifting ideal surface atom is much more energetically favorable both in thermodynamics and kinetics, compared with the path of creating a new adatom. This suggests that Ullmann coupling on copper surface is more likely to occur through a non-adatom formation pathway, the metal atom will be partially lifted up while the C--Cu--C organometallic intermediates forms and back to its original position after completing the coupling reaction. However, it is also worthwhile to mention that the possibility that adatoms will take part in the Ullmann coupling process should not be ruled out. The heat released from the hehalogenation step is sufficient to compensate either C--C coupling through a non-adatom surface metal atom or through an adatom creating path. It means both of these two procedure can occur in nature but occupy different proportions and proceed in different velocity.
 
 The path that adatom already exists from thermal fluctuation or defect before the coupling is roughly discussed. Pre-existing adatom can be regarded as a exceedingly plausible source for organometallic intermediates in surface Ullmann coupling on metal surface.
-
-Clean adatoms can be created if the monomers interact strongly. Design?
+}
+{\comm RZK: Clean adatoms can be created if the monomers interact strongly. Design?}
 
 % \input{silver_gold.tex}
 
