@@ -124,73 +124,68 @@ Color-coding:
 
 {Unclassified text.}
 
+Zhenzhe, if you edit the red text, please save the original as a LaTeX comment. I often need to revert your changes and it takes too much time.
+
 \section{Introduction}
 
 %RZK0423: The detailed review of the classical Ullmann reaction is saved in the branch named Review-Intro. Dima's comments from January 2021 have not been fully incorporated into the saved version.
 
 \subsection{On-surface Ullmann coupling}
 
-{\comm 
-
-RZK0423: This is Dima's comment: ``You should start with a more extended discussion of the goal of on-surface Ullmann. Discuss GNRs and 2D polymers, give some key figures - to tell the reader why they should care to read the rest of the paper.'' I think figures will be useful in the thesis but not in the article. I have outlined a plan for the first introductory sentences:
-
-* Unique ZZZ properties of one- and two-dimensional materials such as GNRs and 2D polymers make them promising candidates to produce a variety of electronic devices such as ZZZ.
-
-* Main challenges: (a) tuning properties of these materials to the desired range by modifying their atomic composition and structure, (b) cost-effective synthesis of large quantities of these materials free of defects [or with the desired amount of defects], (c) ask Dima.
-
-}%end comm
-
-{\color{blue}
-On-surface polymerization is a rapid-developing field aimed at achieving the constructions of unprecedented 1D or 2D polymers with novel structures and revolutionary properties\cite{ullmann_105, ullmann_33, ullmann_70}. Unique electronic or spin characteristics of functional materials such as graphene nanoribbons\cite{ullmann_106, ullmann_45, ullmann_107, ullmann_101}, hexagonal boron-nitride\cite{ullmann_110, ullmann_111, ullmann_112} and other 2D polymers\cite{ullmann_108, ullmann_109} make them promising candidates to produce a variety of electronic and optoelectronic device\cite{ullmann_113, ullmann_114}.
-
-The choices of monomer and surface are considered as the main challenge for on-surface polymerization. Highly reactive monomers or surfaces will both promote the decomposition or desorption of monomers in high vacuum reaction condition, on the other hand, inert monomers or surfaces can lead to the desorption upon annealing activation. The issue of chemical reactivity underlines the popularity and practicality of on-surface Ullmann coupling methods.
-}
-
 {\lock
 
-The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, one- and two-dimensional organic polymers with high degree of control over their electronic properties~\cite{ullmann_33}. 
+%RZZK: Dima's comment: ``Discuss GNRs and 2D polymers, give some key figures - to tell the reader why they should care to read the rest of the paper.'' I think figures will be useful in the thesis but not in the research article.
+
+Unique and tunable properties of $\pi$-conjugated organic polymers such as one-dimensional (1D) graphene nanoribbons~\cite{ullmann_106, ullmann_45, ullmann_107, ullmann_101}
+%RZK0506: avoid mentioning materials that are not relevant for this review.
+%, hexagonal boron-nitride~\cite{ullmann_110, ullmann_111, ullmann_112} 
+and two-dimensional (2D) [layered] covalent organic frameworks {\comm [RZK0506: check whether the references are suitable for 2D $\pi$-conjugated COFs~
+\cite{ullmann_108, ullmann_109}]} make them promising candidates to produce a variety of electronic and optoelectronic devices~\cite{ullmann_113, ullmann_114}.
+%
+The utilization/application of these materials requires scalable methods to fabricate/produce/synthesize extended polymer structures with low defect density.
+%{\comm RZK0506: Should we mention the challenge of decoupling the polymer from the metallic surface to make semiconducting devices. }%end comm
+%
+%RZK0506: On-surface polymerization is a rapid-developing field aimed at achieving the constructions of unprecedented 1D or 2D polymers with novel structures and revolutionary properties\cite{ullmann_105, ullmann_33, ullmann_70}. 
+The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, atomically precise $\pi$-conjugated organic polymers with high degree of control over their electronic properties~\cite{ullmann_33}. 
 %
 %A recent surge of interest in electronic devices based on low-dimensional organic nanostructures with $\pi$-conjugated backbones has led to a renewed attention to the Ullmann process.
 %The recent surge of interest in bottom-up fabrication of functional nanostructures on surfaces....
 %
 The on-surface Ullmann reaction has been developed from its classical version -- nucleophilic substitution reaction between aromatic halides that proceed in solution in the presence of metallic copper leading to the formation of a carbon-carbon bond. 
 Since its discovery in 1901~\cite{ullmann_01}, the classical Ullmann coupling has rapidly become one of the key reactions in organic synthesis with its scope extended to multiple reactants and Cu-containing catalysts~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32, ullmann_115, ullmann_116, ullmann_117, ullmann_118, ullmann_119, ullmann_120, ullmann_121, ullmann_122}.
-%RZK0423: Any other reviews to add to the citation list above? (ZZ:added)
 The well-established ability of the Ullmann reaction to create bonds between aromatic carbon atoms thus coupling their $\pi$ systems has been adapted to perform synthesis on metal surfaces, which serve as both a low-dimensional confining template and catalyst.
-In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on (a) a variety of metals, most often copper, silver and gold OR (b) metals in the copper group: copper, silver and gold (ask Dima).
+In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on a variety of metals, most often copper, silver and gold.
 
-%RZK0423: Dima's comment about the following sentence: "there was a series of Bent's papers on Ullmann. cite others, too." If necessary change to "by Brent~\textit{et al.}~\cite{sur_sci01, others}." Do not include the year. (ZZ: modified and added)
-{\color{blue}
-One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Bent~\textit{et al.}~\cite{sur_sci01} with a series of pioneer and extended exploration\cite{ullmann_127, ullmann_128, ullmann_129, ullmann_87}.
+One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum condition was reported by Bent~\textit{et al.}~\cite{sur_sci01} in 1992. with a series of pioneer and extended exploration\cite{ullmann_127, ullmann_128, ullmann_129, ullmann_87}.
 %
-The intermediate species of the same reaction were inspected using STM imaging then by Weiss \textit{et al.}~\cite{langm01}. 
-Later, it was demonstrated that linear \emph{protopolymers}---aligned monomer units that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
-}
+The intermediate species of this reaction were inspected using STM imaging by Weiss \textit{et al.} in 1998~\cite{langm01}. 
+In 2004, it was demonstrated that linear \emph{protopolymers}---aligned monomer units that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
 %
-This insight showed that the Ullmann coupling can be used not only to synthesize organic molecules but periodic polymers as well. 
-The protopolymers have later been identified by Lipton-Duffin \textit{et al.} as periodic organometallic intermediates linked \textit{via} carbon-metal-carbon bonds~\cite{ullmann_88}.
-Remarkably, the Ullmann reaction has been employed for the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces.
-And Grill \textit{et al.} have prepared patches of a two-dimensional polymer from \textit{tetrakis}(bromophenyl)porphyrin on the Au(111) surface.
+%This insight showed that the Ullmann coupling can be used not only to synthesize organic molecules but periodic polymers as well. 
+These protopolymers have later been identified by Lipton-Duffin \textit{et al.} as periodic organometallic intermediates linked \textit{via} carbon-metal-carbon bonds~\cite{ullmann_88}.
+%Remarkably, the Ullmann reaction has been employed for the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces.
+And Grill \textit{et al.} have prepared patches of a 2D polymer from \textit{tetrakis}(bromophenyl)porphyrin on the Au(111) surface.
 %the coupling between brominated tetraphenyl-porphyrins on the Au(111) surface was performed by Grill \textit{et al.}~\cite{Naturenano2007} in 2007.
 %
-Since then, surface Ullmann coupling has become one of the most representative on-surface synthesis schemes. It has been utilized to create covalently-linked extended aromatic systems on a variety of metal surfaces starting from halogenated aryl precursors~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
-
-{\color{blue}
-The challenges of on-surface Ullmann reactions also draw much attention after three decade development: (a) tuning properties of these materials to the desired range by modifying their atomic composition and structure, (b) cost-effective synthesis of 2D polymers free of defects and with larger size. (c) 
-}
+Since then, surface Ullmann coupling has become one of the most common on-surface polymerization methods. It has been utilized to create covalently-linked extended macromolecular structures including ordered polymer wires, atomically precise graphene nanoribbons and organic 2D materials on a variety of metal surfaces starting from halogenated aryl precursors~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
 
 }
+
+%RZK0506: The following can be re-inserted in the right place.
+%The choices of monomer and surface are considered as the main challenge for on-surface polymerization. Highly reactive monomers or surfaces will both promote the decomposition or desorption of monomers in high vacuum reaction condition, on the other hand, inert monomers or surfaces can lead to the desorption upon annealing activation. The issue of chemical reactivity underlines the popularity and practicality of on-surface Ullmann coupling methods.
+
+
 
 \subsection{Mechanism of on-surface Ullmann coupling}
 
 {\lock
 
-Although numerous nanostructures have been obtained on metal surfaces via Ullmann coupling, our knowledge of the mechanism of the surface processes still remains incomplete/fragmentary. 
+Although numerous nanostructures have been obtained on metal surfaces via Ullmann coupling, our knowledge of the mechanism of the surface processes still remains incomplete. 
 A thorough understanding of the mechanism of on-surface Ullmann reaction is essential for tuning reaction conditions and for rational, more precise design of monomers that produce the polymers that match a chosen metal surface.
 
 %RZK-REVIEW: The focus of the following review of the Ullmann coupling mechanism is entirely on the formation of a carbon-carbon bond from halogen-containing precursors on Cu, Ag and Au surfaces. A particular attention is paid to the monohalogenated benzenes. 
 
-The overall coupling process can be divided into the elementary steps (Fig.~\ref{fig_mecha}) described in detail below. It is widely accepted that aryl halide molecules physisorbed on metal surface lose their halogens forming organometallic intermediates. These intermediates diffuse on the surface and, once sufficiently close to each other, combine with the formation of a carbon-metal-carbon bridge. This intermediate undergoes reductive elimination to form a covalent carbon-carbon bond between the two aryls. It should be noted that the surface Ullmann coupling proceeds through the formation of the organometallic intermediates similar to those encountered in the reaction in solution (Fig.~\ref{SI-fig:classical} in \sinfo).
+The overall coupling process can be divided into the elementary steps (Fig.~\ref{fig_mecha}) described in detail below. It is widely accepted that aryl halide molecules physisorbed on metal surface lose their halogens forming surface-bound aryl radicals. These intermediates diffuse on the surface and, once sufficiently close to each other, combine with the formation of an organometallic intermediate with a carbon-metal-carbon bridge. This intermediate undergoes reductive elimination to form a covalent carbon-carbon bond between the two aryls. It should be noted that the surface Ullmann coupling proceeds through the formation of the organometallic intermediates similar to those encountered in the reaction in solution (Fig.~\ref{SI-fig:classical} in \sinfo).
 
 \begin{figure*}[tb]
 \centering
