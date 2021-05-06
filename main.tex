@@ -54,6 +54,7 @@ floatfix,
 \usepackage{import}
 \usepackage{multirow}
 \usepackage{xr} % referencing across multiple files
+\usepackage{cleveref} % cite figures in SI
 \usepackage[dvipsnames]{xcolor}
 
 %\usepackage{url}            % simple URL typesetting
@@ -139,6 +140,12 @@ RZK0423: This is Dima's comment: ``You should start with a more extended discuss
 
 }%end comm
 
+{\color{blue}
+On-surface polymerization is a rapid-developing field aimed at achieving the constructions of unprecedented 1D or 2D polymers with novel structures and revolutionary properties\cite{ullmann_105, ullmann_33, ullmann_70}. Unique electronic or spin characteristics of functional materials such as graphene nanoribbons\cite{ullmann_106, ullmann_45, ullmann_107, ullmann_101}, hexagonal boron-nitride\cite{ullmann_110, ullmann_111, ullmann_112} and other 2D polymers\cite{ullmann_108, ullmann_109} make them promising candidates to produce a variety of electronic and optoelectronic device\cite{ullmann_113, ullmann_114}.
+
+The choices of monomer and surface are considered as the main challenge for on-surface polymerization. Highly reactive monomers or surfaces will both promote the decomposition or desorption of monomers in high vacuum reaction condition, on the other hand, inert monomers or surfaces can lead to the desorption upon annealing activation. The issue of chemical reactivity underlines the popularity and practicality of on-surface Ullmann coupling methods.
+}
+
 {\lock
 
 The on-surface Ullmann reaction is currently viewed as a promising bottom-up strategy to assemble, in mild conditions, one- and two-dimensional organic polymers with high degree of control over their electronic properties~\cite{ullmann_33}. 
@@ -147,24 +154,30 @@ The on-surface Ullmann reaction is currently viewed as a promising bottom-up str
 %The recent surge of interest in bottom-up fabrication of functional nanostructures on surfaces....
 %
 The on-surface Ullmann reaction has been developed from its classical version -- nucleophilic substitution reaction between aromatic halides that proceed in solution in the presence of metallic copper leading to the formation of a carbon-carbon bond. 
-Since its discovery in 1901~\cite{ullmann_01}, the classical Ullmann coupling has rapidly become one of the key reactions in organic synthesis with its scope extended to multiple reactants and Cu-containing catalysts~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32}.
-%RZK0423: Any other reviews to add to the citation list above? 
+Since its discovery in 1901~\cite{ullmann_01}, the classical Ullmann coupling has rapidly become one of the key reactions in organic synthesis with its scope extended to multiple reactants and Cu-containing catalysts~\cite{ullmann_29,ullmann_30,ullmann_31,ullmann_32, ullmann_115, ullmann_116, ullmann_117, ullmann_118, ullmann_119, ullmann_120, ullmann_121, ullmann_122}.
+%RZK0423: Any other reviews to add to the citation list above? (ZZ:added)
 The well-established ability of the Ullmann reaction to create bonds between aromatic carbon atoms thus coupling their $\pi$ systems has been adapted to perform synthesis on metal surfaces, which serve as both a low-dimensional confining template and catalyst.
 In the context of surface reactions, the term Ullmann coupling has been extended to refer to the reaction on (a) a variety of metals, most often copper, silver and gold OR (b) metals in the copper group: copper, silver and gold (ask Dima).
 
-%RZK0423: Dima's comment about the following sentence: "there was a series of Bent's papers on Ullmann. cite others, too." If necessary change to "by Brent~\textit{et al.}~\cite{sur_sci01, others}." Do not include the year.
-One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Xi and Bent~\cite{sur_sci01} in 1992.
+%RZK0423: Dima's comment about the following sentence: "there was a series of Bent's papers on Ullmann. cite others, too." If necessary change to "by Brent~\textit{et al.}~\cite{sur_sci01, others}." Do not include the year. (ZZ: modified and added)
+{\color{blue}
+One of the first fundamental studies of the surface-confined coupling of iodobenzene to biphenyl under ultrahigh vacuum (UHV) condition was reported by Bent~\textit{et al.}~\cite{sur_sci01} with a series of pioneer and extended exploration\cite{ullmann_127, ullmann_128, ullmann_129, ullmann_87}.
 %
-The intermediate species of the same reaction were inspected using STM imaging by Weiss \textit{et al.}~\cite{langm01} in 1998. 
-In 2004, it was demonstrated that linear \emph{protopolymers}---aligned monomer units that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
+The intermediate species of the same reaction were inspected using STM imaging then by Weiss \textit{et al.}~\cite{langm01}. 
+Later, it was demonstrated that linear \emph{protopolymers}---aligned monomer units that have not yet reacted to form the final polymer---could be obtained by depositing \textit{para}-diiodobenzene on Cu(111) at 77 K~\cite{jacs01}. 
+}
 %
 This insight showed that the Ullmann coupling can be used not only to synthesize organic molecules but periodic polymers as well. 
 The protopolymers have later been identified by Lipton-Duffin \textit{et al.} as periodic organometallic intermediates linked \textit{via} carbon-metal-carbon bonds~\cite{ullmann_88}.
 Remarkably, the Ullmann reaction has been employed for the first synthesis of covalently-bonded nanostructures from molecular building blocks on metal surfaces.
-In 2007, Grill \textit{et al.} have prepared patches of a two-dimensional polymer from \textit{tetrakis}(bromophenyl)porphyrin on the Au(111) surface.
+And Grill \textit{et al.} have prepared patches of a two-dimensional polymer from \textit{tetrakis}(bromophenyl)porphyrin on the Au(111) surface.
 %the coupling between brominated tetraphenyl-porphyrins on the Au(111) surface was performed by Grill \textit{et al.}~\cite{Naturenano2007} in 2007.
 %
 Since then, surface Ullmann coupling has become one of the most representative on-surface synthesis schemes. It has been utilized to create covalently-linked extended aromatic systems on a variety of metal surfaces starting from halogenated aryl precursors~\cite{ullmann_33,ullmann_34, ullmann_42, ullmann_43, ullmann_45, ullmann_46, ullmann_47, ullmann_48}. 
+
+{\color{blue}
+The challenges of on-surface Ullmann reactions also draw much attention after three decade development: (a) tuning properties of these materials to the desired range by modifying their atomic composition and structure, (b) cost-effective synthesis of 2D polymers free of defects and with larger size. (c) 
+}
 
 }
 
@@ -704,42 +717,45 @@ Limitation: Aryl=Phenyl. Cu(111) only. Three halogens. How to limit the literatu
 \section{Methods}
 %\subsection{Computation Models}
 
-\subsection{Computational Details}
-
+\subsection{Computational details}
+{\color{blue}
 The periodic density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. 
 
 The Cu(111) surface used in all Ullmann coupling was 
-modeled by a four-layered slab consisting of 192 Cu atoms and at least \SI{15}{\angstrom} of vacuum. Each layer is made up with 48 ($8\times 6$) Cu atoms. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to \SI{800}{\electronvolt} and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2}$ \si{\electronvolt}$/$\si{\angstrom}$^{2}$. 
+modeled by a four-layered slab consisting of 192 Cu atoms and at least \SI{15}{\angstrom} of vacuum. Each layer is made up with 48 (8 in X-axis and 6 in Y-axis) Cu atoms. The relaxations were performed with applying spin-polarization. The energy cut-off for the plane-wave basis was set to \SI{800}{\electronvolt} and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than $2\times 10^{-2}$ \si{\electronvolt}$/$\si{\angstrom}$^{2}$. 
 
 Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60, ullmann_99} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the distance between them. Plus, All atoms were fully relaxed until the MAX force on the atom was less than \SI{0.1}{\electronvolt}/\si{\angstrom}$^{2}$ in CI-NEB calculations.
 
 Generally the value of most thermodynamic functions can be derived from our DFT optimization results. 
-(%ZZ1215: still miss the math part, will add later)
+{\comm ZZ: Need more details about the math derivation, added later
+}
+
 
 The simulation of surface Ullmann coupling reaction was conducted with chlorobenzene, bromobenzene and iodobenzene on Cu(111) surface. We explored the mechanism discussed above step by step including the least reported step --- formation of C--C bond.
 
-In the dehalogenation step, the CI-NEB method was used in chlorobenzene, bromobenzene and iodobenzene precursors to study how different halogens will affect on the dissociation of carbon-halogen bonds. CI-NEB method offered us energy profile diagram as well the transition state.
+In the dehalogenation step, the CI-NEB method was used in chlorobenzene, bromobenzene and iodobenzene precursors to study how different halogens will affect on the dissociation of carbon-halogen bonds. CI-NEB method provides energy profile diagram as well the transition state.
 
-Choice for the zero-energy state.
-
+%Choice for the zero-energy state.
+Clean, ideal Cu(111) surface with a halobenzene in gas phase (not physisorbed) is chosen to be zero-energy state among all intermediates involved in surface Ullmann coupling process. Energies of other intermediates are presented with relative values.
+}
 \section{Results and Discussion}
 
 RZK0422: Re-read several times, make corrections, make sure it is clear to a reader new to the field. Polish English. Present data clearly.
 
 \subsection{Physisorption}
 
-{\lock
+{\color{blue}
 
 Before organic precursors undergo chemical transformations, they are first physisorbed on a metal surface. 
-The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively (Fig.~\ref{fig:completeenergy}). 
-The predicted binding is \SI{0.24}{\electronvolt} stronger than that obtained previously using the optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. The difference in the strength of adsorption between iodobenzene and bromobenzene is almost exactly the same ($\sim$\SI{0.18}{\electronvolt}) in this and previous works.
+The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively (notated as \textbf{PHYS} in Fig.~\ref{fig:completeenergy}). 
+The predicted binding interaction is slightly stronger than the ones obtained previously using optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. It is worthy to mention that the difference in the strength of binding between iodobenzene and bromobenzene on Cu(111) is almost the same in our and previous works.
 
 %RZK0415: The strong binding between the surface and halogenated benzenes is primarily due to the interaction of (a) the $\pi$-system (b) halogen and . For example, the energy of interaction between biphenyl and the metal is ZZZ whereas Br$_2$ molecule interacts with the surface by ZZZ.
 
-RZK0422: The following text is not mine and should not be in the red zone. My comment above is only a template, not the final text. Either (a) or (b) should be chosen in the final text. Moreover, 4.08 eV seems to be too strong for a vdW interaction.
+%RZK0422: The following text is not mine and should not be in the red zone. My comment above is only a template, not the final text. Either (a) or (b) should be chosen in the final text. Moreover, 4.08 eV seems to be too strong for a vdW interaction.
 
-The strong binding of halobenzenes on surface is primarily due to the van der Waals interaction of (a) the $\pi$-system and (b) halogens with the metal surface. For example, the energy of interaction between biphenyl and copper is \SI{1.72}{\electronvolt} whereas Br$_2$ molecule interacts with the surface by \SI{4.08}{\electronvolt}.
-
+{\comm (need modification The strong binding of halobenzene on metal surface is primarily due to the van der Waals interaction of (a) the $\pi$-system and (b) halogens with the metal surface. For example, the energy of interaction between biphenyl and copper is \SI{1.72}{\electronvolt} whereas Br$_2$ molecule interacts with the surface by \SI{4.08}{\electronvolt}.
+}
 }
 
 \begin{figure*}[hbt]
@@ -773,31 +789,31 @@ The strong binding of halobenzenes on surface is primarily due to the van der Wa
 
 {\lock
 
-Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition and final states for the debromination of the physisorbed bromobenzene on Cu(111). These state are labeled as \textbf{PHYS}, \textbf{DHAL$\ddagger$} and \textbf{DHAL} in Fig.~\ref{fig:completeenergy}. Dechlorination and deiodination have similar energy and geometry change trend (see supporting information for the figures of dechlorination and deiodination).
+Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition and final states (labeled as \textbf{PHYS}, \textbf{DHAL$\ddagger$} and \textbf{DHAL} in Fig.~\ref{fig:completeenergy}) for the debromination of the physisorbed bromobenzene on Cu(111). Dechlorination and deiodination have similar energy and geometry change trend (see \sinfo for the figures of dechlorination and deiodination).
 
 }{\color{blue}
 
-[RZK0317: The logic of the paragraph below is not clear]
+%[RZK0317: The logic of the paragraph below is not clear]
 
-Our results show that energy change of the dehalogenation step are \SI{-0.58}{\electronvolt}, \SI{-0.81}{\electronvolt} and \SI{-0.96}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. [RZK0317: Unlike analogous reactions in the solution?], indicating that dehalogenation reactions on the copper surface are all exothermic. 
-Contrary to surface-confined condition, dehalogenation of bromobenzene and iodobenzene in gas phase require \SI{3.85}{\electronvolt} and \SI{3.33}{\electronvolt} energy to accomplish~\cite{jacs2013}. This means copper surface can denote electrons to and stabilize dissociated species, which will make this reaction energetically favourable on Cu(111).  
+Our results show that energy change of the dehalogenation step are \SI{-0.58}{\electronvolt}, \SI{-0.81}{\electronvolt} and \SI{-0.96}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. It indicates that dehalogenation reactions on the copper surface are all exothermic. 
+Contrary to surface-confined condition, dehalogenation of bromobenzene and iodobenzene in gas phase require \SI{3.85}{\electronvolt} and \SI{3.33}{\electronvolt} energy to accomplish~\cite{jacs2013}. This means copper surface can stabilize and denote electrons to dissociated species, which will make this reaction energetically favourable on Cu(111).  
 
 }{\lock
 
-The energy barrier of the dehalogenation on surface decreases from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}). This trend is in agreement with the trend of experimentally measured temperatures required to complete dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87} while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data about the dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data on dihalogenated precursors (Table~\ref{table:exp-temp}) that chlorobenzene dissociates at significantly higher temperature than both bromobenzene and iodobenzene.
-
+The energy barrier of the dehalogenation on surface decreases from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}). This trend is in agreement with the trend of experimentally measured temperatures required to complete dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87}, while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data referred to dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data of dihalogenated precursors (Table~\ref{table:exp-temp}) that chlorobenzene dissociates at significantly higher temperature than bromobenzene and iodobenzene.
 {\color{blue}
-Previous DFT calculations have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.01}{\electronvolt}~\cite{ullmann_86}. The break of C--Cl also requires a higher energy than the break of C--Br in solution. The discrepancy also suggests that dechlorination is faster in solution than on Cu(111) but debromination should be faster in reverse.
+Previous DFT calculations have demonstrated that the free energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.01}{\electronvolt}~\cite{ullmann_86}. The break of C--Cl also requires a higher energy than the break of C--Br in solution.
 }
 
 RZK0317: Bell-Evans-Polanyi principle?
 
-It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously~\cite{jacs2013} using optB86b exchange-correlation functional and smaller slab size, the molecular orientation on Cu(111) is identical with our model. The energy change and barrirer reported for this step are \SI{0.66}{\electronvolt} and \SI{-0.68}{\electronvolt} (bromobenzene), \SI{0.40}{\electronvolt} and \SI{-0.81}{\electronvolt} (iodobenzene).
+It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously~\cite{jacs2013} using optB86b exchange-correlation functional, the molecular orientation of bromobenzene and dissociated phenyl radical on Cu(111) are identical with our model. The energy change and barrier reported are \SI{0.66}{\electronvolt} and \SI{-0.68}{\electronvolt} (bromobenzene), \SI{0.40}{\electronvolt} and \SI{-0.81}{\electronvolt} (iodobenzene).
 %RZK0317: Any comments? (ZZ: added)
 %RZK0415: Did they study the same orientation of the molecule? (ZZ: yes, almost the same)
-ZZ added: The trend of enthalpy and activation energy data for different halogens are consistent with our conclusion, the difference between enthalpy and activation energy are also close to our results, which could be supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and our larger slab model for computation.
-%ZZ: will add how the XC-functional influence the calculation (overestimate/underestimate) later.
-
+{\color{blue}
+The trend of energy change and activation energy for different halogens are consistent with our conclusion, the difference between energy change and activation energy are also close to our results, which could be supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and our larger slab model for computation.
+{\comm ZZ will add details how the XC-functional influence the calculation (overestimate/underestimate) later.}
+}
 }
 
 \begin{table*}
@@ -836,25 +852,26 @@ ZZ added: The trend of enthalpy and activation energy data for different halogen
 
 %RZK0317: In the paragraph below, more numerical data must be presented in a Table and less in the text. Text should discuss main trends. (ZZ: added table)
 
-Selected geometric parameters of the intermediates have been summarized in Table~\ref{table:bondlength}. As shown in Fig.~\ref{fig:dissociation_Br}, the distances between carbon and halogen which are going to dissociate a covalent bond, the angle of phenyl ring with respect to surface are both suffering successively changes. In \textbf{PHYS} of halobenzene, the distances between carbon and halogen are consistent with the calculated bond length of C--Cl (\SI{1.76}{\angstrom} in chlorobenzene), C--Br (\SI{1.91}{\angstrom} in bromobenzene) C--I (\SI{2.14}{\angstrom} in iodobenzene) in gas phase based on B3LYP functional DFT calculations. These distances will show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms occupy the hollow site on Cu(111) surface in the end of dehalogenation. Interestingly, in the \textbf{DHAL$\ddagger$} transition states of all three halobenzene precursors, C--X distance shows a consistent approximately \SI{0.5}{\angstrom} longer than C--X in \textbf{PHYS}, suggesting that different dehalogenation reactions on Cu(111) follow identical mechanism.
-The phenyl ring part of three halobenzenes are all mostly parallel to surface with adsorbed on copper before the dehalogenation. And in the dissociation, the phenyl ring starts to become tilt on surface, then finalize at a large slope. This indicates that the unsaturated carbon atom is interacting with copper atom in Cu(111) during the dehalogenation process. The interaction also changes the distance between the unsaturated carbon and the copper atom involved in dehalogenaiton from different starting values in \textbf{PHYS} to the same \SI{2.01}{\angstrom} in \textbf{DHAL} states, and the copper atom involved in dehalogenation are all raised by \SI{0.10}{\angstrom} from their original positions. The same C--Cu distance in the end of dehalogenation of chlorobenzene, bromobenzene and iodobenzene suggest that the dissociated halogen atoms have little effect on the interaction of unsaturated carbon and copper atoms. However, halogen atoms have a much larger influence on phenyl ring, resulting in different tilt angles of dehalogenated aromatic species, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
+Selected geometric parameters of the intermediates have been summarized in Table~\ref{table:bondlength}. As shown in Fig.~\ref{fig:dissociation_Br}, the distances between carbon and halogen which are going to dissociate a covalent bond, the angle of phenyl ring with respect to surface have both suffered successively changes. In \textbf{PHYS} of halobenzene, the distance between carbon and halogen is consistent with the calculated bond length of C--Cl (\SI{1.76}{\angstrom} of chlorobenzene), C--Br (\SI{1.91}{\angstrom} of bromobenzene) C--I (\SI{2.14}{\angstrom} of iodobenzene) in gas phase based on B3LYP functional DFT calculations. These distances will show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms occupy the hollow site on Cu(111) surface in the end of dehalogenation. Interestingly, in the \textbf{DHAL$\ddagger$} transition states of all three halobenzene precursors, C--X distance shows a consistent approximately \SI{0.5}{\angstrom} longer than C--X in \textbf{PHYS}, suggesting that different dehalogenation reactions on Cu(111) follow identical mechanism.
+The phenyl ring parts of three halobenzenes are all mostly parallel to surface once adsorbed on copper before the dehalogenation. And in the dissociation, the phenyl rings start to become tilt on surface, then finalize at a large slope. This indicates that the unsaturated carbon atom is interacting with copper atom in Cu(111) during the reaction process. The interaction also changes the distance between the unsaturated carbon and the copper atom involved in dehalogenation from different starting values in \textbf{PHYS} to the same \SI{2.01}{\angstrom} in \textbf{DHAL} states, and the copper atom involved in dehalogenation are all raised by \SI{0.10}{\angstrom} from their original positions. The same C--Cu distances in the end of dehalogenation of chlorobenzene, bromobenzene and iodobenzene suggest that the dissociated halogen atoms have little effect on the interaction of unsaturated carbon and copper atoms. However, halogen atoms have a much larger influence on phenyl ring, resulting in different tilt angles of dehalogenated aromatic species, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
 
 }
 
-RZK0317: Discuss the role of adatoms in the dehalogenation step. Our results and/or old results can be disscussed. Old results can be dicussed briefly since they are already presented in the introduction.
+{\comm RZK0317: Discuss the role of adatoms in the dehalogenation step. Our results and/or old results can be discussed. Old results can be discussed briefly since they are already presented in the introduction. }
 
 %RZK0422: Do not capitalize all words in titles, including section titles. Capitalize only the first word.
 
 {\color{blue}
 
-The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher/lower/similar activation energy of \SI{2.04}{\electronvolt} than/to . On the clean surface, the extracted adatom is located at the RYZ site (Fig.~\ref{SI-fig:cleanatomform}). Compare to the dehalogenation geometry. And so on.
+(This paragraph is not finished) It has been proposed that the adatom could be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously due to previous work\cite{chemeurope2017}. On the clean surface, the extracted adatom is located at the hollow site right new the vacancy (Fig.~\cref{SI-fig:cleanatomform}). The site occupied by the adatom is highly similar compared to the dehalogenation geometry. It can be concluded that extracting an metal atom out to create an adatom require much less energy compared to creating it on clean surface. It can be noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation should occur simultaneously on Cu(111) surface.
+
 
 }
 
 
 {\color{blue}
 
-Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species.
+Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species. And dehalogenation step is highly likely to create an adatom on Cu(111) surface.
 
 }
 %R1111: Do you mean our calculated enthalpies or experimental values? (%ZZ: add descriptions)
@@ -879,24 +896,25 @@ The energies of forming the C--Cu--C bridge intermediate (annotated as \textbf{C
 
 %}{\color{blue}
 
-\textbf{DHAL-2} used here is well matched to the experiment STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. Generally the reaction from two dehalogenated precursor to C--Cu--C bridge intermediate is endothermic, but the energy change is relatively small and consistent with the experimental condition shown in Table.~\ref{fig:temp}, dehalogenation and formation of C--Cu--C intermediate structure commonly complete at same temperature. The exception is gold surfaces, on which these intermediates are not observed because they immediately proceed to form final C--C covalnet bonds~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102} with a very fast speed~\cite{ullmann_33, ullmann_102, ullmann_103, jacs2011}. 
+\textbf{DHAL-2} used here is well matched to the experimental STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. Generally the reaction from two dehalogenated precursors to C--Cu--C bridge intermediate is endothermic, but the energy change is relatively small and consistent with the experimental condition shown in Table.~\ref{table:exp-temp}, dehalogenation and formation of C--Cu--C intermediate structure commonly complete at same temperature. The exception is gold surfaces, on which these bridge intermediates are not observed because they immediately proceed to form final C--C covalent bonds~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102} with a very fast speed~\cite{ullmann_33, ullmann_102, ullmann_103, jacs2011}. 
 
-In the \textbf{CMC} configuration, the copper atom interacting with two phenyl rings is lifted from the first layer of the ideal surface. This partially lifted atom is raised higher by \SI{0.56}{\angstrom} from its original position, which is much larger than the height due to one phenyl species extraction in \textbf{DHAL} (\SI{0.10}{\angstrom}). %It can be inferred that the force emerged between one phenyl ring and one copper atom is not adequate to extract this copper out from the surface.
+In the \textbf{CMC} configuration, the copper atom interacting with two phenyl rings is lifted from the first layer of the ideal surface. This partially lifted atom is raised higher by \SI{0.56}{\angstrom} from its original position, which is much larger than the height of copper extracted by one phenyl species in \textbf{DHAL} (\SI{0.10}{\angstrom}). %It can be inferred that the force emerged between one phenyl ring and one copper atom is not adequate to extract this copper out from the surface.
 The distance between two carbon atoms in the C--Cu--C bridge is \SI{3.10}{\angstrom}, which is \SI{1.61}{\angstrom} longer than the length of the connecting C--C in biphenyl. The angle of two phenyl rings connected to the Cu atom with respect to the surface are both \SI{52}{\degree}, this angle is the same as the tilt of a single phenyl in DHAL (\SI{52}{\degree}).
+
+This step has also been reported in previous work\cite{pccp2010}. The construction of phenyl--Cu--phenyl structure on Cu(111) surface is calculated to be an exothermic process, which is not corresponding to our endothermic prediction. It can be explained by the difference in initial configurations. Two phenyl radicals are interacting with adjacent copper atoms, separated by a short distance in their initial states. However, out initial states come from double of single dehalogenated phenyl radicals. Theoretically it can be considered that two phenyl radicals in \textbf{DHAL-2} are infinitely far away from each other, leaving non interaction between. This unignorable interaction between phenyl radicals remains to be the principal reason for the inconsistency.
 
 Formation of C--Cu--C bridge structure has been proven to play a significant role in the creation of adatom in surface Ullmann coupling. The interaction is potentially sufficient to extract an ideal surface copper atom out.
 
 }
 
-RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively.
+{\comm RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively. (ZZ: added)}
 
 \subsection{Formation of the C--C bond}
 
 {\lock
 %In the final step of the Ullmann coupling a C--C bond is formed between two phenyl radicals. 
-Two pathways to construct the C--C bond starting from the C--Cu--C bridge intermediate are considered in this work. 
-In the first pathway, the catalyzed Cu atom returns to its original position in the first layer once the C--C bond is formed. 
-In the second pathway, the bridge Cu atom is fully pulled out to become an adatom, leaving a vacancy in its original position on first layer. 
+Two pathways to construct the C--C bond from the C--Cu--C bridge intermediate are considered in this work. 
+In the first pathway, the catalyzed Cu atom returns to its original position in the first layer once the C--C bond is formed, metal surface remains ideal, non-defect before and after the surface Ullmann coupling. In the second pathway, the bridge Cu atom is fully pulled out to become a new adatom, leaving a vacancy in its original position on first layer along with the formation of coupling product. 
 %The two pathways are discussed separately.
 }
 
@@ -904,20 +922,21 @@ In the second pathway, the bridge Cu atom is fully pulled out to become an adato
 
 {\lock
 
-The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of the NEB calculations are presented in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
+The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
 
 }{\color{blue}
  
 %RZK0324: Do not use E_{barrier}. Write "the energy barrier" instead. 
 %RZK0324: It would be better to use "the energy change" instead of $\Delta E$ but sometimes it is ok to use $\Delta E$ to shorten long sentences. 
 %RZK0324: Replace all labels with the new ones. 
-The energy change and barrier for this step are \SI{-2.00}{\electronvolt} and \SI{0.49}{\electronvolt}, respectively. These values are the same for all halogens because the initial and final model states do not contain halogen atoms. 
-This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and optB86b exchange-correlation functional~\cite{jacs2013}.
+The energy change and barrier for this step are \SI{-2.00}{\electronvolt} and \SI{0.49}{\electronvolt}, respectively. These values are the same for all halogens because the initial and final modeling states do not contain halogen atoms in calculations. 
+This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
 %ZZ: more detailed analysis will be added.
 
-Experiments have shown that the onset temperature for the final C--C bond-formation step is approximately \SI{300}{\kelvin}~\cite{sur_sci01} (Table~\ref{table:exp-temp}) on Cu(111) surface, which is in line with the calculated energy barrier. RZK0324: Details on the agreement with experiment?
+Experiments have shown that the onset temperature for the final C--C bond-formation step is approximately \SI{300}{\kelvin}~\cite{sur_sci01} for synthesizing biphenyl on Cu(111) surface, which is in line with the calculated energy barrier (\SI{0.49}{\electronvolt}). In addition, this step is highly exothermic based on the \SI{-2.00}{\electronvolt} of energy barrier, and the final biphenyl product on Cu(111) possesses the lowest thermodynamic energy in Fig.~\ref{fig:completeenergy}. In experiment, surface Ullmann coupling of bromobenzene will proceed to biphenyl and two bromine atoms adsorbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}, which agrees that biphenyl is the most thermodynamic stable species on coupling condition. Significantly higher temperature will end to the desorption of coupling product, even halogen atoms from metal surface.
+{\comm RZK0324: Details on the agreement with experiment? (ZZ: added)}
  
-Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. The tilt angle of phenyl ring with respect to copper surface varied from \SI{52}{\degree} to \SI{34}{\degree} and ends in nearly \SI{0}{\degree}.
+Besides, Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. The tilt angle of phenyl ring with respect to copper surface varied from \SI{52}{\degree} to \SI{34}{\degree} and ends in nearly \SI{0}{\degree}.
 }
 
 %R1111: LATER. We need to develop better notation for all chemical species and refer to them consistently.
@@ -939,7 +958,7 @@ The energy profile of this pathway that leads to the creation of an adatom durin
 }{\color{blue}
 
 Fig.~\ref{fig:bondformadatom} shows trajectory from \textbf{CMC} to the C--Cu--C bridge intermediate on top of a fully extracted Cu adatom (\textbf{X-CMC}), followed by formation of dimer on this newly formed adatom (\textbf{X-DIM-A}). In \textbf{X-CMC} and \textbf{X-DIM-A}, a vacancy is generated on the original location of newly formed adatom. 
-In the first step, an Cu atom is fully extracted out by \textbf{X-CMC} bridge intermediate, energy change and barrier are \SI{-0.20}{\electronvolt} and \SI{1.38}{\electronvolt}. The distance between two carbons forming C--Cu--C bridge increases to \SI{3.89}{\angstrom} (in \textbf{X-CMC}) from \SI{3.10}{\angstrom}, and cuts down by \SI{0.34}{\angstrom} in the \textbf{X-CMC$\ddagger$}. The tilt angle flattens to \SI{13}{\degree} from \SI{34}{\degree}.
+In the first step, an Cu atom is fully extracted out in \textbf{X-CMC} bridge intermediate, energy change and barrier are \SI{-0.20}{\electronvolt} and \SI{1.38}{\electronvolt}. The distance between two carbons forming C--Cu--C bridge increases to \SI{3.89}{\angstrom} (in \textbf{X-CMC}) from \SI{3.10}{\angstrom} (iin \textbf{CMC}), and cuts down by \SI{0.34}{\angstrom} in \textbf{X-CMC$\ddagger$}. The tilt angle flattens to \SI{13}{\degree} from \SI{34}{\degree}.
 
 %%% Late steps
 %R1111: What effect is responsible for the energy lowering upon adatom creation in IM5? Note that for I--Ph on Cu the extraction+diffusion during the C-I breaking step produces the overall uphill step. PRIORITY1. Remove Ph in IM3, IM4, IM without geometry relaxation (only the metal surface, not phenyl).
@@ -947,7 +966,9 @@ In the first step, an Cu atom is fully extracted out by \textbf{X-CMC} bridge in
 In the second step of forming C--C bond with newly formed adatom, energy change and barrier are \SI{-0.17}{\electronvolt} and \SI{2.01}{\electronvolt}. It ends with the formation of a new covalent C--C with a bond length of \SI{1.50}{\angstrom}, the former distance between these two carbons is \SI{3.10}{\angstrom} in \textbf{X-CMC}, and is condensed by \SI{0.57}{\angstrom} in \textbf{X-DIM$\ddagger$}. The tilt angle in \textbf{X-DIM-A} is a little twisted to \SI{-9.1}{\degree}. The configuration of biphenyl should be a nearly plane structure, this can be explained by the fact that the newly formed C--C is directly on the top of fully extracted Cu adatom. The distance from the Cu adatom to formed C--C bond is \SI{1.66}{\angstrom}, leading to the repulsion force and distort the two phenyl ring to such a degree.
 This path will finally reach the state where a new adatom, a vacancy spot and a biphenyl formed on copper surface. Ideally there are no interaction among these three species (\textbf{X-DIM-B}). The energy of \textbf{X-DIM-B} is increased by \SI{0.14}{\electronvolt} compared to \textbf{X-DIM-A}.
 
-Besides, we also investigated the effect of Ullmann coupling intermediates on creation of adatoms, as shown in Fig.~\ref{fig:onlysurface}. The bottom line shows the potential energy of \textbf{DHAL-2}, \textbf{CMC} and \textbf{X-CMC} in Fig.~\ref{fig:completeenergy}. The surface configuration of these three intermediates are separated from the slab and perform a single point energy calculation, the results are displayed in the top line. The energy of copper surface increased by \SI{1.48}{\electronvolt} from \textbf{CMC} to \textbf{X-CMC}, but the potential energy of \textbf{X-CMC} is \SI{0.20}{\electronvolt} lower than \textbf{CMC}, this means that the interaction between two phenyl species and the ideal surface Cu is strong to extract the Cu atom out of first layer, and even lead to a more stable state on potential energy surface.
+In addition to the mechanism describe above, we explored an alternative reaction pathway directly from \textbf{X-CMC} to \textbf{X-DIM-B} instead of passing \textbf{X-DIM-A}. In this path, the formation of C--C bond and the diffusion of newly formed adatom away take place simultaneously, rather than one after the other in former path. The CI-NEB data is geometry is shown in \sinfo. Since this path displays an exceedingly high activation energy around (\SI{3.0}{\electronvolt}), and surpassing the previous energy barrier (\SI{2.01}{\electronvolt}) to a large scale, it seems not plausible to occur actually in nature.
+
+Besides, we also investigated the effect of Ullmann coupling intermediates on creation of adatoms, as shown in Fig.~\ref{fig:onlysurface}. The bottom line shows the potential energy of \textbf{DHAL-2}, \textbf{CMC} and \textbf{X-CMC} in Fig.~\ref{fig:completeenergy}. The surface configuration of these three intermediates are separated from the slab and perform a single point energy calculation, the results are displayed in the top line. The energy of copper surface is increased by \SI{1.48}{\electronvolt} from \textbf{CMC} to \textbf{X-CMC}, but the potential energy of \textbf{X-CMC} is \SI{0.20}{\electronvolt} lower than \textbf{CMC}, this means that the interaction between two phenyl species and the ideal surface Cu is strong to extract the Cu atom out of first layer, and even lead to a more stable state on potential energy surface.
 
 }
 
@@ -960,19 +981,6 @@ Besides, we also investigated the effect of Ullmann coupling intermediates on cr
 \label{fig:onlysurface}
 \end{figure}
 
-% \begin{figure*}[hbt]
-% \centering
-% \includegraphics[width=1.0\textwidth]{Fig/IM4_IM_r1.pdf}
-% \caption{Full extraction of an ideal surface Cu atom out in Path II. Left diagram is CI-NEB calculation, right part is the top and side view of \textbf{CMC}, \textbf{X-CMC$\ddagger$}, and \textbf{X-CMC} in Fig.~\ref{fig:completeenergy}, sphere colors are set same as above.}
-% \label{fig:IM4_TS}
-% \end{figure*}
-
-% \begin{figure*}[hbt]
-% \centering
-% \includegraphics[width=1.0\textwidth]{Fig/bondformadatom.pdf}
-% \caption{C-C bond formation through new formed adatom Path II. Left diagram is CI-NEB calculation, right part is the top and side view of \textbf{X-CMC}, \textbf{X-DIM$\ddagger$}, and \textbf{X-DIM} in Fig.~\ref{fig:completeenergy}, sphere colors are set same as above.}
-% \label{fig:bondformadatom}
-% \end{figure*}
 
 \begin{figure*}[hbt]
 \centering
@@ -992,11 +1000,13 @@ RZK0324: Spin density maps of the adatom-containing intermediates.
 The possibility of two paths above are compared in multiple aspects.
 The potential energy data and simplified cartoons geometry are present in Fig.~\ref{fig:completeenergy}. Two mechanism begin to vary from \textbf{CMC}, ideal surface path (black path) is both kinetically and thermodynamically more favourable due to a lower-energy transition state and more stable product. This suggests that at the same temperature condition, the reaction involved in ideal surface path will take place at a higher speed and account for a larger percentage. In experiment, phenyl radical species require temperature at \SI{350}{\kelvin} to accomplish C--C bonds on Cu(111) surface, this is more or less corresponding to a higher activation energy than \SI{0.49}{\electronvolt} obtained in ideal surface, this can be explained by the fact that all energy diagram are collected from potential energy, instead of free energy. Under a constant pressure, free activation energy will reflect authentic reaction condition. Taking the entropy contribution into consideration, the energy barrier should be larger, details will be discussed in entropy correction section.
 
+In these two path, the final coupling steps seem similar from \textbf{X-CMC} to \textbf{X-DIM-A} and from \textbf{CMC} to \textbf{DIM}. The only difference is C--C forming on top an adatom in former path, and on ideal surface in latter path, though the energy barrier is highly distinct. This can be explained by the geometry of their entirely unequal transition state. 
+
 However, the evidence in geometry provides a different result. In experiment, the distance between two carbons in C--Cu--C bridge structure is \SI{4.5}{\angstrom} \textpm\ \SI{0.6}{\angstrom} based on the STM image of this bridge intermediates. This corresponds to the distance in \textbf{X-CMC} of creation of an adatom path, which is \SI{3.89}{\angstrom}, but this distance in \textbf{CMC} is \SI{3.10}{\angstrom}. This means that the C--Cu--C intermediates is more likely to possess an adatom, this adatom is either from an ideal surface or it is an pre-existing adatom.
 
 Taking the reaction condition into consideration. The temperature of final forming C--C bond from two phenyl species need to go up to above \SI{350}{\kelvin}~\cite{sur_sci01}. The activation energy of \textbf{CMC} evolved to \textbf{DIM$\ddagger$} in ideal surface path and to \textbf{X-CMC} in creation of an adatom path are \SI{0.38}{\electronvolt} and \SI{1.37}{\electronvolt}, respectively. The experimental temperature can meet the requirement of both two pathways, but the reaction in ideal surface path will occur with a higher speed.
 
-RZK0422: The alternative transition states must be described. What is the energy barrier with the alternative TS compared to that with X-DIM-ddagger?
+RZK0422: The alternative transition states must be described. What is the energy barrier with the alternative TS compared to that with X-DIM-ddagger? 
 
 }
 
@@ -1008,24 +1018,18 @@ RZK0422: The alternative transition states must be described. What is the energy
 
 \subsection{Desorption of products}
 
-Although the desorption of the reaction products is not observed experimentally [RZK0422: is this true?] it is worth looking at its energetics.
- 
 {\color{blue}
+The desorption of the reaction products have also been observed experimentally with temperature programmed desorption. Biphenyl has been reported to complete the desorpion on Cu(111) surface at \SIrange{400}{450}{\kelvin}\cite{ullmann_104}, which is nearly \SI{100}{\kelvin} higher than the coupling temperature.
+The dissociated halogen atoms on surface will desorb even at much higher temperature. For instance, bromine atoms start to leave Cu(111) surface at \SI{900}{\kelvin} and higher, iodine atoms start at \SI{800}{\kelvin} \cite{jacs2013, ullmann_104}. 
 
-
-Apart from the intermediates discussed above, we consider the desoprtion of all species on copper surface after the completion of Ullmann coupling reaction. Energy change of desorping formed biphenyl molecule is \SI{1.72}{\electronvolt}, and of desorping two chlorine atoms, two bromine atoms and two iodine atoms are \SI{3.33}{\electronvolt}, \SI{4.01}{\electronvolt} and \SI{4.66}{\electronvolt}. 
-
-
-Energy change of desorping formed biphenyl molecule is \SI{1.72}{\electronvolt}, and of desorping two chlorine atoms to chlorine gas molecule, two bromine atoms bromine gas molecule and two iodine atoms to iodine gas molecule are \SI{4.18}{\electronvolt}, \SI{4.08}{\electronvolt} and \SI{3.95}{\electronvolt}, respectively.
-RZK0422: As suggested before, calculate the energy of PROD state and report desorption energy of Halogen$_2$ molecule, not two separate atoms.
-
+Energy change of desorping formed biphenyl molecule is \SI{1.72}{\electronvolt}, and of desorping two chlorine atoms to chlorine gas molecule, two bromine atoms to bromine gas molecule and two iodine atoms to iodine gas molecule are \SI{4.18}{\electronvolt}, \SI{4.08}{\electronvolt} and \SI{3.95}{\electronvolt}, respectively. 
+%RZK0422: As suggested before, calculate the energy of PROD state and report desorption energy of Halogen$_2$ molecule, not two separate atoms.
+Desorping biphenyl molecule requires \SI{1.72}{\electronvolt} of energy, corresponding to increase the annealing temperature \SI{100}{\kelvin} higher than coupling temperature to remove biphenyl on Cu(111). 
+And desorping bromine atoms require higher energy than iodine atoms, which is well matched to the higher temperature for bromine in experimental observation. 
+Such a high desorption energy for halogen atoms becomes a nasty issue for practical surface Ullmann coupling. The dissociated halogen atoms will remain on metal surface and impede the further diffusion of chemical species for coupling. Removing the halogens can effectively optimize the speed and quality of synthesizing polymer structure in surface Ullmann coupling.
 }
 
-RZK0422: The meaning of the following sentence is unclear. 
-Here taking the surface Ullmann coupling between two bromobenzene as example, the physisorption of two bromobenzene on Cu(111) surface decrease the energy of the whole system by 2.35 eV, which is widely recognized in experiment because adsorbing aromatic species on copper surface as a fast procedure. 
 
-The last two successive steps are concerned with the desorption of biphenyl molecule and two dehalogenated bromine atoms. 
-In total, the red line is more energetically favourable than green line, that can be considered to be a more reasonable pathway in realistic surface Ullmann coupling if there is no pre-exiting adatom on metal surface.
 
 %%% Early steps
 %R1111: LATER. Do we need adatom calculations for TS1? Perhaps only one or two halogen-metal pairs (for complete diagram). How will it affect the subsequent steps? Will the PH-Adatom roam the surface together before encountering the second Ph? PRIORITY6.
@@ -1037,32 +1041,39 @@ In total, the red line is more energetically favourable than green line, that ca
 %RZK1222: How difficult is it to push the adatom (with attached organic radicals) DOWN?
 
 \subsection{Coupling catalyzed by an existing adatom}
+{\color{blue}
+In addition to two paths discussed above in surface Ullmann coupling, we also consider the copper atom involved in surface Ullmann coupling is a pre-existing adatom on Cu(111). It is a superficial evaluation since in the calculations, a vacancy always exists next to the adatom, the interaction between the adatom and the vacancy has been ignored to presume an adatom has formed on Cu(111) before any surface Ullmann coupling precursors are adsorbed.
 
-In addition to two paths discussed above in surface Ullmann coupling, we also consider the copper atom involved in surface Ullmann coupling is a pre-existing adatom on Cu(111). It is a superficial evaluation since in the calculations, a vacancy always exists next to the adatom, the interaction between the adatom and the vacancy has been ignored to presume an adatom has formed on Cu(111) before any surface Ullmann coupling related species are adsorbed.
+In the diagram, the initial state is the same as the one in Fig.~\ref{fig:completeenergy}. Overall the reaction is highly exothermic with a pre-existing adatom (from \textbf{X-SURF}). This adatom displays a high availability of interaction to various intermediate species in surface Ullmann coupling. Can an existing adatom revert back to its original ``clean'' form to catalyze another event? The answer to this question will provide the prediction on the sustained catalytic ability of pre-existing adatoms. However, it seems negative from our results. First, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. Second, adatom-coordinated species are anchored to the adatom can relocate inside a pre-existing vacancy at a defect site on surface and back to \textbf{CMC}, then complete the coupling reaction with the ideal surface path. Example: the activation barrier of reverse \textbf{CMC} to \textbf{X-CMC} is lower than C--C bond formation on top of an adatom.
 
-In the diagram, the initial state is the same as the one in Fig.~\ref{fig:completeenergy}. Overall the reaction is highly exothermic with a pre-existing adatom (from \textbf{X-SURF}). This adatom displays a high availability of interaction to various intermediate species in surface Ullmann coupling. However, once the \textbf{X-CMC} is formed on copper surface, \textbf{X-DIM$\ddagger$} with high energy barrier will extensively retard the final coupling reaction, even the phenyl--Cu--phenyl intermediate may diffuse on Cu(111) surface to seek a random vacancy and back to \textbf{CMC} in Fig.~\ref{fig:completeenergy}, then completed the C--C bond construction with an ideal surface copper atom. This high activation energy suggests that once the pre-existing adatom capture the surface Ullmann coupling intermediate species, it can neither diffuse individually longer nor react with these species till the formation of covalent C--C bond. It will be interrupted at C--Cu--C organometallic intermediate.
+It suggests that the reaction will be interrupted at C--Cu--C organometallic intermediate with a pre-existing adatom. Compared to forming C--C bond, it prefers to diffuse to nearby vacancy site, refill it and catalyze the final production synthesize.
+}
+{\comm back to reform the halogen bond will be discussed once the transition state is done}
+
+
+
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/ullmann_adatom.pdf}
-\caption{The energy diagram of bromobenzene on Cu(111) surface Ullmann coupling reaction with a pre-existing adatom. (Scarlet circle represents bromine atom). RZK0324: important transition state(s) are missing. ZZ: This figure needs to reformat! adding one more transistion state and the labels need to redraw}
+\caption{The energy diagram of bromobenzene on Cu(111) surface Ullmann coupling reaction with a pre-existing adatom. (Scarlet circle represents bromine atom). ZZ: reformat this figure will be done in the future } 
 \label{fig:adatomullmann}
 \end{figure*}
 
-RZK0422: Can an existing adatom revert back to its original ``clean'' form to catalyze another event? It does not look plausible. First, adatom-coordinated species are anchored to the adatom too strongly to simply diffuse away. Examples. Second, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. C--Halogen bond formation?
+{\comm (from Rustam)RZK0422: Can an existing adatom revert back to its original ``clean'' form to catalyze another event? It does not look plausible. First, adatom-coordinated species are anchored to the adatom too strongly to simply diffuse away. Examples. Second, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. C--Halogen bond formation? (ZZ: added in main text)}
 
 \section{Entropy correction and free energy calculation}
+{\color{blue}
+An unignorable disagreement exits between the experimental data and our DFT results. The calculated energy barrier of dehalogenation is \SI{0.89}{\electronvolt} (\textbf{PHYS}-\textbf{DHAL$\ddagger$}), which is  higher than the energy barrier from two dehalogenated phenyls to the biphenyl (\textbf{DHAL-2}-\textbf{DIM$\ddagger$}). In experiment, the latter step always require a higher temperature to accomplish than dehalogenation step, which has been descried by the data in Table.~\ref{table:exp-temp}. This issue has also existed in other works~\cite{jacs2013, pccp2010}. We are considering this general discrepancy aroused from the ignorance of entropy in theoretical calculations. 
 
-An unignorable disagreement exits between the experimental data and our DFT results. The calculated energy barrier of dehalogenation is \SI{0.89}{\electronvolt} (\textbf{PHYS}-\textbf{DHAL$\ddagger$}), which is  higher than the energy barrier from two dehalogenated phenyls to the biphenyl (\textbf{DHAL-2}-\textbf{DIM$\ddagger$}). In experiment, the latter step always require a higher temperature to accomplish than dehalogenation step, which has been validated by the data in Table.~\ref{fig:temp}. This issue has also been observed in other works~\cite{jacs2013, pccp2010}. We are considering this general discrepancy aroused from the ignorance of entropy in theoretical calculations. 
+DFT calculations make a useful contribution to elucidating the mechanism behind the adsorption of molecules on surface, and allow precise prediction on energy and geometry. However, DFT calculations are basically limited to \SI{0}{\kelvin} temperature, describing potential energy and trend, instead of free energy change. Specifically in surface Ullmann coupling reaction, the formation of dimer consists of the combination of two dehalogenated species, which will lead to an effective decrease in entropy and make a non-negligible contribution to free energy change. Thus, to bridge the gap between experiments and simulation data in surface Ullmann coupling at finite temperature, entropy must be taken into consideration. 
 
-DFT calculations make a useful contribution to elucidating the mechanism behind the adsorption of molecules on surface, and allow precise prediction on energy and geometry. However, DFT calculations are basically limited to \SI{0}{\kelvin} temperature, describing potential energy and trend, instead of free energy change. Specifically in surface Ullman coupling reaction, the formation of dimer consists of the combination of two dehalogenated species, which will lead to an effective decrease in entropy and make a non-negligible contribution to free energy change. Thus, to bridge the gap between experiments and simulation data in surface Ullmann coupling at finite temperature, entropy must be taken into consideration. 
-
-Here the free energy diagram (Fig.\ref{fig:entropy}) is obtained after the entropy correction is done to our previous potential energy data. We treated three dimensional free gas molecules and two dimensional adsorbed species both with transnational motion exclusively, the temperature condition for all species are at \SI{200}{\kelvin} and \SI{400}{\kelvin}, respectively labeled in Fig.\ref{fig:entropy}, pressure of gas molecule is $10^{-10}$ mba, which is widely used ultra high vacuum condition in surface Ullmann coupling, and the concentration of adsorbed molecules is \SI{10e-16}{\per\metre\squared}, which is validated by STM image in Ref.~\cite{ullmann_67}. Details are discussed in Supplementary Information.
+Here the free energy diagram (Fig.\ref{fig:entropy}) is obtained after the entropy correction is done to our previous potential energy data. We treated three dimensional free gas molecules and two dimensional adsorbed species both with transnational motion exclusively, the temperature condition for all species are at \SI{200}{\kelvin} and \SI{400}{\kelvin}, respectively labeled in Fig.\ref{fig:entropy}, pressure of gas molecule is $10^{-10}$ mba, which is widely used ultra high vacuum condition in surface Ullmann coupling, and the concentration of adsorbed molecules is \SI{10e-16}{\per\metre\squared}, which is validated by STM image in Ref.~\cite{ullmann_67}. Details are discussed in \sinfo.
 
 Zero energy state is fluctuated up in free energy due to including the entropy correction of gas bromobenzene. At \SI{400}{\kelvin}, the free energy barrier stay unchanged as \SI{0.89}{\electronvolt}, while the free energy barrier from \textbf{DHAL-2} to \textbf{DIM$\ddagger$} changes to \SI{1.09}{\electronvolt} from previous \SI{0.66}{\electronvolt}. The energy required for C--C coupling from two dehalogenated species has effectively increased in free energy calculations, which is further matched with the experimentally higher temperature in second step.
 
 Our study suggests that the entropy contribution to free energy will affect the process of surface Ullmann coupling.The entropy calculation depends much on surface coverage, temperature and pressure, a highly consistent reaction condition parameter setup will allow more accurate results in DFT calculations. However, our model for two dimensional lattice adsorption is a superficial model, aimed at providing insight into narrowing the gap between theoretical calculation and experiment. 
-
+}
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.98\textwidth]{Fig/entropy-correction.pdf}
@@ -1072,13 +1083,14 @@ Our study suggests that the entropy contribution to free energy will affect the 
 
 
 \section{Conclusions}
+{\color{blue}
 We have systematically studied the surface Ullmann coupling reaction of chlorobenzene, bromobenzene and iodobenzene on commonly employed Cu(111) surface with computation methods. Also the role of metal atom involved in each elementary step of forming biphenyl molecule are studied. Mainly the energy and molecular geometry of two different pathways: (1) a partially lifted up copper atom takes part in the formation of C--Cu--C bridge structure and back to it original position in first layer of surface with the construction of new C--C bond; (2) a copper atom and a vacancy is formed by fully extraction of C--Cu--C bridge structure, and a new adatom is created with forming C--C bond on copper surface are compared based on DFT calculation results. A simple discussion on the circumstance that an adatom exists before the surface Ullmann coupling occurs and interact with coupling-related species has also been constructed.
 
 The effect of different halogens mostly agree with the results descried in previous works. It can be concluded that halogens will mainly influence the dehalogenation step and produce little effect on later steps. After forming C--Cu--C bridge intermediate structure, the path of partially lifting ideal surface atom is much more energetically favorable both in thermodynamics and kinetics, compared with the path of creating a new adatom. This suggests that Ullmann coupling on copper surface is more likely to occur through a non-adatom formation pathway, the metal atom will be partially lifted up while the C--Cu--C organometallic intermediates forms and back to its original position after completing the coupling reaction. However, it is also worthwhile to mention that the possibility that adatoms will take part in the Ullmann coupling process should not be ruled out. The heat released from the hehalogenation step is sufficient to compensate either C--C coupling through a non-adatom surface metal atom or through an adatom creating path. It means both of these two procedure can occur in nature but occupy different proportions and proceed in different velocity.
 
 The path that adatom already exists from thermal fluctuation or defect before the coupling is roughly discussed. Pre-existing adatom can be regarded as a exceedingly plausible source for organometallic intermediates in surface Ullmann coupling on metal surface.
-
-Clean adatoms can be created if the monomers interact strongly. Design?
+}
+{\comm RZK: Clean adatoms can be created if the monomers interact strongly. Design?}
 
 % \input{silver_gold.tex}
 

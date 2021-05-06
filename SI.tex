@@ -33,6 +33,8 @@ floatfix,
 \usepackage{diagbox}
 \usepackage{import}
 \usepackage{multirow}
+\usepackage{xr} % referencing across multiple files
+\usepackage{cleveref} % cite figures in SI
 
 %\usepackage{url}            % simple URL typesetting
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -98,29 +100,29 @@ This intermediate then reacts with a second aryl molecule through oxidative addi
 \label{fig:cleanatomform}
 \end{figure*}
 
-% \begin{figure*}[hbt]
-% \centering
-% \includegraphics[width=1.0\textwidth]{Fig/dissociation_Cl.png}
-% \caption{The dissociation of C-Cl bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atoms, with cyan color is carbon atoms, with white color is hydrogen atoms, sphere with yellow color is chlorine atom)}
-% \label{fig:dissociation_Cl}
-% \end{figure*}
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=1.0\textwidth]{Fig/dissociation_Cl.png}
+\caption{The dissociation of C-Cl bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atoms, with cyan color is carbon atoms, with white color is hydrogen atoms, sphere with yellow color is chlorine atom)}
+\label{fig:dissociation_Cl}
+\end{figure*}
 
 
 
-% \begin{figure*}[hbt]
-% \centering
-% \includegraphics[width=1.0\textwidth]{Fig/dissociation_I.png}
-% \caption{The dissociation of C-I bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atom, with cyan color is carbon atom, with white color is hydrogen atom, sphere with red color is iodine atoms)}
-% \label{fig:dissociation_I}
-% \end{figure*}
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=1.0\textwidth]{Fig/dissociation_I.png}
+\caption{The dissociation of C-I bond on Cu(111) surface. Left is the energy diagram of the CI-NEB calculations, right side are the top and side views of geometry of $IS$, $TS$ and $FS$. (Sphere with ochre color is copper atom, with cyan color is carbon atom, with white color is hydrogen atom, sphere with red color is iodine atoms)}
+\label{fig:dissociation_I}
+\end{figure*}
 
-% \begin{figure}[hbt]
-% \centering
-% \includegraphics[width=0.45\textwidth]{Fig/FormingC-Cu-C.pdf}
-% \caption{RZK0415: This figure is now obsolete and must be removed. It does not report any info complementary to the main energy profile.
-% Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
-% \label{fig:formingBridge}
-% \end{figure}
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=0.45\textwidth]{Fig/FormingC-Cu-C.pdf}
+\caption{RZK0415: This figure is now obsolete and must be removed. It does not report any info complementary to the main energy profile.
+Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
+\label{fig:formingBridge}
+\end{figure}
 
 
 \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
