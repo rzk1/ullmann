@@ -797,9 +797,10 @@ Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition a
 %[RZK0317: The logic of the paragraph below is not clear]
 
 %Our results show that energy change of the dehalogenation step are \SI{-0.58}{\electronvolt}, \SI{-0.81}{\electronvolt} and \SI{-0.96}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. It indicates that dehalogenation reactions on the copper surface are all exothermic. 
-Our results show that dehalogenation reactions on the Cu(111) are all exothermic(~\ref{table:bondlength}), rather than highly endothermic in gas phase~\cite{jacs2013}, verifying the catalysis of copper surface in this step.
+Our results show that dehalogenation reactions on the Cu(111) are all exothermic(Table.~\ref{table:bondlength}), rather than highly endothermic in gas phase~\cite{jacs2013}, verifying the catalysis role of copper surface in this step.
 }{\lock{\color{blue}
-The energy barriers decrease in the order of chlorobenzene $>$ bromobenzene $>$ iodobenzene, in agreement with the corresponding experimentally measured temperatures required to complete dehalogenation on Cu(111) (\ref{table:exp-temp}). This trend of different halogens is also consistent with the reported dissociation results of 1,4-dihalobenzene on Cu(110) (\cite{ullmann_52}), illustrating that iodoaryl derivatives are the most reactive species in copper-confined ullmann coupling while chloroaryls are the least ones. It should be noted that this step has been investigated previously~\cite{jacs2013} with identical molecular orientation of species on surface using optB86b XC-functional (data listed in Table~\ref{table:bondlength}). The trend and magnitude of change in energy change and barrier for different halogens are consistent with our conclusion, which is supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and size of slab model for computation.
+The energy barriers decrease in the order of chlorobenzene $>$ bromobenzene $>$ iodobenzene, in agreement with the corresponding experimentally measured temperatures required to complete dehalogenation on Cu(111) (Table.\ref{table:exp-temp}). This trend of different halogens is also consistent with the reported dissociation results of 1,4-dihalobenzene on Cu(110)\cite{ullmann_52}, illustrating that iodoaryl derivatives are the most reactive species in copper-confined ullmann coupling while chloroaryls are the least ones. It should be noted that this step has been investigated previously~\cite{jacs2013} with identical molecular orientation of species on surface using optB86b XC-functional (data listed in Table~\ref{table:bondlength}). The trend and magnitude of vary in energy change and barrier for different halogens are consistent with our conclusion, which is supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and size of slab model for computation.
+
 {\comm ZZ will add details how the XC-functional influence the calculation (overestimate/underestimate) later.}
 
 \sout{The energy barrier of the dehalogenation on surface decreases from chlorobenzene} (\SI{1.24}{\electronvolt}) \sout{to bromobenzene} (\SI{0.89}{\electronvolt}) \sout{and to iodobenzene} (\SI{0.63}{\electronvolt}). \sout{This trend is in agreement with the trend of experimentally measured temperatures required to complete dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at} \SI{175}{\kelvin}~\cite{ullmann_87}, \sout{while bromobenzene dissociates at} \SI{160}{\kelvin}~\cite{ullmann_67}. \sout{There is no data referred to dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data of dihalogenated precursors that chlorobenzene dissociates at significantly higher temperature than bromobenzene and iodobenzene.}
@@ -807,7 +808,7 @@ The energy barriers decrease in the order of chlorobenzene $>$ bromobenzene $>$ 
 \sout{Previous DFT calculation has demonstrated that the free energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene with hydride in solution are} \SI{1.11}{\electronvolt} and \SI{1.01}{\electronvolt}~\cite{ullmann_86}. 
 
 
-RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
+%RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
 
 
 }
@@ -834,6 +835,11 @@ RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
  & Br & 3.40 & -0.63 & 2.77 & 2.01 & -1.39\\ 
  & I &3.42 &-0.69 & 2.73 & 2.01 & -1.41\\ 
  \hline
+ \multirow{3}{*}{Hal--Cu (\si{\angstrom}) } & Cl & 2.99 & -0.62 & 2.37 & 3.50 & +0.51\\ 
+ & Br & 2.89 & -0.49 & 2.50 & 3.57 & +0.68\\ 
+ & I &2.80 &-0.16 & 2.64& 3.74 & +0.94\\ 
+ \hline
+ \hline
  Energy & & & Barrier & & & Change \\
  \hline
  \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -1.07 & 1.24 (+0.35) &0.17 &-1.65 & -0.58 (+0.23)\\ 
@@ -856,7 +862,7 @@ RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
 
 Selected geometric parameters of the intermediates have also been summarized in Table~\ref{table:bondlength}. \sout{the distances between carbon and halogen which are going to dissociate a covalent bond, the angle of phenyl ring with respect to surface have both suffered successively changes.} In \textbf{PHYS} of halobenzene, the distance between carbon and halogen is consistent with the calculated C--halogen covalent bond length (\SI{1.76}{\angstrom} in chlorobenzene, \SI{1.91}{\angstrom} in bromobenzene and \SI{2.14}{\angstrom} in iodobenzene) in gas phase based on B3LYP functional DFT calculations. These distances show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms all occupy the hollow site on Cu(111) surface in the end of dehalogenation. Interestingly, C--halogen distances in three different \textbf{DHAL$\ddagger$} transition states show consistent approximately \SI{0.5}{\angstrom} longer than corresponding C--halogen lengths in \textbf{PHYS} , suggesting that different dehalogenation reactions on Cu(111) follow similar mechanisms.
 
-The phenyl rings also suffer successively changes, parallel in \textbf{PHYS}, tilt in the process of dehalogenation and finalize with an apparent slope. The interaction between unsaturated carbon and copper atom shortens the their distance to same \SI{2.01}{\angstrom} in three different \textbf{DHAL} states, and these copper atoms are all raised by \SI{0.10}{\angstrom} from their original positions.
+The angle of phenyl rings also suffer successively changes, parallel in \textbf{PHYS}, tilt in the process of dehalogenation and finalize with an apparent slope in \textbf{DHAL}. The interaction between unsaturated carbon and copper atom shortens their distance to same \SI{2.01}{\angstrom} in three different \textbf{DHAL} states, and these copper atoms are all raised approximately by \SI{0.12}{\angstrom} from their original positions.
 The same C--Cu distances in \textbf{DHAL} suggest that the dissociated halogen atoms have little effect on the interaction of unsaturated carbon and copper atoms. However, halogen atoms have obvious influence on dissociated phenyl ring, resulting in their different tilt angles, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
 
 }
@@ -870,10 +876,6 @@ The same C--Cu distances in \textbf{DHAL} suggest that the dissociated halogen a
 It has been proposed that the adatom could be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously due to previous work\cite{chemeurope2017}. It can be concluded that extracting an metal atom out to create an adatom require much less energy compared to creating it on clean surface. It can be noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation should occur simultaneously on Cu(111) surface.
 
 
-}
-
-
-{\color{blue}
 
 Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species. And dehalogenation step is highly likely to create an adatom on Cu(111) surface.
 
@@ -894,11 +896,11 @@ Summarizing the data of the first step, Cu(111) surface has been proven to evide
 \subsection{Formation of C--Cu--C bridge intermediates}
 
 {\color{blue}
-%\lock
+
 
 The energies of forming the C--Cu--C bridge intermediate (annotated as \textbf{CMC} in Fig.~\ref{fig:completeenergy}) from dehalogenated species on Cu(111) surface are expected to be the same for different halogens, the calculated energies are slightly different: \SI{0.25}{\electronvolt}, \SI{0.16}{\electronvolt} and \SI{0.17}{\electronvolt} for chlorinated, brominated and iodinated benzenes, respectively. The minor difference originates from the halogen atoms still stay proximity to the organic fragments in \textbf{DHAL-2}, the interaction between them affects the initial states (\textbf{DHAL-2}) in forming C--Cu--C bridge intermediates.
 
-%}{\color{blue}
+
 
 \textbf{DHAL-2} used here is well matched to the experimental STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. Generally the reaction from two dehalogenated precursors to C--Cu--C bridge intermediate is endothermic, but the energy change is relatively small and consistent with the experimental condition shown in Table.~\ref{table:exp-temp}, dehalogenation and formation of C--Cu--C intermediate structure commonly complete at same temperature. The exception is gold surfaces, on which these bridge intermediates are not observed because they immediately proceed to form final C--C covalent bonds~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102} with a very fast speed~\cite{ullmann_33, ullmann_102, ullmann_103, jacs2011}. 
 
@@ -912,6 +914,39 @@ Formation of C--Cu--C bridge structure has been proven to play a significant rol
 }
 
 {\comm RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively. (ZZ: added)}
+
+\begin{table*}
+\centering
+\begin{tabular}{ lccccccccc  }
+ \hline
+ \hline
+ Distance & Halogen & \textbf{DHAL-2} & \textbf{CMC} & Increase & \textbf{DIM$\ddagger$} & \textbf{DIM} & Change & \textbf{DSRB} & \textbf{D-SURF}\\ 
+ \hline 
+ \multirow{3}{*}{C--C (\si{\angstrom})} & Cl & \multirow{3}{*}{$\infty$} & \multirow{3}{*}{3.10} & \multirow{3}{*}{-0.82} & \multirow{3}{*}{2.28} & \multirow{3}{*}{1.49} & \multirow{3}{*}{-1.61} & \multirow{3}{*}{1.49} &\multirow{3}{*}{1.49}\\ 
+ & Br & &  &  &  & & & &\\ 
+ & I & &  &  &  & & & &\\ 
+ \hline
+ \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & 2.01 & \multirow{3}{*}{2.06} & \multirow{3}{*}{-0.03} & \multirow{3}{*}{2.03} & \multirow{3}{*}{3.22} & \multirow{3}{*}{+1.16} & \multirow{3}{*}{} &\multirow{3}{*}{}\\ 
+ & Br & 2.03 &  &  &  & & & &\\ 
+ & I &2.02 &  &  &  & & & &\\ 
+ \hline
+ \multirow{3}{*}{Cu$_{\rm lift}$ (\si{\angstrom}) } & Cl & 0.12 & \multirow{3}{*}{0.53} & \multirow{3}{*}{-0.04} & \multirow{3}{*}{0.49} & \multirow{3}{*}{0.00} & \multirow{3}{*}{-0.53} & \multirow{3}{*}{0.00} &\multirow{3}{*}{0.00}\\ 
+ & Br & 0.14 &  &  &  & & & &\\ 
+ & I &0.12 &  &  &  & & & &\\ 
+ \hline
+ \hline
+ Energy & & & & Barrier & & & Change & &\\
+ \hline
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.30 & -3.05 &+0.49 &-2.56 & -5.05 & -2.00& -3.33&0.85\\ 
+ & Br &-3.90 & -3.73 &+0.49 & -3.24& -5.73 & -2.00& -4.01&0.07\\ 
+ & I  & -4.55 & -4.38 & +0.49& -3.89& -6.38 & -2.00& -4.66&-0.71\\ 
+ \hline
+ \hline
+\end{tabular}
+\caption{Geometric and energetic characterization of the C--C coupling step on ideal surface. Energies are reported relative to the \textbf{SURF} state. \textbf{DHAL-2} is twice the value as \textbf{DHAL} to simulate two infinite far dehalogenated phenyl radicals on Cu(111), \textbf{DSRB} with desorption of diphenyl product and \textbf{D-SURF} with further desorption of halogen atoms.}
+\label{table:bondlength}
+\end{table*}
+
 
 \subsection{Formation of the C--C bond}
 
@@ -954,6 +989,38 @@ Besides, Cu atom involved in C--Cu--C bridge structure is back to the first laye
 \end{figure*}
 
 \subsubsection{Creation of an adatom}
+
+\begin{table*}
+\centering
+\begin{tabular}{ lccccccccccc  }
+ \hline
+ \hline
+ Distance & Halogen & \textbf{CMC} & Increase & \textbf{X-CMC$\ddagger$} & \textbf{X-CMC}(Change) & Increase & \textbf{X-DIM$\ddagger$} & \textbf{X-DIM-A}(Change) & \textbf{X-DIM-B}  \\ 
+ \hline 
+ \multirow{3}{*}{C--C (\si{\angstrom})} & Cl & \multirow{3}{*}{$\infty$} & \multirow{3}{*}{3.10} & \multirow{3}{*}{+0.45} & \multirow{3}{*}{3.89(+0.79)} & \multirow{3}{*}{-1.36} & \multirow{3}{*}{2.53} & \multirow{3}{*}{1.50(+2.39)} &\multirow{3}{*}{1.50}\\ 
+ & Br & &  &  &  & & & & \\ 
+ & I & &  &  &  & & & & \\ 
+ \hline
+ \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & \multirow{3}{*}{2.06} & \multirow{3}{*}{-0.26} & \multirow{3}{*}{1.85} & \multirow{3}{*}{1.96(-0.10)} & \multirow{3}{*}{-0.06} & \multirow{3}{*}{1.90} & \multirow{3}{*}{2.14(+0.18)} &\multirow{3}{*}{} \\ 
+ & Br &  &  &  &  & & & &\\ 
+ & I & &  &  &  & & & & \\ 
+ \hline
+ \multirow{3}{*}{Cu$_{\rm lift}$ (\si{\angstrom}) } & Cl & \multirow{3}{*}{0.53} & \multirow{3}{*}{+1.26} & \multirow{3}{*}{1.79} & \multirow{3}{*}{2.08(+1.55)} & \multirow{3}{*}{-0.20} & \multirow{3}{*}{1.88} & \multirow{3}{*}{1.87(-0.21)} &\multirow{3}{*}{0.00}\\ 
+ & Br &  &  &  &  & & & &  \\ 
+ & I & &  &  &  & & & & \\ 
+ \hline
+ \hline
+ Energy  & & & Barrier & & & Barrier & & & \\
+ \hline
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 & +1.38 &-1.67 &-3.26(-0.21) & -2.01 & -1.25& -3.42(-0.16)&-3.29\\ 
+ & Br &-3.73 &+1.38 &-2.35 & -3.94(-0.21)& -2.01 & -1.93& -4.11(-0.16)&-3.97 \\ 
+ & I  & -4.38 & +1.38 & -3.00& -4.59(-0.21)& -2.01 & -2.58& -4.76(-0.16)&-4.62\\ 
+ \hline
+ \hline
+\end{tabular}
+\caption{Geometric and energetic characterization of the C--C coupling step with creation of an adatom. Energies are reported relative to the \textbf{SURF} state.}
+\label{table:bondlength}
+\end{table*}
 
 {\lock
 
