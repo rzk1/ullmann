@@ -907,6 +907,16 @@ This step was reported to be exothermic in previous work\cite{pccp2010}. Two deh
 
 {\comm RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively. (ZZ: added)}
 
+\subsection{Formation of the C--C bond}
+
+{\color{blue}
+%In the final step of the Ullmann coupling a C--C bond is formed between two phenyl radicals. 
+Two pathways of constructing C--C bond are investigated: the catalyzed Cu atom (1) returns to its original position with formation of biphenyl, metal surface retains defect-free, named \textit{ideal surface} path; or (2) fully extracted, creating an adatom-vacancy pair, adatam is free to diffuse after Ullmann reaction, named \textit{create adatom}
+%The two pathways are discussed separately.
+}
+
+\subsubsection{Ideal surface}
+
 \begin{table*}
 \centering
 \begin{tabular}{ lccccccccc  }
@@ -939,37 +949,28 @@ This step was reported to be exothermic in previous work\cite{pccp2010}. Two deh
  \hline
  \hline
 \end{tabular}
-\caption{Geometric and energetic characterization of the formation of C--Cu--C intermediate and C--C coupling step on ideal surface. Energies are reported relative to the \textbf{SURF} state. \textbf{DHAL-2} is twice the value as \textbf{DHAL} to simulate two infinite far dehalogenated phenyl radicals on Cu(111), \textbf{DSRB} with desorption of diphenyl product and \textbf{D-SURF} with further desorption of halogen atoms. Formation energy of \textbf{CMC} from \textbf{DHAL-2} should be same for different halogens, the differences here(in parenthesis) originate from the interaction between adjacent dissociated halogen atoms and organic fragments in \textbf{DHAL-2} in included.}
+\caption{Geometric and energetic characterization of the formation of C--Cu--C intermediate and C--C coupling step on ideal surface. Energies are reported relative to the \textbf{SURF} state. \textbf{DHAL-2} is twice the value as \textbf{DHAL} to simulate two infinite far dehalogenated phenyl radicals on Cu(111), \textbf{DSRB} with desorption of diphenyl product and \textbf{D-SURF} with further desorption of halogen atoms. Formation energy of \textbf{CMC} from \textbf{DHAL-2} should be same for different halogens, the differences here(in parenthesis) originate from the interaction between adjacent dissociated halogen atoms and organic fragments in \textbf{DHAL-2}. In final coupling step, the energy change and barrier for different halogens are exactly same due to the absence of halogen atoms in this step.}
 \label{table:idealsurface}
 \end{table*}
 
-\subsection{Formation of the C--C bond}
-
 {\color{blue}
-%In the final step of the Ullmann coupling a C--C bond is formed between two phenyl radicals. 
-Two pathways of constructing C--C bond are investigated: the catalyzed Cu atom (1) returns to its original position with formation of biphenyl, metal surface retains defect-free, named \textit{ideal surface} path; or (2) fully extracted, creating an adatom-vacancy pair, adatam is free to diffuse after Ullmann reaction, named \textit{create adatom}
-%The two pathways are discussed separately.
-}
 
-\subsubsection{Ideal surface}
+%The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
 
-{\lock
+As the data in Table.\ref{table:idealsurface} illustrate, final coupling step following ideal surface path (\textbf{CMC} to \textbf{DIM}) is highly exothermic, resulting in that biphenyl is the most thermodynamic stable species in along the RYK-black line in Fig.~\ref{fig:completeenergy}. In agreement with experiment, Ullmann coupling of bromobenzene will end in biphenyl and bromine atoms adsoprbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}. Then higher annealing temperature leads to the desorption of biphenyl and eventually bromine gas.
+This path offers a relatively small energy barrier, which is line with onset temperature for C--C bond formation from two phenyl radicals on Cu(111) is \SI{300}{\kelvin}~\cite{sur_sci01} in experiment.
 
-The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
-
-}{\color{blue}
+The raised cooper atom in this path migrates back step by step.
  
 %RZK0324: Do not use E_{barrier}. Write "the energy barrier" instead. 
 %RZK0324: It would be better to use "the energy change" instead of $\Delta E$ but sometimes it is ok to use $\Delta E$ to shorten long sentences. 
 %RZK0324: Replace all labels with the new ones. 
-The energy change and barrier for this step are \SI{-2.00}{\electronvolt} and \SI{0.49}{\electronvolt}, respectively. These values are the same for all halogens because the initial and final modeling states do not contain halogen atoms in calculations. 
-This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
+%This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
 %ZZ: more detailed analysis will be added.
 
-Experiments have shown that the onset temperature for the final C--C bond-formation step is approximately \SI{300}{\kelvin}~\cite{sur_sci01} for synthesizing biphenyl on Cu(111) surface, which is in line with the calculated energy barrier (\SI{0.49}{\electronvolt}). In addition, this step is highly exothermic based on the \SI{-2.00}{\electronvolt} of energy barrier, and the final biphenyl product on Cu(111) possesses the lowest thermodynamic energy in Fig.~\ref{fig:completeenergy}. In experiment, surface Ullmann coupling of bromobenzene will proceed to biphenyl and two bromine atoms adsorbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}, which agrees that biphenyl is the most thermodynamic stable species on coupling condition. Significantly higher temperature will end to the desorption of coupling product, even halogen atoms from metal surface.
 {\comm RZK0324: Details on the agreement with experiment? (ZZ: added)}
  
-Besides, Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. The tilt angle of phenyl ring with respect to copper surface varied from \SI{52}{\degree} to \SI{34}{\degree} and ends in nearly \SI{0}{\degree}.
+%Besides, Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. The tilt angle of phenyl ring with respect to copper surface varied from \SI{52}{\degree} to \SI{34}{\degree} and ends in nearly \SI{0}{\degree}.
 }
 
 %R1111: LATER. We need to develop better notation for all chemical species and refer to them consistently.
