@@ -742,8 +742,8 @@ RZK0422: Re-read several times, make corrections, make sure it is clear to a rea
 \subsection{Physisorption}
 
 {\color{blue}
-Organic precursors will be adsorbed on metal surface before undergoing chemical transformations. 
-The data in Table.~\ref{table:bondlength} indicate the interaction between organic molecules and metal surface are mainly physisorption. Compared with previous work using optB86b exchange-correlation functional, the trend and magnitude of growth from bromobenzene to iodobenzene are extremely similar. The strong binding of halobenzene is primarily due to the interaction of $\pi$-system and halogen with metal surface. The chemisorption energy of Br$_2$ molecule on Cu(111) is \SI{4.08}{\electronvolt}.
+Organic precursors are adsorbed on metal surface before undergoing chemical transformations. 
+The data in Table.~\ref{table:bondlength} indicates the interaction between halobenzene and copper surface is mainly physisorption. Compared with previous work using optB86b exchange-correlation functional, the trend and magnitude of growth from bromobenzene to iodobenzene are highly similar. The strong binding of halobenzene is primarily due to the interaction of $\pi$-system and halogen with metal surface. The chemisorption energy of Br$_2$ molecule on Cu(111) is \SI{4.08}{\electronvolt}.
 %The adsorption energies calculated in this work for a single molecule of chlorobenzene, bromobenzene and iodobenzene on Cu(111) are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt}, respectively (notated as \textbf{PHYS} in Fig.~\ref{fig:completeenergy}). 
 %The predicted binding interaction is slightly stronger than the ones obtained previously using optB86b exchange-correlation functional: \SI{-0.95}{\electronvolt} for bromobenzene and \SI{-1.12}{\electronvolt} for iodobenzene~\cite{jacs2013}. It is worthy to mention that the difference in the strength of binding between iodobenzene and bromobenzene on Cu(111) is almost the same in our and previous works.
 
@@ -809,9 +809,9 @@ Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition a
 %[RZK0317: The logic of the paragraph below is not clear]
 
 %Our results show that energy change of the dehalogenation step are \SI{-0.58}{\electronvolt}, \SI{-0.81}{\electronvolt} and \SI{-0.96}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. It indicates that dehalogenation reactions on the copper surface are all exothermic. 
-Our results show that dehalogenation reactions on the Cu(111) are all exothermic(~\ref{table:bondlength}), rather than highly endothermic in gas phase~\cite{jacs2013}, verifying the catalysis of copper surface in this step.
-}{\lock{\color{blue}
-The energy barriers decrease in the order of chlorobenzene $>$ bromobenzene $>$ iodobenzene, in agreement with the corresponding experimentally measured temperatures required to complete dehalogenation on Cu(111) (\ref{table:exp-temp}). This trend of different halogens is also consistent with the reported dissociation results of 1,4-dihalobenzene on Cu(110) (\cite{ullmann_52}), illustrating that iodoaryl derivatives are the most reactive species in copper-confined ullmann coupling while chloroaryls are the least ones. It should be noted that this step has been investigated previously~\cite{jacs2013} with identical molecular orientation of species on surface using optB86b XC-functional (data listed in Table~\ref{table:bondlength}). The trend and magnitude of change in energy change and barrier for different halogens are consistent with our conclusion, which is supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and size of slab model for computation.
+Our results show that dehalogenation reactions on the Cu(111) are all exothermic(Table.~\ref{table:bondlength}), rather than highly endothermic in gas phase~\cite{jacs2013}, verifying the catalysis role of copper surface in this step.
+The energy barriers decrease in the order of chlorobenzene $>$ bromobenzene $>$ iodobenzene, in agreement with the corresponding experimentally measured temperatures required to complete dehalogenation on Cu(111) (Table.\ref{table:exp-temp}). This trend of different halogens is also consistent with the reported dissociation results of 1,4-dihalobenzene on Cu(110)\cite{ullmann_52}, illustrating that iodoaryl derivatives are the most reactive species in copper-confined ullmann coupling while chloroaryls are the least ones. It should be noted that this step has been investigated previously~\cite{jacs2013} with identical molecular orientation of species on surface using optB86b XC-functional (data listed in Table~\ref{table:bondlength}). The trend and magnitude of vary in energy change and barrier for different halogens are consistent with our conclusion, which is supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and size of slab model for computation.
+
 {\comm ZZ will add details how the XC-functional influence the calculation (overestimate/underestimate) later.}
 
 \sout{The energy barrier of the dehalogenation on surface decreases from chlorobenzene} (\SI{1.24}{\electronvolt}) \sout{to bromobenzene} (\SI{0.89}{\electronvolt}) \sout{and to iodobenzene} (\SI{0.63}{\electronvolt}). \sout{This trend is in agreement with the trend of experimentally measured temperatures required to complete dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at} \SI{175}{\kelvin}~\cite{ullmann_87}, \sout{while bromobenzene dissociates at} \SI{160}{\kelvin}~\cite{ullmann_67}. \sout{There is no data referred to dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data of dihalogenated precursors that chlorobenzene dissociates at significantly higher temperature than bromobenzene and iodobenzene.}
@@ -819,10 +819,10 @@ The energy barriers decrease in the order of chlorobenzene $>$ bromobenzene $>$ 
 \sout{Previous DFT calculation has demonstrated that the free energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene with hydride in solution are} \SI{1.11}{\electronvolt} and \SI{1.01}{\electronvolt}~\cite{ullmann_86}. 
 
 
-RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
+%RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
 
 
-}
+
 %RZK0317: Any comments? (ZZ: added)
 %RZK0415: Did they study the same orientation of the molecule? (ZZ: yes, almost the same)
 
@@ -833,7 +833,7 @@ RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
 \begin{tabular}{ lcccccc  }
  \hline
  \hline
- Distance & Halogen & \textbf{PHYS} & Increase & \textbf{DHAL$\ddagger$} & \textbf{DHAL} & Change \\ 
+ Distance & Halogen & \textbf{PHYS} & $\Delta$ (\textbf{DHAL$\ddagger$}$-$\textbf{PHYS}) & \textbf{DHAL$\ddagger$} & \textbf{DHAL} & $\Delta$ (\textbf{DHAL}$-$\textbf{PHYS}) \\ 
  \hline 
  \multirow{3}{*}{C--Hal (\si{\angstrom})} & Cl & 1.74 & +0.44 & 2.18 & 3.99 & +2.25\\ 
  %\cline{2-5}
@@ -845,6 +845,11 @@ RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
  \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & 3.54 & -1.02 & 2.52 & 2.01 & -1.53\\ 
  & Br & 3.40 & -0.63 & 2.77 & 2.01 & -1.39\\ 
  & I &3.42 &-0.69 & 2.73 & 2.01 & -1.41\\ 
+ \hline
+ \multirow{3}{*}{Hal--Cu (\si{\angstrom}) } & Cl & 2.99 & -0.62 & 2.37 & 3.50 & +0.51\\ 
+ & Br & 2.89 & -0.49 & 2.50 & 3.57 & +0.68\\ 
+ & I &2.80 &-0.16 & 2.64& 3.74 & +0.94\\ 
+ \hline
  \hline
  Energy & & & Barrier & & & Change \\
  \hline
@@ -866,9 +871,9 @@ RZK0317: Bell-Evans-Polanyi principle? (ZZ: added)
 
 %RZK0317: In the paragraph below, more numerical data must be presented in a Table and less in the text. Text should discuss main trends. (ZZ: added table)
 
-Selected geometric parameters of the intermediates have also been summarized in Table~\ref{table:bondlength}. \sout{the distances between carbon and halogen which are going to dissociate a covalent bond, the angle of phenyl ring with respect to surface have both suffered successively changes.} In \textbf{PHYS} of halobenzene, the distance between carbon and halogen is consistent with the calculated C--halogen covalent bond length (\SI{1.76}{\angstrom} in chlorobenzene, \SI{1.91}{\angstrom} in bromobenzene and \SI{2.14}{\angstrom} in iodobenzene) in gas phase based on B3LYP functional DFT calculations. These distances show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms all occupy the hollow site on Cu(111) surface in the end of dehalogenation. Interestingly, C--halogen distances in three different \textbf{DHAL$\ddagger$} transition states show consistent approximately \SI{0.5}{\angstrom} longer than corresponding C--halogen lengths in \textbf{PHYS} , suggesting that different dehalogenation reactions on Cu(111) follow similar mechanisms.
+Selected geometric parameters of the intermediates have also been summarized in Table~\ref{table:bondlength}. \sout{the distances between carbon and halogen which are going to dissociate a covalent bond, the angle of phenyl ring with respect to surface have both suffered successively changes.} In \textbf{PHYS} of halobenzene, the distance between carbon and halogen is consistent with the calculated C--halogen covalent bond length (\SI{1.76}{\angstrom} in chlorobenzene, \SI{1.91}{\angstrom} in bromobenzene and \SI{2.14}{\angstrom} in iodobenzene) in gas phase based on B3LYP functional DFT calculations. These distances show a continued growth till \textbf{DHAL} states, and dissociated halogen atoms all occupy the hollow sites on Cu(111) surface in the end of dehalogenation. Interestingly, C--halogen distances in three different \textbf{DHAL$\ddagger$} transition states show consistent approximately \SI{0.5}{\angstrom} longer than corresponding C--halogen lengths in \textbf{PHYS} , suggesting that different dehalogenation reactions on Cu(111) follow similar mechanisms.
 
-The phenyl rings also suffer successively changes, parallel in \textbf{PHYS}, tilt in the process of dehalogenation and finalize with an apparent slope. The interaction between unsaturated carbon and copper atom shortens the their distance to same \SI{2.01}{\angstrom} in three different \textbf{DHAL} states, and these copper atoms are all raised by \SI{0.10}{\angstrom} from their original positions.
+The angle of phenyl ring also suffers successively changes, parallel in \textbf{PHYS}, tilt in the process of dehalogenation and finalize with an apparent slope in \textbf{DHAL}. The interaction between unsaturated carbon and copper atom shortens their distance to same \SI{2.01}{\angstrom} in three different \textbf{DHAL} states, and these copper atoms are all raised approximately by \SI{0.12}{\angstrom} from their original positions.
 The same C--Cu distances in \textbf{DHAL} suggest that the dissociated halogen atoms have little effect on the interaction of unsaturated carbon and copper atoms. However, halogen atoms have obvious influence on dissociated phenyl ring, resulting in their different tilt angles, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
 
 }
@@ -879,13 +884,9 @@ The same C--Cu distances in \textbf{DHAL} suggest that the dissociated halogen a
 
 {\color{blue}
 
-It has been proposed that the adatom could be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously due to previous work\cite{chemeurope2017}. It can be concluded that extracting an metal atom out to create an adatom require much less energy compared to creating it on clean surface. It can be noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation should occur simultaneously on Cu(111) surface.
+It has been proposed that the adatom could be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously due to previous work\cite{chemeurope2017}. It can be concluded that extracting an metal atom out to create an adatom requires much less energy compared to creating it on clean surface. It can be noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation should occur simultaneously on Cu(111) surface.
 
 
-}
-
-
-{\color{blue}
 
 Summarizing the data of the first step, Cu(111) surface has been proven to evidently reduce the energy barrier of the dehalogenation of chlorobenzene, bromobenzene and iodobenzene. The copper surface can not only serve as a template and support for Ullmann coupling reaction, but also optimize the temperature condition for it to initialize. On Cu(111), the dehalogenation of iodobenzene is the most energetically favourable and chlorobenzene is the least. The mechanisms of three different halogens dissociation are very similar according to the angles and distance change in related species. And dehalogenation step is highly likely to create an adatom on Cu(111) surface.
 
@@ -906,20 +907,17 @@ Summarizing the data of the first step, Cu(111) surface has been proven to evide
 \subsection{Formation of C--Cu--C bridge intermediates}
 
 {\color{blue}
-%\lock
 
-The energies of forming the C--Cu--C bridge intermediate (annotated as \textbf{CMC} in Fig.~\ref{fig:completeenergy}) from dehalogenated species on Cu(111) surface are expected to be the same for different halogens, the calculated energies are slightly different: \SI{0.25}{\electronvolt}, \SI{0.16}{\electronvolt} and \SI{0.17}{\electronvolt} for chlorinated, brominated and iodinated benzenes, respectively. The minor difference originates from the halogen atoms still stay proximity to the organic fragments in \textbf{DHAL-2}, the interaction between them affects the initial states (\textbf{DHAL-2}) in forming C--Cu--C bridge intermediates.
+As the data in Table.~\ref{table:idealsurface} shows, formation of C--Cu--C bridge intermediate (\textbf{CMC}) from two dehalogenated phenyl radicals (\textbf{DHAL-2}) is endothermic. Experimentally, dehalogenation and this step occur at same temperature (Table.~\ref{table:exp-temp}), corresponding to the relatively small energy change of this step in calculation. Gold surface is an exception that C--Au--C intermediates are rarely observed in experiment due to fast proceeding to coupling product after dehalogenation~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102, ullmann_103, jacs2011}.
 
-%}{\color{blue}
+Compared to raised by \SI{0.12}{\angstrom} in \textbf{DHAL-2}, the copper atom interacted with two phenyl radicals is lifted by \SI{0.53}{\angstrom} in \textbf{CMC}, indicating a much stronger extraction.
 
-\textbf{DHAL-2} used here is well matched to the experimental STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. Generally the reaction from two dehalogenated precursors to C--Cu--C bridge intermediate is endothermic, but the energy change is relatively small and consistent with the experimental condition shown in Table.~\ref{table:exp-temp}, dehalogenation and formation of C--Cu--C intermediate structure commonly complete at same temperature. The exception is gold surfaces, on which these bridge intermediates are not observed because they immediately proceed to form final C--C covalent bonds~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102} with a very fast speed~\cite{ullmann_33, ullmann_102, ullmann_103, jacs2011}. 
+%\textbf{DHAL-2} used here is well matched to the experimental STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. 
+%The distance between two carbon atoms in the C--Cu--C bridge is \SI{3.10}{\angstrom}, which is \SI{1.61}{\angstrom} longer than the length of the connecting C--C in biphenyl. The angle of two phenyl rings connected to the Cu atom with respect to the surface are both \SI{52}{\degree}, this angle is the same as the tilt of a single phenyl in DHAL (\SI{52}{\degree}).
 
-In the \textbf{CMC} configuration, the copper atom interacting with two phenyl rings is lifted from the first layer of the ideal surface. This partially lifted atom is raised higher by \SI{0.56}{\angstrom} from its original position, which is much larger than the height of copper extracted by one phenyl species in \textbf{DHAL} (\SI{0.10}{\angstrom}). %It can be inferred that the force emerged between one phenyl ring and one copper atom is not adequate to extract this copper out from the surface.
-The distance between two carbon atoms in the C--Cu--C bridge is \SI{3.10}{\angstrom}, which is \SI{1.61}{\angstrom} longer than the length of the connecting C--C in biphenyl. The angle of two phenyl rings connected to the Cu atom with respect to the surface are both \SI{52}{\degree}, this angle is the same as the tilt of a single phenyl in DHAL (\SI{52}{\degree}).
+This step was reported to be exothermic in previous work\cite{pccp2010}. Two dehalogenated phenyl radicals are infinitely far this time, while they interact with adjacent copper atoms in previous work. The unignorable repulsion between result in a higher energy initial configuration and lead to the inconsistency.
 
-This step has also been reported in previous work\cite{pccp2010}. The construction of phenyl--Cu--phenyl structure on Cu(111) surface is calculated to be an exothermic process, which is not corresponding to our endothermic prediction. It can be explained by the difference in initial configurations. Two phenyl radicals are interacting with adjacent copper atoms, separated by a short distance in their initial states. However, out initial states come from double of single dehalogenated phenyl radicals. Theoretically it can be considered that two phenyl radicals in \textbf{DHAL-2} are infinitely far away from each other, leaving non interaction between. This unignorable interaction between phenyl radicals remains to be the principal reason for the inconsistency.
-
-Formation of C--Cu--C bridge structure has been proven to play a significant role in the creation of adatom in surface Ullmann coupling. The interaction is potentially sufficient to extract an ideal surface copper atom out.
+%Formation of C--Cu--C bridge intermediate has been proven to play a significant role in the creation of adatom in surface Ullmann coupling. The interaction is potentially sufficient to extract an ideal surface copper atom out.
 
 }
 
@@ -927,32 +925,68 @@ Formation of C--Cu--C bridge structure has been proven to play a significant rol
 
 \subsection{Formation of the C--C bond}
 
-{\lock
+{\color{blue}
 %In the final step of the Ullmann coupling a C--C bond is formed between two phenyl radicals. 
-Two pathways to construct the C--C bond from the C--Cu--C bridge intermediate are considered in this work. 
-In the first pathway, the catalyzed Cu atom returns to its original position in the first layer once the C--C bond is formed, metal surface remains ideal, non-defect before and after the surface Ullmann coupling. In the second pathway, the bridge Cu atom is fully pulled out to become a new adatom, leaving a vacancy in its original position on first layer along with the formation of coupling product. 
+Two pathways of constructing C--C bond are investigated: the catalyzed Cu atom (1) returns to its original position with formation of biphenyl, metal surface retains defect-free, named \textit{ideal surface} path; or (2) fully extracted, creating an adatom-vacancy pair, adatam is free to diffuse after Ullmann reaction, named \textit{create adatom}
 %The two pathways are discussed separately.
 }
 
 \subsubsection{Ideal surface}
 
-{\lock
+\begin{table*}
+\centering
+\begin{tabular}{ lccccccccc  }
+ \hline
+ \hline
+ Distance & Halogen & \textbf{DHAL-2} & \textbf{CMC} & $\Delta$(\textbf{DIM$\ddagger$}$-$\textbf{CMC}) & \textbf{DIM$\ddagger$} & \textbf{DIM} & $\Delta$(\textbf{DIM}$-$\textbf{CMC}) & \textbf{DSRB} & \textbf{D-SURF}\\ 
+ \hline 
+ \multirow{3}{*}{C--C (\si{\angstrom})} & Cl & \multirow{3}{*}{$\infty$} & \multirow{3}{*}{3.10} & \multirow{3}{*}{-0.82} & \multirow{3}{*}{2.28} & \multirow{3}{*}{1.49} & \multirow{3}{*}{-1.61} & \multirow{3}{*}{1.49} &\multirow{3}{*}{1.49}\\ 
+ & Br & &  &  &  & & & &\\ 
+ & I & &  &  &  & & & &\\ 
+ \hline
+ \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & 2.01 & \multirow{3}{*}{2.06} & \multirow{3}{*}{-0.03} & \multirow{3}{*}{2.03} & \multirow{3}{*}{3.22} & \multirow{3}{*}{+1.16} & \multirow{3}{*}{} &\multirow{3}{*}{}\\ 
+ & Br & 2.03 &  &  &  & & & &\\ 
+ & I &2.02 &  &  &  & & & &\\ 
+ \hline
+ \multirow{3}{*}{Cu$_{\rm lift}$ (\si{\angstrom}) } & Cl & 0.12 & \multirow{3}{*}{0.53} & \multirow{3}{*}{-0.04} & \multirow{3}{*}{0.49} & \multirow{3}{*}{0.00} & \multirow{3}{*}{-0.53} & \multirow{3}{*}{0.00} &\multirow{3}{*}{0.00}\\ 
+ & Br & 0.14 &  &  &  & & & &\\ 
+ & I &0.12 &  &  &  & & & &\\ 
+ \hline
+ \hline
+ Energy & & & (form \textbf{CMC}) & Barrier & & & Change & &\\
+ \hline
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.30 & -3.05(+0.25) &+0.49 &-2.56 & -5.05 & -2.00& -3.33&0.85\\ 
+ & Br &-3.90 & -3.73(+0.17) &+0.49 & -3.24& -5.73 & -2.00& -4.01&0.07\\ 
+ & I  & -4.55 & -4.38(+0.17) & +0.49& -3.89& -6.38 & -2.00& -4.66&-0.71\\ 
+ \hline
+ E (\si{\electronvolt})~\cite{pccp2010} & & & (-3.00) & +0.38 & & & -1.90 & & \\
+ \hline
+ E (\si{\electronvolt})~\cite{jacs2013} & & & & 0.14 & & & -1.96 & &\\
+ \hline
+ \hline
+\end{tabular}
+\caption{Geometric and energetic characterization of the formation of C--Cu--C intermediate and C--C coupling step on ideal surface. Energies are reported relative to the \textbf{SURF} state. \textbf{DHAL-2} is twice the value as \textbf{DHAL} to simulate two infinite far dehalogenated phenyl radicals on Cu(111), \textbf{DSRB} with desorption of diphenyl product and \textbf{D-SURF} with further desorption of halogen atoms. Formation energy of \textbf{CMC} from \textbf{DHAL-2} should be same for different halogens, the differences here(in parenthesis) originate from the interaction between adjacent dissociated halogen atoms and organic fragments in \textbf{DHAL-2}. In final coupling step, the energy change and barrier for different halogens are exactly same due to the absence of halogen atoms in this step.}
+\label{table:idealsurface}
+\end{table*}
 
-The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
+{\color{blue}
 
-}{\color{blue}
+%The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
+
+As the data in Table.\ref{table:idealsurface} illustrates, final coupling step following ideal surface path (\textbf{CMC} to \textbf{DIM}) is highly exothermic, resulting in that biphenyl is the most thermodynamic stable species in along the RYK-black line in Fig.~\ref{fig:completeenergy}. In agreement with experiment, Ullmann coupling of bromobenzene end in biphenyl and bromine atoms adsoprbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}. Then higher annealing temperature leads to the desorption of biphenyl and eventually bromine gas.
+This path offers a relatively small energy barrier, which is line with onset temperature for C--C bond formation from two phenyl radicals on Cu(111) is \SI{300}{\kelvin} in experiment~\cite{sur_sci01}.
+
+The raised cooper atom in this path migrates back step by step. with the tilt angle of phenyl ring with respect to surface varied from \SI{52}{\degree} to \SI{0}{\degree} in the end.
  
 %RZK0324: Do not use E_{barrier}. Write "the energy barrier" instead. 
 %RZK0324: It would be better to use "the energy change" instead of $\Delta E$ but sometimes it is ok to use $\Delta E$ to shorten long sentences. 
 %RZK0324: Replace all labels with the new ones. 
-The energy change and barrier for this step are \SI{-2.00}{\electronvolt} and \SI{0.49}{\electronvolt}, respectively. These values are the same for all halogens because the initial and final modeling states do not contain halogen atoms in calculations. 
-This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
+%This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
 %ZZ: more detailed analysis will be added.
 
-Experiments have shown that the onset temperature for the final C--C bond-formation step is approximately \SI{300}{\kelvin}~\cite{sur_sci01} for synthesizing biphenyl on Cu(111) surface, which is in line with the calculated energy barrier (\SI{0.49}{\electronvolt}). In addition, this step is highly exothermic based on the \SI{-2.00}{\electronvolt} of energy barrier, and the final biphenyl product on Cu(111) possesses the lowest thermodynamic energy in Fig.~\ref{fig:completeenergy}. In experiment, surface Ullmann coupling of bromobenzene will proceed to biphenyl and two bromine atoms adsorbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}, which agrees that biphenyl is the most thermodynamic stable species on coupling condition. Significantly higher temperature will end to the desorption of coupling product, even halogen atoms from metal surface.
 {\comm RZK0324: Details on the agreement with experiment? (ZZ: added)}
  
-Besides, Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. The tilt angle of phenyl ring with respect to copper surface varied from \SI{52}{\degree} to \SI{34}{\degree} and ends in nearly \SI{0}{\degree}.
+%Besides, Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. 
 }
 
 %R1111: LATER. We need to develop better notation for all chemical species and refer to them consistently.
@@ -965,13 +999,46 @@ Besides, Cu atom involved in C--Cu--C bridge structure is back to the first laye
 \label{fig:bondformlift}
 \end{figure*}
 
-\subsubsection{Creation of an adatom}
+\subsubsection{Create adatom}
 
+\begin{table*}
+\centering
+\begin{tabular}{ lccccccccccccc  }
+ \hline
+ \hline
+ Distance & Halogen & \textbf{CMC}$^{a}$ & $\Delta (b-a)$ & \textbf{X-CMC$\ddagger$}$^{b}$ & \textbf{X-CMC}$^{c}$ &$\Delta (c-a)$ & $\Delta (d-c)$ & \textbf{X-DIM$\ddagger$}$^{d}$ & \textbf{X-DIM-A}$^{e}$ &$\Delta (e-c)$ & \textbf{X-DIM-B}  \\ 
+ \hline 
+ \multirow{3}{*}{C--C (\si{\angstrom})} & Cl & \multirow{3}{*}{3.10} & \multirow{3}{*}{+0.45} & \multirow{3}{*}{3.55} & \multirow{3}{*}{3.89} &\multirow{3}{*}{+0.79} & \multirow{3}{*}{-1.36} & \multirow{3}{*}{2.53} & \multirow{3}{*}{1.50} &\multirow{3}{*}{-2.39} &\multirow{3}{*}{1.50}\\ 
+ & Br & &  &  &  & & & & & &\\ 
+ & I & &  &  &  & & & & & &\\ 
+ \hline
+ \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & \multirow{3}{*}{2.06} & \multirow{3}{*}{-0.21} & \multirow{3}{*}{1.85} & \multirow{3}{*}{1.96} &\multirow{3}{*}{-0.10} & \multirow{3}{*}{-0.06} & \multirow{3}{*}{1.90} & \multirow{3}{*}{2.14} &\multirow{3}{*}{+0.18} &\multirow{3}{*}{} \\ 
+ & Br &  &  & & & &  & & & &\\ 
+ & I & &  &  & & & & & & & \\ 
+ \hline
+ \multirow{3}{*}{Cu$_{\rm lift}$ (\si{\angstrom}) } & Cl & \multirow{3}{*}{0.53} & \multirow{3}{*}{+1.16} & \multirow{3}{*}{1.68} & \multirow{3}{*}{2.02} &\multirow{3}{*}{+1.49} & \multirow{3}{*}{-0.25} & \multirow{3}{*}{1.77} & \multirow{3}{*}{1.76} &\multirow{3}{*}{-0.26} &\multirow{3}{*}{0.00}\\ 
+ & Br &  &  &  &  & & & &  & &\\ 
+ & I & &  &  &  & & & & & &\\ 
+ \hline
+ \hline
+ Energy  & & & Barrier & & & Change & Barrier& & &Change&\\
+ \hline
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 & +1.38 &-1.67 &-3.26 &-0.21 & +2.01 & -1.25& -3.42&-0.16&-3.29\\ 
+ & Br &-3.73 &+1.38 &-2.35 & -3.94 &-0.21 & +2.01 & -1.93& -4.11 & -0.16&-3.97 \\ 
+ & I  & -4.38 & +1.38 & -3.00& -4.59 &-0.21& +2.01 & -2.58& -4.76 & -0.16&-4.62\\ 
+ \hline
+ \hline
+\end{tabular}
+\caption{Geometric and energetic characterization of the C--C coupling step with creation of an adatom. Energies are reported relative to the \textbf{SURF} state.}
+\label{table:adatom}
+\end{table*}
+
+{\color{blue}
+The path leads to final biphenyl product with creating an adatom is divided into three steps: adatom extracted by \textbf{CMC} to form \textbf{X-CMC}, C--C bond formation on top of newly adatom to form \textbf{X-DIM-A}and diffusion of adatom to form \textbf{X-DIM-B}, present by RYK-red line in Fig.~\ref{fig:completeenergy}.
 {\lock
+%The energy profile of this pathway that leads to the creation of an adatom during the C--C bond-formation step is shown by RYK-red line in Fig.~\ref{fig:completeenergy}. The path contains three elementary steps: the adatom extraction, C--C bond formation on the top of adatom, and diffusion of biphenyl away from newly generated adatom. The two intermediates in this three-step process are denoted as \textbf{X-CMC}, \textbf{X-DIM-A}, whereas the final product is labeled as \textbf{X-DIM-B}. The two transition states are denoted as \textbf{X-CMC$\ddagger$}, \textbf{X-DIM$\ddagger$}.
+}
 
-The energy profile of this pathway that leads to the creation of an adatom during the C--C bond-formation step is shown by RYK-red line in Fig.~\ref{fig:completeenergy}. The path contains three elementary steps: the adatom extraction, C--C bond formation on the top of adatom, and diffusion of biphenyl away from newly generated adatom. The two intermediates in this three-step process are denoted as \textbf{X-CMC}, \textbf{X-DIM-A}, whereas the final product is labeled as \textbf{X-DIM-B}. The two transition states are denoted as \textbf{X-CMC$\ddagger$}, \textbf{X-DIM$\ddagger$}.
-
-}{\color{blue}
 
 Fig.~\ref{fig:bondformadatom} shows trajectory from \textbf{CMC} to the C--Cu--C bridge intermediate on top of a fully extracted Cu adatom (\textbf{X-CMC}), followed by formation of dimer on this newly formed adatom (\textbf{X-DIM-A}). In \textbf{X-CMC} and \textbf{X-DIM-A}, a vacancy is generated on the original location of newly formed adatom. 
 In the first step, an Cu atom is fully extracted out in \textbf{X-CMC} bridge intermediate, energy change and barrier are \SI{-0.20}{\electronvolt} and \SI{1.38}{\electronvolt}. The distance between two carbons forming C--Cu--C bridge increases to \SI{3.89}{\angstrom} (in \textbf{X-CMC}) from \SI{3.10}{\angstrom} (iin \textbf{CMC}), and cuts down by \SI{0.34}{\angstrom} in \textbf{X-CMC$\ddagger$}. The tilt angle flattens to \SI{13}{\degree} from \SI{34}{\degree}.
@@ -987,6 +1054,38 @@ In addition to the mechanism describe above, we explored an alternative reaction
 Besides, we also investigated the effect of Ullmann coupling intermediates on creation of adatoms, as shown in Fig.~\ref{fig:onlysurface}. The bottom line shows the potential energy of \textbf{DHAL-2}, \textbf{CMC} and \textbf{X-CMC} in Fig.~\ref{fig:completeenergy}. The surface configuration of these three intermediates are separated from the slab and perform a single point energy calculation, the results are displayed in the top line. The energy of copper surface is increased by \SI{1.48}{\electronvolt} from \textbf{CMC} to \textbf{X-CMC}, but the potential energy of \textbf{X-CMC} is \SI{0.20}{\electronvolt} lower than \textbf{CMC}, this means that the interaction between two phenyl species and the ideal surface Cu is strong to extract the Cu atom out of first layer, and even lead to a more stable state on potential energy surface.
 
 }
+
+\begin{table*}
+\centering
+\begin{tabular}{ lccccccccccccc  }
+ \hline
+ \hline
+ Distance & Halogen & \textbf{CMC}$^{a}$ & $\Delta (b-a)$ & \textbf{X-CMC$\ddagger$}$^{b}$ & \textbf{X-CMC}$^{c}$ &$\Delta (c-a)$ & $\Delta (d-c)$ & \textbf{X-DIM$\ddagger$}$^{d}$ & \textbf{X-DIM-A}$^{e}$ &$\Delta (e-c)$ & \textbf{X-DIM-B}  \\ 
+ \hline 
+ \multirow{3}{*}{C--C (\si{\angstrom})} & Cl & \multirow{3}{*}{3.10} & \multirow{3}{*}{+0.43} & \multirow{3}{*}{3.53} & \multirow{3}{*}{3.86} &\multirow{3}{*}{+0.76} & \multirow{3}{*}{-1.30} & \multirow{3}{*}{2.56} & \multirow{3}{*}{1.51} &\multirow{3}{*}{-2.35} &\multirow{3}{*}{1.50}\\ 
+ & Br & &  &  &  & & & & & &\\ 
+ & I & &  &  &  & & & & & &\\ 
+ \hline
+ \multirow{3}{*}{C--Cu (\si{\angstrom}) } & Cl & \multirow{3}{*}{2.06} & \multirow{3}{*}{-0.21} & \multirow{3}{*}{1.85} & \multirow{3}{*}{1.94} &\multirow{3}{*}{-0.12} & \multirow{3}{*}{-0.05} & \multirow{3}{*}{1.89} & \multirow{3}{*}{2.16} &\multirow{3}{*}{+0.22} &\multirow{3}{*}{} \\ 
+ & Br &  &  & & & &  & & & &\\ 
+ & I & &  &  & & & & & & & \\ 
+ \hline
+ \multirow{3}{*}{Cu$_{\rm lift}$ (\si{\angstrom}) } & Cl & \multirow{3}{*}{0.53} & \multirow{3}{*}{+1.05} & \multirow{3}{*}{1.58} & \multirow{3}{*}{1.97} &\multirow{3}{*}{+1.44} & \multirow{3}{*}{-0.16} & \multirow{3}{*}{1.81} & \multirow{3}{*}{1.71} &\multirow{3}{*}{-0.26} &\multirow{3}{*}{0.00}\\ 
+ & Br &  &  &  &  & & & &  & &\\ 
+ & I & &  &  &  & & & & & &\\ 
+ \hline
+ \hline
+ Energy  & & & Barrier & & & Change & Barrier& & &Change&\\
+ \hline
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 & +0.71 &-2.34 &-2.89 &+0.16 & +1.78 &-1.11 & -3.37&-0.48&-3.29\\ 
+ & Br &-3.73 &+0.71 &-3.02 & -3.57 &+0.16 & +1.78 &-1.79 & -4.06 & -0.48&-3.97 \\ 
+ & I  & -4.38 & +0.71 & -3.67& -4.22 &+0.16& +1.78 &-2.44 & -4.70 & -0.48&-4.62\\ 
+ \hline
+ \hline
+\end{tabular}
+\caption{Geometric and energetic characterization of the C--C coupling step with creation of an adatom from another direction. Energies are reported relative to the \textbf{SURF} state.}
+\label{table:adatom-another-direaction}
+\end{table*}
 
 
 
@@ -1010,7 +1109,7 @@ RZK0324: We need to decide whether to keep the 3 C--C bond formation NEB figures
 RZK0324: Spin density maps of the adatom-containing intermediates.
 
 %R1111: All titles and subtitles must use sentence case. It means that only the first word is capitalized. Do not capitalize all words!
-\subsubsection{Ideal surface vs creation of an adatom}
+\subsubsection{Ideal surface vs create adatom}
 
 {\color{blue}
 The possibility of two paths above are compared in multiple aspects.
