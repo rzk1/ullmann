@@ -416,28 +416,32 @@ For the last step, in which a C--C bond is constructed in the coupling. The role
 
 }
 
-\section{Methods}
-%\subsection{Computation Models}
 
-\subsection{Computational details}
-{\color{blue}
-The periodic density functional theory calculations were performed using the Perdew–Burke-Ernzerhof (PBE) for the exchange-correlation functional, the projector augmented wave method for the ion-core electron interactions, and a plane-wave basis set as implemented in the Vienna ab-initio simulation package (VASP) code. Van der Waals (vdW) interactions were included using the DFT-D3 method to describe the nonlocal correlation energy. All relaxations were performed with applying spin-polarization.
+\section{Computational methods}
 
-All Cu(111) surfaces were
-modeled by four-layer slab consisting of 192 Cu atoms and at least \SI{15}{\angstrom} of vacuum. Each layer is made up with p(8 $\times$ 6) Cu atoms. The energy cut-off for the plane-wave basis was set to \SI{800}{\electronvolt} and a $3\times 3 \times1$ k-mesh was adopted. The mesh density of k points was kept fixed in related calculations with primitive cells. All atoms were fully relaxed until the MAX force on the atom was less than 0.02 \si{\electronvolt}$/$\si{\angstrom}$^{2}$. 
+{\lock
 
-Transition-state calculations were carried out using a Climbing-Image Nudged Elastic Band (CI-NEB) and Dimer methods with VTST code\cite{ullmann_59}. An improved initial guess~\cite{ullmann_60, ullmann_99} for minimum energy path was conducted in CI-NEB calculation, different number of intermediates were interpolated between the initial and final configurations due to the total distance among all atoms. Plus, All atoms were fully relaxed until the MAX force on the atom was less than \SI{0.1}{\electronvolt}/\si{\angstrom}$^{2}$ in CI-NEB calculations.
+Cu(111) surface was modeled with a $1000 \times 1000$~\si{\angstrom} slab containing 192 Cu atoms arranged in four 8 $\times$ 6 layers. \SI{15}{\angstrom} of vacuum was added in the direction normal to the surface to ensure weak interaction between periodic images of the slab. {\comm RZK0525: Specify the real size of the slab.}
+
+Density functional theory calculations were performed using Vienna \emph{ab-initio} simulation package (VASP)~\cite{RZK}. The dispersion-corrected~\cite{RZK-DFT-D3} Perdew-Burke-Ernzerhof (PBE) generalized gradient approximation~\cite{RZK} was used as the exchange-correlation functional. Spin-polarized electronic states were modeled using a plane wave basis set with the energy cut-off set at \SI{800}{\electronvolt}. The projector augmented wave formalism was used to describe interactions of atomic cores with valence electrons. The integration over the Brillouin zone was performed using the $3\times 3 \times1$ Monkhorst-Pack $k$-point mesh. 
+%RZK0525: I think we have not kept any calculations with primitive cells.
+%The mesh density of k points was kept fixed in related calculations with primitive cells. 
+
+Atomic positions were optimized until the maximum force on atoms decreased below \SI{0.02}{\electronvolt\per\square\angstrom}. 
+{\comm RZK0525: Check the units of force in the previous sentence and below. Force is the enegy divided by distance, not distance squared.}
+%
+Transition state structures were located using the climbing-image nudged elastic band (NEB) and dimer methods with the VTST code~\cite{ullmann_59}. {\comm RZK0525: Did we really use the dimer method?}
+%
+In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for minimum energy path was used and the positions of atoms were relaxed until the maximum force dropped below \SI{0.1}{\electronvolt\per\square\angstrom}.
 
 %Generally the value of most thermodynamic functions can be derived from our DFT optimization results. 
 %{\comm ZZ: Need more details about the math derivation, added later}
 
-
-Monomers of surface Ullmann coupling reaction include chlorobenzene, bromobenzene and iodobenzene. We explored the mechanism of each elementary step.
-%In the dehalogenation step, the CI-NEB method was used to the effect of chlorine, bromine and iodine on dissociation of carbon-halogen bonds. 
-%Later in formation of phenyl--Cu--phenyl and C--C bond step, 
-%Choice for the zero-energy state.
-Clean, ideal Cu(111) surface with a halobenzene in gas phase (not adsorbed) is chosen to be zero-energy state in the energy profile (Fig.~\ref{fig:completeenergy}), other intermediates are present with relative values.
 }
+
+{\comm 
+Clean, ideal Cu(111) surface with a halobenzene in gas phase (not adsorbed) is chosen to be zero-energy state in the energy profile (Fig.~\ref{fig:completeenergy}), other intermediates are present with relative values.}
+
 \section{Results and Discussion}
 
 %RZK0422: Re-read several times, make corrections, make sure it is clear to a reader new to the field. Polish English. Present data clearly.
@@ -897,8 +901,11 @@ In conclusion, adatoms can be created in Ullmann reaction, but they are occasion
 
 \section{acknowledgements}
 
+{\lock
+
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful to Compute Canada for computer time. %The authors are grateful to Compute Canada for computer resources allocated under CFI John R. Evans Leaders Fund ().
 
+}
 
 \nocite{*}
 
