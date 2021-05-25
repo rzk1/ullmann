@@ -40,6 +40,8 @@ prb,
 floatfix,
 ]{revtex4-2}
 
+%\newcommand*{\INTERNAL}{}
+
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
@@ -70,11 +72,18 @@ floatfix,
 %%height=10in,a5paper,hmargin={3cm,0.8in},
 %]{geometry}
 
-%RZK: do not edit red text
-\newcommand{\lock}{\color{red}}
-\newcommand{\comm}{\color{Purple}} %comment
-\newcommand{\sinfo}{Supplementary Information}
+\ifdefined\INTERNAL
 
+\newcommand{\lock}{\color{red}}
+
+\else
+
+\newcommand{\lock}{\color{red}}
+
+\fi
+\newcommand{\comm}{\color{Purple}} %comment
+
+\newcommand{\sinfo}{Supplementary Information}
 % Use Supp Info labels with SI- prefix
 \externaldocument[SI-]{SI}
 
@@ -113,18 +122,21 @@ This manuscript reviews the results of experimental and computational studies of
 
 %RZK: Detailed description of the figure. Take a look at the original publication. Reprinted from~\cite{RZK} with permission of American Chemical Society or PUBLISHER. See the LaTeX comment below. If you take a figure from a publication it is very important to cite the work and obtain publisher's permission. We need to make sure that all our borrowed figures satisfy copyright permissions. For example, see: https://www.stm-assoc.org/2016_01_05_Guidelines_for_Quotation_From_Journal_Articles.pdf
 
+\ifdefined\INTERNAL
 
-%Color-coding: 
-%
-%{\lock RZK and ZZ contributed and agree.}
-%
-%{\comm Some in-line comments by RZK.}
-%
-%\textcolor{blue}{Written by ZZ, to be reviewed by RZK.}
-%
-%{Unclassified text.}
-%
-%Zhenzhe, if you edit the red text, please save the original as a LaTeX comment. I often need to revert your changes and it takes too much time.
+Color-coding: 
+
+{\lock RZK and ZZ contributed and agree.}
+
+{\comm Some in-line comments by RZK.}
+
+\textcolor{blue}{Written by ZZ, to be reviewed by RZK.}
+
+{Unclassified text.}
+
+Zhenzhe, if you edit the red text, please save the original as a LaTeX comment. I often need to revert your changes and it takes too much time.
+
+\fi
 
 \section{Introduction}
 
@@ -842,6 +854,8 @@ Like previous drawn conclusion, Ullmann reaction catalyzed by a pre-existing ada
 
 %{\comm (from Rustam) RZK0422: Can an existing adatom revert back to its original ``clean'' form to catalyze another event? It does not look plausible. First, adatom-coordinated species are anchored to the adatom too strongly to simply diffuse away. Examples. Second, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products. Example: C--C bond formation is hindered by the high activation barrier. C--Halogen bond formation? (ZZ: added in main text)}
 
+\ifdefined\INTERNAL
+
 \section{Entropy correction and free energy calculation}
 {\color{blue}
 As mentioned, an unignorable disagreement exits between the experimental data and our DFT results. Theoretical energy barrier of dehalogenation is \SI{0.89}{\electronvolt} (\textbf{PHYS} to \textbf{DHAL$\ddagger$}), which is  higher than the energy barrier from two dehalogenated phenyls to the biphenyl (\textbf{DHAL-2} to \textbf{DIM$\ddagger$}). In experiment, C--C bond formation always requires a higher temperature to accomplish than dehalogenation step, which has been descried by the data in Table.~\ref{table:exp-temp}. This issue has also been observed in other works~\cite{jacs2013, pccp2010}. We are considering this general discrepancy arised from the ignorance of entropy in theoretical calculations. 
@@ -861,6 +875,8 @@ Our study suggests that the entropy contribution to free energy can affect the p
 \label{fig:entropy}
 \end{figure*}
 
+\fi
+
 
 \section{Conclusions}
 {\color{blue}
@@ -876,6 +892,8 @@ In conclusion, adatoms can be created in Ullmann reaction, but they are occasion
 % \input{silver_gold.tex}
 
 \section{acknowledgements}
+
+The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful to Compute Canada for computer time. %The authors are grateful to Compute Canada for computer resources allocated under CFI John R. Evans Leaders Fund ().
 
 
 \nocite{*}
