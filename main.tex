@@ -79,8 +79,8 @@ floatfix,
 
 \else
 
-\newcommand{\lock}{\color{red}}
-\newcommand{\zhzh}{\color{blue}}
+\newcommand{\lock}{\color{black}}
+\newcommand{\zhzh}{\color{black}}
 
 \fi
 \newcommand{\comm}{\color{Purple}} %comment
@@ -91,7 +91,7 @@ floatfix,
 
 \begin{document}
 
-\title{Adatoms in the surface Ullmann coupling}
+\title{Role of adatoms in the Ullmann coupling of phenyl groups on Cu(111) surface}
 
 \author{Zhenzhe Zhang}
 \author{Dmitrii F. Perepichka}%
@@ -106,8 +106,11 @@ floatfix,
              %  but any date may be explicitly specified
 
 \begin{abstract}
-There is a mounting evidence from experimental and modeling studies that metal atoms can be raised above or completely extracted from a metal surface during the Ullmann reaction. 
-This manuscript reviews the results of experimental and computational studies of the surface Ullmann coupling that shed light on the role of surface adatoms in its mechanism. A particular focus is on the early stages of the polymerization and coupling of two monomers.
+
+
+There is a mounting evidence from experimental and modeling studies that metal atoms can be raised above or completely extracted from a metal surface during the Ullmann reaction. In this work, the energetics of the adatom creation during the Ullmann reaction of two phenyl groups on Cu(111) surface is examined for the first time using DFT modeling. More importantly, previously unstudied effects of adatoms, extracted and pre-existing, on the coupling of two phenyl groups are investigated in detail.
+%The results indicate that 
+%This manuscript reviews the results of experimental and computational studies of the surface Ullmann coupling that shed light on the role of surface adatoms in its mechanism. A particular focus is on the early stages of the polymerization and coupling of two monomers.
 \end{abstract}
 
 \maketitle
@@ -442,9 +445,9 @@ In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for
 %RZK0422: Re-read several times, make corrections, make sure it is clear to a reader new to the field. Polish English. Present data clearly.
 
 \subsection{Physisorption}
-{\lock
-The precursors of surface Ullmann coupling are physisorped on the Cu(111) surface before the initialization of the chemical process. The calculated adsorption energies are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively.
-}
+%{\lock
+%The precursors of surface Ullmann coupling are physisorped on the Cu(111) surface before the initialization of the chemical process. The calculated adsorption energies are \SI{-1.06}{\electronvolt}, \SI{-1.18}{\electronvolt} and \SI{-1.37}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively.
+%}
 
 {\zhzh
 Organic precursors are adsorbed on metal surface before undergoing chemical transformations. 
@@ -512,7 +515,9 @@ The data in Table.~\ref{table:bondlength} indicates the interaction between halo
 
 Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition and final states (labeled as \textbf{PHYS}, \textbf{DHAL$\ddagger$} and \textbf{DHAL} in Fig.~\ref{fig:completeenergy}) for the debromination of the physisorbed bromobenzene on Cu(111). Dechlorination and deiodination have similar energy and geometry change trend (see \sinfo for the figures of dechlorination and deiodination).
 
-}{\zhzh
+}
+
+{\zhzh
 
 %[RZK0317: The logic of the paragraph below is not clear]
 
@@ -522,16 +527,16 @@ Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition a
 
 Dehalogenation reactions on the Cu(111) are all exothermic, as demonstrated in Table.~\ref{table:bondlength}, rather than highly endothermic in gas phase~\cite{jacs2013}, verifying the catalysis role of copper surface in this step.
 
-{\lock
-The energy barrier of the dehalogenation on surface decreases from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}). This trend is in agreement with the trend of experimentally measured temperatures required to complete dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87}, while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data referred to dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data of dihalogenated precursors~\cite{ullmann_52} that chlorobenzene dissociates at significantly higher temperature than bromobenzene and iodobenzene.
-}
+%{\lock
+%The energy barrier of the dehalogenation on surface decreases from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}). This trend is in agreement with the trend of experimentally measured temperatures required to complete dehalogenation. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87}, while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data referred to dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data of dihalogenated precursors~\cite{ullmann_52} that chlorobenzene dissociates at significantly higher temperature than bromobenzene and iodobenzene.
+%}
 
 The energy barriers decrease in the order of chlorobenzene, bromobenzene and iodobenzene, in agreement with the corresponding experimentally measured temperatures required to complete dehalogenation on Cu(111). This trend of different halogens is also consistent with the reported dissociation results of 1,4-dihalobenzene on Cu(110)\cite{ullmann_52}, illustrating that iodoaryl derivatives are the most reactive species in copper-confined ullmann coupling while chloroaryls are the least ones. 
 
-{\lock
-It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously\cite{jacs2013} using optB86b exchange-correlation
-functional, the molecular orientation of bromobenzene and dissociated phenyl radical on Cu(111) are identical with our model. The energy change and barrier reported are \SI{0.66}{\electronvolt} and \SI{-0.68}{\electronvolt} (bromobenzene), \SI{0.40}{\electronvolt} and \SI{-0.81}{\electronvolt} (iodobenzene).
-}
+%{\lock
+%It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously\cite{jacs2013} using optB86b exchange-correlation
+%functional, the molecular orientation of bromobenzene and dissociated phenyl radical on Cu(111) are identical with our model. The energy change and barrier reported are \SI{0.66}{\electronvolt} and \SI{-0.68}{\electronvolt} (bromobenzene), \SI{0.40}{\electronvolt} and \SI{-0.81}{\electronvolt} (iodobenzene).
+%}
 
 It should be noted that this step has been investigated previously~\cite{jacs2013} with identical molecular orientation of species on Cu(111) using optB86b XC-functional (data listed in Table~\ref{table:bondlength}). The trend and magnitude of vary in energy change and barrier for different halogens are consistent with our conclusion, which is supported by Bell-Evans-Polanyi principle. The slight difference in the energy value can be interpreted by different functional usage and size of slab model for computation.
 
@@ -647,9 +652,9 @@ This step was reported to be exothermic in previous work\cite{pccp2010}. Two deh
 
 \subsection{Formation of the carbon-carbon bond}
 
-{\lock
-Two pathways to construct the C--C bond from the C-- Cu--C bridge intermediate are considered in this work. In the first pathway, the catalyzed Cu atom returns to its original position in the first layer once the C--C bond is formed, metal surface remains ideal, non-defect before and after the surface Ullmann coupling. In the second pathway, the bridge Cu atom is fully pulled out to become a new adatom, leaving a vacancy in its original position on first layer along with the formation of coupling product.
-}
+%{\lock
+%Two pathways to construct the C--C bond from the C-- Cu--C bridge intermediate are considered in this work. In the first pathway, the catalyzed Cu atom returns to its original position in the first layer once the C--C bond is formed, metal surface remains ideal, non-defect before and after the surface Ullmann coupling. In the second pathway, the bridge Cu atom is fully pulled out to become a new adatom, leaving a vacancy in its original position on first layer along with the formation of coupling product.
+%}
 
 {\zhzh
 %In the final step of the Ullmann coupling a C--C bond is formed between two phenyl radicals. 
@@ -667,11 +672,12 @@ Two pathways of constructing C--C bond are investigated: the catalyzed Cu atom (
 % \label{fig:bondformlift}
 % \end{figure*}
 
-{\lock
-The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
-}
+%{\lock
+%The energy profile of the first pathway is shown by the RYK-black line in Fig.~\ref{fig:completeenergy} whereas the details of NEB calculations are present in Fig.~\ref{fig:bondformlift}. The initial, transition and final states of this step are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
+%}
+
 {\zhzh
-As the data in Table.\ref{table:idealsurface} illustrates, final coupling step following ideal surface path (\textbf{CMC} to \textbf{DIM}) is highly exothermic, resulting that biphenyl is the most thermodynamic stable species along the RYK-black line in Fig.~\ref{fig:completeenergy}. In agreement with experiment, Ullmann coupling of bromobenzene ends in biphenyl and bromine atoms adsoprbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}. Then higher annealing temperature leads to the desorption of biphenyl and eventually bromine gas with tremendously high heating.
+As the data in Table~\ref{table:idealsurface} illustrates, final coupling step following ideal surface path (\textbf{CMC} to \textbf{DIM}) is highly exothermic, resulting that biphenyl is the most thermodynamic stable species along the RYK-black line in Fig.~\ref{fig:completeenergy}. In agreement with experiment, Ullmann coupling of bromobenzene ends in biphenyl and bromine atoms adsoprbed on Cu(111) at \SI{350}{\kelvin}\cite{ullmann_67}. Then higher annealing temperature leads to the desorption of biphenyl and eventually bromine gas with tremendously high heating.
 This path offers a relatively small energy barrier, which in line with onset temperature for C--C bond formation from two phenyl radicals on Cu(111) is \SI{300}{\kelvin} in experiment~\cite{sur_sci01}.
 
 As shown in Fig.~\ref{fig:bondformlift}, the raised cooper atom in ideal surface path migrates back step by step. with the tilt angle of phenyl ring with respect to surface varied from \SI{52}{\degree} to \SI{0}{\degree} in the end.
@@ -736,9 +742,9 @@ As shown in Fig.~\ref{fig:bondformlift}, the raised cooper atom in ideal surface
 \label{fig:distance-energy}
 \end{figure*}
 
-{\lock
-The energy profile of this pathway that leads to the creation of an adatom during the C--C bond-formation step is shown by RYK-red line in Fig.~\ref{fig:completeenergy}. The path contains three elementary steps: the adatom extraction, C--C bond formation on the top of adatom, and diffusion of biphenyl away from newly generated adatom. The two intermediates in this three-step process are denoted as \textbf{X-CMC}, \textbf{X-DIM-A}, whereas the final product is labeled as \textbf{X-DIM-B}. The two transition states are denoted as \textbf{X-CMC$\ddagger$}, \textbf{X-DIM$\ddagger$}.
-}
+%{\lock
+%The energy profile of this pathway that leads to the creation of an adatom during the C--C bond-formation step is shown by RYK-red line in Fig.~\ref{fig:completeenergy}. The path contains three elementary steps: the adatom extraction, C--C bond formation on the top of adatom, and diffusion of biphenyl away from newly generated adatom. The two intermediates in this three-step process are denoted as \textbf{X-CMC}, \textbf{X-DIM-A}, whereas the final product is labeled as \textbf{X-DIM-B}. The two transition states are denoted as \textbf{X-CMC$\ddagger$}, \textbf{X-DIM$\ddagger$}.
+%}
 
 {\zhzh
 The path leading to biphenyl product with creating an adatom is divided into three elementary steps: adatom extracted by \textbf{CMC} to form \textbf{X-CMC} through \textbf{X-CMC$\ddagger$}, C--C bond formation on top of newly adatom to form \textbf{X-DIM-A} through \textbf{X-DIM$\ddagger$} and diffusion of adatom to form \textbf{X-DIM-B}, present by RYK-red line in Fig.~\ref{fig:completeenergy}.
@@ -915,27 +921,32 @@ Our study suggests that the entropy contribution to free energy can affect the p
 
 %{\zhzh For the last step, in which a C--C bond is constructed in the coupling. The role of metal atom in this formation has also been reported, but rarely compared to other steps discussed above.}
 
-{\zhzh
+{\lock
 
-DFT modeling is used to investigate the role of adatoms in the Ullmann coupling of monosubstituted benzenes on the commonly employed Cu(111) surface. It was found that the extraction of an adatom by two phenyl groups bonded to the same copper atom has only \SI{1000}{\electronvolt} is plausible and cannot be discarded -- competitive with C--C bond formation. The energetic cost of extracting the adatom is almost completely offset by the increased binding between the two phenyl groups and the adatom in the process of extraction. The binding strength is estimated to increase by (if compared to the binding to the surface atom).
+DFT modeling was used to investigate the role of adatoms in the Ullmann coupling of monohalogenated benzenes on Cu(111) surface. It was found that the energy of the extraction of a copper atom bonded to two phenyl groups in the intermediate organometallic structure is only \SI{0.16}{\electronvolt}, which is significantly lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the clean surface. In the case of the extraction by the two phenyl groups, the energy cost of breaking multiple bonds between copper atoms is almost completely offset by the increased binding of the phenyl groups to the extracted copper atom. This effect is also responsible for the low \SI{0.71}{\electronvolt} extraction barrier. 
 
-These results suggest that adatoms should often be found in the CMC bridge structures and should be considered as an alternative in future studies. Is this true? Will the reaction simply proceed toward the normal product?
+%The energetic cost of extracting the adatom is almost completely offset by the increased binding between the two phenyl groups and the adatom in the process of extraction. The binding strength is estimated to increase by (if compared to the binding to the surface atom). Compared to adatom extraction during the DHAL step (\SI{0.88}{\electronvolt}) In this repsect adatom extrac
 
-The increased binding strength makes the formation of the carbon-carbon bond between the two phenyl group extremely difficult. 
-High barrier and no energy release.
+While the energy profile of the extraction appears to suggest that the formation of adatoms should be expected in the Ullmann coupling process, it is important to compare these numbers to the energetic characteristics of the competitive C--C bond formation pathway, which happens on the ideal surface without adatom extraction. It was calculated that the extraction barrier is \SI{0.22}{\electronvolt} higher the barrier of the C--C bond formation, indicating that the irreversible C--C bond formation proceeds faster at all temperatures. This comparison implies that the structures containing extracted adatoms can form only fleetingly in the Ullmann process. At the sufficiently high temperatures required to extract adatoms, the equilibrium mixture will be heavily dominated by the products of the C--C coupling thus making adatom-containing species unlikely to be observed in STM or AFM experiments.
 
-The two phenyl groups bound to the extracted adatom can still participate in the coupling process if the adatom recombines with the vacancy -- the step that is found to have relatively low activation energy.
+%RZZK The increased binding strength makes the formation of the carbon-carbon bond between the two phenyl group extremely difficult. High barrier and no energy release.
 
-A simple discussion on pre-existing adatom affecting on-surface Ullmann reaction has also been present. 
+%RZZK The two phenyl groups bound to the extracted adatom can still participate in the coupling process if the adatom recombines with the vacancy -- the step that is found to have relatively low activation energy.
+
+%RZZK: A simple discussion on pre-existing adatom affecting on-surface Ullmann reaction has also been present. 
 
 %RZK0525. I am almost certain that this will not pay off: A 2D lattice model is proposed to complement entropy into theoretically potential energy, to explain a common lower energy barrier in C--C bond formation than dehalogenation in DFT calculation, which disagrees the temperature set in experiment.
 
-The effects of different halogens on dehalogenation step agree with the results descried in previous works. C--C bond formation catalyzed by a partially lifted ideal surface copper atoms is overall kinetically and thermodynamically favorable in biphenyl assemble process. However, the results demonstrate adatom can be easily created once the phenyl--Cu--phenyl intermediates are formed, the energy barrier of fully extracting it out is highly comparable with partially lifting path. The hard-to-cross peak emerges from C--C bond constructed on top of an adatom, this step will dramatically hinders the coupling to the end with biphenyl and ''clean'' adatom forming Cu(111). In creating adatom path, two different fashions of extracting adatom out are explored and discussed. Adatom created by organometallic intermediate along the longitude direction is more likely to occur in reality due to a smaller activation energy. Plus, the heat released from the hehalogenation step is sufficient to compensate both ideal surface and create adatom paths to the end. It means ideal surface copper atom catalyze and created adatom in Ullmann process both occur in nature but occupy different proportions and proceed in different velocity.
+}
+
+{\comm RZK0526: The following paragraphs need further polishing.
+
+The effects of different halogens on dehalogenation step agree with the results descried in previous works. C--C bond formation catalyzed by a partially lifted ideal surface copper atoms is overall kinetically and thermodynamically favorable in biphenyl assemble process. However, the results demonstrate adatom can be easily created once the phenyl--Cu--phenyl intermediates are formed, the energy barrier of fully extracting it out is highly comparable with partially lifting path. The hard-to-cross peak emerges from C--C bond constructed on top of an adatom, this step will dramatically hinders the coupling to the end with biphenyl and ``clean'' adatom forming on Cu(111). In creating adatom path, two different fashions of extracting adatom out are explored and discussed. Adatom created by organometallic intermediate along the longitude direction is more likely to occur in reality due to a smaller activation energy. Plus, the heat released from the hehalogenation step is sufficient to compensate both ideal surface and create adatom paths to the end. It means ideal surface copper atom catalyze and created adatom in Ullmann process both occur in nature but occupy different proportions and proceed in different velocity.
 The possibility that adatom already emerged from thermal fluctuation or defect before the coupling is also discussed. Pre-existing adatom can be regarded as a exceedingly plausible catalyst source for organometallic intermediates in Ullmann reaction on metal surface.
 
-In conclusion, adatoms can be created in Ullmann reaction, but they are occasionally serve as the catalysts in final biphenyl formation step on Cu(111). Created adatom has a greater change to relocate in vacancy site and catalyze C--C bond with ideal surface path, ''clean'' adatom can rarely be created by dehalogenated phenyl radicals on Cu(111). However, the possibility should not be ruled out, monomers with larger molecular size and stronger interaction with copper is more likely to proceed coupling to the end. This provides the insight of adatom creation by precursor design and synthesizing more 1D and 2D functional polymer through on-surface Ullmann reactions.
+In conclusion, adatoms rarely serve as catalysts in final biphenyl formation step on Cu(111). Created adatom has a greater change to relocate in vacancy site and catalyze C--C bond with ideal surface path, ``clean'' adatom can rarely be created by dehalogenated phenyl radicals on Cu(111). However, the possibility should not be ruled out, monomers with larger molecular size and stronger interaction with copper is more likely to proceed coupling to the end. This provides the insight of adatom creation by precursor design and synthesizing more 1D and 2D functional polymer through on-surface Ullmann reactions.
 
-{\comm RZK0525: Clean adatoms can be created if the monomers interact strongly with each other and strongly but not too strongly with the adatom. Is it possible to design such monomers? If so, will catalitically active adatoms affect the Ullmann coupling positively or negatively? Adatom creation ``machine'' can be an extremely important topics on its own, outside the fabrication of low-dimensional polymers. For example, production of super-active adatom catalysts.}
+%{\comm RZK0525: Clean adatoms can be created if the monomers interact strongly with each other and strongly but not too strongly with the adatom. Is it possible to design such monomers? If so, will catalitically active adatoms affect the Ullmann coupling positively or negatively? Adatom creation ``machine'' can be an extremely important topics on its own, outside the fabrication of low-dimensional polymers. For example, production of super-active adatom catalysts.}
 
 %ZZ text from objectives: And the formation of such a bridge structure can serve as a feasible strategy to create adatoms on Cu(111) surface. 
 
@@ -945,7 +956,7 @@ In conclusion, adatoms can be created in Ullmann reaction, but they are occasion
 
 % \input{silver_gold.tex}
 
-%TWO follow-up projects appears to be useful. 
+%RZK. TWO follow-up projects appears to be useful. 
 % 1. Explain the surprisingly low DIM activation barrier compared to DHAL activation barrier. A simple bond-strength arguments suggest that the strength of C-Metal is underestimated and possibly C-X, C-C strengths are overestimated.
 % 2. Design the reaction (machine) capable of generating clean adatoms. Consider thermodynamics states of such a machine (set, grab, extract, release, leave). Consider the kinetics of the processes of switching between the states. Consider side pathways  that skip the extraction.
 
