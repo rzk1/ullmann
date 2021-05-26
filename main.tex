@@ -252,7 +252,9 @@ Pre-exisiting adatoms have previously been observed to participate in metal orga
 
 }
 
-%\subsubsection{Dehalogenation}
+\ifdefined\INTERNAL
+
+\subsubsection{Dehalogenation}
 
 \begin{figure}[htb]
 \centering
@@ -261,25 +263,21 @@ Pre-exisiting adatoms have previously been observed to participate in metal orga
 \label{fig:3}
 \end{figure}
 
+\fi
+
 {\lock
 
 It has been suggested based on results of STM investigation and DFT calculations that adatoms can be created immediately after the dehalogenation of aryl precursors in the on-surface Ullmann reaction. As shown in Fig.~\ref{fig:3}, the calculated energy required to lift an ideal-surface atom and place it on the surface is reduced to \SI{0.64}{\electronvolt}, \SI{0.40}{\electronvolt} and \SI{0.16}{\electronvolt} for Cu(111), Ag(111) and Au(111) surfaces, respectively, if the extracted adatom is bonded to iodine and phenyl fragments -- the products of the dehalogenation of a iodobenzene molecule~\cite{chemeurope2017}. {\comm RZK0506: The energy for Cu appears to be wrong. Read the article and discuss the energies with me.}
 %
 It has also been concluded that the significantly reduced adatom extraction energy (compared to that on the clean surface) can be fully compensated by the release of comparable amount of energy in the preceding dehalogenation step, making the combined dehalogenation and extraction essentially thermo-neutral on these surfaces.
 
-%RZZK: For future comparison in RnD: extraction here is still hugely endothermic, unlike the extraction at later steps.
-
-%Dehalogenation of iodobenzene will result in phenyl-metal species, the energies of this interaction with full extraction of ideal-surface atom were calculated to be \SI{0.64}{\electronvolt}, \SI{0.40}{\electronvolt} and \SI{0.16}{\electronvolt} for Cu, Ag and Au surfaces, decreased by \SI{1.07}{\electronvolt}, \SI{0.72}{\electronvolt} and \SI{0.99}{\electronvolt}, respectively. 
-
-%Till now it can be concluded that dehalogenation lowers the energy required for creation of adatoms from ideal-surface atoms on a metal surface. 
-%The direct use of pre-existing adatoms should ideally cut down the energy barrier for this step compared to ideal-surface atoms.
-%Dima: This makes no sense. The energy of a step X is not affected by existence of an alternative step Y. (ZZ: a pre-existing adatom will affect the initial geometry of dehalogenation.)
-%However, few work has been related to pre-existing adatoms in dehalogenation.
+%RZK: For future comparison in RnD: extraction here is still hugely endothermic, unlike the extraction at later steps.
 
 }
 
+\ifdefined\INTERNAL
 
-%\subsubsection{Diffusion}
+\subsubsection{Diffusion}
 
 %\begin{figure}[hbt]
 %\centering
@@ -288,12 +286,7 @@ It has also been concluded that the significantly reduced adatom extraction ener
 %\label{fig:diff}
 %\end{figure}
 
-%The diffusion process is involved in the interaction between single precursor group and metal atom. 
-%In 2018, Nagoya \textit{et al.}~\cite{jpcc2018} investigated the mechanism of Ullmann coupling of 7,10-dibromofluoranthene (Br$_{2}$FL) on Au(111) via DFT calculations. Compared to simple phenyl rings that tend to form ~$36^\circ$ tilt angle with Cu(111) surface~\cite{pccp2010}, the monobromo FL with one Br atom removed would stay almost parallel to Au(111) surface due to steric repulsion between the large backbone of BrFL group and the substrate. And BrFL group was found to lift surface Au atom out by 1.9 \angstrom\ from its initial position, which is much larger than 0.16 \angstrom\ height lifted by a simpole phenyl ring, as shown in Fig.~\ref{fig:diff}.
-%Ebeling \textit{et al.}~\cite{acsnano2019} also indicated 4-bromo-3$^{''}$-iodo-$p$-terphenyl group interacts with the Cu atom inside the surface, and would partially lift the Cu atom out from the surface while diffusing on Cu(111) surface. 
-%
-
-%Metal atoms of $nature(1)$ were proven to play a significant role in the diffusion of dehalogenated phenyl groups, the metal atoms that interact with phenly groups will be partially lifted from its original position, the lifting height is affected by the intensity of interaction between the phenyl group and metal atom. Formation of adatom of $origin(2)$ has not been reported in diffusion, which indicates that the interaction between phenyl group and metal atom in this step is not in the magnitude to fully extract a metal atom of $nature(1)$. 
+\fi
 
 {\lock
 
@@ -313,7 +306,9 @@ The raise of this magnitude (cf. \SI{1.7}{\angstrom} van der Waals radius of gol
 
 }
 
-%\subsubsection{Formation of carbon--metal--carbon intermediates} \label{sec:dimerized-adatom}
+\ifdefined\INTERNAL
+
+\subsubsection{Formation of carbon--metal--carbon intermediates} \label{sec:dimerized-adatom}
 
 %The nature of the metal atoms in dimerized organometallic intermediate has been investigated through multiple approaches. Besides, it can be deduced that an metal atom of $nature(2)$, which is also an adatom of $origin(1)$ will exit above the first layer of surface before the surface Ullmann coupling reacion occurs. And this atom can attract two phenyl groups diffuse close to it and form the dimerized organometallic intermediate in this step. This type of formation might require less energy compared to the situation that two phenyl groups both interact with the same metal atom of $nature(1)$. The arguments on the nature and origin of metal atoms in this step are intense in the mechanism of surface Ullmann coupling.
 
@@ -333,8 +328,6 @@ The raise of this magnitude (cf. \SI{1.7}{\angstrom} van der Waals radius of gol
 \label{fig:adatom-CMC-evidence1}
 \end{figure}
 
-%The origin the adatoms were later explored after the metal atoms in dimerized organometallic intermediates were proven to be of $nature(2)$, which is an adatom on surface. In 2019, the study of 4‐Bromo-3$^{''}$- iodo‐$p$‐terphenyl coupling on Cu(111), proved again that the Cu atoms in dimerized organometallic intermediates were adatoms (metal atoms of $nature(2)$) compared experiments with simulated AFM image[Fig.~\ref{fig:6}~\cite{acsnano2019}]. It was further suggested that these adatoms are generated by the extraction of two close single precursor groups (adatom of $origin(2)$), instead of pre-exsiting adatoms (adatoms of $origin(1)$) from a statistic study of all intermediates species in the surface Ullmann coupling.
-
 \begin{figure}[tb]
 \centering
 \includegraphics[width=0.75\columnwidth]{Fig/AFM_prove.png}
@@ -342,7 +335,7 @@ The raise of this magnitude (cf. \SI{1.7}{\angstrom} van der Waals radius of gol
 \label{fig:adatom-CMC-evidence2}
 \end{figure}
 
-%The nature of metal atoms in dimerized organometallic intermediates has been proven to be an adatom. And further the origin of this adatom is of $origin(2)$, which indicates before the surface Ullmann coupling reaction occurs, the adatom is still a metal atom of $nature(1)$, stay in the first layer of metal surface. After it was selected from two phenyl groups in coupling procedure, it will be fully lifted out of the surface, become a new adatoms. The effect of metal atom in the last step --- formation of C--C bond was not investigated intensive compared to previous steps.
+\fi
 
 %%In addition, chlorinated prophyrin as precursor has also been deposited on Cu(111)~\cite{chematerial2019}. Based on DFT calculations, the Cu adatom mediated path is 3~eV lower than the direct dechlorination. And from STM image, some precursors are still intact at temperature of 400~K, which should be already dehalogenated at lower temperature. It proves that the Cu adatoms are the limiting agent [Fig.~\ref{fig:prophyrin}].
 
@@ -352,9 +345,6 @@ The raise of this magnitude (cf. \SI{1.7}{\angstrom} van der Waals radius of gol
 %\caption{STM simulations and DFT reaction profile for the (a) direct %dechlorination reaction (red lines) and (b) Cu adatom-mediated Ullmann coupling reaction (blue lines). For each process the energy are plotted of the (i, ii) precursors, (iii, iv) intermediates, (v) and final species (gray circles) and two transition states (white circles).}
 %\label{fig:prophyrin}
 %\end{figure}
-
-%\sout{It has been proven that two phenyl groups, after diffusing to adjacent position, will bind to the same ideal surface copper atom and form C--Cu--C structure on Cu(111)}~\cite{pccp2010, acsnano2019}.
-%\sout{Similar structure will be constructed on Ag(111) and Au(111) surface from phenyls and ideal surface silver and gold atoms.}
 
 {\lock
 
@@ -839,20 +829,21 @@ In conclusion, the adatom can be created in on-surface Ullmann reaction on a def
 
 %R1111: Note that the difference between dimer1 and dimer2 is smaller than the difference between FS1 and IS. Probably because the dimer interacts stronger with the adatom than with the surface. 
 
+%\ifdefined\INTERNAL
 
 \subsection{Desorption of products}
 
-{\color{blue}
-The detachment of the coupling species have also been observed in temperature programmed desorption experiment. Biphenyl desorps from Cu(111) surface at \SIrange{400}{450}{\kelvin}\cite{ullmann_104}. Dissociated bromine atoms and iodine atoms start to segregate at higher temperature, typically higher than \SI{900}{\kelvin}, \SI{800}{\kelvin}\cite{jacs2013, ullmann_104}, respectively.
-%has been reported to complete the desorpion on Cu(111) surface at \SIrange{400}{450}{\kelvin}\cite{ullmann_104}, which is nearly \SI{100}{\kelvin} higher than the coupling temperature.
-%The dissociated halogen atoms on surface will desorb even at much higher temperature. For instance, bromine atoms start to leave Cu(111) surface at \SI{900}{\kelvin} and higher, iodine atoms start at \SI{800}{\kelvin} \cite{jacs2013, ullmann_104}. 
-Consistent with experiment, our results show energy change of desorping biphenyl is \SI{+1.72}{\electronvolt}, corresponding to a higher temperature than C--C bond formation, and desorping two bromine atoms to bromine gas and two iodine atoms to iodine gas require \SI{+4.08}{\electronvolt} and \SI{+3.95}{\electronvolt}, respectively. 
-%RZK0422: As suggested before, calculate the energy of PROD state and report desorption energy of Halogen$_2$ molecule, not two separate atoms.
+{\lock
 
-High desorption energy for dissociated halogens becomes a nasty issue for practical on-surface Ullmann reactioon. These atoms can remain on metal surface and impede the further diffusion of chemical species for coupling. Removing the halogens can effectively optimize the speed and quality of synthesizing polymer structure with on-surface Ullmann coupling.
+The detachment of the products of the Ullmann coupling has been observed in temperature programmed desorption experiments. Biphenyl desorps from Cu(111) surface at \SIrange{400}{450}{\kelvin}, nearly \SI{100}{\kelvin} higher than the coupling temperature~\cite{ullmann_104}. Bromine and iodine atoms start to desorb at temperatures higher than \SI{900}{\kelvin} and \SI{800}{\kelvin}, respectively~\cite{jacs2013, ullmann_104}. 
+In qualitative agreement with these experiments, the calculations indicate that the desorption energy of biphenyl is \SI{+1.72}{\electronvolt}, higher that the RZK energy barrier of the C--C bond formation. The calculated desorption energy of halogen atoms {\comm as diatomic molecules?} is substantially higher: \SI{+4.08}{\electronvolt} for bromine and \SI{+3.95}{\electronvolt} for iodine. 
+{\comm RZK0525: As I suggested before, the energy of PROD state must be calculated with Halogen$_2$ molecule, not two separate atoms. This means that out calculations desorb holgen atoms as molecules, not as atoms.}
+
+High desorption energy of halogen atoms is undesirable in practical on-surface Ullmann reactions. These atoms remain on metal surfaces and impede the diffusion process, which is required to couple two aryl groups. Removing the halogens can effectively optimize the speed of the process and improve the quality of synthesized polymers.
+
 }
 
-
+%\fi
 
 %%% Early steps
 %R1111: LATER. Do we need adatom calculations for TS1? Perhaps only one or two halogen-metal pairs (for complete diagram). How will it affect the subsequent steps? Will the PH-Adatom roam the surface together before encountering the second Ph? PRIORITY6.
@@ -861,7 +852,7 @@ High desorption energy for dissociated halogens becomes a nasty issue for practi
 
 %RZK1222: This important effect needs to be properly described. The height of TS2-1 means that IM5, once formed will not undergo the C--C bond formation and can be viewed as an undesirable by-product of the reaction (unless it exists in quick equilibrium with IM4, which can be entropically hindered -- hard to find that vacancy again).
 
-%RZK1222: How difficult is it to push the adatom (with attached organic radicals) DOWN?
+%RZK1222: How difficult is it to push the adatom (with attached organic radicals) DOWN into ideal surface?
 
 \subsection{Coupling catalyzed by an existing adatom}
 {\color{blue}
