@@ -822,6 +822,13 @@ Besides, we also investigated the attraction of multiple intermediates on copper
 %R1111: All titles and subtitles must use sentence case. It means that only the first word is capitalized. Do not capitalize all words!
 \subsubsection{Ideal surface vs create adatom}
 
+{\lock
+While the energy profile of the extraction appears to suggest that the formation of adatoms should be expected in the Ullmann coupling process, it is important to compare these numbers to the energetic characteristics of the competitive C--C bond formation pathway, which happens on the ideal surface without adatom extraction. 
+
+%RZZK: The energetic cost of extracting the adatom is almost completely offset by the increased binding between the two phenyl groups and the adatom in the process of extraction. The binding strength is estimated to increase by (if compared to the binding to the surface atom). Compared to adatom extraction during the DHAL step (\SI{0.88}{\electronvolt}) In this repsect adatom extrac
+
+}
+
 {\zhzh
 The two paths, ideal surface and create adatom are compared in multiple aspects.
 As simplified geometry images in Fig.~\ref{fig:completeenergy} and CI-NEB curves in Fig.~\ref{fig:distance-energy} indicate, two mechanisms begin to vary at \textbf{CMC}, ideal surface path (black) is both kinetically and thermodynamically more favourable than create adatom (red) due to a lower energy transition state and more stable product. This suggests that at the same temperature condition, the reaction involved in ideal surface mechanism take place at a higher speed and account for a larger percentage. In experiment, phenyl radical species require temperature at \SI{350}{\kelvin}~\cite{sur_sci01}  to accomplish C--C bonds formation on Cu(111) surface, this is more or less corresponding to a higher activation energy than \SI{0.49}{\electronvolt} obtained in ideal surface path. Even smaller energy barriers have been reported in previous work\cite{pccp2010, jacs2013}, it may come from the fact that DFT calculation provides electronic energy, instead of free energy reflecting more authentic reaction condition.
@@ -923,36 +930,36 @@ Our study suggests that the entropy contribution to free energy can affect the p
 
 {\lock
 
-DFT modeling was used to investigate the role of adatoms in the Ullmann coupling of monohalogenated benzenes on Cu(111) surface. It was found that the energy of the extraction of a copper atom bonded to two phenyl groups in the intermediate organometallic structure is only \SI{0.16}{\electronvolt}, which is significantly lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the clean surface. In the case of the extraction by the two phenyl groups, the energy cost of breaking multiple bonds between copper atoms is almost completely offset by the increased binding of the phenyl groups to the extracted copper atom. This effect is also responsible for the low \SI{0.71}{\electronvolt} extraction barrier. 
+DFT modeling was used to investigate the role of adatoms in the Ullmann coupling of monohalogenated benzenes on Cu(111) surface. It was found that the energy of the extraction of a copper atom bonded to two phenyl groups in the intermediate organometallic structure is \SI{0.16}{\electronvolt}, which is significantly lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the ideal clean surface. In the case of the phenyl-assited extraction, the energy cost of breaking multiple bonds between copper atoms is almost completely offset by the increased binding of the phenyl groups to the extracted copper atom. This effect is also responsible for the low \SI{0.71}{\electronvolt} extraction barrier. 
 
-%The energetic cost of extracting the adatom is almost completely offset by the increased binding between the two phenyl groups and the adatom in the process of extraction. The binding strength is estimated to increase by (if compared to the binding to the surface atom). Compared to adatom extraction during the DHAL step (\SI{0.88}{\electronvolt}) In this repsect adatom extrac
+Comparison of this profile to the energetic characteristics of the competing irreversible C--C bond formation on the ideal surface revealed that the extraction barrier is \SI{0.22}{\electronvolt} higher than the barrier of the C--C bond formation. This comparison indicates that the latter step proceeds faster at all temperatures and implies that the structures containing extracted adatoms can form only fleetingly in the Ullmann process. At any temperature that is sufficiently high for the adatom extraction, the equilibrium mixture will be heavily dominated by the products of the C--C coupling, making organometallic bridges containing extracted adatoms unlikely to be observed by STM or AFM.
 
-While the energy profile of the extraction appears to suggest that the formation of adatoms should be expected in the Ullmann coupling process, it is important to compare these numbers to the energetic characteristics of the competitive C--C bond formation pathway, which happens on the ideal surface without adatom extraction. It was calculated that the extraction barrier is \SI{0.22}{\electronvolt} higher the barrier of the C--C bond formation, indicating that the irreversible C--C bond formation proceeds faster at all temperatures. This comparison implies that the structures containing extracted adatoms can form only fleetingly in the Ullmann process. At the sufficiently high temperatures required to extract adatoms, the equilibrium mixture will be heavily dominated by the products of the C--C coupling thus making adatom-containing species unlikely to be observed in STM or AFM experiments.
+%RZK0526: Abbreviations STM and AFM.
 
-%RZZK The increased binding strength makes the formation of the carbon-carbon bond between the two phenyl group extremely difficult. High barrier and no energy release.
+{\comm RZK0526: Insert the actual number below.}
+The strong binding of the two phenyl groups to adatoms, which is estimated to be \SI{10000}{\electronvolt} stronger than their binding to an ideal-surface atom, makes the barrier of the formation of the C--C bond between the adatom-bonded phenyl groups extremely high. It was calculated to be \SI{1.78}{\electronvolt} and \SI{1.29}{\electronvolt} higher that the corresponding barrier for the ideal surface reaction. This has important implications not only for the phenyl-extracted adatoms but also for the adatoms that exist on clean copper surface, for example, around steps and kinks. The presence of such a high energy barrier implies that any adatoms participating in the Ullmann reaction tend to become coordinated to phenyl groups but are unable to catalyze subsequent C--C bond formation.
+{\comm RZK0527: I think it is not only the binding strength but the stiffness of the bonds. In that case, include ``the stiff phenyl--adatom bonds''.}
 
-%RZZK The two phenyl groups bound to the extracted adatom can still participate in the coupling process if the adatom recombines with the vacancy -- the step that is found to have relatively low activation energy.
-
-%RZZK: A simple discussion on pre-existing adatom affecting on-surface Ullmann reaction has also been present. 
-
-%RZK0525. I am almost certain that this will not pay off: A 2D lattice model is proposed to complement entropy into theoretically potential energy, to explain a common lower energy barrier in C--C bond formation than dehalogenation in DFT calculation, which disagrees the temperature set in experiment.
+{\comm RZK0527: We can discuss implications beyond the Ullmann coupling. For example, creation of adatom covered surfaces and design of ``adatom pumps''.}
+%The results of this work have implications beyond the Ullmann coupling process. When it comes to design of adatom covered metal surfaces, which can serve as active catalysts for many reactions beyond the Ullmann coupling process.
 
 }
 
-{\comm RZK0526: The following paragraphs need further polishing.
+%{\comm RZK0526: The following paragraphs need further polishing.
 
-The effects of different halogens on dehalogenation step agree with the results descried in previous works. C--C bond formation catalyzed by a partially lifted ideal surface copper atoms is overall kinetically and thermodynamically favorable in biphenyl assemble process. However, the results demonstrate adatom can be easily created once the phenyl--Cu--phenyl intermediates are formed, the energy barrier of fully extracting it out is highly comparable with partially lifting path. The hard-to-cross peak emerges from C--C bond constructed on top of an adatom, this step will dramatically hinders the coupling to the end with biphenyl and ``clean'' adatom forming on Cu(111). In creating adatom path, two different fashions of extracting adatom out are explored and discussed. Adatom created by organometallic intermediate along the longitude direction is more likely to occur in reality due to a smaller activation energy. Plus, the heat released from the hehalogenation step is sufficient to compensate both ideal surface and create adatom paths to the end. It means ideal surface copper atom catalyze and created adatom in Ullmann process both occur in nature but occupy different proportions and proceed in different velocity.
-The possibility that adatom already emerged from thermal fluctuation or defect before the coupling is also discussed. Pre-existing adatom can be regarded as a exceedingly plausible catalyst source for organometallic intermediates in Ullmann reaction on metal surface.
+%The hard-to-cross peak emerges from C--C bond constructed on top of an adatom, this step will dramatically hinders the coupling to the end with biphenyl and ``clean'' adatom forming on Cu(111). In creating adatom path, two different fashions of extracting adatom out are explored and discussed. Adatom created by organometallic intermediate along the longitude direction is more likely to occur in reality due to a smaller activation energy. Plus, the heat released from the dehalogenation step is sufficient to compensate both ideal surface and create adatom paths to the end. It means ideal surface copper atom catalyze and created adatom in Ullmann process both occur in nature but occupy different proportions and proceed in different velocity.
 
-In conclusion, adatoms rarely serve as catalysts in final biphenyl formation step on Cu(111). Created adatom has a greater change to relocate in vacancy site and catalyze C--C bond with ideal surface path, ``clean'' adatom can rarely be created by dehalogenated phenyl radicals on Cu(111). However, the possibility should not be ruled out, monomers with larger molecular size and stronger interaction with copper is more likely to proceed coupling to the end. This provides the insight of adatom creation by precursor design and synthesizing more 1D and 2D functional polymer through on-surface Ullmann reactions.
+%The possibility that adatom already emerged from thermal fluctuation or defect before the coupling is also discussed. Pre-existing adatom can be regarded as a exceedingly plausible catalyst source for organometallic intermediates in Ullmann reaction on metal surface.
+
+%In conclusion, adatoms rarely serve as catalysts in final biphenyl formation step on Cu(111). Created adatom has a greater change to relocate in vacancy site and catalyze C--C bond with ideal surface path, ``clean'' adatom can rarely be created by dehalogenated phenyl radicals on Cu(111). 
+
+%However, the possibility should not be ruled out, monomers with larger molecular size and stronger interaction with copper is more likely to proceed coupling to the end. This provides the insight of adatom creation by precursor design and synthesizing more 1D and 2D functional polymer through on-surface Ullmann reactions.
 
 %{\comm RZK0525: Clean adatoms can be created if the monomers interact strongly with each other and strongly but not too strongly with the adatom. Is it possible to design such monomers? If so, will catalitically active adatoms affect the Ullmann coupling positively or negatively? Adatom creation ``machine'' can be an extremely important topics on its own, outside the fabrication of low-dimensional polymers. For example, production of super-active adatom catalysts.}
 
 %ZZ text from objectives: And the formation of such a bridge structure can serve as a feasible strategy to create adatoms on Cu(111) surface. 
 
-%{\comm RZK0426: Any remarks on what can be learned from further studies of the mechanism? Ask Dima.}
-
-}
+%}
 
 % \input{silver_gold.tex}
 
