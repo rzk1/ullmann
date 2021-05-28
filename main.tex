@@ -477,7 +477,7 @@ Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition a
 %
 %REVIEW (Numbers should be verified): Unlike analogous reactions in the solution, dehalogenation reactions on the copper surface are all exothermic. DFT results have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.18}{\electronvolt}~\cite{ullmann_86}.
 %
-The energy barrier of the dehalogenation on Cu(111) surface decreases from chlorobenzene (\SI{1.25}{\electronvolt}) to bromobenzene (\SI{0.92}{\electronvolt}) and to iodobenzene (\SI{0.68}{\electronvolt}). The energy change in the dehalogenation step is \SI{-0.58}{\electronvolt}, \SI{-0.80}{\electronvolt} and \SI{-0.94}{\electronvolt} for chlorobenzene, bromobenzene and iodobenzene, respectively. 
+The energy barrier of the dehalogenation on Cu(111) surface decreases from chlorobenzene (\SI{1.25}{\electronvolt}) to bromobenzene (\SI{0.92}{\electronvolt}) and to iodobenzene (\SI{0.68}{\electronvolt}). 
 The amount of energy released in the dehalogenation follow the opposite trend increasing from chlorobenzene (\SI{0.58}{\electronvolt}) to bromobenzene (\SI{0.80}{\electronvolt}) and to iodobenzene (\SI{0.94}{\electronvolt}) (Fig.~\ref{fig:completeenergy} and Table~\ref{SI-table:bondlength} in \sinfo), in accord with the Bell-Evans-Polanyi principle.
 %
 The calculated energies are in qualitative agreement with the trend in experimentally measured dehalogenation temperatures~\cite{ullmann_52,ullmann_87,ullmann_67} and with the previous calculations on this~\cite{jacs2013} and similar systems.
@@ -495,28 +495,26 @@ The calculated energies are in qualitative agreement with the trend in experimen
 
 }
 
-{\zhzh
-It has been proposed that the surface copper can be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously reported in previous work\cite{chemeurope2017}. It can be concluded that extracting an metal atom out to create an adatom requires much less energy compared to creating it on clean surface. It is noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation can occur simultaneously on Cu(111) surface.
-}
 
+\ifdefined\INTERAL
 \subsection{Formation of carbon--metal--carbon intermediates}
+\fi
 
-{\zhzh
+{\lock
 
-As the data in Table.~\ref{table:idealsurface} shows, formation of C--Cu--C bridge intermediate (\textbf{CMC}) from two dehalogenated phenyl radicals (\textbf{DHAL-2}) is endothermic. Experimentally, dehalogenation and this step occur at same temperature (Table.~\ref{table:exp-temp}), corresponding to the relatively small energy change of this step in calculation. Gold surface is an exception that C--Au--C intermediates are rarely observed in experiment due to fast proceeding to coupling product after dehalogenation~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102, ullmann_103, jacs2011}.
-
-Compared to the height of \SI{0.12}{\angstrom} in \textbf{DHAL-2}, the raised catalyzing copper atom interacted with two phenyl radicals is lifted by \SI{0.53}{\angstrom} in \textbf{CMC}, indicating a much stronger extraction.
+The formation of carbon--metal--carbon intermediates from two infinitely separated phenyl radicals, which are assigned \textbf{CMC} and \textbf{DHAL-2} labels respectively, is slightly endothermic. Experimentally, the dehalogenation and formation of the bridge structure occur at the same temperature (Table~\ref{table:exp-temp}) indicating that only a small energy barrier needs to be overcome for the two phenyl groups to approach each other~\cite{pccp2010}. 
+%REVIEW: Gold surface is an exception that C--Au--C intermediates are rarely observed in experiment due to fast proceeding to coupling product after dehalogenation~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102, ullmann_103, jacs2011}.
+%
+The two phenyl groups in the \textbf{CMC} state lift their common copper atom \SI{0.53}{\angstrom} above its ideal-surface position, which noticeably higher than the \SI{0.12}{\angstrom} raise in the \textbf{DHAL-2} state.
 
 %\textbf{DHAL-2} used here is well matched to the experimental STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. 
 %The distance between two carbon atoms in the C--Cu--C bridge is \SI{3.10}{\angstrom}, which is \SI{1.61}{\angstrom} longer than the length of the connecting C--C in biphenyl. The angle of two phenyl rings connected to the Cu atom with respect to the surface are both \SI{52}{\degree}, this angle is the same as the tilt of a single phenyl in DHAL (\SI{52}{\degree}).
 
-This step was reported to be exothermic in previous work\cite{pccp2010}. Two dehalogenated phenyl radicals are infinitely far this time, while they interact with adjacent copper atoms in previous work. The unignorable repulsion between phenyl radicals results in a higher energy initial configuration and lead to such inconsistency.
+%REVIEW: This step was reported to be exothermic in the previous work~\cite{pccp2010}. Two dehalogenated phenyl radicals are infinitely far this time, while they interact with adjacent copper atoms in the previous work. %RZK thinks this is a clumsy explanation. The repulsion between phenyl radicals results in a higher energy initial configuration and lead to such inconsistency.
 
 %Formation of C--Cu--C bridge intermediate has been proven to play a significant role in the creation of adatom in surface Ullmann coupling. The interaction is potentially sufficient to extract an ideal surface copper atom out.
 
 }
-
-%{\comm RZK0426: The result reported in pccp2010 for ideal-surface step is very different from our results. In their article this step is exothermic. This needs to be mentioned and perhaps discussed extensively. (ZZ: added)}
 
 \subsection{Formation of the carbon-carbon bond}
 
@@ -531,7 +529,6 @@ Two pathways of constructing C--C bond are investigated: the catalyzed Cu atom (
 }
 
 \subsubsection{Ideal surface}
-
 
 % \begin{figure*}[hbt]
 % \centering
@@ -550,20 +547,14 @@ This path offers a relatively small energy barrier, which in line with onset tem
 
 As shown in Fig.~\ref{fig:bondformlift}, the raised cooper atom in ideal surface path migrates back step by step. with the tilt angle of phenyl ring with respect to surface varied from \SI{52}{\degree} to \SI{0}{\degree} in the end.
  
-%RZK0324: Do not use E_{barrier}. Write "the energy barrier" instead. 
-%RZK0324: It would be better to use "the energy change" instead of $\Delta E$ but sometimes it is ok to use $\Delta E$ to shorten long sentences. 
-%RZK0324: Replace all labels with the new ones. 
 %This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
 %ZZ: more detailed analysis will be added.
-
-%{\comm RZK0324: Details on the agreement with experiment? (ZZ: need more modification)}
  
 %Besides, Cu atom involved in C--Cu--C bridge structure is back to the first layer from \SI{0.56}{\angstrom} height in this step. The distance between two unsaturated carbon atoms starts from \SI{3.10}{\angstrom}, then shortened by \SI{0.82}{\angstrom} in the transition state and finalize at \SI{1.49}{\angstrom}, which is the same as the connecting C--C bond length in biphenyl molecule. The change of this distance is consistent with earlier work~\cite{sur_sci01}. 
+
 }
 
-%R1111: LATER. We need to develop better notation for all chemical species and refer to them consistently.
-
-%R1111: LATER. It is important to discuss the zero-energy for this step. Would it be more informative to use a common zero from the entire energy profile?
+%RZK0528: Zhenzhe! The data reported for reference~\cite{pccp2010} looks wrong. I am not sure how to interpret -3.00 eV. 
 \begin{table*}
 \centering
 \begin{tabular}{ lccccccccc  }
@@ -602,6 +593,11 @@ As shown in Fig.~\ref{fig:bondformlift}, the raised cooper atom in ideal surface
 
 
 \subsubsection{Create adatom}
+
+{\comm RZK0527: It is difficult, almost impossible, to draw conclusions using numbers from very different computational models.}
+{\zhzh
+It has been proposed that the surface copper can be extracted out to become an adatom in dehalogenation step. The energy of the adatom formation during the dehalogenation step can be compared to the high \SI{1.76}{\electronvolt} energy of the adatom extraction on the clean metal surface (Fig.~\ref{fig:completeenergy}, RYK-green pathway). The extraction on the clean surface has higher activation energy of \SI{2.04}{\electronvolt} than the approximately \SIrange{0.88}{0.96}{\electronvolt} of extraction with dehalogenation simultaneously reported in previous work\cite{chemeurope2017}. It can be concluded that extracting an metal atom out to create an adatom requires much less energy compared to creating it on clean surface. It is noted that the activation energy of dehalogenation without adatom extraction is \SI{0.89}{\electronvolt}, similar to with adatom extraction. At the same temperature, dehalogenation with and without adatom formation can occur simultaneously on Cu(111) surface.
+}
 
 \begin{figure*}[hbt]
 \centering
@@ -843,7 +839,7 @@ The research was funded by the Natural Sciences and Engineering Research Council
 
 }
 
-\nocite{*}
+%\nocite{*}
 
 \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
 \bibliography{references}% Produces the bibliography via BibTeX.
