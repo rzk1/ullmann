@@ -422,18 +422,18 @@ The phenyl groups, which are produced in the dehalogenation of monosubstituted b
 
 {\lock
 
-Cu(111) surface was modeled with a $1000 \times 1000$~\si{\angstrom} slab containing 192 Cu atoms arranged in four 8 $\times$ 6 atomic layers. \SI{15}{\angstrom} of vacuum was added in the direction normal to the surface to ensure weak interaction between periodic images of the slab. {\comm RZK0525: Specify the actual spatial size of the slab.}
+Cu(111) surface was modeled with a $20.55 \times 13.35$~\si{\angstrom} slab containing 192 Cu atoms arranged in four 8 $\times$ 6 atomic layers. \SI{10.00}{\angstrom} of vacuum was added in the direction normal to the surface to ensure weak interaction between periodic images of the slab. {\comm RZK0525: Specify the actual spatial size of the slab.}{\zhzh ZHZH0531: modified. }
 
-Density functional theory calculations were performed using Vienna \emph{ab-initio} simulation package (VASP)~\cite{RZK}. The dispersion-corrected~\cite{RZK-DFT-D3} Perdew-Burke-Ernzerhof (PBE) generalized gradient approximation~\cite{RZK} was used as the exchange-correlation (XC) functional. Spin-polarized electronic states were modeled using a plane wave basis set with the energy cut-off set at \SI{800}{\electronvolt}. The projector augmented wave formalism was used to describe interactions of atomic cores with valence electrons. The integration over the Brillouin zone was performed using the $3\times 3 \times1$ Monkhorst-Pack $k$-point mesh. 
+Density functional theory calculations were performed using Vienna \emph{ab-initio} simulation package (VASP)~\cite{ullmann_131, ullmann_132, ullmann_133, ullmann_134}. The dispersion-corrected~\cite{ullmann_136, ullmann_137} Perdew-Burke-Ernzerhof (PBE) generalized gradient approximation~\cite{ullmann_135, ullmann_138} was used as the exchange-correlation (XC) functional. Spin-polarized electronic states were modeled using a plane wave basis set with the energy cut-off set at \SI{800}{\electronvolt}. The projector augmented wave formalism was used to describe interactions of atomic cores with valence electrons. The integration over the Brillouin zone was performed using the $3\times 3 \times1$ Monkhorst-Pack $k$-point mesh. 
 %RZK0525: I think we have not kept any calculations with primitive cells.
 %The mesh density of k points was kept fixed in related calculations with primitive cells. 
 
-Atomic positions were optimized until the maximum force on atoms decreased below \SI{0.02}{\electronvolt\per\square\angstrom}. 
-{\comm RZK0525: Check the units of force in the previous sentence and below. Force is the enegy divided by distance, not distance squared.}
+Atomic positions were optimized until the maximum force on atoms decreased below \SI{0.02}{\electronvolt/\angstrom}. 
+{\comm RZK0525: Check the units of force in the previous sentence and below. Force is the energy divided by distance, not distance squared.} {\zhzh ZHZH0531: checked and clarified}
 %
-Transition state structures were located using the climbing-image nudged elastic band (NEB) and dimer methods with the VTST code~\cite{ullmann_59}. {\comm RZK0525: Did we really use the dimer method?}
+Transition state structures were located using the climbing-image nudged elastic band (NEB) with the VTST code~\cite{ullmann_59}. {\comm RZK0525: Did we really use the dimer method?} {\zhzh ZHZH0531: deleted, we did not use.}
 %
-In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for the minimum energy path was used and the positions of atoms were relaxed until the maximum force dropped below \SI{0.1}{\electronvolt\per\square\angstrom}.
+In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for the minimum energy path was used and the positions of atoms were relaxed until the maximum force dropped below \SI{0.1}{\electronvolt/\angstrom}.
 
 %Generally the value of most thermodynamic functions can be derived from our DFT optimization results. 
 %{\comm ZZ: Need more details about the math derivation, added later}
