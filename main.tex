@@ -79,11 +79,12 @@ floatfix,
 
 \else
 
-\newcommand{\lock}{\color{red}}
+\newcommand{\lock}{\color{black}}
 \newcommand{\zhzh}{\color{blue}}
 
 \fi
-\newcommand{\comm}{\color{Purple}} %comment
+%\newcommand{\comm}{\color{Purple}} %comment
+\newcommand{\comm}{\color{ForestGreen}} %comment
 
 \newcommand{\sinfo}{Supplementary Information}
 % Use Supp Info labels with SI- prefix
@@ -437,7 +438,7 @@ In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.\textwidth]{Fig/main-profile.pdf}
-\caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on the Cu(111) surface. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}. {\comm RZK0528: Change the legend to ``Adatom extraction along $[11\bar{2}]$''.}{\zhzh ZZ0602: added}} 
+\caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on the Cu(111) surface. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{SI-table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}.}
 \label{fig:completeenergy}
 \end{figure*}
 
@@ -446,7 +447,8 @@ In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for
 \fi
 
 {\lock
-Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. 
+
+\textbf{Early steps of the Ullmann process.} Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. 
 Although the binding of chlorobenzene, bromobenzene and iodobenzene to Cu(111) predicted in this work (Fig.~\ref{fig:completeenergy}, \textbf{PHYS} state) is stronger than that obtained previously using the optB86b XC functional~\cite{jacs2013} the trends in the physisorption energies for different halogens are almost exactly the same (Table~\ref{SI-table:bondlength} in \sinfo).
 %REVIEW: The strong binding between the surface and halogenated benzenes is primarily due to the interaction of (a) the $\pi$-system (b) halogen (choose one) and the surface. This follows from the analysis of the interaction energy between biphenyl and the metal (\SI{1.72}{\electronvolt}) and the van derWaals interaction of Br$_2$ molecule with the surface (\SI{1000}{\electronvolts}).
 }
@@ -549,7 +551,7 @@ The two phenyl groups in the \textbf{CMC} state lift their common copper atom \S
 \fi
 
 {\lock
-The main focus of this work is on the final step of the Ullmann coupling, in which the C--C bond is formed between the two phenyl groups bound to the same bridge metal atom in the \textbf{CMC} state. 
+\textbf{Coupling of two phenyl groups.} The main focus of this work is on the final step of the Ullmann coupling, in which the C--C bond is formed between the two phenyl groups bound to the same bridge metal atom in the \textbf{CMC} state. 
 Two pathways to construct the C--C bond are considered here. 
 In the first pathway, the bridge Cu atom returns to its original position in the first metal layer after the C--C bond is formed. This pathway is referred to as the ideal-surface pathway.
 In the second pathway, the this Cu atom is pulled out from the topmost metal layer to become an adatom, leaving a vacancy in its original position. This pathway is called the adatom pathway.
@@ -557,9 +559,9 @@ In the second pathway, the this Cu atom is pulled out from the topmost metal lay
 
 {\lock
 The initial, transition and final states along the ideal-surface pathway are denoted as \textbf{CMC}, \textbf{DIM$\ddagger$} and \textbf{DIM}, respectively.
-The energy of the key states is shown with the black line in Fig.~\ref{fig:completeenergy} whereas the their structures and the NEB energy profile are present in Fig.~\ref{fig:bondformlift}. 
+The energy of the key states is shown with the black line in Fig.~\ref{fig:completeenergy} whereas the their structures and the NEB energy profile are present in Fig.~\ref{fig:distance-energy}. 
 The C--C bond formation along the ideal-surface path is so exothermic (\SI{-2.00}{\electronvolt}) that it can be considered irreversible at \SI{350}{\kelvin} -- the temperature required to convert organometallic intermediates to biphenyl in experiments~\cite{ullmann_67, sur_sci01}. The ideal-surface path has a relatively small \SI{0.49}{\electronvolt} energy barrier. %, which in line with the onset temperature for the C--C bond formation from two phenyl radicals on Cu(111) is \SI{300}{\kelvin} in experiment~\cite{sur_sci01}.
-Fig.~\ref{fig:bondformlift} shows that, in this pathway, the bridge cooper atom gradually returns back to its position as the C--C bond formation proceeds. At the same time, the \SI{52}{\degree} tilt angle formed by a phenyl ring with the surface vanishes in the product \textbf{DIM} state.
+Fig.~\ref{fig:distance-energy} shows that, in this pathway, the bridge cooper atom gradually returns back to its position as the C--C bond formation proceeds. At the same time, the \SI{52}{\degree} tilt angle formed by a phenyl ring with the surface vanishes in the product \textbf{DIM} state.
 % 
 The structural changes and the energetics of this step are in qualitative agreement with previous calculations (Table~\ref{table:idealsurface}). %REVIEW: This step has also been investigated previously, energy change and barrier are provided as \SI{-1.90}{\electronvolt} and \SI{0.38}{\electronvolt} based on a smaller slab and same PBE exchange-correlation functional~\cite{pccp2010}, another work has reported \SI{-1.96}{\electronvolt} and \SI{0.14}{\electronvolt} for energy change and barrier respectively with a smaller slab as well and different optB86b exchange-correlation functional~\cite{jacs2013}.
 
@@ -674,18 +676,12 @@ In addition to the C--C formation mechanism describe above, we explored an alter
 
 
 {\lock
-While the energy profile of the extraction pathway appears to suggest that the formation of phenyl-bound adatoms should be expected in the Ullmann coupling process, it is important to view these numbers in comparison to the energetic characteristics of the competitive ideal-surface pathway. Since the adatom extraction barrier is only \SI{0.22}{\electronvolt} higher than the barrier of the ideal-surface C--C bond formation the extraction process appears to happen at the relevant temperatures (\SI{350}{\kelvin} is used to promote the coupling of phenyl groups) albeit orders of magnitude slower than the ideal-surface dimerization. However, the insurmountable barrier of the second segment along the adatom pathway and the low barrier of the reversed adatom-vacancy recombination  indicate that most extracted adatoms are predestined to recombine with the vacancy and return to the \textbf{CMC} state, which eventual undergo the irreversible ideal-surface transformation toward the biphenyl \textbf{DIM} state. This dynamics makes organometallic bridges containing extracted adatoms extremely rare, meaning that they are unlikely to be observed in STM or AFM measurements.
+While the energy profile of the extraction pathway appears to suggest that the formation of phenyl-bound adatoms should be expected in the Ullmann coupling process, it is important to view these numbers in comparison to the energetic characteristics of the competitive ideal-surface pathway. Since the adatom extraction barrier is only \SI{0.22}{\electronvolt} higher than the barrier of the ideal-surface C--C bond formation the extraction process appears to happen at the relevant temperatures (\SI{350}{\kelvin} is used to promote the coupling of phenyl groups) albeit orders of magnitude slower than the ideal-surface dimerization. However, the insurmountable barrier of the second segment along the adatom pathway and the low barrier of the reversed adatom-vacancy recombination  indicate that most extracted adatoms are predestined to recombine with the vacancy and return to the \textbf{CMC} state, which eventually undergoes the irreversible ideal-surface transformation toward the biphenyl \textbf{DIM} state. This dynamics makes organometallic bridges containing extracted adatoms extremely rare, meaning that they are unlikely to be observed in STM or AFM measurements.
 
 }
 
 \ifdefined\INTERNAL
-\subsection{Old section that needs discussion}
-
-{\lock
-
-The energy profile of the adatom pathway has consequences for the possibility of the Ullmann coupling on adatoms that are not extracted during the reaction but already exist on Cu(111) surface. Such adatoms are known to form around ZZZ.
-
-}
+\subsection{Unpolished section that needs discussion}
 
 {\zhzh
 
@@ -725,20 +721,26 @@ High desorption energy of halogen atoms is undesirable in practical on-surface U
 
 %RZK1222: How difficult is it to push the adatom (with attached organic radicals) DOWN into ideal surface?
 
-\subsection{Coupling catalyzed by an existing adatom}
+%REVIEW only
+\ifdefined\INTERNAL
+\subsection{Coupling on an existing adatom}
+\fi
 
-{\zhzh
-In addition to two paths above, catalyzed copper atom being a pre-existing adatom on Cu(111) is also considered. It has been reported that 2D adatom gas is formed on copper surface due to thermal evaporation (\SI{700}{\kelvin} around 1\% -6\% density~\cite{ullmann_130}) and various defect as well, where pre-existing adatoms originate from.
+{\lock
 
-In the diagram, the initial state is the same as \textbf{SURF} in Fig.~\ref{fig:completeenergy}. Overall the reaction is highly exothermic from \textbf{X-SURF}. This adatom displays a high availability of interaction to various intermediate species along path. Can an existing adatom revert back to its original ``clean'' form to catalyze another event? The answer to this question can provide the prediction on the sustained catalytic ability of adatoms on metal. However, it seems negative from our results. First, adatom-coordinated species cannot react with the sufficiently low barrier to produce weakly adsorbed products, since C--C bond formation is hindered by the high activation barrier. Second, adatom-coordinated species anchored to the adatom can relocate inside a random vacancy at a defect site on surface and back to \textbf{CMC}, then complete the coupling reaction along the ideal surface path, with this adatom turns out to be a ideal surface atom. The activation barrier of reverse \textbf{CMC} to \textbf{X-CMC} is much lower than C--C bond formation on top of an adatom. 
+\textbf{Coupling on an existing adatom.} The shape of the energy profile along the adatom pathway is also relevant for the coupling catalyzed by the adatoms that are not extracted during the reaction but already exist on Cu(111) surface. Such pre-existing adatoms are known to form due to thermal fluctuations on the ideal surface and more often around various defects such as steps and kinks. Fig.~\ref{fig:adatomullmann} shows that, once the dehalogenation step is complete, the Ullmann coupling with pre-existing adatom is a highly exothermic process. It consists of the phenyl radicals overcoming only a minor diffusion barrier~\cite{pccp2010} to move closer to the existing adatom and to form bonds with them. Fig.~\ref{fig:adatomullmann} shows that the first phenyl is coordinated with the energy release of \SI{10000}{\electronvolt} and the second with the release of additional \SI{10000}{\electronvolt}. After reaching the state with two phenyl groups bonded to the adatom, the system system becomes trapped in this state. On one hand, the Ullmann coupling cannot proceed further toward biphenyl because of the height of the \textbf{X-DIM$\ddagger$} barrier. On the other hand, the reverse dissociation of the adatom-phenyl bond also requires high energy. For this reason, pre-existing adatoms on copper surface can hinder the Ullmann coupling process by creating the low-energy \textbf{X-CMC} configurations well-separated from both product and reactant states. For the Ullmann-based polymerization, the presence of adatoms can lead to defects in the nanostructures being assembled on the surface.
+{\comm RZK0602: Insert the numbers above.}
 
-Like previous drawn conclusion, Ullmann reaction catalyzed by a pre-existing adatom on Cu(111) is also interrupted at C--Cu--C organometallic intermediate. Compared to C--C bond formation, the intermediate prefers to diffuse and refill nearby vacancy site, then proceed to biphenyl with a ideal surface copper atom catalyse.
+{\comm RZK0602: Slabs containing the surface vacancy are used to model pre-existing adatoms. OR should we fill the vacancy?}
+
 }
 
 \begin{figure}[hbt]
 \centering
 \includegraphics[width=0.48\textwidth]{Fig/ullmann_adatom.pdf}
-\caption{The energy diagram of on-surface Ullmann reaction of bromobenzene on Cu(111) with a pre-existing adatom. In calculations, a vacancy exists next to the adatom, the interaction between the adatom and the vacancy is ignored to presume an pre-existing adatom condition.} 
+\caption{The energy diagram of on-surface Ullmann reaction of bromobenzene on Cu(111) with a pre-existing adatom. In calculations, a vacancy exists next to the adatom, the interaction between the adatom and the vacancy is ignored to presume an pre-existing adatom condition. 
+{\comm RZK0602: Energies for iodine and chlorine appears to be wrong at X-CMC and X-DIM $\ddagger$. The energy of coordinating the first and second phenyl are too different and should be verified.}
+} 
 \label{fig:adatomullmann}
 \end{figure}
 
