@@ -446,7 +446,7 @@ In NEB calculations, an improved initial guess~\cite{ullmann_60, ullmann_99} for
 \centering
 \includegraphics[width=1.\textwidth]{Fig/main-profile.pdf}
 \caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on the Cu(111) surface. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{SI-table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}.
- {\comm RZK0603: Use the same font, same size for all labels: energy levels, axis ticks, axis labels. The energy levels numbers are poorly aligned and make the figure look bad. Do not insert energy labels manually, add them with your plotting tool.}
+ {\comm RZK0603: Use the same font, same size for all labels: energy levels, axis ticks, axis labels. The energy levels numbers are poorly aligned and make the figure look bad. Do not insert energy labels manually, add them with your plotting tool.} {\zhzh ZZ: modified}
 }
 \label{fig:completeenergy}
 \end{figure*}
@@ -725,8 +725,8 @@ High desorption energy of halogen atoms is undesirable in practical on-surface U
 
 {\lock
 
-\textbf{Coupling on an existing adatom.} The shape of the energy profile along the adatom pathway is also relevant for the coupling catalyzed by the adatoms that are not extracted during the reaction but already exist on Cu(111) surface. Such pre-existing adatoms are known to form due to thermal fluctuations on the ideal surface and more often around various defects such as steps and kinks. Fig.~\ref{fig:adatomullmann} shows that, once the dehalogenation step is complete, the Ullmann coupling with pre-existing adatom is a highly exothermic process. It consists of the phenyl radicals overcoming only a minor diffusion barrier~\cite{pccp2010} to move closer to the existing adatom and to form bonds with them. Fig.~\ref{fig:adatomullmann} shows that the first phenyl is coordinated with the energy release of \SI{10000}{\electronvolt} and the second with the release of additional \SI{10000}{\electronvolt}. After reaching the state with two phenyl groups bonded to the adatom, the system system becomes trapped in this state. On one hand, the Ullmann coupling cannot proceed further toward biphenyl because of the height of the \textbf{X-DIM$\ddagger$} barrier. On the other hand, the reverse dissociation of the adatom-phenyl bond also requires high energy. For this reason, pre-existing adatoms on copper surface can hinder the Ullmann coupling process by creating the low-energy \textbf{X-CMC} configurations well-separated from both product and reactant states. For the Ullmann-based polymerization, the presence of adatoms can lead to defects in the nanostructures being assembled on the surface.
-{\comm RZK0602: Insert the numbers above.}
+\textbf{Coupling on an existing adatom.} The shape of the energy profile along the adatom pathway is also relevant for the coupling catalyzed by the adatoms that are not extracted during the reaction but already exist on Cu(111) surface. Such pre-existing adatoms are known to form due to thermal fluctuations on the ideal surface and more often around various defects such as steps and kinks. Fig.~\ref{fig:adatomullmann} shows that, once the dehalogenation step is complete, the Ullmann coupling with pre-existing adatom is a highly exothermic process. It consists of the phenyl radicals overcoming only a minor diffusion barrier~\cite{pccp2010} to move closer to the existing adatom and to form bonds with them. Fig.~\ref{fig:adatomullmann} shows that the first phenyl is coordinated with the energy release of \SI{0.49}{\electronvolt} and the second with the release of additional \SI{0.95}{\electronvolt}. After reaching the state with two phenyl groups bonded to the adatom, the system system becomes trapped in this state. On one hand, the Ullmann coupling cannot proceed further toward biphenyl because of the height of the \textbf{X-DIM$\ddagger$} barrier. On the other hand, the reverse dissociation of the adatom-phenyl bond also requires high energy. For this reason, pre-existing adatoms on copper surface can hinder the Ullmann coupling process by creating the low-energy \textbf{X-CMC} configurations well-separated from both product and reactant states. For the Ullmann-based polymerization, the presence of adatoms can lead to defects in the nanostructures being assembled on the surface.
+{\comm RZK0602: Insert the numbers above.} {\zhzh ZZ: added}
 
 {\comm RZK0602: Slabs containing the surface vacancy are used to model pre-existing adatoms. OR should we fill the vacancy?}
 
@@ -767,6 +767,12 @@ Our study suggests that the entropy contribution to free energy can affect the p
 
 \fi
 
+{\zhzh \textbf{Ullmann reactions on Ag(111) and Cu(111) surfaces.}  Coupling of bromobenzene on Ag(111) and Au(111) have been explored with the same modeling methods. 
+
+For silver surface, debromination needs to overcome a \SI{1.20}{\electronvolt} energy barrier, \SI{0.31}{\electronvolt} higher than on copper. With formation of \textbf{CMC}, ideal-surface and adatom pathways are also compared here (only adatom extraction along the $[11\bar{2}]$ was considered). The extraction of adatom requires a \SI{0.43}{\electronvolt} of activation energy, lower than the barrier of ideal-surface pathway (\SI{0.62}{\electronvolt}). It means that the extraction of adatom is proceeding even faster than ideal surface atom catalyst on Ag(111), which is different from Cu(111). However, it also encounters the same issue as copper in the C--C bond formation step. A relatively high energy transition state \textbf{X-DIM$\ddagger$} prevents the completion of Ullmann reaction on silver, prompting the reaction reverse back and following the ideal-surface pathway as discussed above on copper surface. 
+
+Considering three coinage surfaces, it can be inferred that adatom extraction is highly possible to occur on Ag(111) and Cu(111), nevertheless rare on Au(111) surface. This is due to that C--Ag and C--Cu bond are strong but C--Au is comparatively weak. 
+}
 
 \section{Conclusions}
 
@@ -790,6 +796,7 @@ The strong binding of the two phenyl groups to adatoms, which is estimated to be
 %The results of this work have implications beyond the Ullmann coupling process. When it comes to design of adatom covered metal surfaces, which can serve as active catalysts for many reactions beyond the Ullmann coupling process.
 
 }
+
 
 %{\comm RZK0526: The following paragraphs need further polishing.
 
