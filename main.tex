@@ -316,7 +316,7 @@ This raise is considered insufficient to justify further studies of the adatom c
 However, larger organic groups that tend to stay parallel to the surface can lift a metal atom higher. 
 For example, DFT calculations have revealed that bromofluoranthene group, which contains four fused aromatic rings, lifts a gold atom by \SI{0.5}{\angstrom} above its ideal-surface position~\cite{jpcc2018} in the optimized state. 
 Moreover, it has been calculated that this radical can lift the gold atom upto \SI{1.9}{\angstrom} in one of the intermediate NEB states in the diffusion pathway~\cite{jpcc2018}.
-The raise of this magnitude (cf. \SI{1.41}{\angstrom} radius of gold atom {\comm[RZK0819: Calculate the radius from interatomic distances on the surface]}) is high enough to warrant further exploratory studies of the adatom creation.
+The raise of this magnitude (cf. \SI{1.41}{\angstrom} radius of gold atom {\comm[RZK0819: Calculate the radius from interatomic distances on the surface]} {\zhzh ZZ:added}) is high enough to warrant further exploratory studies of the adatom creation.
 
 %RZK0511: The following paragraph does not seem to belong in the literature review. If these are your own thoughts then the paragraph should be placed in R&D. If this is a summary of someone else' review of existing data then it should be properly referenced.
 %The evidence of pre-existing adatoms are involved in this step is not reported. It can be speculated that diffusion of aryl groups on metal surface can seldom create adatoms since the intensity of interaction between one dehalogenated species and metal atoms is not sufficient to fully extract ideal-surface atoms out.
@@ -437,6 +437,7 @@ The phenyl group, which is produced in the dehalogenation of monosubstituted ben
 
 The (111) metal surfaces were modeled with slabs containing 192 metal atoms arranged in four 8 $\times$ 6 atomic layers. \SI{10}{\angstrom} of vacuum was added in the direction normal to the surface to ensure weak interaction between periodic images of the slab. The size of the slabs in the lateral directions was $20.55 \times 13.35$~\si{\angstrom} for Cu, $22.84 \times 14.82$~\si{\angstrom} for Ag, and $22.47 \times 14.60$~\si{\angstrom} for Au. 
 {\comm RZK0624: The missing numbers should be inserted.}
+{\zhzh ZZ: done}
 
 DFT calculations were performed using Vienna \emph{ab initio} simulation package (VASP)~\cite{ullmann_131, ullmann_132, ullmann_133, ullmann_134}. The dispersion-corrected~\cite{ullmann_136, ullmann_137} Perdew-Burke-Ernzerhof (PBE) generalized gradient approximation~\cite{ullmann_139} was used as the exchange-correlation (XC) functional. 
 %RZK0602: The two references above are not the correct citation for PBE.
@@ -519,7 +520,7 @@ The calculated energies are in qualitative agreement with the trend in experimen
 \begin{table*}
 \centering
 \caption{Characterization of the intermediates along the ideal-surface pathway. The states are labeled as in Fig.~\ref{fig:completeenergy}. The energies are relative to the \textbf{SURF} state.  %For the coupling step, the energy change and barrier for different halobenzenes are exactly same due to the absence of halogen atoms in this step. 
-{\comm RZK0528: Zhenzhe! The data reported for reference~\cite{pccp2010} looks wrong. I am not sure how to interpret -3.00 eV. Is the other data reported reliably? Verify. } 
+{\comm RZK0528: Zhenzhe! The data reported for reference~\cite{pccp2010} looks wrong. I am not sure how to interpret -3.00 eV. Is the other data reported reliably? Verify. } {\zhzh ZZ: I did not see why -3.00 eV is there, I delete it. The barrier and change are right, I checked}
 }
 \label{table:idealsurface}
 \begin{tabular}{ lccccccccc  }
@@ -538,9 +539,9 @@ The calculated energies are in qualitative agreement with the trend in experimen
  & Br & -3.73 &+0.49 & -3.24& -5.73 & -2.00& -4.01&0.07\\ 
  & I  & -4.38 & +0.49& -3.89& -6.38 & -2.00& -4.66&-0.71\\ 
  \hline
- E (\si{\electronvolt})~\cite{pccp2010} & & (-3.00) & +0.38 & & & -1.90 & & \\
+ E (\si{\electronvolt})~\cite{pccp2010} & &  & +0.38 & & & -1.90 & & \\
  \hline
- E (\si{\electronvolt})~\cite{jacs2013} & & & +0.14 & & & -1.96 & &\\
+ E (\si{\electronvolt})~\cite{jacs2013} & & & +0.14 & & & -2.06 & &\\
  \hline
  \hline
 \end{tabular}
@@ -620,10 +621,10 @@ The frozen-nuclei interaction energy between the two phenyl groups and copper su
 
 {\comm RZK0529: The actual number is still needed below. Re-draw the figure as requested to get the number.}
 It is remarkable that the energy of the extraction of a copper atom bonded to two phenyl groups is only \SI{0.16}{\electronvolt} -- dramatically lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the ideal clean surface (green pathway in Fig.~\ref{fig:completeenergy}). The \SI{0.71}{\electronvolt} barrier height for the phenyl-assisted extraction is also substantially lower than the \SI{2.04}{\electronvolt} barrier of clean-surface extraction.
-It is suggested that the high energy cost of breaking multiple bonds between copper atoms during the phenyl-assited extraction is almost completely offset by the increased strength of binding of the phenyl groups to the extracted copper atom. This hypothesis is supported by the \SI{10000}{\electronvolt} increase in the interaction energy between the two phenyl groups and the copper atoms during the same transformation (Fig.~\ref{fig:onlysurface}). While it is difficult to separate this total interaction energy into the energy components describing $\pi$-metal and covalent carbon-adatom interaction, it is unlikely that the $\pi$-metal interaction become stronger when the phenyl rings move farther away from the surface in \textbf{X-CMC} (Fig.~\ref{fig:distance-energy}). Another argument for the stronger covalent interactions is the \SI{0.12}{\angstrom} decrease in length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
+It is suggested that the high energy cost of breaking multiple bonds between copper atoms during the phenyl-assited extraction is almost completely offset by the increased strength of binding of the phenyl groups to the extracted copper atom. This hypothesis is supported by the \SI{1.39}{\electronvolt} increase in the interaction energy between the two phenyl groups and the copper atoms during the same transformation (Fig.~\ref{fig:onlysurface}). While it is difficult to separate this total interaction energy into the energy components describing $\pi$-metal and covalent carbon-adatom interaction, it is unlikely that the $\pi$-metal interaction become stronger when the phenyl rings move farther away from the surface in \textbf{X-CMC} (Fig.~\ref{fig:distance-energy}). Another argument for the stronger covalent interactions is the \SI{0.12}{\angstrom} decrease in length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
 
 It is also worth noting that the phenyl-assisted adatom extraction appears to require less energy than the previously described extraction assisted by a single phenyl group and a halogen atom, which may happen immediately after the dehalogenation step~\cite{chemeurope2017}. 
-In the previous study, which used smaller slab models, optB86b exchange and local density correlation functionals, the energy of the phenyl-iodine-assisted extraction of a copper atom was calculated to be \SI{0.88}{\electronvolt}~\cite{chemeurope2017}. {\comm RZK0529: Any explanations of why iodine is less helpful?} 
+In the previous study, which used smaller slab models, optB86b exchange and local density correlation functionals, the energy of the phenyl-iodine-assisted extraction of a copper atom was calculated to be \SI{0.88}{\electronvolt}~\cite{chemeurope2017}. {\comm RZK0529: Any explanations of why iodine is less helpful?} {\zhzh ZZ: I did not see their explanation on this. My idea: During the deiodination, the largest height that copper atom involved can be lifted is \SI{0.15}{\angstrom}, which means that the interaction between the copper atom and one phenyl radical with one iodine atom is weaker than two phenyl radicals.}
 
 With the permissive energetics of adatom extraction, it is important to look closely at the second segment of the adatom pathway, namely, the formation of the C--C bond catalyzed by the adatom. 
 In contrast to the C--C bond formation on the ideal surface, the energy release along this segment of the adatom pathway is moderate \SI{-0.48}{\electronvolt} (\textit{cf.} \SI{-2.00}{\electronvolt} on the ideal surface) while the barrier height is the prohibitive \SI{1.78}{\electronvolt} (\textit{cf.} \SI{0.49}{\electronvolt}). 
