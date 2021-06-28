@@ -519,28 +519,28 @@ The calculated energies are in qualitative agreement with the trend in experimen
 \caption{Characterization of the intermediates along the ideal-surface pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
 The energies are relative to the \textbf{SURF} state.
 %For the coupling step, the energy change and barrier for different halobenzenes are exactly same due to the absence of halogen atoms in this step. 
-{\comm RZK0628: Exchange the order of columns $\Delta$(\textbf{DIM$\ddagger$}$-$\textbf{CMC}) and \textbf{DIM$\ddagger$}. }
+{\comm RZK0628: Exchange the order of columns $\Delta$(\textbf{DIM$\ddagger$}$-$\textbf{CMC}) and \textbf{DIM$\ddagger$}. } {\zhzh ZZ: done}
 }
 \label{table:idealsurface}
 \begin{tabular}{ lccccccccc  }
  \hline
  \hline
-  & & & Barrier & & & Change & &\\
-  & Hal. & \textbf{CMC} & $\Delta$(\textbf{DIM$\ddagger$}$-$\textbf{CMC}) & \textbf{DIM$\ddagger$} & \textbf{DIM} & $\Delta$(\textbf{DIM}$-$\textbf{CMC}) & \textbf{DSRB} & \textbf{PROD} \\ 
+  & & &  & Barrier & & Change & &\\
+  & Hal. & \textbf{CMC} & \textbf{DIM$\ddagger$} & $\Delta$(\textbf{DIM$\ddagger$}$-$\textbf{CMC}) &  \textbf{DIM} & $\Delta$(\textbf{DIM}$-$\textbf{CMC}) & \textbf{DSRB} & \textbf{PROD} \\ 
  \hline 
- C--C (\si{\angstrom}) & & 3.10 & -0.82 & 2.28 & 1.49 & -1.61 & 1.49 & 1.49 \\ 
+ C--C (\si{\angstrom}) & & 3.10 & 2.28 & -0.82 & 1.49 & -1.61 & 1.49 & 1.49 \\ 
  \hline
- C--Cu (\si{\angstrom}) & & 2.06 & -0.03 & 2.03 & 3.22 & +1.16 & & \\
+ C--Cu (\si{\angstrom}) & & 2.06 & 2.03 & -0.03 & 3.22 & +1.16 & & \\
  \hline
- Lift Cu (\si{\angstrom}) & & 0.53 & -0.04 & 0.49 & 0.00 & -0.53 & 0.00 & 0.00 \\
+ Lift Cu (\si{\angstrom}) & & 0.53 & 0.49& -0.04  & 0.00 & -0.53 & 0.00 & 0.00 \\
  \hline
- \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 &+0.49 &-2.56 & -5.05 & -2.00& -3.33&0.85\\ 
- & Br & -3.73 &+0.49 & -3.24& -5.73 & -2.00& -4.01&0.07\\ 
- & I  & -4.38 & +0.49& -3.89& -6.38 & -2.00& -4.66&-0.71\\ 
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 &-2.56 &+0.49 & -5.05 & -2.00& -3.33&0.85\\ 
+ & Br & -3.73 & -3.24 &+0.49 & -5.73 & -2.00& -4.01&0.07\\ 
+ & I  & -4.38 & -3.89 & +0.49 & -6.38 & -2.00& -4.66&-0.71\\ 
  \hline
- E (\si{\electronvolt})~\cite{pccp2010} & &  & +0.38 & & & -1.90 & & \\
+ E (\si{\electronvolt})~\cite{pccp2010} & &  &  & +0.38& & -1.90 & & \\
  \hline
- E (\si{\electronvolt})~\cite{jacs2013} & & & +0.14 & & & -2.06 & &\\
+ E (\si{\electronvolt})~\cite{jacs2013} & & &  & +0.14& & -2.06 & &\\
  \hline
  \hline
 \end{tabular}
@@ -610,16 +610,16 @@ When the adatom is extracted along the $[1\bar{1}0]$ direction (yellow labels in
 \includegraphics[width=0.48\textwidth]{Fig/onlysurface.pdf}
 \caption{
 The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{DHAL-2} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states. 
-%RZK0628: y-ticks placement is weird. There should be a tick mark at y=0.
+%RZK0628: y-ticks placement is weird. There should be a tick mark at y=0. ZZ: done 
 }
 \label{fig:onlysurface}
 \end{figure}
 
 {\lock
 
-{\comm RZK0628: Use the energy of X-CMC in Figure~\ref{fig:onlysurface} to replace the 10000 marker in this paragraph.}
+{\comm RZK0628: Use the energy of X-CMC in Figure~\ref{fig:onlysurface} to replace the 10000 marker in this paragraph.} {\zhzh ZZ:done}
 It is remarkable that the energy of the extraction of a copper atom bonded to two phenyl groups is only \SI{0.16}{\electronvolt} -- dramatically lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the ideal clean surface (green pathway in Fig.~\ref{fig:completeenergy}). The \SI{0.71}{\electronvolt} barrier height for the phenyl-assisted extraction is also substantially lower than the \SI{2.04}{\electronvolt} barrier of clean-surface extraction.
-It is suggested that the high energy cost of breaking multiple bonds between copper atoms during the phenyl-assited extraction is almost completely offset by the increased strength of binding of the phenyl groups to the extracted copper atom. This hypothesis is supported by the \SI{10000}{\electronvolt} increase in the interaction energy between the two phenyl groups and the copper atoms after the extraction (Fig.~\ref{fig:onlysurface}). While it is difficult to separate this total interaction energy into the energy components describing $\pi$-metal and covalent carbon-adatom interaction, it is the covalent component that is most likely became stronger. It is unlikely that the $\pi$-metal interaction become stronger when the phenyl rings move farther away from the surface in \textbf{X-CMC} (Fig.~\ref{fig:distance-energy}). Another argument for the stronger covalent interactions is the \SI{0.12}{\angstrom} decrease in length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
+It is suggested that the high energy cost of breaking multiple bonds between copper atoms during the phenyl-assited extraction is almost completely offset by the increased strength of binding of the phenyl groups to the extracted copper atom. This hypothesis is supported by the \SI{1.56}{\electronvolt} increase in the interaction energy between the two phenyl groups and the copper atoms after the extraction (Fig.~\ref{fig:onlysurface}). While it is difficult to separate this total interaction energy into the energy components describing $\pi$-metal and covalent carbon-adatom interaction, it is the covalent component that is most likely became stronger. It is unlikely that the $\pi$-metal interaction become stronger when the phenyl rings move farther away from the surface in \textbf{X-CMC} (Fig.~\ref{fig:distance-energy}). Another argument for the stronger covalent interactions is the \SI{0.12}{\angstrom} decrease in length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
 
 It is also worth noting that the phenyl-assisted adatom extraction appears to require less energy than the previously described extraction assisted by a single phenyl group and a halogen atom, which may happen immediately after the dehalogenation step~\cite{chemeurope2017}. 
 In the previous study, which used smaller slab models, optB86b exchange and local density correlation functionals, the energy of the extraction of a copper atom assisted by phenyl and iodine was calculated to be \SI{0.88}{\electronvolt}~\cite{chemeurope2017}. %{\comm RZK0529: Any explanations of why iodine is less helpful?} {\zhzh ZZ: I did not see their explanation on this. My idea: During the deiodination, the largest height that copper atom involved can be lifted is \SI{0.15}{\angstrom}, which means that the interaction between the copper atom and one phenyl radical with one iodine atom is weaker than two phenyl radicals.}
@@ -655,26 +655,26 @@ In addition to the C--C formation mechanism describe above, we explored an alter
 \centering
 \caption{Characterization of the intermediates along the $[11\bar{2}]$ adatom pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
 The energies are relative to the \textbf{SURF} state. 
-{\comm RZK0628: Exchange the order of columns $\Delta^{(b-a)}$ and \textbf{X-CMC$\ddagger$}$^{b}$. Exchange the order of columns  $\Delta^{(d-c)}$ and \textbf{X-DIM$\ddagger$}$^{d}$. The logic is: the state is introduced and only then referred to. Use this logic to correct table(s) in \sinfo.}
+{\comm RZK0628: Exchange the order of columns $\Delta^{(b-a)}$ and \textbf{X-CMC$\ddagger$}$^{b}$. Exchange the order of columns  $\Delta^{(d-c)}$ and \textbf{X-DIM$\ddagger$}$^{d}$. The logic is: the state is introduced and only then referred to. Use this logic to correct table(s) in \sinfo.} {\zhzh ZZ:done}
 }
 \label{table:adatom-longitude}
 \begin{tabular}{ lccccccccccccc  }
  \hline
  \hline
-  & & & Barrier & & & Change & Barrier& & &Change&\\
-  & Hal. & \textbf{CMC}$^{a}$ & $\Delta^{(b-a)}$ & \textbf{X-CMC$\ddagger$}$^{b}$ & \textbf{X-CMC}$^{c}$ &$\Delta^{(c-a)}$ & $\Delta^{(d-c)}$ & \textbf{X-DIM$\ddagger$}$^{d}$ & \textbf{X-DIM-A}$^{e}$ &$\Delta^{(e-c)}$ & \textbf{X-DIM-B}  \\ 
+  & & & & Barrier & & Change & & Barrier & &Change&\\
+  & Hal. & \textbf{CMC}$^{a}$ & \textbf{X-CMC$\ddagger$}$^{b}$ & $\Delta^{(b-a)}$ & \textbf{X-CMC}$^{c}$ &$\Delta^{(c-a)}$ & \textbf{X-DIM$\ddagger$}$^{d}$ & $\Delta^{(d-c)}$ & \textbf{X-DIM-A}$^{e}$ &$\Delta^{(e-c)}$ & \textbf{X-DIM-B}  \\ 
  \hline 
- {C--C (\si{\angstrom})} & & {3.10} & {+0.43} & {3.53} & {3.86} &{+0.76} & {-1.30} & {2.56} & {1.51} &{-2.35} &{1.50}\\ 
+ {C--C (\si{\angstrom})} & & {3.10} & {3.53} & {+0.43} & {3.86} &{+0.76} & {2.56} & {-1.30} & {1.51} &{-2.35} &{1.50}\\ 
  \hline
- {C--Cu (\si{\angstrom}) } & & {2.06} & {-0.21} & {1.85} & {1.94} &{-0.12} & {-0.05} & {1.89} & {2.16} &{+0.22} &{} \\ 
+ {C--Cu (\si{\angstrom}) } & & {2.06} & {1.85} & {-0.21} & {1.94} &{-0.12} & {1.89} & {-0.05} & {2.16} &{+0.22} &{} \\ 
  \hline
- {Lift Cu (\si{\angstrom}) } & & {0.53} & {+1.05} & {1.58} & {1.97} &{+1.44} & {-0.16} & {1.81} & {1.71} &{-0.26} &{0.00}\\ 
+ {Lift Cu (\si{\angstrom}) } & & {0.53} & {1.58} & {+1.05} & {1.97} &{+1.44} & {1.81} & {-0.16} & {1.71} &{-0.26} &{0.00}\\ 
 % \hline
 % \hline
  \hline
- \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 & +0.71 &-2.34 &-2.89 &+0.16 & +1.78 &-1.11 & -3.37&-0.48&-3.29\\ 
- & Br &-3.73 &+0.71 &-3.02 & -3.57 &+0.16 & +1.78 &-1.79 & -4.06 & -0.48&-3.97 \\ 
- & I  & -4.38 & +0.71 & -3.67& -4.22 &+0.16& +1.78 &-2.44 & -4.70 & -0.48&-4.62\\ 
+ \multirow{3}{*}{E (\si{\electronvolt}) } & Cl & -3.05 &-2.34 & +0.71 &-2.89 &+0.16 &-1.11 & +1.78 & -3.37&-0.48&-3.29\\ 
+ & Br &-3.73 &-3.02 &+0.71 & -3.57 &+0.16 &-1.79 & +1.78 & -4.06 & -0.48&-3.97 \\ 
+ & I  & -4.38 & -3.67 & +0.71 & -4.22 &+0.16 &-2.44 & +1.78 & -4.70 & -0.48&-4.62\\ 
  \hline
  \hline
 \end{tabular}
