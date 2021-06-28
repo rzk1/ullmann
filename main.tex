@@ -107,8 +107,7 @@ floatfix,
              %  but any date may be explicitly specified
 
 \begin{abstract}
-%{\comm RZK0618: Mostly limited to Cu.}
-There is mounting evidence from experimental and computational studies that metal atoms can be  removed from their crystallographic positions in the surface when interacting with the organic species produced in the course of surface-confined reactions. In this work, the energetics of the adatom creation during the coupling of two phenyl groups on Cu(111), Ag(111) and Au(111) surfaces is examined [for the first time] using density functional theory modeling. Analysis of competing pathways reveals that two phenyl groups can extract a silver atom from its surface position faster than forming the carbon-carbon bond. This process is slow on the Cu(111) surface and thermodynamically prohibitive on Au(111). It is also found that strong bonds formed by all adatoms, extracted or pre-existing, with phenyl groups create prohibitively high barriers for their further coupling with the formation of biphenyl. The pathways investigated in this work explain why extracted adatoms are unlikely to be observed during many surface-confined reactions and how the presence of adatoms can lead to defects in the nanostructures assembled on the surface.
+There is mounting experimental evidence that metal atoms can be removed from their crystallographic positions in the surface when interacting with the organic species produced in the course of surface-confined reactions. In this work, the energetics of the adatom creation during the coupling of two phenyl groups on Cu(111), Ag(111) and Au(111) surfaces is examined [for the first time] using density functional theory modeling. Analysis of competing pathways reveals that two phenyl groups can extract a silver atom from its surface position faster than they can form the carbon-carbon bond. This process is slow on the Cu(111) surface and thermodynamically prohibitive on Au(111). It is also found that strong bonds formed by all adatoms, extracted or pre-existing, with phenyl groups create a prohibitively high barrier for the subsequent coupling step. The pathways investigated in this work explain why extracted adatoms are diffucults to observe in some surface-confined reactions and how the presence of adatoms can lead to defects in the nanostructures assembled on the surface.
 \end{abstract}
 
 \maketitle
@@ -316,7 +315,7 @@ This raise is considered insufficient to justify further studies of the adatom c
 However, larger organic groups that tend to stay parallel to the surface can lift a metal atom higher. 
 For example, DFT calculations have revealed that bromofluoranthene group, which contains four fused aromatic rings, lifts a gold atom by \SI{0.5}{\angstrom} above its ideal-surface position~\cite{jpcc2018} in the optimized state. 
 Moreover, it has been calculated that this radical can lift the gold atom upto \SI{1.9}{\angstrom} in one of the intermediate NEB states in the diffusion pathway~\cite{jpcc2018}.
-The raise of this magnitude (cf. \SI{1.41}{\angstrom} radius of gold atom) is high enough to warrant further exploratory studies of the adatom creation.
+The raise of this magnitude (cf. \SI{1.4}{\angstrom} radius of gold atom) is high enough to warrant further exploratory studies of the adatom creation.
 
 %RZK0511: The following paragraph does not seem to belong in the literature review. If these are your own thoughts then the paragraph should be placed in R&D. If this is a summary of someone else' review of existing data then it should be properly referenced.
 %The evidence of pre-existing adatoms are involved in this step is not reported. It can be speculated that diffusion of aryl groups on metal surface can seldom create adatoms since the intensity of interaction between one dehalogenated species and metal atoms is not sufficient to fully extract ideal-surface atoms out.
@@ -439,7 +438,7 @@ The (111) metal surfaces were modeled with slabs containing 192 metal atoms arra
 
 DFT calculations were performed using Vienna \emph{ab initio} simulation package (VASP)~\cite{ullmann_131, ullmann_132, ullmann_133, ullmann_134}. The dispersion-corrected~\cite{ullmann_136, ullmann_137} Perdew-Burke-Ernzerhof (PBE) generalized gradient approximation~\cite{ullmann_139} was used as the exchange-correlation (XC) functional. 
 Spin-polarized electronic states were modeled using a plane wave basis set with the energy cut-off set at \SI{800}{\electronvolt}.
-%RZK0602: Why the energy cutoff is so high? {\zhzh ZZ0602: corrected}
+%{\comm RZK0629: The energy cutoff still appears to be wrong. Check your output files. Report the value in Ry.}
 The projector augmented wave formalism was used to describe interactions of atomic cores with valence electrons. The integration over the Brillouin zone was performed using the $3\times 3 \times1$ Monkhorst-Pack $k$-point mesh. 
 
 Atomic positions were optimized until the maximum force on atoms decreased below \SI{0.02}{\electronvolt\per\angstrom}. 
@@ -516,10 +515,9 @@ The calculated energies are in qualitative agreement with the trend in experimen
 
 \begin{table*}
 \centering
-\caption{Characterization of the intermediates along the ideal-surface pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
+\caption{Characterization of the intermediates in the ideal-surface pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
 The energies are relative to the \textbf{SURF} state.
-%For the coupling step, the energy change and barrier for different halobenzenes are exactly same due to the absence of halogen atoms in this step. 
-{\comm RZK0628: Exchange the order of columns $\Delta$(\textbf{DIM$\ddagger$}$-$\textbf{CMC}) and \textbf{DIM$\ddagger$}. } {\zhzh ZZ: done}
+%For the coupling step, the energy change and barrier for different halobenzenes are exactly same due to the absence of halogen atoms in this step.
 }
 \label{table:idealsurface}
 \begin{tabular}{ lccccccccc  }
@@ -609,17 +607,14 @@ When the adatom is extracted along the $[1\bar{1}0]$ direction (yellow labels in
 \centering
 \includegraphics[width=0.48\textwidth]{Fig/onlysurface.pdf}
 \caption{
-The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{DHAL-2} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states. 
-%RZK0628: y-ticks placement is weird. There should be a tick mark at y=0. ZZ: done 
-}
+The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{DHAL-2} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states.}
 \label{fig:onlysurface}
 \end{figure}
 
 {\lock
 
-{\comm RZK0628: Use the energy of X-CMC in Figure~\ref{fig:onlysurface} to replace the 10000 marker in this paragraph.} {\zhzh ZZ:done}
 It is remarkable that the energy of the extraction of a copper atom bonded to two phenyl groups is only \SI{0.16}{\electronvolt} -- dramatically lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the ideal clean surface (green pathway in Fig.~\ref{fig:completeenergy}). The \SI{0.71}{\electronvolt} barrier height for the phenyl-assisted extraction is also substantially lower than the \SI{2.04}{\electronvolt} barrier of clean-surface extraction.
-It is suggested that the high energy cost of breaking multiple bonds between copper atoms during the phenyl-assited extraction is almost completely offset by the increased strength of binding of the phenyl groups to the extracted copper atom. This hypothesis is supported by the \SI{1.56}{\electronvolt} increase in the interaction energy between the two phenyl groups and the copper atoms after the extraction (Fig.~\ref{fig:onlysurface}). While it is difficult to separate this total interaction energy into the energy components describing $\pi$-metal and covalent carbon-adatom interaction, it is the covalent component that is most likely became stronger. It is unlikely that the $\pi$-metal interaction become stronger when the phenyl rings move farther away from the surface in \textbf{X-CMC} (Fig.~\ref{fig:distance-energy}). Another argument for the stronger covalent interactions is the \SI{0.12}{\angstrom} decrease in length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
+It is suggested that the high energy cost of breaking multiple bonds between copper atoms during the phenyl-assited extraction is almost completely offset by the increased strength of binding of the phenyl groups to the extracted copper atom. This hypothesis is supported by the \SI{1.56}{\electronvolt} increase in the interaction energy between the two phenyl groups and the copper atoms after the extraction (Fig.~\ref{fig:onlysurface}). While it is difficult to separate this total interaction energy into the energy components describing $\pi$-metal and covalent carbon-adatom interaction, it is the covalent component that is most likely becomes stronger. It is unlikely that the $\pi$-metal interaction becomes stronger because the phenyl rings move farther away from the surface in \textbf{X-CMC} (Fig.~\ref{fig:distance-energy}). Another argument for the stronger covalent interactions is the \SI{0.12}{\angstrom} decrease in the length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
 
 It is also worth noting that the phenyl-assisted adatom extraction appears to require less energy than the previously described extraction assisted by a single phenyl group and a halogen atom, which may happen immediately after the dehalogenation step~\cite{chemeurope2017}. 
 In the previous study, which used smaller slab models, optB86b exchange and local density correlation functionals, the energy of the extraction of a copper atom assisted by phenyl and iodine was calculated to be \SI{0.88}{\electronvolt}~\cite{chemeurope2017}. %{\comm RZK0529: Any explanations of why iodine is less helpful?} {\zhzh ZZ: I did not see their explanation on this. My idea: During the deiodination, the largest height that copper atom involved can be lifted is \SI{0.15}{\angstrom}, which means that the interaction between the copper atom and one phenyl radical with one iodine atom is weaker than two phenyl radicals.}
@@ -631,11 +626,11 @@ The cleavage of these strong bonds hinders the second segment of the adatom path
 
 It should be mentioned that the \textbf{X-DIM-B} state, in which the biphenyl is not bound to the adatom, is only \SI{0.08}{\electronvolt} higher in energy than the \textbf{X-DIM-A} state, indicating that biphenyl is not strongly bound to the adatom and and can diffuse away easily. 
 
-From the purely thermodynamics point of view, the overall nearly thermoneutral adatom pathway (\SI{-0.24}{\electronvolt}) can be summarized as the energy released during the C--C bond formation (\SI{-2.00}{\electronvolt}) being used to extract the adatom (\SI{1.76}{\electronvolt}). The pathway of this energy redistribution is intriguingly complex with all stable states along the path -- \textbf{CMC}, \textbf{X-CMC}, \textbf{X-DIM-A}, \textbf{X-DIM-B} -- having very similar energy. First, the adatom escapes the pull of its metal neighbors with the compensating energy-releasing strengthening of the two phenyl-adatom bonds. Second, the strong C--M bonds are converted into the strong C--C bond without a significant change in energy. Finally, the biphenyl drifts away from the adatom without experiencing a strong resisting force. From the kinetics point of view, only the second segment along the path has a high energy barrier rendering the pathway inaccessible during the on-surface Ullmann coupling.
+From the purely thermodynamics point of view, the overall nearly thermoneutral adatom pathway (\SI{-0.24}{\electronvolt}) can be summarized as the redistribution of the energy: the energy released during the highly exothermic C--C bond formation (\SI{-2.00}{\electronvolt}) is used in the energy demanding adatom extraction (\SI{1.76}{\electronvolt}). The pathway of this energy redistribution is intriguingly complex with all stable states along the path -- \textbf{CMC}, \textbf{X-CMC}, \textbf{X-DIM-A}, \textbf{X-DIM-B} -- having very similar energy. First, the adatom escapes the pull of its metal neighbors with the compensating energy-releasing strengthening of the two phenyl-adatom bonds. Second, the strong C--M bonds are converted into the strong C--C bond without a significant change in energy. Finally, the biphenyl drifts away from the adatom without experiencing a strong resisting force. From the kinetics point of view, only the second segment along the path has a high energy barrier rendering the pathway inaccessible during the surface-confined coupling reactions.
 
 %RZZK: The energetic cost of extracting the adatom is almost completely offset by the increased binding between the two phenyl groups and the adatom in the process of extraction. The binding strength is estimated to increase by (if compared to the binding to the surface atom). Compared to adatom extraction during the DHAL step (\SI{0.88}{\electronvolt}) In this repsect adatom extrac
 
-In addition to the C--C formation mechanism describe above, we explored an alternative pathway that proceeds from \textbf{X-CMC} directly to \textbf{X-DIM-B} without passing through \textbf{X-DIM-A}. In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. It was found that this path has a high activation energy of \SI{3.0}{\electronvolt} indicating that such a transformation is unrealistically slow. 
+In addition to the C--C formation mechanism described above, we explored an alternative pathway that proceeds from \textbf{X-CMC} directly to \textbf{X-DIM-B} without passing through \textbf{X-DIM-A}. In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. It was found that this path has a high activation energy of \SI{3.0}{\electronvolt} indicating that such a transformation is unrealistically slow. 
 %and will not be considered further. 
 %The NEB energy profile and structural changes for this segment are shown in \sinfo. RZK0528: There is no data in \sinfo.
 
@@ -653,9 +648,8 @@ In addition to the C--C formation mechanism describe above, we explored an alter
 
 \begin{table*}
 \centering
-\caption{Characterization of the intermediates along the $[11\bar{2}]$ adatom pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
+\caption{Characterization of the intermediates in the $[11\bar{2}]$ adatom pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
 The energies are relative to the \textbf{SURF} state. 
-{\comm RZK0628: Exchange the order of columns $\Delta^{(b-a)}$ and \textbf{X-CMC$\ddagger$}$^{b}$. Exchange the order of columns  $\Delta^{(d-c)}$ and \textbf{X-DIM$\ddagger$}$^{d}$. The logic is: the state is introduced and only then referred to. Use this logic to correct table(s) in \sinfo.} {\zhzh ZZ:done}
 }
 \label{table:adatom-longitude}
 \begin{tabular}{ lccccccccccccc  }
@@ -814,7 +808,7 @@ Comparison of this profile to that of the competing irreversible C--C bond forma
 The strong binding of the two phenyl groups to adatoms, estimated to be \SI{1.47}{\electronvolt} stronger than their binding to an ideal-surface atom, makes the barrier of the formation of the C--C bond between the adatom-bonded phenyl groups extremely high. It was calculated to be \SI{1.78}{\electronvolt}, which is \SI{1.29}{\electronvolt} higher that the corresponding barrier for the ideal surface reaction. This has important implications not only for the phenyl-extracted adatoms but also for the adatoms that exist on clean copper surface, for example, around steps and kinks. The presence of such a high energy barrier implies that any adatom participating in the surface reaction coordinates organic groups strongly but is unable to catalyze the subsequent C--C bond formation.
 %{\comm RZK0527: I think it is not only the binding strength but the stiffness of the bonds. In that case, include ``the stiff phenyl--adatom bonds''.}
 
-{\comm RZK: We should discuss implications.}% For example, creation of adatom covered surfaces and design of ``adatom pumps''.}
+%{\comm RZK: We should discuss implications.}% For example, creation of adatom covered surfaces and design of ``adatom pumps''.}
 %The results of this work have implications beyond the Ullmann coupling process. When it comes to design of adatom covered metal surfaces, which can serve as active catalysts for many reactions beyond the Ullmann coupling process.
 
 }
