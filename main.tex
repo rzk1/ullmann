@@ -18,35 +18,20 @@
 %  3)  latex apssamp.tex
 %  4)  latex apssamp.tex
 %
-\documentclass[%
- reprint,
-%superscriptaddress,
-%groupedaddress,
-%unsortedaddress,
-%runinaddress,
-%frontmatterverbose, 
-%preprint,
-%preprintnumbers,
-%nofootinbib,
-%nobibnotes,
-%bibnotes,
- amsmath,amssymb,
- aps,
-%pra,
-prb,
-%rmp,
-%prstab,
-%prstper,
-floatfix,
-]{revtex4-2}
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
 
+
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
 %\newcommand*{\INTERNAL}{}
-
+\usepackage{chemformula} % Formula subscripts using \ch{}
+\usepackage[T1]{fontenc} % Use modern font encodings
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{hyperref}% add hypertext capabilities
-\hypersetup{colorlinks=true,urlcolor={blue},citecolor={blue}, linkcolor={blue}}
+% \hypersetup{colorlinks=true,urlcolor={blue},citecolor={blue}, linkcolor={blue}}
 \usepackage{amsmath} % or simply amstext
 %\newcommand{\angstrom}{\textup{\angstrom}}
 \usepackage{siunitx}
@@ -90,9 +75,12 @@ floatfix,
 % Use Supp Info labels with SI- prefix
 \externaldocument[SI-]{SI}
 
-\begin{document}
 
-\title{Role of adatoms in the surface-confined Ullmann coupling of phenyl groups}
+
+\title[An \textsf{achemso} demo]
+    {Role of adatoms in the surface-confined Ullmann coupling of phenyl groups
+    %class\footnote{A footnote for the title}
+    }
 
 \author{Zhenzhe Zhang}
 \author{Dmitrii F. Perepichka}%
@@ -105,6 +93,7 @@ floatfix,
 
 %\date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
+\begin{document}
 
 \begin{abstract}
 %RZK: One Dima's comment has not been addressed yet. 
@@ -880,7 +869,7 @@ The research was funded by the Natural Sciences and Engineering Research Council
 %\nocite{*}
 
 %RZK0806: use achemso bibliography style. Remove links from the references.
-\bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
+% \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
 \bibliography{references}% Produces the bibliography via BibTeX.
 
 \end{document}
