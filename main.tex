@@ -21,7 +21,7 @@
 \PassOptionsToPackage{usenames,dvipsnames}{xcolor}
 
 
-\documentclass[journal=jacsat,manuscript=article]{achemso}
+\documentclass[journal=ancac3,layout=twocolumn,manuscript=article]{achemso}
 
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
 %\newcommand*{\INTERNAL}{}
@@ -77,10 +77,8 @@
 
 
 
-\title[An \textsf{achemso} demo]
-    {Role of adatoms in the surface-confined Ullmann coupling of phenyl groups
-    %class\footnote{A footnote for the title}
-    }
+\title
+{Role of adatoms in the surface-confined Ullmann coupling of phenyl groups}
 
 \author{Zhenzhe Zhang}
 \author{Dmitrii F. Perepichka}%
@@ -641,6 +639,7 @@ In the first step, the adatom escapes the pull of its metal neighbors with the c
 }
 
 \begin{table*}
+\tiny %RZK0808: Ugly temporary fix for the ugly achemso package
 \centering
 \caption{Characterization of the intermediates in the $[11\bar{2}]$ adatom pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
 The energies are relative to \textbf{SURF}. 
@@ -867,9 +866,24 @@ The data presented in this work suggests that, for many other bond forming react
 % 1. Explain the surprisingly low DIM activation barrier compared to DHAL activation barrier. A simple bond-strength arguments suggest that the strength of C-Metal is underestimated and possibly C-X, C-C strengths are overestimated.
 % 2. Design the reaction (machine) capable of generating clean (super-active) adatoms. Consider thermodynamics states of such a machine (set, grab, extract, release, leave). Consider the kinetics of the processes of switching between the states. Consider side pathways  that skip the extraction.
 
-\section{acknowledgements}
+\begin{acknowledgement}
 
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful to Compute Canada for computer resources allocated under the CFI John R. Evans Leaders Fund program.
+
+\end{acknowledgement}
+
+\begin{suppinfo}
+
+RZK0808: Describe the content of \sinfo using a recent ACS Nano article.
+
+\end{suppinfo}
+
+\begin{tocentry}
+
+\includegraphics[width=0.62\textwidth]{Fig/conclusion.pdf}\newline
+RZK0808: This TOG is temporary.
+
+\end{tocentry}
 
 %\nocite{*}
 
