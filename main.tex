@@ -109,7 +109,7 @@ floatfix,
 \begin{abstract}
 %RZK: One Dima's comment has not been addressed yet. 
 The Ullmann coupling of aromatic molecules on metal surfaces is currently the most successful strategy to synthesize $\pi$-conjugated organic polymers with unique electronic properties such as molecular wires, graphene nanoribbons and two-dimensional covalent organic frameworks. 
-Experimental evidence suggests that metal atoms can be removed from their crystallographic positions in the surface when interacting with the organic species produced in the course of surface-confined reactions. In this work, the energetics of the adatom creation during the coupling of two monohalogenated benzene molecules on the Cu(111), Ag(111) and Au(111) surfaces is examined, for the first time, using density functional theory modeling. Analysis of competing pathways reveals that two phenyl groups can extract a silver atom from its surface position faster than they can form the carbon-carbon bond. This process is slow on the Cu(111) surface and thermodynamically prohibitive on Au(111). It is also found that strong bonds formed by all adatoms, extracted or pre-existing, with phenyl groups create a prohibitively high barrier for the subsequent coupling step. The pathways investigated in this work explain why extracted adatoms are diffucults to observe in some surface-confined reactions and how the presence of adatoms can lead to defects in the nanostructures assembled on the surface.
+Experimental evidence suggests that metal atoms can be removed from their crystallographic positions in the surface when interacting with the organic species produced in the course of surface-confined reactions. In this work, the energetics of the adatom creation during the coupling of two monohalogenated benzene molecules on the Cu(111), Ag(111) and Au(111) surfaces is examined using density functional theory modeling. Analysis of competing pathways reveals that two phenyl groups can extract a silver atom from its surface position faster than they can form the carbon-carbon bond. This process is slow on the Cu(111) surface and thermodynamically restricted on Au(111). It is also found that strong bonds formed by all adatoms, extracted or pre-existing, with phenyl groups create a prohibitively high barrier for the subsequent coupling step. The pathways investigated in this work explain why extracted adatoms are diffucults to observe in some surface-confined reactions and how the presence of adatoms can lead to defects in the nanostructures assembled on the surface.
 \end{abstract}
 
 \maketitle
@@ -610,7 +610,7 @@ However, the extraction along the $[11\bar{2}]$ direction has lower barrier than
 \centering
 \includegraphics[width=0.48\textwidth]{Fig/onlysurface.pdf}
 \caption{
-The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{CMC} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states.}
+(a) The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{CMC} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states. (b) Linear dependence between the decreased catalytic activity of adatoms compared to ideal surfaces and strengthening of the phenyl-metal binding. In both axis labels, $\Delta$ refers to the change in the quantity of interest from the ideal suface to adatom.}
 \label{fig:onlysurface}
 %RZK0806: Update the figure to include all metals.
 %RZK0806: Add the new panel that shows the correlation between bond strengthening and activation barrier. See the new Powerpoint file for labels.
@@ -696,7 +696,7 @@ The energies are relative to \textbf{SURF}.
 
 {\lock
 
-The high energy of the \textbf{X-DIM$\ddagger$} transition state also makes the preceding adatom extraction step a side dead-end process. Although the extraction process is expected to happen at the relevant temperatures (Table~\ref{SI-RZK0806-experimental-temperatures}), most extracted adatoms are predestined to recombine with the vacancy returning to the \textbf{CMC} state, which eventually undergoes the irreversible ideal-surface C--C bond formation. 
+The high energy of the \textbf{X-DIM$\ddagger$} transition state also makes the preceding adatom extraction step a side dead-end process. Although the extraction process is expected to happen slowly at the relevant temperatures (Table~\ref{SI-RZK0806-experimental-temperatures}), most extracted adatoms are predestined to recombine with the vacancy returning to the \textbf{CMC} state, which eventually undergoes the irreversible ideal-surface C--C bond formation. 
 %
 %While the energy profile of the extraction pathway appears to suggest that the formation of phenyl-bound adatoms should be expected in the Ullmann coupling process, it is important to view these numbers in comparison to the energetic characteristics of the competitive ideal-surface pathway. Since the adatom extraction barrier is only \SI{0.22}{\electronvolt} higher than the barrier of the ideal-surface C--C bond formation the extraction process appears to happen at the relevant temperatures (\SI{350}{\kelvin} is used to promote the coupling of phenyl groups) albeit orders of magnitude slower than the ideal-surface dimerization. However, the insurmountable barrier of the second segment along the adatom pathway and the low barrier of the reversed adatom-vacancy recombination  indicate that most extracted adatoms are predestined to recombine with the vacancy and return to the \textbf{CMC} state, which eventually undergoes the irreversible ideal-surface transformation toward the biphenyl \textbf{DIM} state. 
 %
@@ -823,59 +823,64 @@ However, even with this low barrier, the transformation along the adatom pathway
 Since the extraction barrier is eliminated for pre-existing Au adatoms, they are expected to catalyze the C--C bond formation almost as efficiently as ideal-surface atoms, without forming the \textbf{X-CMC} traps like Cu adatoms (Fig.~\ref{fig:adatomullmann}).
 
 To summarize, the calculations show that adatoms on all three surfaces have decreased ability to catalyze the C--C bond formation compared to metal atoms of the ideal surfaces. 
-The key reason behind the decreased catalytic activity is the strengthening of the phenyl-metal binding as demonstrated by the dependence between the two characteristics in Fig.~\ref{fig:onlysurface}b.
+The key reason behind the decreased catalytic activity is the strengthening of the phenyl-metal binding as demonstrated by the nearly linear dependence between the two properties in Fig.~\ref{fig:onlysurface}b.
 
-{\comm Any simple general chemistry explanations of this trend: why gold binds a Ph weaker than other metals? In other words, why gold is so inert? Is it true that in percentage terms gold exhibit smaller decrease in Ph binding (going from ideal to adatom)?}
+%To enable efficient trap-free adatom catalysis both the extraction and C--C bond formation steps of the adatom pathway must have low activation barriers and desirably be exothermic. In addition to being efficient in absolute terms, this pathway should outcompete the catalytic process on the ideal surface. 
+
+\ifdefined\INTERNAL
+\subsection{Implications for adatom catalysis}
+\fi
+
+\begin{figure}[bt]
+\centering
+\includegraphics[width=0.48\textwidth]{Fig/conclusion.pdf}
+\caption{RZK0808} 
+%RZK0808: Zhenzhe, what font is used for the other figures in the manuscript? Replace "Phenyl-assisted adatom extraction is difficult", "Efficient adatom catalysis"
+\label{fig:conclusion}
+\end{figure}
+
+%[Further analysis of] The data collected for the three metals reveals that adjusting the strength of organic-adatom binding (through, for example, electron-donating and withdrawing groups in organic precursors) might not be sufficient to enable efficient adatom catalysis (i.e. to make the adatom pathway more likely than the ideal-surface pathway). 
+\textbf{Implications for adatom catalysis.} 
+%
+The data for the three metals shows that focusing solely on the strength of the organic-adatom binding might not be sufficient to find a metal-precursor combination for efficient adatom catalysis. The example of Au(111) demonstrates that the weak organic-adatom binding hinders the adatom extraction whereas Ag(111) and Cu(111) show that the strong binding leads to prohibitively high barriers in the C--C bond formation step. However, it is expected that the assisted adatom extraction can be facilitated without increasing phenyl-adatom binding if metal catalysts with lower energy of unassisted adatom extaction are employed. The utility of considering both the energy of unassisted adatom extraction and strengthening of the phenyl-metal binding for various metals is shown in Fig.~\ref{fig:conclusion}. Remarkably, the DFT determined condition for the thermoneutral adatom extraction happens to be a straight line in the space of these two parameters. Moreover, the region where the adatom-catalyzed C--C bond formation is faster than that on the ideal surface can be readily estimated using a only subset of the DFT energies computed in this work (see theoretical details in \sinfo). Fig.~\ref{fig:conclusion} makes clear that a competitive adatom-catalyzed coupling of two phenyl groups requires metal catalysts with at most \SI{1.05}{\electronvolt} energy of the unassisted adatom-vacancy formation (cf. \SI{1.56}{\electronvolt} for gold). This upper bound can greatly facilitate computational screening of metals for efficient trap-free adatom catalysis since DFT calculations can be performed quickly for only clean metal surfaces. The screening accuracy can be improved if the horizontal position on the chart is also available from additional but still very few DFT calculations. For example, inert metals like gold cannot have more than \SI{0.84}{\electronvolt} energy of the unassisted adatom extraction whereas for metals like silver this limit is even more restrictive \SI{0.60}{\electronvolt}. Finally, the data presented in this work suggests that plots similar to Fig.~\ref{fig:conclusion} can be constructed for many other bond forming reactions on metal surfaces, facilitating investigation of their mechanisms. 
+
+The data presented in this work suggests that, for many other bond forming reactions on metal surfaces, plots similar to Fig.~\ref{fig:conclusion} can have much wider areas of competitive adatom catalysis and can facilitate investigation of catalytic mechanisms. 
+
+%{\comm Any simple general chemistry explanations of this trend: why gold binds a Ph weaker than other metals? In other words, why gold is so inert? Is it true that in percentage terms gold exhibit smaller decrease in Ph binding (going from ideal to adatom)?}
+
+%{\comm The works provides unprecedented physical insight into key [tunable parameters] factors that could, in the future, enable design of catalytic C--C bond-forming reactions catalyzed by adatoms. An realistic/ideal adatom pathway should have (1) low-barrier, desirably irreversible adatom extraction step and (2) low-barrier desirably irreversible bond-creating step. In addition to being efficient in absolute terms, this pathway should outcompete the catalytic process on the ideal surface. There are several parameters that can be tuned by changing the nature of metal or mixture of metals and electronic effects in interacting molecules: strength of metal-metal bonds (weaker bonds will facilitate )}
 
 \section{Conclusions}
 
-{\comm RZK: Data is limited to the Cu surface.}
+%\nopagebreak
+DFT modeling was used to investigate the role of adatoms in the coupling of two phenyl groups on the Cu(111), Ag(111) and Au(111) surfaces. For all three metals, it was found that the energy of the extraction of an atom bonded to two phenyl groups is significantly lower than the energy required to extract an adatom from the ideal clean surface. In the most dramatic example of Cu(111), the difference is an order of magnitude (\SI{0.16}{\electronvolt} \emph{vs.} \SI{1.76}{\electronvolt}). In the case of the phenyl-assisted extraction, the energy cost of breaking multiple bonds between metal atoms is almost completely offset by the increased binding of the phenyl groups to the extracted metal atom. This effect is also responsible for the low phenyl-assisted extraction barriers for all three metals (\SI{0.71}{\electronvolt} Cu, \SI{0.43}{\electronvolt} Ag, \SI{0.36}{\electronvolt} Au). 
 
-{\lock
+For all three metals, the stronger binding of the two phenyl groups to adatoms than to ideal-surface atoms makes the barrier of the formation of the C--C bond between the adatom-bonded phenyl groups higher than the barrier for the same step on the ideal surface. In the case of Cu(111) and Ag(111), the adatom-catalyzed C--C bond formation barriers are extremely high (\SI{1.78}{\electronvolt} Cu, \SI{1.52}{\electronvolt} Ag) rendering the adatom-catalyzed C--C bond formation impossible despite the ease of the adatom extraction. The high barriers means that phenyl-bonded adatoms may form only fleetingly on Cu(111) and Ag(111) before recombining with their vacancies and undergoing the ideal-surface C--C coupling. This makes organometallic bridges containing extracted adatoms unlikely to be observed by STM or AFM. In contrast, the adatom-catalyzed C--C bond formation barrier on Au(111) is only \SI{0.20}{\electronvolt}, \SI{0.06}{\electronvolt} higher than the ideal-surface barrier. However, the adatom catalysis is impossible even on Au(111) because it is the extraction of adatoms that is less competitive than the ideal-surface catalysis in this case.
 
-DFT modeling was used to investigate the role of adatoms in the coupling of two phenyl groups on the Cu(111), Ag(111) and Au(111) surfaces. It was found that the energy of the extraction of a copper atom bonded to two phenyl groups is \SI{0.16}{\electronvolt}, which is significantly lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the ideal clean surface. In the case of the phenyl-assited extraction, the energy cost of breaking multiple bonds between copper atoms is almost completely offset by the increased binding of the phenyl groups to the extracted copper atom. This effect is also responsible for the low \SI{0.71}{\electronvolt} extraction barrier. 
+The collected data can be used to predict behavior of not only the phenyl-extracted adatoms but also the adatoms that already exist on metal surfaces, for example, around steps and kinks. For Cu(111) and Ag(111), pre-existing adatoms bind phenyl groups strongly but are unable to catalyze the subsequent C--C bond formation thus forming low-energy traps. In contrast, pre-existing adatoms on the Au(111) surface are not expected to form such traps as they catalyze the C--C bond formation almost as efficiently as ideal-surface atoms. This implies that using the Au(111) as the catalyst for the Ullmann-based polymerization can lead to fewer defects in nanostructures assembled on the surface. %compared to Ag(111) and Cu(111).
 
-Comparison of this profile to that of the competing irreversible C--C bond formation on the ideal surface revealed that the extraction barrier is \SI{0.22}{\electronvolt} higher than the barrier of the C--C bond formation. This comparison indicates that the latter step proceeds faster at all temperatures and implies that the structures containing extracted adatoms can form only fleetingly. At any temperature that is sufficiently high for the adatom extraction, the equilibrium mixture will be heavily dominated by the products of the C--C coupling, making organometallic bridges containing extracted adatoms unlikely to be observed by STM or AFM.
+{\comm 
 
-%RZZK: The 1.47 value should be verified based on the new figure.
-The strong binding of the two phenyl groups to adatoms, estimated to be \SI{1.47}{\electronvolt} stronger than their binding to an ideal-surface atom, makes the barrier of the formation of the C--C bond between the adatom-bonded phenyl groups extremely high. It was calculated to be \SI{1.78}{\electronvolt}, which is \SI{1.29}{\electronvolt} higher that the corresponding barrier for the ideal surface reaction. This has important implications not only for the phenyl-extracted adatoms but also for the adatoms that exist on clean copper surface, for example, around steps and kinks. The presence of such a high energy barrier implies that any adatom participating in the surface reaction coordinates organic groups strongly but is unable to catalyze the subsequent C--C bond formation.
-%{\comm RZK0527: I think it is not only the binding strength but the stiffness of the bonds. In that case, include ``the stiff phenyl--adatom bonds''.}
-
-%{\comm RZK: We should discuss implications.}% For example, creation of adatom covered surfaces and design of ``adatom pumps''.}
 %The results of this work have implications beyond the Ullmann coupling process. When it comes to design of adatom covered metal surfaces, which can serve as active catalysts for many reactions beyond the Ullmann coupling process.
 
-By directly comparing ideal surface and adatoms, this work quantifies the influence of the environment of metal atoms on their catalytic properties.
+By directly comparing the C--C formation step of the Ullmann coupling on ideal surface and adatoms, this work quantified the influence of the environment of metal atoms on their catalytic properties. Furthermore, it established the im
 
-}
-
-
-%{\comm RZK0526: The following paragraphs need further polishing.
-
-%The hard-to-cross peak emerges from C--C bond constructed on top of an adatom, this step will dramatically hinders the coupling to the end with biphenyl and ``clean'' adatom forming on Cu(111). In creating adatom path, two different fashions of extracting adatom out are explored and discussed. Adatom created by organometallic intermediate along the longitude direction is more likely to occur in reality due to a smaller activation energy. Plus, the heat released from the dehalogenation step is sufficient to compensate both ideal surface and create adatom paths to the end. It means ideal surface copper atom catalyze and created adatom in Ullmann process both occur in nature but occupy different proportions and proceed in different velocity.
-
-%The possibility that adatom already emerged from thermal fluctuation or defect before the coupling is also discussed. Pre-existing adatom can be regarded as a exceedingly plausible catalyst source for organometallic intermediates in Ullmann reaction on metal surface.
-
-%In conclusion, adatoms rarely serve as catalysts in final biphenyl formation step on Cu(111). Created adatom has a greater change to relocate in vacancy site and catalyze C--C bond with ideal surface path, ``clean'' adatom can rarely be created by dehalogenated phenyl radicals on Cu(111). 
-
+The works provides unprecedented physical insight into key [tunable parameters] factors that could, in the future, enable design of catalytic C--C bond-forming reactions catalyzed by adatoms. Other molecules (Larger radicals), metals from a subset of DFT data.
 %However, the possibility should not be ruled out, monomers with larger molecular size and stronger interaction with copper is more likely to proceed coupling to the end. This provides the insight of adatom creation by precursor design and synthesizing more 1D and 2D functional polymer through the on-surface Ullmann reactions.
 
-%{\comm RZK0525: Clean adatoms can be created if the monomers interact strongly with each other and strongly but not too strongly with the adatom. Is it possible to design such monomers? If so, will catalitically active adatoms affect the Ullmann coupling positively or negatively? Adatom creation ``machine'' can be an extremely important topics on its own, outside the fabrication of low-dimensional polymers. For example, production of super-active adatom catalysts.}
+This upper bound can greatly facilitate computational screening of metals for efficient trap-free adatom catalysis since DFT calculations can be performed quickly for only clean metal surfaces. The screening accuracy can be improved if the horizontal position on the chart is also available from additional but still very few DFT calculations. For example, inert metals like gold cannot have more than \SI{0.84}{\electronvolt} energy of the unassisted adatom extraction whereas for metals like silver this limit is even more restrictive \SI{0.60}{\electronvolt}. Finally, the data presented in this work suggests that plots similar to Fig.~\ref{fig:conclusion} can be constructed for many other bond forming reactions on metal surfaces, facilitating investigation of their mechanisms. 
 
-%}
+The data presented in this work suggests that, for many other bond forming reactions on metal surfaces, plots similar to Fig.~\ref{fig:conclusion} can have much wider areas of competitive adatom catalysis and can facilitate investigation of catalytic mechanisms. 
 
-% \input{silver_gold.tex}
+}
 
 %RZK. TWO follow-up projects appears to be useful. 
 % 1. Explain the surprisingly low DIM activation barrier compared to DHAL activation barrier. A simple bond-strength arguments suggest that the strength of C-Metal is underestimated and possibly C-X, C-C strengths are overestimated.
-% 2. Design the reaction (machine) capable of generating clean adatoms. Consider thermodynamics states of such a machine (set, grab, extract, release, leave). Consider the kinetics of the processes of switching between the states. Consider side pathways  that skip the extraction.
+% 2. Design the reaction (machine) capable of generating clean (super-active) adatoms. Consider thermodynamics states of such a machine (set, grab, extract, release, leave). Consider the kinetics of the processes of switching between the states. Consider side pathways  that skip the extraction.
 
 \section{acknowledgements}
 
-{\lock
-
-The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful to Compute Canada for computer time. %The authors are grateful to Compute Canada for computer resources allocated under CFI John R. Evans Leaders Fund ().
-
-}
+The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful to Compute Canada for computer resources allocated under the CFI John R. Evans Leaders Fund program.
 
 %\nocite{*}
 
