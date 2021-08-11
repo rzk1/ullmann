@@ -437,7 +437,7 @@ The coupling reaction on the Cu(111) surface will be described in detail first. 
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_Br.pdf}
 \caption{Dissociation of the C--Br bond on Cu(111). The energy diagram shows the NEB profile of the debromination process. In the structural images, yellow, cyan, white, red spheres represent copper, carbon, hydrogen, bromine atoms, respectively. The dissociation of the C--Cl and C--I bonds is shown in \sinfo.
-{\comm RZK0804: The zero-energy reference appears to be wrong.}
+{\comm RZK0804: The zero-energy reference appears to be wrong.}{\zhzh ZZ0810: solved}
 }
 \label{fig:dissociation_Br}
 \end{figure*}
@@ -460,9 +460,9 @@ Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition a
 %
 %REVIEW (Numbers should be verified): Unlike analogous reactions in the solution, dehalogenation reactions on the copper surface are all exothermic. DFT results have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.18}{\electronvolt}~\cite{ullmann_86}.
 %
-The amount of energy released in the dehalogenation step on Cu(111) surface increases from chlorobenzene (\SI{0.58}{\electronvolt}) to bromobenzene (\SI{0.80}{\electronvolt}) and to iodobenzene (\SI{0.94}{\electronvolt}) (Fig.~\ref{fig:completeenergy} and Table~\ref{SI-table:bondlength}).
-%RZK0806: Zhenzhe, resolve inconsistencies in your data! For example, the barrier for bromobenzene is 0.92 here, disagrees with the main figure and Table S1.
-The energy barriers follow the opposite trend decreasing from chlorobenzene (\SI{1.25}{\electronvolt}) to bromobenzene (\SI{0.92}{\electronvolt}) and to iodobenzene (\SI{0.68}{\electronvolt}), in agreement with the Bell-Evans-Polanyi principle.
+The amount of energy released in the dehalogenation step on Cu(111) surface increases from chlorobenzene (\SI{0.58}{\electronvolt}) to bromobenzene (\SI{0.81}{\electronvolt}) and to iodobenzene (\SI{0.96}{\electronvolt}) (Fig.~\ref{fig:completeenergy} and Table~\ref{SI-table:bondlength}).
+%RZK0806: Zhenzhe, resolve inconsistencies in your data! For example, the barrier for bromobenzene is 0.92 here, disagrees with the main figure and Table S1.ZZ0810: checked, the data in table is right~
+The energy barriers follow the opposite trend decreasing from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}), in agreement with the Bell-Evans-Polanyi principle.
 The calculated energies are in qualitative agreement with the trend in experimentally measured dehalogenation temperatures (Table~\ref{SI-RZK0806-experimental-temperatures})~\cite{ullmann_52,ullmann_87,ullmann_67} and with the previous calculations on this~\cite{jacs2013} and similar systems.
 %{\comm RZK0527: REVIEW only becuase the trend is reproduced only roughly. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87} while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data the dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data on dihalogenated precursors (Table~\ref{table:exp-temp}) that chlorobenzene dissociates at significantly higher temperature than both bromobenzene and iodobenzene.}
 
@@ -573,15 +573,15 @@ However, the extraction along the $[11\bar{2}]$ direction has lower barrier than
 
 }
 
-\begin{figure}[hbt]
+\begin{figure*}[hbt]
 \centering
-\includegraphics[width=0.48\textwidth]{Fig/onlysurface.pdf}
+\includegraphics[width=0.95\textwidth]{Fig/onlysurface.pdf}
 \caption{
 (a) The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{CMC} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states. (b) Linear dependence between the decreased catalytic activity of adatoms compared to ideal surfaces and strengthening of the phenyl-metal binding. In both axis labels, $\Delta$ refers to the change in the quantity of interest from the ideal suface to adatom.}
 \label{fig:onlysurface}
 %RZK0806: Update the figure to include all metals.
 %RZK0806: Add the new panel that shows the correlation between bond strengthening and activation barrier. See the new Powerpoint file for labels.
-\end{figure}
+\end{figure*}
 
 {\lock
 
@@ -795,6 +795,24 @@ The key reason behind the decreased catalytic activity is the strengthening of t
 
 %To enable efficient trap-free adatom catalysis both the extraction and C--C bond formation steps of the adatom pathway must have low activation barriers and desirably be exothermic. In addition to being efficient in absolute terms, this pathway should outcompete the catalytic process on the ideal surface. 
 
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=1.\textwidth]{Fig/Ag_mainfile.pdf}
+\caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on Ag(111). Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{SI-table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}.
+}
+\label{fig:completeenergy}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=1.\textwidth]{Fig/Au_mainfile.png}
+\caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on Au(111). Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{SI-table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}.
+}
+\label{fig:completeenergy}
+\end{figure*}
+
+
+
 \ifdefined\INTERNAL
 \subsection{Implications for adatom catalysis}
 \fi
@@ -804,6 +822,7 @@ The key reason behind the decreased catalytic activity is the strengthening of t
 \includegraphics[width=0.48\textwidth]{Fig/conclusion.pdf}
 \caption{RZK0808} 
 %RZK0808: Zhenzhe, what font is used for the other figures in the manuscript? Replace "Phenyl-assisted adatom extraction is difficult", "Efficient adatom catalysis"
+%ZZ0810: I updated this figure with python
 \label{fig:conclusion}
 \end{figure}
 
@@ -848,6 +867,12 @@ The research was funded by the Natural Sciences and Engineering Research Council
 \begin{suppinfo}
 
 RZK0808: Describe the content of \sinfo\ using a recent ACS Nano article as an example.
+
+The Supporting Information is available free of charge at
+(website)
+
+Example: Additional data including the calculated phonon dispersion and energy stability of DLHC AlSb and InSb; structural model of moiré pattern between AlSb DLHC and graphene; spectroscopic imaging of AlSb DLHC; and the morphology of InSb growth at different conditions (PDF)
+
 
 \end{suppinfo}
 
