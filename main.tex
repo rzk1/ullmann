@@ -776,7 +776,7 @@ Our study suggests that the entropy contribution to free energy can affect the p
 
 \textbf{Ullmann reaction on Ag(111) and Au(111).}
 %
-Energy profiles of the Ullmann reaction on the ideal Ag(111) and Au(111) surfaces, calculated for bromobenzene (Fig.~\ref{fig:RZK0806}), reproduce several well-known key trends.  
+Energy profiles of the Ullmann reaction on the ideal Ag(111) and Au(111) surfaces, calculated for bromobenzene (Fig.~\ref{fig:Ag_all} and Fig.~\ref{fig:Au_all}), reproduce several well-known key trends.  
 %
 %RZK0806: Cu barrier must be check after previous concerns about data consistency are addressed
 %ZZ0811: checked
@@ -806,7 +806,7 @@ The key reason behind the decreased catalytic activity is the strengthening of t
 \includegraphics[width=1.\textwidth]{Fig/Ag_mainfile.pdf}
 \caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on Ag(111). Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{SI-table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}.
 }
-\label{fig:completeenergy}
+\label{fig:Ag_all}
 \end{figure*}
 
 \begin{figure*}[hbt]
@@ -814,7 +814,7 @@ The key reason behind the decreased catalytic activity is the strengthening of t
 \includegraphics[width=1.\textwidth]{Fig/Au_mainfile.png}
 \caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on Au(111). Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. In the schematic labels, blue and red circles denote copper and halogen atoms, respectively, whereas green ovals denote phenyl groups. The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. The energy of the chlorine and iodine containing species are reported in Tables~\ref{SI-table:bondlength}, \ref{table:idealsurface} and~\ref{table:adatom-longitude}.
 }
-\label{fig:completeenergy}
+\label{fig:Au_all}
 \end{figure*}
 
 
@@ -868,6 +868,14 @@ Fundamental analysis of the systematic DFT data can also advance design of effec
 
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful to Compute Canada for computer resources allocated under the CFI John R. Evans Leaders Fund program.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The "Acknowledgement" section can be given in all manuscript
+%% classes.  This should be given within the "acknowledgement"
+%% environment, which will make the correct section or running title.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Please use ``The authors thank \ldots'' rather than ``The authors would like to thank \ldots''.
+
 \end{acknowledgement}
 
 \begin{suppinfo}
@@ -877,10 +885,25 @@ RZK0808: Describe the content of \sinfo\ using a recent ACS Nano article as an e
 The Supporting Information is available free of charge at
 (website)
 
-Example: Additional data including the calculated phonon dispersion and energy stability of DLHC AlSb and InSb; structural model of moiré pattern between AlSb DLHC and graphene; spectroscopic imaging of AlSb DLHC; and the morphology of InSb growth at different conditions (PDF)
+Additional data including dechlorination and deiodination of monohalogenated benzene on Cu(111), adatom pathway along $[1\bar{1}0]$ direction on Cu(111), adatom formation on clean Cu(111) surface and mathematical analysis of trends.
 
+Example found: Additional data including the calculated phonon dispersion and energy stability of DLHC AlSb and InSb; structural model of moiré pattern between AlSb DLHC and graphene; spectroscopic imaging of AlSb DLHC; and the morphology of InSb growth at different conditions (PDF)
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%A listing of the contents of each file supplied as Supporting Information
+%%should be included. For instructions on what should be included in the
+%%Supporting Information as well as how to prepare this material for
+%%publications, refer to the journal's Instructions for Authors.
+
+%%The following files are available free of charge.
+%%\begin{itemize}
+%%  \item Filename: brief description
+%%  \item Filename: brief description
+%%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{suppinfo}
+
+
 
 \begin{tocentry}
 
@@ -892,9 +915,18 @@ RZK0808: This TOG is temporary.
 %\nocite{*}
 
 %RZK0806: use achemso bibliography style. Remove links from the references.
-%ZZ0811: it is already achemso bibliography style as explained in the format source file.
-% \bibliographystyle{apsrev4-1} % Tell bibtex which bibliography style to use
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The appropriate \bibliography command should be placed here.
+%% Notice that the class file automatically sets \bibliographystyle
+%% and also names the section correctly.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \bibliography{references}% Produces the bibliography via BibTeX.
+
+
+
+
 
 \end{document}
 
