@@ -1,4 +1,4 @@
-\documentclass[aps,prl,amsmath,amssymb,floatfix,notitlepage]{revtex4-1}
+\documentclass[aps,prl,reprint,amsmath,amssymb,floatfix,notitlepage]{revtex4-1}
 %\documentclass[journal=ancac3,layout=twocolumn,manuscript=article]{achemso}
 
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
@@ -21,9 +21,6 @@
 \usepackage{xr} % referencing across multiple files
 \usepackage{cleveref} % cite figures in SI
 
-%RZK: do not edit red text
-\newcommand{\lock}{\color{red}}
-
 \renewcommand{\figurename}{Supporting Figure}
 \renewcommand{\tablename}{Supporting Table}
 \renewcommand{\thefigure}{S\arabic{figure}}
@@ -36,7 +33,6 @@
 
 \begin{document}
 
-%RZZK: check that article titles match here and in the main text
 \title{\sinfo\ for \\
 Role of adatoms in the surface-confined Ullmann coupling of phenyl groups}% Force line breaks with \\
 %\thanks{A footnote to the article title}%
@@ -177,12 +173,12 @@ Role of adatoms in the surface-confined Ullmann coupling of phenyl groups}% Forc
 %\begin{figure}[hbt]
 %\centering
 %\includegraphics[width=0.45\textwidth]{Fig/FormingC-Cu-C.pdf}
-%\caption{RZK0415: This figure is now obsolete and must be removed. It does not report any info complementary to the main energy profile.
+%\caption{
 %Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
 %\label{fig:formingBridge}
 %\end{figure}
 
-\section{Conditions for efficient adatom catalysis}
+\section{Conditions for competitive adatom catalysis}
 
 %The analysis of the three metals performed in this work raises a tantalizing question whether it is possible to find a metal surface capable of catalyzing the coupling of two phenyl groups through an efficient and competitive adatom pathway. 
 
@@ -192,23 +188,104 @@ The data collected in this work shows that the strengthening of the phenyl-adato
 \Delta B = 0.9355 X
 \end{equation}
 %
-Second, $X$ determines the energetics of the extraction step as well. As described in the main text, the energy required for the unassisted adatom extraction -- further denoted as $Y$ -- is compensated by $X$ when phenyl groups are bonded to the extracted adatom. It is reasonable to assume that metals with lower $Y$ (and the same $X$) will also have lower energy of phenyl-assisted extraction. For (hypothetical) metals with sufficiently low $Y$, the energetic cost of the adatom extraction will be fully compensated by $X$, resulting in the phenyl-assisted extraction that is thermoneutral.
+Second, $X$ determines the energetics of the extraction step as well. As described in the main text, the energy required for the unassisted adatom extraction -- further denoted as $Y$ -- is compensated by $X$ when phenyl groups are bonded to the extracted adatom. It is reasonable to assume that metals with lower $Y$ (and the same $X$) will also have lower energy of phenyl-assisted extraction. For (hypothetical) metals with sufficiently low $Y$, the energetic cost of the adatom extraction will be fully compensated by $X$, resulting in the phenyl-assisted extraction that is thermoneutral. 
 
-To predict the energy of the phenyl-assisted extraction 
-
-The line of thermoneutral extraction (TNE) is a shows what Y should a hypothetical metal with X have to exhibit the thermoneutral phenyl-assisted adatom extraction. Points lying below this line are characterized by exothermic assisted extraction and above this line by endothermic extraction. The vertical distance between a point $(X,Y)$ and the line is equal to the absolute energy of the phenyl-assisted adatom extraction:
+To predict the energy of the phenyl-assisted extraction $E_{AX}$ (i.e. $AX$ stands for assisted extraction) for a metal with known numerical values of $X$ and $Y$, the value of $Y$ can be corrected by some (yet unspecified) amount $\text{TNE}$, which will be different for different $X$
 %
-\begin{equation}
+\begin{equation} \label{eq:relation2}
 \begin{split}
-E_{\text{AEX}} = Y - \text{TNE}(X)
+E_{AX} = Y - \text{TNE}(X)
 \end{split}
 \end{equation}
 %
-where AEX - stands for assisted extraction.
+$\text{TNE}$ here stands for ThermoNeutral Extraction because this is the physical meaning of this correction: if $Y$ happens to be equal to $\text{TNE}$ then the phenyl-assisted extraction will be thermoneutral.
 
-The line of TNE is calculated by fitting a straight line to several points of TNE. Point of TNE is a point in the X-Y space at which the phenyl-assisted adatom extraction from the surface of a hypothetical metal is expected to have precisely zero energy.  The Y-position of a point of TNE is calculated from the DFT data for the metal by subtracting the energy of the phenyl-assisted adatom extraction from the clean-surface adatom extraction energy. The X-position of the point of TNE is assumed to be the same as the X-position of the metal described by DFT.
+The collected DFT data can be used to determine $\text{TNE}$ as a function of $X$. It is important to emphasize that this function will be different for different organic groups. Indeed, the values of $Y$ and $E_{AX}$ are known for three metals surfaces and phenyl group. Remarkably, the three datapoints lie on a straight line (Fig.~\ref{main-fig:conclusion}), giving the following almost perfect fit for $\text{TNE}(X)$
+%
+\begin{equation} \label{eq:TNEfit}
+\begin{split}
+\text{TNE}(X) = 1.043 + 0.420 X
+\end{split}
+\end{equation}
+%
+where the constant term is in \si{\electronvolt} and the coefficient in the linear term is dimensionless. 
 
+%The line of thermoneutral extraction (TNE) is a shows what Y should a hypothetical metal with X have to exhibit the thermoneutral phenyl-assisted adatom extraction. Points lying below this line are characterized by exothermic assisted extraction and above this line by endothermic extraction. The vertical distance between a point $(X,Y)$ and the line is equal to the absolute energy of the phenyl-assisted adatom extraction:
+%%
+%\begin{equation} \label{eq:relation2}
+%\begin{split}
+%E_{\text{AEX}} = Y - \text{TNE}(X)
+%\end{split}
+%\end{equation}
+%%
 
+%The line of TNE is calculated by fitting a straight line to several points of TNE. Point of TNE is a point in the X-Y space at which the phenyl-assisted adatom extraction from the surface of a hypothetical metal is expected to have precisely zero energy.  The Y-position of a point of TNE is calculated from the DFT data for the metal by subtracting the energy of the phenyl-assisted adatom extraction from the clean-surface adatom extraction energy. The X-position of the point of TNE is assumed to be the same as the X-position of the metal described by DFT.
+
+The established relations are required to determined the condition for the competitive adatom catalysis for the coupling of two phenyl groups 
+%
+\begin{equation}
+\begin{split}
+\frac{r^{\text{adatom}} }{ r^{\text{ideal}} } &> 1
+\end{split}
+\end{equation}
+%
+where the rates of the product formation on the ideal surface and adatom are compared. The expressions for the rate on the ideal surface can be written as
+%
+\begin{equation}
+\begin{split}
+r^{\text{ideal}} &= \frac{d[\text{DIM}]}{dt} = k^{\text{DIM}\ddagger} [\text{CMC}]  = \\
+&= A \exp\left[ -\frac{B_0}{k_B T} \right] [\text{CMC}] 
+\end{split}
+\end{equation}
+%
+where $A$ is Arrhenius prefactor and $B_0$ is the C--C bond formation energy
+%
+\begin{equation}
+\begin{split}
+B_0 = E(\text{DIM}\ddagger) - E(\text{CMC}) 
+\end{split}
+\end{equation}
+%
+It should be noted that the free energies, required to determine the rate and equilibrium constants are substituted by electronic energies, which can be obtained from DFT readily.
+
+The rate of the product formation along the ideal path can be obtained assuming that the adatom extraction step is fast
+%
+\begin{equation}
+\begin{split}
+r^{\text{adatom}} &= \frac{d[\text{X-DIM-A}]}{dt} = k^{\text{X-DIM}\ddagger} K_{AX} [\text{CMC}] 
+\end{split}
+\end{equation}
+%
+where
+%
+\begin{equation}
+\begin{split}
+k^{\text{X-DIM}\ddagger} &= A' \exp\left[ -\frac{B_0+\Delta B}{k_B T} \right] [\text{CMC}] \\
+K_{AX} &= \exp\left[ -\frac{E_{AX}}{k_B T} \right] 
+\end{split}
+\end{equation}
+%
+the expression for the rate along the adatom pathway is 
+
+If it is assumed that $A=A'$ and the rate expressions are plugged into the condition for the competitive adatom catalysis, it reduces to
+%
+\begin{equation}
+\begin{split}
+E_{AX} + \Delta B &< 0
+\end{split}
+\end{equation}
+%
+To interpret this condition for the competitive adatom catalysis: the assisted extraction should be sufficiently exothermic ($E_{AX} < 0$) to outweigh the always slower C--C bond formation on adatoms $\Delta B > 0$.
+
+Fortunately, both $E_{AE}$ and $\Delta B$ can be obtained from the DFT data as shown in Eqs.~(\ref{eq:relation1}), (\ref{eq:relation2}) and~(\ref{eq:TNEfit}), giving the following condition for the competitive adatom catalysis:
+%
+\begin{equation}
+\begin{split}
+Y &< 1.043 - 0.515 X
+\end{split}
+\end{equation}
+%
+This inequality defines the region shown in Fig.~\ref{main-fig:conclusion} in the main text.
 
 \bibliographystyle{achemso}
 \bibliography{references}
