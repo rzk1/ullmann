@@ -506,11 +506,13 @@ However, the extraction along the $[11\bar{2}]$ direction has lower barrier than
 \caption{
 (a) The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{CMC} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states. (b) Linear dependence between the decreased catalytic activity of adatoms compared to ideal surfaces and strengthening of the phenyl-metal binding. In both axis labels, $\Delta$ refers to the change in the quantity of interest from the ideal suface to adatom.}
 \label{fig:onlysurface}
-%RZK0815: Do not use double-hyphen in the x and y-axis labels in (b). Single hyphen is ok.
-%RZK0815: Use the x-axis label from (b) in the y-axis label of (a).
+%RZK0815: There are multiple corrections required:
+%Do not use double-hyphen in the x and y-axis labels in (b). Single hyphen is ok.
+%Use the x-axis label from (b) in the y-axis label of (a).
 %The quality of (b) is poor. The resolution is too low.
 %In panel (a), label X-CMC datapoints with their y-values. In panel (b), label all points with their y-values.
 %In both panel, the y-axis should start at 0.0. Remove the negative portion.
+%In the original figure, the trendline went through the origin. Restric the trendline in the same way here.
 \end{figure*}
 
 {\lock
@@ -725,18 +727,20 @@ The key reason behind the decreased catalytic activity is the strengthening of t
 \begin{figure}[bt]
 \centering
 \includegraphics[width=0.48\textwidth]{Fig/conclusion.pdf}
-\caption{RZK0815: The region of competitive Three metals according to the DFT calculated energetics of the unassisted and assisted adatom extraction. $\Delta$ refers to the change in the phenyl-metal binding from the ideal suface to adatom. Interestingly, } 
-%RZK0808: Zhenzhe, what font is used for the other figures in the manuscript? Replace "Phenyl-assisted adatom extraction is difficult", "Efficient adatom catalysis"
-%ZZ0810: I updated this figure with python
-%RZK0815: Thanks! Can you also please let me know the font name, if python tells you?
+\caption{Conditions of the competitive adatom catalyzed coupling of two phenyl groups (details in \sinfo). $\Delta$ in the axis label refers to the change in the phenyl-metal binding from the ideal suface to adatom. Green lines are lines of constant ratio of the rates of adatom- and surface-catalyzed C--C bond formation. The solid green line marks the ratio of 1. In the right region, adatom catalysis is uncompetitive because adatoms bind phenyl groups too strongly.  In the upper region, adatom catalisys is restricted because adatom extraction is difficult. Remarkably, the DFT determined condition for the thermoneutral assisted adatom extraction -- a prerequisite for competitive adatom catalysis -- is a straight line in this plot.} 
 \label{fig:conclusion}
 \end{figure}
 
 %[Further analysis of] The data collected for the three metals reveals that adjusting the strength of organic-adatom binding (through, for example, electron-donating and withdrawing groups in organic precursors) might not be sufficient to enable efficient adatom catalysis (i.e. to make the adatom pathway more likely than the ideal-surface pathway). 
 \textbf{Implications for adatom catalysis.} 
 %
-The analysis of the three metals performed in this work raises a tantalizing question whether it is possible to find a metal surface capable of catalyzing the coupling of two phenyl groups through an efficient and competitive adatom pathway. 
-The collected data shows that focusing solely on the strength of the organic-adatom binding might not be sufficient to find such a metal. The example of Au(111) demonstrates that weak phenyl-adatom binding hinders the adatom extraction whereas examples of Ag(111) and Cu(111) show that strong binding leads to prohibitively high barriers in the C--C bond formation step. It is expected, however, that the phenyl-assisted adatom extraction can be facilitated without increasing the phenyl-adatom binding if metal catalysts with lower energy of unassisted adatom extraction are employed. The utility of considering both the energy of unassisted adatom extraction -- an intrinsic property of a metal -- and strengthening of the phenyl-metal binding is shown in Fig.~\ref{fig:conclusion}. Remarkably, the DFT determined condition for the thermoneutral adatom extraction -- a prerequisite for competitive adatom catalysis -- happens to be a straight line in the space of these two parameters (see theoretical details in \sinfo). Moreover, Fig.~\ref{fig:conclusion} contains a region where the adatom-catalyzed C--C bond formation is faster than that on the ideal surface. The approximate boundaries of this region can be readily estimated using a subset of the DFT energies computed for the three metals in this work. Fig.~\ref{fig:conclusion} clarifies that a competitive adatom-catalyzed coupling of two phenyl groups requires metal catalysts with at most \SI{1.05}{\electronvolt} energy of the unassisted adatom-vacancy formation (cf. \SI{1.56}{\electronvolt} for gold). This upper bound can greatly facilitate computational screening of metals for efficient trap-free adatom catalysis since the only DFT calculations needed are those for clean metal surfaces. The screening accuracy can be further improved if the horizontal position on the figure is also available from additional DFT calculations for a candidate metal. For example, inert metals like gold cannot have more than \SI{0.84}{\electronvolt} energy of the unassisted adatom extraction whereas for metals like silver this limit is even more restrictive \SI{0.60}{\electronvolt}. 
+The analysis of the three metals performed in this work raises a tantalizing question whether it is possible to find a metal surface capable of catalyzing the coupling of two phenyl (and other organic) groups through a competitive adatom pathway -- that is, the adatom-catalyzed C--C bond formation that is faster than the ideal-surface transformation. 
+The collected data shows that focusing solely on the strength of the organic-adatom binding might not be sufficient to find such a metal. The example of Au(111) demonstrates that weak phenyl-adatom binding hinders the adatom extraction whereas examples of Ag(111) and Cu(111) show that strong binding leads to prohibitively high barriers in the C--C bond formation step. It is expected, however, that the phenyl-assisted adatom extraction can be facilitated without hindering the C--C bond formation on adatoms if metal catalysts with lower energy of unassisted adatom extraction are employed. 
+
+It turns out that it is possible to formulate a simple condition for competitive adatom catalysis (see theoretical details in \sinfo) if both the energy of unassisted adatom extraction -- an intrinsic property of a metal -- and strengthening of the phenyl-metal binding are considered. 
+Fig.~\ref{fig:conclusion} shows that, in the space of these two parameters, the DFT energies computed for the three metals can be used to estimate the boundaries of the competitive adatom catalyzed coupling of two phenyl groups.
+
+Fig.~\ref{fig:conclusion} shows that finding a metal surface for competitive adatom-catalyzed coupling of two phenyl groups is not an easy task. Adatom catalysis requires metals with at most \SI{1.05}{\electronvolt} energy of the unassisted adatom-vacancy formation (cf. \SI{1.56}{\electronvolt} for gold). Knowing this upper bound can greatly facilitate computational screening of metals for the efficient trap-free adatom catalysis since the only DFT calculations needed are those for clean metal surfaces. The screening accuracy can be further improved if the horizontal position on the figure is also available from additional DFT calculations for a candidate metal. For example, inert metals like gold cannot have more than \SI{0.84}{\electronvolt} energy of the unassisted adatom extraction whereas for metals like silver this limit is even more restrictive \SI{0.60}{\electronvolt}. 
 
 %The analysis data presented here suggests that plots similar to Fig.~\ref{fig:conclusion} can be constructed for many other bond forming reactions on metal surfaces, facilitating investigation of their mechanisms. 
 
