@@ -83,8 +83,6 @@ Surface-confined reactions such as the Ullmann and Glaser coupling, decarboxylat
 The Ullmann coupling of aryl halides on metal surfaces -- often copper, silver and gold -- is one of the most used polymerization reactions. 
 The original Ullmann reaction~\cite{ullmann_01} proceeds between aromatic halides in solution in the presence of copper powder and leads to the formation of a carbon-carbon bond between two aromatic carbon atoms. 
 Although the Ullmann coupling has been largely replaced from solution-based organic synthesis with more selective and mild reactions (e.g. Suzuki, Yamamoto, Stille) it has seen a major renaissance in on-surface chemistry in the last decade~\cite{ullmann_33, ullmann_42, ullmann_43, ullmann_45, ullmann_46,ullmann_47, ullmann_148, ullmann_149, ullmann_150, ullmann_98, ullmann_97, jacs2016, ullmann_152}, where its ability to couple aromatic carbons and their $\pi$ systems has been adapted to assemble $\pi$-conjugated nanomaterials.
-%RZK0815: References above are missing: DIMA-refs. Lost inbetween github updates?
-%ZZ0816: added
 
 \ifdefined\INTERNAL
 
@@ -374,8 +372,7 @@ Table~\ref{table:idealsurface} and Fig.~\ref{fig:distance-energy} show that, in 
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/distance-energy.pdf}
 \caption{Coupling of the phenyl groups along the ideal-surface (black),  [11$\overline{2}$] adatom (red), and  [1$\overline{1}$0] adatom (yellow) pathways. (a) NEB energy profiles along the reaction coordinate represented by the distance between the two carbon atoms. For the Cu(111) surface, the geometry of key intermediates is shown along the (b) ideal-surface, (c) [11$\overline{2}$] adatom, and (d) [1$\overline{1}$0] adatom pathways.}
-%RZK0815: In panel (a) the Au figure is low resolution.
-%ZZ0816: changed.
+%RZK0818: In panel (a) the Au figure is still not in the vector format. Cu and Ag are in vector format.
 \label{fig:distance-energy}
 \end{figure*}
 
@@ -389,22 +386,14 @@ The extraction along the $[1\bar{1}0]$ direction is slightly exothermic whereas 
 %
 However, the extraction along the $[11\bar{2}]$ direction has lower barrier than that along the $[1\bar{1}0]$ direction (\SI{0.71}{\electronvolt} \emph{vs} \SI{1.38}{\electronvolt}) because the adatom does not have to be lifted as high in the \textbf{X-CMC$\ddagger$} transition state in the former case (\SI{1.58}{\angstrom} \emph{vs} \SI{1.68}{\angstrom}, Table~\ref{table:adatom-longitude}). This difference in the barrier height is significant enough to consider only the $[11\bar{2}]$ extraction further.
 
-%\zhzh ZZ0811: maybe we need to explain that's why we directly obtained energy profile of Ag(111) and Au(111) on $[11\bar{2}]$ direction. RZK0815: "further" means exactly that. 
-
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.95\textwidth]{Fig/onlysurface.pdf}
 \caption{
 (a) The frozen-nuclei interaction energy between the two phenyl groups and copper surface measured as the change from the \textbf{CMC} state. Positive energy indicates stronger interactions. Atoms are fixed to estimate the interaction energy in the transition states. (b) Nearly linear dependence between the decreased catalytic activity of adatoms compared to ideal surfaces and strengthening of the phenyl-metal binding. In both axis labels, $\Delta$ refers to the change in the quantity of interest from the ideal suface to adatom. The trendline enforced to go through the origin is given by $y=0.898 x$ ($R^2 = 0.950$).}
 \label{fig:onlysurface}
-%RZK0815: There are multiple corrections required:
-%Do not use double-hyphen in the x and y-axis labels in (b). Single hyphen is ok.(done)
-%Use the x-axis label from (b) in the y-axis label of (a).(done)
-%The quality of (b) is poor. The resolution is too low.(done)
-%In panel (a), label X-CMC datapoints with their y-values. In panel (b), label all points with their y-values.(done)
-%In both panel, the y-axis should start at 0.0. Remove the negative portion.(done)
-%In the original figure, the trendline went through the origin. Restric the trendline in the same way here.
-%ZZ0817: done
+%RZK0818: There are multiple corrections required:
+%The quality of (b) is poor. The resolution is too low.(done) The (b) must be in vector format, as most other figures.
 \end{figure*}
 
 It is remarkable that the energy of the extraction of a copper atom bonded to two phenyl groups is only \SI{0.16}{\electronvolt} -- dramatically lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom from the ideal clean surface (green pathway in Fig.~\ref{fig:completeenergy}). The \SI{0.71}{\electronvolt} barrier height for the phenyl-assisted extraction is also substantially lower than the \SI{2.04}{\electronvolt} barrier of clean-surface extraction, due to the increased binding of the phenyl groups to the Cu adatom (Fig.~\ref{fig:onlysurface}a), implicitly seen in the \SI{0.12}{\angstrom} decrease in the length of the carbon-adatom bond during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{table:adatom-longitude}).
@@ -519,9 +508,7 @@ High desorption energy of halogen atoms is undesirable in practical on-surface U
 \begin{figure}[bt]
 \centering
 \includegraphics[width=0.48\textwidth]{Fig/ullmann_adatom.pdf}
-\caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on a pre-existing adatom on Cu(111) surface. Faint upper and lower levels denote chlorine and iodine states, respectively, whereas the black levels refer to bromine states. The energies are relative to the \textbf{SURF} state.}
-%RZK0815: Remove chlorine and iodine and add the pre-existing Au profile. This is to illustrate that pre-existing Au adatoms catalyze the Ullmann coupling.
-%ZZ0817: not finished
+\caption{Energy profile of the Ullmann reaction of monohalogentated benzenes on a pre-existing adatom on Cu(111) surface. Faint upper and lower levels denote chlorine and iodine states, respectively, whereas the black levels refer to bromine states. The energies are relative to the \textbf{SURF} state. {\comm RZK0815: Remove chlorine and iodine and add the pre-existing Au profile. This is to illustrate that pre-existing Au adatoms catalyze the Ullmann coupling. ZZ0817: calcs of X-SING Au are not finished.}}
 \label{fig:adatomullmann}
 \end{figure}
 
@@ -573,7 +560,6 @@ Our study suggests that the entropy contribution to free energy can affect the p
 \centering
 \includegraphics[width=1.\textwidth]{Fig/Au_mainfile.pdf}
 \caption{Energy profile of the Ullmann reaction of bromobenzene on Au(111). Color coding and key elements are explained in the caption of Fig.~\ref{fig:completeenergy}.}
-%RZK0816: Remove the thin spurious line on the left of the figure.
 \label{fig:Au_all}
 \end{figure*}
 
@@ -702,9 +688,9 @@ Formation of organometallic intermediates on Cu(111), characterization of the in
 
 \pagebreak
 
-%RZK0815: All journal names must be properly abbreviated. Check all references for weird symbols in titles and format the mrpoperly.
+%RZK0818: Abbrevite all journal names (this can be done in the software that generates your bib file). See any ACS Nano article for proper formatting. Check all references one-by-one. They must be displayed correctly.
 \bibliographystyle{achemso}
-\bibliography{references}% Produces the bibliography via BibTeX.
+\bibliography{references}
 
 \pagebreak
 
