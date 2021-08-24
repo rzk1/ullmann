@@ -34,7 +34,7 @@
 \begin{document}
 
 \title{\sinfo\ for \\
-Role of adatoms in the surface-confined Ullmann coupling of phenyl groups}% Force line breaks with \\
+Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line breaks with \\
 %\thanks{A footnote to the article title}%
 
 \author{Zhenzhe Zhang}
@@ -141,8 +141,7 @@ The two phenyl groups in the \textbf{CMC} state lift their common copper atom \S
 
 \begin{table*}
 \centering
-\caption{Characterization of the intermediates in the dehalogenation step on Cu(111). The energies are relative to \textbf{SURF}.
-}
+\caption{Structural and energetic characteristics of the intermediates in the dehalogenation step on Cu(111). The energies are relative to \textbf{SURF}.}
 \label{table:bondlength}
 \begin{tabular}{ llccccc  }
  \hline
@@ -245,7 +244,7 @@ The data collected in this work shows that the strengthening of the phenyl-adato
 \Delta B = 0.898 X
 \end{equation}
 %
-Second, $X$ determines the energetics of the extraction step as well. As described in the main text, the energy required for the unassisted adatom extraction -- further denoted as $Y$ -- is compensated by $X$ when phenyl groups are bonded to the extracted adatom. It is reasonable to assume that metals with lower $Y$ (and the same $X$) will also have lower energy of phenyl-assisted extraction. For (hypothetical) metals with sufficiently low $Y$, the energetic cost of the adatom extraction will be fully compensated by $X$, resulting in the phenyl-assisted extraction that is thermoneutral. 
+Second, $X$ determines the energetics of the extraction step as well. As described in the main text, the energy required for the unassisted adatom extraction -- further denoted as $Y$ -- is compensated by $X$ when phenyl groups are bonded to the extracted adatom. It is reasonable to assume that metals with lower $Y$ (but same $X$) will have lower energy of phenyl-assisted extraction. For (hypothetical) metals with sufficiently low $Y$, the energy cost of the adatom extraction will be fully compensated by $X$, resulting in the phenyl-assisted extraction that is thermoneutral. 
 
 To predict the energy of the phenyl-assisted extraction $E_{AX}$ (i.e. $AX$ stands for assisted extraction) for a metal with known numerical values of $X$ and $Y$, the value of $Y$ can be corrected by some (yet unspecified) amount $\text{TNE}$, which will be different for different $X$
 %
@@ -257,7 +256,7 @@ E_{AX} = Y - \text{TNE}(X)
 %
 $\text{TNE}$ here stands for ThermoNeutral Extraction because this is the physical meaning of this correction: if $Y$ happens to be equal to $\text{TNE}$ then the phenyl-assisted extraction will be thermoneutral.
 
-The collected DFT data can be used to determine $\text{TNE}$ as a function of $X$. It is important to emphasize that this function will be different for different organic groups. Indeed, the values of $Y$ and $E_{AX}$ are known for three metals surfaces and phenyl group. Remarkably, the three datapoints lie on a straight line (Fig.~\ref{main-fig:conclusion}), giving the following almost perfect fit for $\text{TNE}(X)$
+The collected DFT data can be used to determine $\text{TNE}$ as a function of $X$ (note that this function will be different if other organic precursors are of interest). Indeed, the values of $X$, $Y$ and $E_{AX}$ are known for three metals surfaces and the phenyl group. This allows to compute values of $\text{TNE}$ at three points $X$ and inter- or extrapolate for other values of $X$ using a convenient fitting function. Remarkably, the three datapoints lie on a straight line (Fig.~\ref{main-fig:conclusion}), giving the following almost perfect fit for $\text{TNE}(X)$
 %
 \begin{equation} \label{eq:TNEfit}
 \begin{split}
@@ -280,7 +279,7 @@ where the constant term is in \si{\electronvolt} and the coefficient in the line
 
 The established relations are required to determined the condition for the competitive adatom catalysis for the coupling of two phenyl groups 
 %
-\begin{equation}
+\begin{equation} \label{eq:compete}
 \begin{split}
 \frac{r^{\text{adatom}} }{ r^{\text{ideal}} } &> 1
 \end{split}
@@ -295,7 +294,7 @@ r^{\text{ideal}} &= \frac{d[\text{DIM}]}{dt} = k^{\text{DIM}\ddagger} [\text{CMC
 \end{split}
 \end{equation}
 %
-where $A$ is Arrhenius prefactor and $B_0$ is the C--C bond formation energy
+where $A$ is the Arrhenius prefactor and $B_0$ is the C--C bond formation energy
 %
 \begin{equation}
 \begin{split}
@@ -317,14 +316,21 @@ where
 %
 \begin{equation}
 \begin{split}
-k^{\text{X-DIM}\ddagger} &= A' \exp\left[ -\frac{B_0+\Delta B}{k_B T} \right] [\text{CMC}] \\
+k^{\text{X-DIM}\ddagger} &= A' \exp\left[ -\frac{B_0+\Delta B}{k_B T} \right] \\
 K_{AX} &= \exp\left[ -\frac{E_{AX}}{k_B T} \right] 
 \end{split}
 \end{equation}
 %
-the expression for the rate along the adatom pathway is 
+Therefore, the expression for the rate along the adatom pathway is 
+%
+\begin{equation}
+\begin{split}
+r^{\text{adatom}} &= A' \exp\left[ -\frac{E_{AX} +B_0+\Delta B}{k_B T} \right] [\text{CMC}] 
+\end{split}
+\end{equation}
+%
 
-If it is assumed that $A=A'$ and the rate expressions are plugged into the condition for the competitive adatom catalysis, it reduces to
+If it is assumed that $A=A'$ and the rate expressions are plugged into the condition for the competitive adatom catalysis, Eq.~\ref{eq:compete}, it reduces to
 %
 \begin{equation}
 \begin{split}
@@ -334,7 +340,7 @@ E_{AX} + \Delta B &< 0
 %
 To interpret this condition for the competitive adatom catalysis: the assisted extraction should be sufficiently exothermic ($E_{AX} < 0$) to outweigh the always slower C--C bond formation on adatoms $\Delta B > 0$.
 
-Fortunately, both $E_{AE}$ and $\Delta B$ can be obtained from the DFT data as shown in Eqs.~(\ref{eq:relation1}), (\ref{eq:relation2}) and~(\ref{eq:TNEfit}), giving the following condition for the competitive adatom catalysis:
+Fortunately, both $E_{AE}$ and $\Delta B$ can be obtained from the DFT data as shown in Eqs.~(\ref{eq:relation1}), (\ref{eq:relation2}) and~(\ref{eq:TNEfit}), giving the following condition for the competitive adatom catalysis for the coupling of two phenyl groups:
 %
 \begin{equation}
 \begin{split}
