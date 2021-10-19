@@ -28,6 +28,16 @@
 
 \newcommand{\sinfo}{Supporting Information}
 
+\ifdefined\INTERNAL
+
+\newcommand{\lock}{\color{red}}
+\newcommand{\zhzh}{\color{blue}}
+
+\else
+
+\newcommand{\lock}{\color{black}}
+\newcommand{\zhzh}{\color{blue}}
+
 % Use main text labels
 \externaldocument[main-]{main}
 
@@ -102,7 +112,7 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/AlterPath.pdf}
-\caption{Adatom catalyzed C--C formation on Cu(111). The energy diagram shows the NEB profile of the reductive elimination simultaneously with adatom escape process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
+\caption{{\zhzh Adatom catalyzed C--C formation on Cu(111). The energy diagram shows the NEB profile of the reductive elimination simultaneously with adatom escape process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}}
 \label{fig:AlterPath}
 \end{figure*}
 
