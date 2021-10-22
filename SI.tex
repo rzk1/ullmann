@@ -28,6 +28,16 @@
 
 \newcommand{\sinfo}{Supporting Information}
 
+\ifdefined\INTERNAL
+
+\newcommand{\lock}{\color{red}}
+\newcommand{\zhzh}{\color{blue}}
+
+\else
+
+\newcommand{\lock}{\color{black}}
+\newcommand{\zhzh}{\color{blue}}
+
 % Use main text labels
 \externaldocument[main-]{main}
 
@@ -97,6 +107,13 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_I.pdf}
 \caption{Dissociation of the C--I bond on Cu(111). The energy diagram shows the NEB profile of the deiodination process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
 \label{fig:dissociation_I}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=1.0\textwidth]{Fig/AlterPath.pdf}
+\caption{{\zhzh Adatom catalyzed C--C formation on Cu(111). The energy diagram shows the NEB profile of the reductive elimination simultaneously with adatom escape process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}}
+\label{fig:AlterPath}
 \end{figure*}
 
 Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. 
@@ -218,9 +235,9 @@ The energies are relative to \textbf{SURF}.
  & Cu/Br & -3.73 & -3.24 &+0.49 & -5.73 & -2.00& -4.01&0.07\\ 
  & Cu/I  & -4.38 & -3.89 & +0.49 & -6.38 & -2.00& -4.66&-0.71\\ 
  \hline
- & Ag/Br &  &  & &  & & & \\ 
+ & Ag/Br & -2.01 & -1.39 & +0.62& -4.78 &-2.77 &-3.43 & 0.07\\ 
  \hline
- & Au/Br &  &  & &  & & & \\ 
+ & Au/Br & -0.88 & -0.74 & +0.14& -3.59 &-2.71 &-2.03 & 0.07\\ 
  \hline
  E (\si{\electronvolt})~\cite{pccp2010} & Cu/Any &  &  & +0.38& & -1.90 & & \\
  \hline
@@ -230,6 +247,7 @@ The energies are relative to \textbf{SURF}.
 \end{tabular}
 \end{table*}
 %RZK0826: Add missing Ag, Au data to the table 
+%ZZ1019: addressed
 
 
 \begin{table*}
@@ -287,8 +305,22 @@ The energies are relative to \textbf{SURF}.
 \end{tabular}
 \end{table*}
 
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
+\caption{{\zhzh Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following ideal surface pathway. Levels shown with black color are states without additional entropy-related functions, whereas the dimgrey and grey are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.}} 
+\label{fig:entropy_ideal}
+\end{figure*}
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
+\caption{{\zhzh Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following phenyl-assisted adatom extraction pathway. Levels shown with red color are states without additional entropy-related functions, whereas the hotpink and lightpink are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.}} 
+\label{fig:entropy_adatom}
+\end{figure*}
+ the process of
 %\begin{figure*}[h!]
-%\centering
+%\centering the process of
 %\includegraphics[width=1.0\textwidth]{Fig/pureadatomform.pdf}
 %\caption{Energetics of an adatom formation on the clean Cu(111) surface.}
 %\label{fig:cleanatomform}
@@ -408,7 +440,7 @@ E_{AX} + \Delta B &< 0
 %
 To interpret this condition for the competitive adatom catalysis: the assisted extraction should be sufficiently exothermic ($E_{AX} < 0$) to outweigh the always slower C--C bond formation on adatoms $\Delta B > 0$.
 
-Fortunately, both $E_{AE}$ and $\Delta B$ can be obtained from the DFT data as shown in Eqs.~(\ref{eq:relation1}), (\ref{eq:relation2}) and~(\ref{eq:TNEfit}), giving the following condition for the competitive adatom catalysis for the coupling of two phenyl groups:
+Fortunately, both $E_{AE}$ and $\Delta B$ can be obtained from the DFT data as shown in Eqs.~(\ref{eq:relation1}), (\ref{eq:relation2}) and~(\ref{eq:TNEfit}), giving the following condition for the competitive adatom catalysis for the coupling of two phenyl groups: ~\cite{book-test1}
 %
 \begin{equation}
 \begin{split}
