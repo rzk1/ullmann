@@ -28,16 +28,6 @@
 
 \newcommand{\sinfo}{Supporting Information}
 
-\ifdefined\INTERNAL
-
-\newcommand{\lock}{\color{red}}
-\newcommand{\zhzh}{\color{blue}}
-
-\else
-
-\newcommand{\lock}{\color{black}}
-\newcommand{\zhzh}{\color{blue}}
-
 % Use main text labels
 \externaldocument[main-]{main}
 
@@ -80,13 +70,13 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 
 \section{Formation of organometallic intermediates on Cu(111)} 
 
-\ifdefined\INTERNAL
-\subsection{Physisorption}
-\fi
-
-\ifdefined\INTERNAL
-\subsection{Dehalogenation}
-\fi
+%\ifdefined\INTERNAL
+%\subsection{Physisorption}
+%\fi
+%
+%\ifdefined\INTERNAL
+%\subsection{Dehalogenation}
+%\fi
 
 \begin{figure*}[bt]
 \centering
@@ -112,7 +102,7 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/AlterPath.pdf}
-\caption{{\zhzh Adatom catalyzed C--C formation on Cu(111). The energy diagram shows the NEB profile of the reductive elimination simultaneously with adatom escape process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}}
+\caption{Alternative pathway for the adatom-catalyzed C--C formation on Cu(111). In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
 \label{fig:AlterPath}
 \end{figure*}
 
@@ -139,9 +129,9 @@ The calculated energies are in qualitative agreement with the trend in experimen
 %The same C--Cu distances in \textbf{DHAL} suggest that the dissociated halogen atoms have little effect on phenyl--Cu intermeidate. However, halogen atoms have obvious influence on dissociated phenyl ring, resulting in their different tilt angles, deiodinated phenyl ring is inclined around \SI{70}{\degree} to metal surface, larger than debrominated and dechlorinated phenyl rings both at around \SI{50}{\degree}.
 %}
 
-\ifdefined\INTERAL
-\subsection{Formation of carbon-metal-carbon intermediates}
-\fi
+%\ifdefined\INTERAL
+%\subsection{Formation of carbon-metal-carbon intermediates}
+%\fi
 
 The formation of carbon-metal-carbon organometallic intermediates (\textbf{CMC}) from two phenyl radicals (\textbf{DHAL-2}) is slightly endothermic with the energy ranging from \SIrange{0.17}{0.25}{\electronvolt} (Fig.~\ref{main-fig:completeenergy} and Table~\ref{table:bondlength}). Experimentally, the dehalogenation and formation of the bridge structure occur at the same temperature indicating that the two phenyl groups need to overcome only a small energy barrier to approach each other~\cite{ullmann_88}. 
 %REVIEW: Gold surface is an exception that C--Au--C intermediates are rarely observed in experiment due to fast proceeding to coupling product after dehalogenation~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102, ullmann_103, jacs2011}.
@@ -246,8 +236,6 @@ The energies are relative to \textbf{SURF}.
  \hline
 \end{tabular}
 \end{table*}
-%RZK0826: Add missing Ag, Au data to the table 
-%ZZ1019: addressed
 
 
 \begin{table*}
@@ -308,17 +296,17 @@ The energies are relative to \textbf{SURF}.
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
-\caption{{\zhzh Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following ideal surface pathway. Levels shown with black color are states without additional entropy-related functions, whereas the dimgrey and grey are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.}} 
+\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following ideal surface pathway. Levels shown with black color are states without additional entropy-related functions, whereas the dimgrey and grey are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.} 
 \label{fig:entropy_ideal}
 \end{figure*}
 
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
-\caption{{\zhzh Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following phenyl-assisted adatom extraction pathway. Levels shown with red color are states without additional entropy-related functions, whereas the hotpink and lightpink are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.}} 
+\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following phenyl-assisted adatom extraction pathway. Levels shown with red color are states without additional entropy-related functions, whereas the hotpink and lightpink are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.} 
 \label{fig:entropy_adatom}
 \end{figure*}
- the process of
+
 %\begin{figure*}[h!]
 %\centering the process of
 %\includegraphics[width=1.0\textwidth]{Fig/pureadatomform.pdf}
@@ -333,6 +321,12 @@ The energies are relative to \textbf{SURF}.
 %Energy diagram of forming C--Cu--C bridge intermediates structures from dechlorinated, debrominated and deiodinated benzene. The energy is computed as the difference between 2 $\times$ dehalogenated intermediates (left geometry) and C--Cu--C bridge intermediate structure $+$ two bromine atoms on Cu(111) surface. The blue circles represent chlorine, bromine or iodine atoms respectively in three situations. Yellow line with circle points is dechlorinated benzene to C--Cu--C, pink line with square points is debrominated benzene to C--Cu--C and red line with triangle points is deiodinated benzene to C--Cu--C.}
 %\label{fig:formingBridge}
 %\end{figure}
+
+\section{Comparison of the dehalogenation and C--C bond formation energy barriers}
+
+It should be noted that the calculated energy barriers for the dehalogenation of bromobenzene on Cu(111), Ag(111) and Au(111) surfaces (0.89, 1.20, \SI{1.46}{\electronvolt}, respectively) are higher than the energy barriers for the C--C bond formation step (0.49, 0.62, \SI{0.14}{\electronvolt}, respectively). This results are inconsistent with the temperatures required for the completion of these two Ullmann coupling steps in experiments. Table~\ref{table:experimental-temperatures} indicates that on Cu and Ag surfaces additional heating is necessary to complete the C--C bond formation step, which means that the C--C bond formation barrier should be higher than the dehalogenation barrier on these surfaces. Thus, it appears that the calculated barriers for the dehalogenation step are too high compared to those for the C--C bond formation step.
+
+The reasons for this apparent mismatch between DFT modeling and experimentally measurements are not clear. It is possible that the disagreement arises from the incorrect mechanistic interpretation of the measurements. For example, the dehalogenation may occur on surface defects (e.g. step edges, kinks, adatoms), which are expected to lower the activation barrier of the dehalogenation compared to that on the ideal surface~\cite{chemeurope2017}. It is possible the reasons for the mismatch are purely computational. One source of error might be the approximate GGA exchange-correlation (XC) functionals used in this and all previous works~\cite{RZK-references}. In this case, the underestimation of the energy of covalent binding between the surface and organic groups by GGA functionals can be responsible for the incorrect relative barrier heights. This modeling error is not expected to alter key conclusions of the work because this study focuses entirely on the  C--C bond formation step. The relative heights of the barriers of this step along the ideal and adatom pathways are expected to be less affected by the errors in the organic-surface binding.
 
 \section{Conditions for competitive adatom catalysis}
 
