@@ -31,20 +31,8 @@
 % Use Supp Info labels with SI- prefix
 \externaldocument[SI-]{SI}
 
-
-
-\ifdefined\INTERNAL
-
-\newcommand{\lock}{\color{red}}
-\newcommand{\zhzh}{\color{blue}}
-
-\else
-
 \newcommand{\lock}{\color{black}}
 \newcommand{\zhzh}{\color{blue}}
-
-
-
 
 \begin{document}
 
@@ -97,13 +85,13 @@ Metal surfaces, however, are not free of defects. These defects range from three
 \sout{It is well known that adatoms are created on clean copper, silver and gold surfaces~\cite{ullmann_79, ullmann_58}, especially near terrace edges and kinks~\cite{ullmann_84, ullmann_85}, in the process of the thermal motion of metal atoms. 
 %It has been calculated~\cite{chemeurope2017} that the formation of an adatom on clean Cu(111), Ag(111) and Au(111) surfaces requires substantial energy: \SI{1.71}{\electronvolt}, \SI{1.12}{\electronvolt} and \SI{1.15}{\electronvolt}, respectively. Such high formation energies result in the extremely small equilibrium concentration of adatoms on clean surfaces.  
 Although the equilibrium concentration of adatoms on clean surfaces is expected to be extremely small due to the high energy of their formation~\cite{chemeurope2017}, such pre-existing adatoms have been known to participate in metal organic coordination networks~\cite{ullmann_80, ullmann_81, ullmann_82, ullmann_83}.}
-{\zhzh Although the equilibrium concentration of adatoms on ideal surfaces is expected to be  small due to the high energy of their formation~\cite{chemeurope2017}, such pre-existing adatoms have been known to form on copper, silver and gold surfaces~\cite{ullmann_79, ullmann_58} near terrace edges and kinks~\cite{ullmann_84, ullmann_85, ullmann_171}. These adatoms have also been found to participate in metal organic coordination networks~\cite{ullmann_80, ullmann_81, ullmann_82, ullmann_83, ullmann_170}.}
+{\zhzh Although the equilibrium concentration of adatoms on ideal surfaces is expected to be small due to the high energy of their formation~\cite{chemeurope2017}, such pre-existing adatoms have been known to form on copper, silver and gold surfaces~\cite{ullmann_79, ullmann_58} near terrace edges and kinks~\cite{ullmann_84, ullmann_85, ullmann_171}. These adatoms have also been found to participate in metal organic coordination networks~\cite{ullmann_80, ullmann_81, ullmann_82, ullmann_83, ullmann_170}.}
 There is also a growing body of evidence that adatoms can be created in the process of on-surface reactions~\cite{ullmann_146, ullmann_53, chematerial2019, ullmann_147, chemeurope2017, ullmann_98, ullmann_91}. % indicating that they may also play a role in the surface-confined Ullmann coupling.
 %In the process of the Ullmann coupling, reactants, intermediates and final products interact directly with metal atoms on the surface and, therefore, can be affected by surface defects. 
 Quantifying the extent to which adatoms and other imperfections of the metal surface influence the thermodynamics and kinetics of the Ullmann coupling can inform new strategies for reaction optimization, leading, in turn, to better defect-free assembly of two-dimensional polymers. 
 
 It has been recently suggested based on results of an STM and density functional theory (DFT) investigation of the on-surface Ullmann coupling reaction that metals atoms bonded to one iodine and one phenyl fragments -- the products of the dehalogenation of a iodobenzene molecule -- can be lifted from their ideal-surface positions and placed onto the surface~\cite{chemeurope2017}. 
-The energy required for this extraction has been calculated to be \SI{0.88}{\electronvolt}, \SI{0.53}{\electronvolt} and \SI{0.35}{\electronvolt} for Cu(111), Ag(111) and Au(111) surfaces -- noticeably lower than the \SI{1.71}{\electronvolt}, \SI{1.12}{\electronvolt} and \SI{1.15}{\electronvolt} extraction energies, respectively, on clean surfaces~\cite{chemeurope2017}. %, if the extracted adatom is bonded to iodine and phenyl fragments -- the products of the dehalogenation of a iodobenzene molecule~\cite{chemeurope2017}. 
+The energy required for this extraction has been calculated to be \SI{0.88}{\electronvolt}, \SI{0.53}{\electronvolt} and \SI{0.35}{\electronvolt} for Cu(111), Ag(111) and Au(111) surfaces -- noticeably lower than the \SI{1.71}{\electronvolt}, \SI{1.12}{\electronvolt} and \SI{1.15}{\electronvolt} extraction energies, respectively, on \sout{clean surfaces} {\zhzh ideal surfaces without organic species (that is ``clean'' surfaces)}~\cite{chemeurope2017}. %, if the extracted adatom is bonded to iodine and phenyl fragments -- the products of the dehalogenation of a iodobenzene molecule~\cite{chemeurope2017}. 
 %
 It has also been estimated that the reduced adatom extraction energy can be partially compensated by the release of energy in the preceding dehalogenation step~\cite{chemeurope2017}. %, making the combined dehalogenation and extraction essentially thermoneutral on these surfaces.
 
@@ -121,7 +109,7 @@ The close agreement between the measured distance and the former model has been 
 The structural analysis has been supported by the analysis of the energetics of the formation of the C--M--C intermediate from two chemisorbed aromatic groups and an adatom that already exist on the surface. The energy of the formation of the organometallic bridge has been found to be \SI{1.74}{\electronvolt} lower than the energy of the formation of the intermediate on the ideal surface~\cite{acsnano2017}. However, the reported energy difference is not conclusive because the large amount of energy required to create the adatom has not considered.
 
 In another study, a comparison of the twisting angle in experimental and simulated AFM images of the C--M--C intermediates formed by two 4‐bromoterphenyl groups on Cu(111) surface 
-has also confirmed that it is an adatom that serves as the metal bridge~\cite{acsnano2019}. Furthermore, an analysis of the temperature-dependent ratio of the two types of C--M--C intermediates that are observed for this precursor has led to a conclusion that the bridge adatoms are extracted during the C--M--C formation step of the surface Ullmann reaction, not simply present on the clean surface before the reaction~\cite{acsnano2019}. 
+has also confirmed that it is an adatom that serves as the metal bridge~\cite{acsnano2019}. Furthermore, an analysis of the temperature-dependent ratio of the two types of C--M--C intermediates that are observed for this precursor has led to a conclusion that the bridge adatoms are extracted during the C--M--C formation step of the surface Ullmann reaction, not simply present on the surface before the reaction~\cite{acsnano2019}. 
 
 Unfortunately, the role of adatoms in the formation of the carbon-carbon bond, the final key step of the on-surface Ullmann coupling, has not been investigated. Although the C--C bond formation on a gold atom lifted high above the surface has been studied computationally in the case of bromofluoranthene,
 %REVIEW: (Fig.~\ref{fig:high-lift}), 
@@ -153,8 +141,8 @@ The coupling reaction on the Cu(111) surface is discussed in detail first. The c
 \centering
 \includegraphics[width=1.\textwidth]{Fig/main-profile.pdf}
 \caption{
-Energy profile of the Ullmann reaction of monohalogentated benzenes on Cu(111). In the pictograms, blue, red, and e shapes denote copper atoms, halogen atoms, and phenyl groups, respectively. %The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. 
-Levels shown with bright colors are states with bromine as the halogen, whereas the faint upper and lower levels denote states with chlorine and iodine as the halogen, respectively. It is assumed that halogen atoms do not influence the reaction after the dehalogenation step (but see Refs.~\onlinecite{ullmann_52, Ullmann_168, Ullmann_169}) and, therefore, only the energy levels for bromine containing species are shown. The numerical values of all species are collected in Tables~\ref{SI-table:bondlength}, \ref{SI-table:idealsurface} and~\ref{SI-table:adatom-longitude}. {\zhzh Abbreviation of states: SURF: surface with unadsorbed molecules; PHYS: one physisorbed molecule; DHAL: one dehalogenated molecule; DHAL-2: two dehalogenated molecules; (X-)CMC: (extracted adatom) Carbon-Metal-Carbon bridge intermediate; (X-)DIM: (extracted adatom) dimerized coupling product; X-DIM-A: dimer on adatom; X-DIM-B: dimer product detach; (X-)DSRB: (extracted adatom) only dimer desorbed; (X-)PROD: (extracted adatom) halogens and dimer desorbed}}
+Energy profile of the Ullmann reaction of monohalogentated benzenes on Cu(111). {\zhzh The pictograms with the yellow background denote transition states.} In the pictograms, blue, red, and e shapes denote copper atoms, halogen atoms, and phenyl groups, respectively. %The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. 
+Energy levels shown with black are states with bromine as the halogen, whereas the grey upper and lower levels denote states with chlorine and iodine as the halogen, respectively. It is assumed that halogen atoms do not influence the reaction after the dehalogenation step (but see Refs.~\onlinecite{ullmann_52, Ullmann_168, Ullmann_169}) and, therefore, only the energy levels for bromine containing species are shown. The numerical values of all species are collected in Tables~\ref{SI-table:bondlength}, \ref{SI-table:idealsurface} and~\ref{SI-table:adatom-longitude}. {\zhzh The following abbreviations are used to denote states. \textbf{SURF} -- surface and gas-phase molecules, \textbf{PHYS} -- one precursor molecule is physisorbed, \textbf{DHAL} -- one molecule is dehalogenated, \textbf{DHAL-2} -- two molecules are dehalogenated, \textbf{CMC} -- carbon-metal-carbon bridge intermediate, \textbf{DIM} -- biphenyl product, \textbf{X-DIM-A} -- biphenyl product adsorbed on adatom, \textbf{X-DIM-B} -- biphenyl product adsorbed on the surface, \textbf{DSRB} --  biphenyl is desorbed, \textbf{PROD} -- all products are desorbed. \textbf{X-} prefix in all abbreviations denotes eXtracted adatom.}}
 \label{fig:completeenergy}
 \end{figure*}
 
@@ -185,17 +173,19 @@ The adatom pathway consists of three elementary steps: the adatom extraction, th
 The adatom extraction was considered along the two high-symmetry surface directions $[1\bar{1}0]$ and $[11\bar{2}]$ (Fig. \ref{fig:distance-energy}) and the product of the extraction -- an adatom bonded to two phenyl radicals -- is denoted \textbf{X-CMC}, where \textbf{X} refers to the presence of eXtracted adatom in this and other state labels. 
 The higher stability of the $[1\bar{1}0]$ \textbf{X-CMC} state is most likely due to the stronger interaction between the undercoordinated metal atoms at the vacancy edges and the nearby phenyl ring (Figure~\ref{fig:distance-energy}).
 However, the extraction along the $[11\bar{2}]$ direction has lower barrier than that along the $[1\bar{1}0]$ direction (\SI{0.71}{\electronvolt} \emph{vs} \SI{1.38}{\electronvolt}) because the adatom does not have to be lifted as high in the \textbf{X-CMC$\ddagger$} transition state in the former case (\SI{1.58}{\angstrom} \emph{vs} \SI{1.68}{\angstrom}, Table~\ref{SI-table:adatom-longitude}). This difference in the barrier height is significant enough to consider only the $[11\bar{2}]$ extraction further.
-{\zhzh Two possibilities of adatom catalyzed C--C formation were also explored: successive or simultaneous occurrence of C--C formation and adatom diffusion. The energy barrier of the latter is so high (\SI{3.04}{\electronvolt}) that the path adatom diffusion after C--C formation is taken in count further (Fig. ~\ref{fig:AlterPath})}.
+%{\zhzh Two possibilities of adatom catalyzed C--C formation were also explored: successive or simultaneous occurrence of C--C formation and adatom diffusion. The energy barrier of the latter is so high (\SI{3.04}{\electronvolt}) that the path adatom diffusion after C--C formation is taken in count further (Fig. ~\ref{fig:AlterPath})}.
+
+{\zhzh In addition to the C--C formation mechanism describe above, we explored an alternative pathway that proceeds from \textbf{X-CMC} directly to \textbf{X-DIM-B} without passing through \textbf{X-DIM-A}. In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. It was found that this path has a high activation energy of \SI{3.0}{\electronvolt} indicating that such a transformation is unrealistically slow.}
 
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.95\textwidth]{Fig/onlysurface.pdf}
 \caption{
-(a) The strength of the interaction energy between the two phenyl groups and copper {\zhzh, silver and gold} surface, measured as the change from the \textbf{CMC} state. (b) Dependence between the decreased catalytic activity of adatoms and strengthening of the phenyl-adatom binding. In both axis labels, $\Delta$ refers to the change from the ideal suface to adatom. The linear trendline enforced to go through the origin is $y=0.898 x$ ($R^2 = 0.950$).}
+(a) The strength of the interaction energy between the two phenyl groups and the surface, measured as the change from the \textbf{CMC} state. (b) Dependence between the decreased catalytic activity of adatoms and strengthening of the phenyl-adatom binding. In both axis labels, $\Delta$ refers to the change from the ideal suface to adatom. The linear trendline enforced to go through the origin is $y=0.898 x$ ($R^2 = 0.950$).}
 \label{fig:onlysurface}
 \end{figure*}
 
-It is remarkable that the energy of the extraction of a copper atom bonded to two phenyl groups is only \SI{0.16}{\electronvolt} -- dramatically lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom \sout{from the ideal clean surface} {\zhzh in an unassisted extraction fashion} (green pathway in Fig.~\ref{fig:completeenergy}). The \SI{0.71}{\electronvolt} barrier height for the phenyl-assisted extraction is also substantially lower than the \SI{2.04}{\electronvolt} barrier of unassisted extraction, due to the increased binding of the phenyl groups to the Cu adatom (Fig.~\ref{fig:onlysurface}a). This strengthening is also manifest in the \SI{0.12}{\angstrom} decrease in the carbon-metal bond length during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{SI-table:adatom-longitude}).
+It is remarkable that the energy of the extraction of a copper atom bonded to two phenyl groups is only \SI{0.16}{\electronvolt} -- dramatically lower than the \SI{1.76}{\electronvolt} energy required to extract an adatom \sout{from the ideal clean surface} {\zhzh from the ideal surface without assistance} (green pathway in Fig.~\ref{fig:completeenergy}). The \SI{0.71}{\electronvolt} barrier height for the phenyl-assisted extraction is also substantially lower than the \SI{2.04}{\electronvolt} barrier of unassisted extraction, due to the increased binding of the phenyl groups to the Cu adatom (Fig.~\ref{fig:onlysurface}a). This strengthening is also manifest in the \SI{0.12}{\angstrom} decrease in the carbon-metal bond length during the \textbf{CMC} to \textbf{X-CMC} transformation (Table~\ref{SI-table:adatom-longitude}).
 
 It is also worth noting that the adatom extraction assisted by two phenyl groups requires less energy {zhzh (\SI{0.16}{\electronvolt})} than the previously described extraction assisted by a single phenyl group and a halogen atom {\zhzh \SI{0.88}{\electronvolt}~\cite{chemeurope2017}.} \sout{, which can happen immediately after the dehalogenation step~\cite{chemeurope2017}.} \sout{In the previous study~\cite{chemeurope2017}, which used different slab models and different density functional, the energy of the extraction of a copper atom assisted by phenyl and iodine was calculated to be }\SI{0.88}{\electronvolt} (cf. \SI{0.16}{\electronvolt} \sout{phenyl-assisted extraction here).}
 
@@ -204,7 +194,7 @@ In contrast to the C--C bond formation on the ideal surface, the energy release 
 This difference between the ideal-surface and adatom pathways can be attributed to the strong bonds between the phenyl groups and adatom.
 Their cleavage  hinders the C--C bond formation as much as their formation facilitates the extraction step.
 
-It is worth noting that the adatom pathway can also be viewed as a sum of two different steps: the exothermic ideal-surface C--C bond formation (\SI{-2.00}{\electronvolt}) and the energy demanding adatom extraction \sout{on clean surface} unassisted (\SI{1.76}{\electronvolt}). 
+It is worth noting that the adatom pathway can also be viewed as a sum of two different steps: the exothermic ideal-surface C--C bond formation (\SI{-2.00}{\electronvolt}) and the energy demanding {\zhzh unassisted} adatom extraction \sout{on clean surface} (\SI{1.76}{\electronvolt}). 
 The entire pathway is, therefore, nearly thermoneutral (\SI{-0.24}{\electronvolt}). 
 \sout{Interestingly, however} {\zhzh In fact}, all three steps along the adatom pathway -- extraction, C--C bond
 formation, and the biphenyl diffusion -- are also almost thermoneutral, with their own energy balancing mechanisms (Fig.~\ref{fig:completeenergy}). 
@@ -226,14 +216,14 @@ Because of such \textbf{X-CMC} traps, the presence of adatoms during the Ullmann
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=1.\textwidth]{Fig/Ag_mainfile.pdf}
-\caption{Energy profile of the Ullmann reaction of bromobenzene on Ag(111).}
+\caption{Energy profile of the Ullmann reaction of bromobenzene on Ag(111). Color coding and abbreviations are the same as in Fig.~\ref{fig:completeenergy}.}
 \label{fig:Ag_all}
 \end{figure*}
 
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=1.\textwidth]{Fig/Au_mainfile.pdf}
-\caption{Energy profile of the Ullmann reaction of bromobenzene on Au(111).}
+\caption{Energy profile of the Ullmann reaction of bromobenzene on Au(111). Color coding and abbreviations are the same as in Fig.~\ref{fig:completeenergy}.}
 \label{fig:Au_all}
 \end{figure*}
 
@@ -270,7 +260,7 @@ The example of Au(111) demonstrates that low strengthening leads to weak extract
 
 To obviate the dilemma, other parameters of the process must be considered when the surface is chosen or designed. It is reasonable to expect, that the phenyl-assisted extraction can be facilitated without hindering the adatom catalyzed C--C bond formation if metal catalysts with low energy of the unassisted adatom extraction are employed. 
 %
-Comparing the rates of the biphenyl formation along the adatom and ideal-surface pathways reveals a trend (\sinfo) that allows to estimate that the energy \sout{of the adatom extraction on a clean metal surface} {\zhzh of unassisted adatom extraction on metal surface} cannot exceed \SI{1.0}{\electronvolt} (cf. \SI{1.56}{\electronvolt} for gold) for a competitive adatom-catalyzed coupling of two phenyl groups (Fig.~\ref{fig:conclusion}).
+Comparing the rates of the biphenyl formation along the adatom and ideal-surface pathways reveals a trend (\sinfo) that allows to estimate that the energy of \sout{the adatom extraction on a clean} {\zhzh the unassisted adatom creation on a} metal surface cannot exceed \SI{1.0}{\electronvolt} (cf. \SI{1.56}{\electronvolt} for gold) for a competitive adatom-catalyzed coupling of two phenyl groups (Fig.~\ref{fig:conclusion}).
 It can be speculated that alloys of copper, silver and gold with different ratio of the components can satisfy this requirement because the lattice incommensurabilities may make atom extraction easier. 
 
 %It is also worth mentioning the analysis presented in Fig.~\ref{fig:conclusion} can greatly reduce the number of DFT calculations necessary to predict co
@@ -280,7 +270,7 @@ The data presented in this work suggests that, for many other C--C bond forming 
 
 %\section*{Conclusions}
 
-To conclude, the role of adatoms in the coupling of iodo-, bromo- and chlorobenzene on the Cu(111), Ag(111) and Au(111) surfaces was investigated using DFT modeling. For all three metals, it was found that the energy of the phenyl-assisted adatom creation is significantly lower than the energy of the clean-surface unassisted adatom creation. In the most dramatic example of Cu(111), the two energies are \SI{0.16}{\electronvolt} and \SI{1.76}{\electronvolt}, respectively. In the case of the phenyl-assisted metal atom extraction, the energy cost of breaking metal-metal bonds is almost completely offset by the increased binding of the phenyl groups to the extracted metal atom. This effect is also responsible for the low phenyl-assisted extraction barriers computed for all three metals (\SI{0.71}{\electronvolt} Cu, \SI{0.43}{\electronvolt} Ag, \SI{0.36}{\electronvolt} Au). 
+To conclude, the role of adatoms in the coupling of iodo-, bromo- and chlorobenzene on the Cu(111), Ag(111) and Au(111) surfaces was investigated using DFT modeling. For all three metals, it was found that the energy of the phenyl-assisted adatom extraction is significantly lower than the energy of the \sout{clean-surface} unassisted adatom creation. In the most dramatic example of Cu(111), the two energies are \SI{0.16}{\electronvolt} and \SI{1.76}{\electronvolt}, respectively. In the case of the phenyl-assisted metal atom extraction, the energy cost of breaking metal-metal bonds is almost completely offset by the increased binding of the phenyl groups to the extracted metal atom. This effect is also responsible for the low phenyl-assisted extraction barriers computed for all three metals (\SI{0.71}{\electronvolt} Cu, \SI{0.43}{\electronvolt} Ag, \SI{0.36}{\electronvolt} Au). 
 
 Quantifying the strengthening of phenyl-adatom bonds for all three metals revealed its strong correlation with the increased activation barrier of the C--C bond formation on adatoms. In the case of Cu(111) and Ag(111), the adatom-catalyzed C--C bond formation barriers are found to be extremely high (\SI{1.78}{\electronvolt} Cu, \SI{1.52}{\electronvolt} Ag) rendering this adatom-based catalytic mechanism impossible despite the ease of the phenyl-assisted adatom extraction. 
 %These high barriers also mean that phenyl-bonded adatoms form only fleetingly on Cu(111) and Ag(111) before recombining with their vacancies and undergoing the regular ideal-surface C--C coupling. This competition between adatom and ideal-surface pathways makes adatom-containing organometallic bridges unlikely to be observed by STM or AFM. 
