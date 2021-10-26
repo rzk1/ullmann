@@ -28,6 +28,9 @@
 
 \newcommand{\sinfo}{Supporting Information}
 
+\newcommand{\lock}{\color{black}}
+\newcommand{\zhzh}{\color{blue}}
+
 % Use main text labels
 \externaldocument[main-]{main}
 
@@ -67,6 +70,21 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 
 
 %\textbf{Formation of organometallic intermediates on the Cu(111) surface.} Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. Although the binding of chlorobenzene, bromobenzene and iodobenzene to Cu(111) calculated in this work is stronger than that obtained previously using the a different XC functional~\cite{jacs2013} the trends in the physisorption energies for different halogens are almost exactly the same (Table~\ref{table:bondlength}).
+
+{\zhzh
+\section{Disagreement between DFT simulation and experiment on Ullmann process}
+In previous experimental study, dehalogenation requires a lower temperature than the C--C bond formation step~\cite{sur_sci01, sur_sci02, sur_sci03, ullmann_52, ullmann_68, ullmann_69, ullmann_88, ullmann_98}. However, DFT modeling reversely reported a higher barrier for the dissociation of halogen relative to the coupling step.
+The reasons for this apparent mismatch between DFT modeling and experimental measurements are not yet clear and deserve a careful consideration in the future.
+
+First, it is possible that the disagreement arises from the incorrect mechanistic interpretation of the measurements. For example, the dehalogenation may occur on surface defects (e.g. step edges, kinks, adatoms) which lower its activation barrier relative to the value calculated for the ideal surface~\cite{chemeurope2017}.
+
+Second, it is possible the reasons for the mismatch are purely computational. One source of error might be the approximate nature of GGA functionals used in all previous works and in ours. While the accuracy of DFT can often be improved using hybrid XC functionals, it is computationally demanding to perform hybrid DFT for large periodic systems in this work. That is precisely why all previous computational studies of on-surface Ullmann coupling use GGA functionals and report the same mismatch between the dehalogenation and C—C bond formation steps~\cite{jacs2013, pccp2010}.
+
+The most likely source of the improper ratio of the dehalogenation and the C—C bond formation barriers is the underestimation of the energy of covalent binding between the surface and organic groups by GGA functionals. This modeling error is not expected to alter key conclusions of our work because this study focuses entirely on the C—C bond formation step. The relative heights of the barriers of this step along the ideal and adatom pathways are expected to be less affected by the errors in the organic-surface binding.
+
+}
+
+
 
 \section{Formation of organometallic intermediates on Cu(111)} 
 
@@ -293,19 +311,6 @@ The energies are relative to \textbf{SURF}.
 \end{tabular}
 \end{table*}
 
-\begin{figure*}[bt]
-\centering
-\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
-\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following ideal surface pathway. Levels shown with black color are states without additional entropy-related functions, whereas the dimgrey and grey are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.} 
-\label{fig:entropy_ideal}
-\end{figure*}
-
-\begin{figure*}[bt]
-\centering
-\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
-\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following phenyl-assisted adatom extraction pathway. Levels shown with red color are states without additional entropy-related functions, whereas the hotpink and lightpink are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.} 
-\label{fig:entropy_adatom}
-\end{figure*}
 
 %\begin{figure*}[h!]
 %\centering the process of
@@ -383,7 +388,7 @@ where the rates of the product formation on the ideal surface and adatom are com
 %
 \begin{equation}
 \begin{split}
-r^{\text{ideal}} &= \frac{d[\text{DIM}]}{dt} = k^{\text{DIM}\ddagger} [\text{CMC}]  = \\
+r^{\text{ideal}} &= \frac{d[\text{DIM}]}{dt} = k^{\text{DIM}\ddagger} [\text{CMC}]   \\
 &= A \exp\left[ -\frac{B_0}{k_B T} \right] [\text{CMC}] 
 \end{split}
 \end{equation}
@@ -443,6 +448,76 @@ Y &< 1.026 - 0.478 X
 \end{equation}
 %
 This inequality defines the region shown in Fig.~\ref{main-fig:conclusion} in the main text.
+
+
+{\zhzh \section{Entropy correction with mobile models}
+In statistical thermodynamics, the partition sum $Q_{\text{sys}}$ of the system consisting of N molecules can be computed as: %
+\begin{equation}
+\begin{split}
+Q_{\text{sys}} = \frac{1}{N!} q^{N}_{\text{mol}} 
+\end{split}
+\end{equation}
+%
+and the partition function of each molecule contains four components: translational, rotational, vibrational and electronic terms (ignore nuclear partition function)
+%
+\begin{equation}
+\begin{split}
+q_{\text{mol}} = q_{\text{elec}q_{\text{rot}}q_{\text{vib}}}q_{\text{tran}}
+\end{split}
+\end{equation}
+%
+And the Helmholtz free energy per molecule in the system can be derived by: 
+%
+\begin{equation}
+\begin{split}
+A = - \frac{k_BT}{N}lnQ
+\end{split}
+\end{equation}
+%
+
+The molecules of all reaction states are divided into two categories: in gas phase or on surface. For the molecules in gas phase, electronic, translational and vibrational terms were considered since vibration motion makes less contribution to the free energy in this modeling system:
+
+\begin{equation}
+\begin{split}
+% q_{\text{tran}} &= \left(\frac{2\pi mk_BT}{h^2}\right)^{\frac{3}{2}} V = \frac{k_BT}{P}\left(\frac{2\pi Mk_BT}{h^2}\right)^\frac{3}{2} \\
+% q_{\text{rot}} &= \frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2}\right)^\frac{2}{3} \\
+% q_{\text{ele}} &= w_{GS}\text{exp}\left(-\frac{E_{GS}}{k_BT}\right)
+A &= -\frac{k_BT}{N}ln(q_{\text{elec}}q_{\text{rot}}q_{\text{tran}}) \\
+&=  E_{GS} - k_BT\log{w_{GS}} \\
+&\quad - k_BT\log{\left[\frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2} \right)^{\frac{2}{3}}(I_aI_bI_c)^{\frac{1}{2}} \right]} \\
+&\quad -k_BT\log{\left[ \left( \frac{P}{k_BT} \right) \left( \frac{2\pi Mk_BT}{h^2}\right)^{-\frac{3}{2}}  \right]}
+\end{split}
+\end{equation}
+Where the $E_{GS}$ and $w_{GS}$ is the electronic energy of ground state and its degeneracy, $\sigma$ is the symmetry number of molecule, $I$ is the moments of inertia, P and T are the pressure and temperature of the system, M is the mass of free mobile molecule.
+
+For the intermediates adsorbed on surface, the vibration and rotation vanish since surface defines their motion into 2D mode. The translational partition function can adopt a 2D forms~\cite{ullmann_172}:
+\begin{equation}
+\begin{split}
+A &= -\frac{k_BT}{N}ln(q_{\text{elec}}q_{\text{tran}}) \\
+&=  E_{GS} - k_BTln\log{w_{GS}} \\
+&\quad -k_BT\log{\left[ \rho \left( \frac{2\pi Mk_BT}{h^2}\right)^{-1}  \right]}
+\end{split}
+\end{equation}
+Where $\rho$ is the concentration of molecule on surface.
+
+
+}
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
+\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following ideal surface pathway. Levels shown with black color are states without additional entropy-related functions, whereas the dimgrey states are with a entropy correction at \SI{200}{\kelvin} temperature and grey states are at \SI{400}{\kelvin} temperature. Both entropy correction are completed at \SI{e-10}{\milli\bar} UHV condition. The concentration of molecule is approximately 0.8 molecule per \si{\nano\metre\squared}}.
+\label{fig:entropy_ideal}
+\end{figure*}
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
+\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following phenyl-assisted adatom extraction pathway. Levels shown with red color are states without additional entropy-related functions, whereas the hotpink and lightpink are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.whereas the hotpink states are with a entropy correction at \SI{200}{\kelvin} temperature and lightpink states are at \SI{400}{\kelvin} temperature. The pressure and molecule concentration are the same as in Fig.~\ref{fig:entropy_ideal}} 
+\label{fig:entropy_adatom}
+\end{figure*}
+
+
 
 \bibliographystyle{achemso}
 \bibliography{references}
