@@ -462,7 +462,7 @@ and the partition function of each molecule contains four components: translatio
 %
 \begin{equation}
 \begin{split}
-q_{\text{mol}} = q_{\text{elec}q_{\text{rot}}q_{\text{vib}}}q_{\text{tran}}
+q_{\text{mol}} = q_{\text{elec}}q_{{\text{rot}}}q_{\text{vib}}q_{\text{tran}}
 \end{split}
 \end{equation}
 %
@@ -470,7 +470,7 @@ And the Helmholtz free energy per molecule in the system can be derived by:
 %
 \begin{equation}
 \begin{split}
-A = - \frac{k_BT}{N}lnQ
+A = - \frac{k_BT}{N}\ln{Q}
 \end{split}
 \end{equation}
 %
@@ -482,20 +482,20 @@ The molecules of all reaction states are divided into two categories: in gas pha
 % q_{\text{tran}} &= \left(\frac{2\pi mk_BT}{h^2}\right)^{\frac{3}{2}} V = \frac{k_BT}{P}\left(\frac{2\pi Mk_BT}{h^2}\right)^\frac{3}{2} \\
 % q_{\text{rot}} &= \frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2}\right)^\frac{2}{3} \\
 % q_{\text{ele}} &= w_{GS}\text{exp}\left(-\frac{E_{GS}}{k_BT}\right)
-A &= -\frac{k_BT}{N}ln(q_{\text{elec}}q_{\text{rot}}q_{\text{tran}}) \\
-&=  E_{GS} - k_BT\log{w_{GS}} \\
-&\quad - k_BT\log{\left[\frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2} \right)^{\frac{2}{3}}(I_aI_bI_c)^{\frac{1}{2}} \right]} \\
-&\quad -k_BT\log{\left[ \left( \frac{P}{k_BT} \right) \left( \frac{2\pi Mk_BT}{h^2}\right)^{-\frac{3}{2}}  \right]}
+A &= -\frac{k_BT}{N}\ln{(q_{\text{elec}}q_{\text{rot}}q_{\text{tran}})} \\
+&=  E_{GS} - k_BT\ln{w_{GS}} \\
+&\quad - k_BT\ln{\left[\frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2} \right)^{\frac{2}{3}}(I_aI_bI_c)^{\frac{1}{2}} \right]} \\
+&\quad -k_BT\ln{\left[ \left( \frac{P}{k_BT} \right) \left( \frac{2\pi Mk_BT}{h^2}\right)^{-\frac{3}{2}}  \right]}
 \end{split}
 \end{equation}
 Where the $E_{GS}$ and $w_{GS}$ is the electronic energy of ground state and its degeneracy, $\sigma$ is the symmetry number of molecule, $I$ is the moments of inertia, P and T are the pressure and temperature of the system, M is the mass of free mobile molecule.
 
-For the intermediates adsorbed on surface, the vibration and rotation vanish since surface defines their motion into 2D mode. The translational partition function can adopt a 2D forms~\cite{ullmann_172}:
+For the intermediates adsorbed on surface, the vibration and rotation vanish since surface defines their motion into 2D mode. The translational partition function also adopts a 2D forms~\cite{ullmann_172}:
 \begin{equation}
 \begin{split}
-A &= -\frac{k_BT}{N}ln(q_{\text{elec}}q_{\text{tran}}) \\
-&=  E_{GS} - k_BTln\log{w_{GS}} \\
-&\quad -k_BT\log{\left[ \rho \left( \frac{2\pi Mk_BT}{h^2}\right)^{-1}  \right]}
+A &= -\frac{k_BT}{N}\ln{(q_{\text{elec}}q_{\text{tran}})} \\
+&=  E_{GS} - k_BT\ln{w_{GS}} \\
+&\quad -k_BT\ln{\left[ \rho \left( \frac{2\pi Mk_BT}{h^2}\right)^{-1}  \right]}
 \end{split}
 \end{equation}
 Where $\rho$ is the concentration of molecule on surface.
