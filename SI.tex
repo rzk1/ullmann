@@ -21,8 +21,8 @@
 \usepackage{xr} % referencing across multiple files
 \usepackage{cleveref} % cite figures in SI
 
-\renewcommand{\figurename}{Supporting Figure}
-\renewcommand{\tablename}{Supporting Table}
+%\renewcommand{\figurename}{Supporting Figure}
+%\renewcommand{\tablename}{Supporting Table}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \renewcommand{\thetable}{S\arabic{table}}
 
@@ -72,7 +72,11 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 %\textbf{Formation of organometallic intermediates on the Cu(111) surface.} Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. Although the binding of chlorobenzene, bromobenzene and iodobenzene to Cu(111) calculated in this work is stronger than that obtained previously using the a different XC functional~\cite{jacs2013} the trends in the physisorption energies for different halogens are almost exactly the same (Table~\ref{table:bondlength}).
 
 {\zhzh
+
 \section{Disagreement between DFT simulation and experiment on Ullmann process}
+
+RZK: This section has already be written, there was no need to write it again. See below. Transfer all appropriate references to the old section and delete this section.
+
 In previous experimental study, dehalogenation requires a lower temperature than the C--C bond formation step~\cite{sur_sci01, sur_sci02, sur_sci03, ullmann_52, ullmann_68, ullmann_69, ullmann_88, ullmann_98}. However, DFT modeling reversely reported a higher barrier for the dissociation of halogen relative to the coupling step.
 The reasons for this apparent mismatch between DFT modeling and experimental measurements are not yet clear and deserve a careful consideration in the future.
 
@@ -115,13 +119,6 @@ The most likely source of the improper ratio of the dehalogenation and the C—C
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_I.pdf}
 \caption{Dissociation of the C--I bond on Cu(111). The energy diagram shows the NEB profile of the deiodination process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
 \label{fig:dissociation_I}
-\end{figure*}
-
-\begin{figure*}[hbt]
-\centering
-\includegraphics[width=1.0\textwidth]{Fig/AlterPath.pdf}
-\caption{Alternative pathway for the adatom-catalyzed C--C formation on Cu(111). In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
-\label{fig:AlterPath}
 \end{figure*}
 
 Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. 
@@ -333,6 +330,120 @@ It should be noted that the calculated energy barriers for the dehalogenation of
 
 The reasons for this apparent mismatch between DFT modeling and experimentally measurements are not clear. It is possible that the disagreement arises from the incorrect mechanistic interpretation of the measurements. For example, the dehalogenation may occur on surface defects (e.g. step edges, kinks, adatoms), which are expected to lower the activation barrier of the dehalogenation compared to that on the ideal surface~\cite{chemeurope2017}. It is possible the reasons for the mismatch are purely computational. One source of error might be the approximate GGA exchange-correlation (XC) functionals used in this and all previous works~\cite{RZK-references}. In this case, the underestimation of the energy of covalent binding between the surface and organic groups by GGA functionals can be responsible for the incorrect relative barrier heights. This modeling error is not expected to alter key conclusions of the work because this study focuses entirely on the  C--C bond formation step. The relative heights of the barriers of this step along the ideal and adatom pathways are expected to be less affected by the errors in the organic-surface binding.
 
+{\zhzh 
+
+\section{Alternative adatom pathways on Cu(111)}
+
+The adatom extraction from Cu(111) surface was considered along the two high-symmetry surface directions $[1\bar{1}0]$ and $[11\bar{2}]$ (Fig.~\ref{fig:distance-energy}). The product of the extraction -- an adatom bonded to two phenyl radicals -- is denoted \textbf{X-CMC}. The higher stability of the $[1\bar{1}0]$ \textbf{X-CMC} state is most likely due to the stronger interaction between the undercoordinated metal atoms at the vacancy edges and the nearby phenyl ring (Figure~\ref{fig:distance-energy}).
+However, the extraction along the $[11\bar{2}]$ direction has lower barrier (\SI{0.71}{\electronvolt} from \textbf{CMC} to \textbf{X-CMC}$\ddagger$) than that along the $[1\bar{1}0]$ direction (\SI{1.38}{\electronvolt}) because the adatom does not have to be lifted as high in the \textbf{X-CMC$\ddagger$} transition state in the former case (\SI{1.58}{\angstrom} \emph{vs} \SI{1.68}{\angstrom}, Table~\ref{table:adatom-longitude}). This difference in the barrier height is significant enough to consider only the $[11\bar{2}]$ extraction further.
+
+In addition to the C--C bond formation mechanism describe above, we explored an alternative pathway that proceeds from \textbf{X-CMC} directly to \textbf{X-DIM-B} without passing through \textbf{X-DIM-A}. In this pathway, the formation of the C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. It was found that this path has the activation energy of \SI{3.0}{\electronvolt} indicating that such a transformation is unrealistically slow (Figure~\ref{fig:AlterPath}).
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=1.0\textwidth]{Fig/distance-energy-SI.pdf}
+\caption{Coupling of the phenyl groups on Cu(111) along the ideal-surface (black),  [11$\overline{2}$] adatom (red), and  [1$\overline{1}$0] adatom (yellow) pathways. (a) Nudged elastic band (NEB) energy profiles along the reaction coordinate represented by the distance between the two carbon atoms. The geometry of key intermediates is shown along the (b) ideal-surface, (c) [11$\overline{2}$] adatom, and (d) [1$\overline{1}$0] adatom pathways.}
+\label{fig:distance-energy}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=1.0\textwidth]{Fig/AlterPath.pdf}
+\caption{Alternative pathway for the adatom-catalyzed C--C formation on Cu(111). In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
+\label{fig:AlterPath}
+\end{figure*}
+
+}
+
+{\zhzh 
+
+\section{Approximate calculation of the free energy profiles}
+
+In order to understand the role of the entropy in the on-surface reactions, the free energy of each state was estimated using the model of mobile rigid adsorbates~\ref{book:Hill-mobile} described below.
+%RZK: book:Hill-mobile -- Terrell Hill, Section 7.1, p. 129.
+
+In statistical thermodynamics, the partition sum of the system consisting of $N$ molecules can be computed as
+%
+\begin{equation}
+\begin{split}
+Q = \frac{1}{N!} q^{N}
+\end{split}
+\end{equation}
+%
+where the partition function of each chemical species of the system $q$ is written as a product of four terms: translational, rotational, vibrational and electronic
+%
+\begin{equation}
+\begin{split}
+q = q_{\text{elec}} q_{{\text{rot}}} q_{\text{vib}} q_{\text{tran}}.
+\end{split}
+\end{equation}
+%
+
+% RZZK: Neglecting rotations is not really justified. Must include them later (in the thesis) because this is easy to do.
+If molecules adsorbed on the surface are assumed to be rigid particles freely moving in two dimensions, the chemical potential $\mu$ (that is, the Gibbs free energy per molecule) at temperature $T$ is
+%
+\begin{equation}
+\begin{split}
+\mu &= - k_B T \ln{\frac{  q_{\text{elec}}q_{\text{tran}}  }{N}} = \\
+&=  E_{GS} - k_BT\ln{w_{GS}} - k_BT\ln \left[ \rho \Lambda^2  \right],
+\end{split}
+\end{equation}
+%
+where $E_{GS}$ and $w_{GS}$ are the energy of the electronic ground state and its degeneracy, $\rho$ is the surface concentration of adsorbates, $\Lambda = \frac{h}{\sqrt{2\pi M k_BT}}$ is the thermal de Broglie wavelength~\cite{ullmann_172}, and $M$ is the molecular mass. Note that the contribution of rotations is neglected because it is expected to be similar for all species along the pathway.
+
+For gas phase molecules, the Gibbs free energy per molecule is calculated using the standard ideal-gas approximation, modified to the case of rigid molecules ($q_{\text{vib}}=1$) to make it consistent with the treatment of the surface species
+%
+\begin{equation}
+\begin{split}
+% q_{\text{tran}} &= \left(\frac{2\pi mk_BT}{h^2}\right)^{\frac{3}{2}} V = \frac{k_BT}{P}\left(\frac{2\pi Mk_BT}{h^2}\right)^\frac{3}{2} \\
+% q_{\text{rot}} &= \frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2}\right)^\frac{2}{3} \\
+% q_{\text{ele}} &= w_{GS}\text{exp}\left(-\frac{E_{GS}}{k_BT}\right)
+\mu &= -k_B T \ln{\frac{q_{\text{elec}}q_{\text{rot}}q_{\text{tran}}}{N}} \\
+&=  E_{GS} - k_BT\ln{w_{GS}} - k_BT\ln{\left[ \left( \frac{P}{k_BT} \right) \Lambda^3  \right]} -\\
+& - k_BT\ln{\left[\frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2} \right)^{\frac{2}{3}}(I_aI_bI_c)^{\frac{1}{2}} \right]},
+\end{split}
+\end{equation}
+%
+where $\sigma$ is the symmetry number of the molecule, $I_{i}$ are the moments of inertia, $P$ is the pressure.
+
+Finally, the surface is assumed to be rigid and fixed in space, making its chemical potential equal to
+%
+\begin{equation}
+\begin{split}
+\mu &= E_{GS} - k_BT \ln{w_{GS}}
+\end{split}
+\end{equation}
+%
+
+Figures~\ref{fig:entropy_ideal} and~\ref{fig:entropy_adatom} show the free energy profiles calculated for the ideal and adatom pathways, respectively. The temperature, surface concentration and pressure of gas-phase molecules are chosen to match experimental conditions. The pressure of \SI{e-13}{\bar} corresponds to the UHV condition~\cite{ullmann_147, ullmann_173, Ullmann_57}. The surface concentration of molecule is set to 0.08 molecules per \si{\nano\metre\squared} as shown in  STM images~\cite{ullmann_67}.
+
+The figures show that the model of freely moving species, leads to noticeable entropic contributions only for the elementary steps that proceed with the change in the number of mobile species on the surface. See, for example, the transitions from \textbf{PHYS} to \textbf{DHAL}, from \textbf{DHAL-2} to \textbf{CMC}, and from \textbf{X-DIM-A} to \textbf{X-DIM-B}. However, the adatom extraction and C--C bond formation steps -- the steps of interest in this work -- the entropy term plays only a minor role. While the entropy contribution is significant for individual states, it remains very similar for all states along the pathway. So the net effect of entropy does not exceed \SI{0.01}{\electronvolt}. Compare, for example, the free energy change from \textbf{CMC} to \textbf{X-CMC} at temperatures of \SI{0}{\kelvin} and \SI{400}{\kelvin}.
+
+It should be noted that the model of localized adsorbates~\ref{book:Hill-mobile} introduces an even smaller net entropy correction to the free energy profiles. Although in the real system the adsorbates are neither fully mobile nor completely localized, the entropy effects are expected to lie inbetween the two calculated values and will be small.
+
+}
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
+\caption{The Gibbs free energy profile of the ideal-surface pathway of the Ullmann coupling of bromobenzene on Cu(111).}
+%RZK: 
+% Legend "No entropy" -> "T = 0 K", "200 K" -> "T = 200 K"
+% Legend "8 x 10^16 m-2" -> "\rho = 8 x 10^-2 nm-2", note new units
+% Does mbar refer to mega-bar or milli-bar? Convert to bars to avoid ambiguity  "P = 10^{-13} bar".
+% Do not explain your legends in the caption!
+% Same corretions for the other figure
+\label{fig:entropy_ideal}
+\end{figure*}
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
+\caption{The Gibbs free energy profile of the adatom pathway of the Ullmann coupling of bromobenzene on Cu(111).} 
+\label{fig:entropy_adatom}
+\end{figure*}
+
+
 \section{Conditions for competitive adatom catalysis}
 
 %The analysis of the three metals performed in this work raises a tantalizing question whether it is possible to find a metal surface capable of catalyzing the coupling of two phenyl groups through an efficient and competitive adatom pathway. 
@@ -448,75 +559,6 @@ Y &< 1.026 - 0.478 X
 \end{equation}
 %
 This inequality defines the region shown in Fig.~\ref{main-fig:conclusion} in the main text.
-
-
-{\zhzh \section{Entropy correction with mobile models}
-In statistical thermodynamics, the partition sum $Q_{\text{sys}}$ of the system consisting of N molecules can be computed as: %
-\begin{equation}
-\begin{split}
-Q_{\text{sys}} = \frac{1}{N!} q^{N}_{\text{mol}} 
-\end{split}
-\end{equation}
-%
-and the partition function of each molecule contains four components: translational, rotational, vibrational and electronic terms (ignore nuclear partition function)
-%
-\begin{equation}
-\begin{split}
-q_{\text{mol}} = q_{\text{elec}}q_{{\text{rot}}}q_{\text{vib}}q_{\text{tran}}
-\end{split}
-\end{equation}
-%
-And the Helmholtz free energy per molecule in the system can be derived by: 
-%
-\begin{equation}
-\begin{split}
-A = - \frac{k_BT}{N}\ln{Q}
-\end{split}
-\end{equation}
-%
-
-The molecules of all reaction states are divided into two categories: in gas phase or on surface. For the molecules in gas phase, electronic, translational and vibrational terms were considered since vibration motion makes less contribution to the free energy in this modeling system:
-
-\begin{equation}
-\begin{split}
-% q_{\text{tran}} &= \left(\frac{2\pi mk_BT}{h^2}\right)^{\frac{3}{2}} V = \frac{k_BT}{P}\left(\frac{2\pi Mk_BT}{h^2}\right)^\frac{3}{2} \\
-% q_{\text{rot}} &= \frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2}\right)^\frac{2}{3} \\
-% q_{\text{ele}} &= w_{GS}\text{exp}\left(-\frac{E_{GS}}{k_BT}\right)
-A &= -\frac{k_BT}{N}\ln{(q_{\text{elec}}q_{\text{rot}}q_{\text{tran}})} \\
-&=  E_{GS} - k_BT\ln{w_{GS}} \\
-&\quad - k_BT\ln{\left[\frac{\sqrt{\pi}}{\sigma} \left(\frac{8\pi^2k_BT}{h^2} \right)^{\frac{2}{3}}(I_aI_bI_c)^{\frac{1}{2}} \right]} \\
-&\quad -k_BT\ln{\left[ \left( \frac{P}{k_BT} \right) \left( \frac{2\pi Mk_BT}{h^2}\right)^{-\frac{3}{2}}  \right]}
-\end{split}
-\end{equation}
-Where the $E_{GS}$ and $w_{GS}$ is the electronic energy of ground state and its degeneracy, $\sigma$ is the symmetry number of molecule, $I$ is the moments of inertia, P and T are the pressure and temperature of the system, M is the mass of free mobile molecule.
-
-For the intermediates adsorbed on surface, the vibration and rotation vanish since surface defines their motion into 2D mode. The translational partition function also adopts a 2D forms~\cite{ullmann_172}:
-\begin{equation}
-\begin{split}
-A &= -\frac{k_BT}{N}\ln{(q_{\text{elec}}q_{\text{tran}})} \\
-&=  E_{GS} - k_BT\ln{w_{GS}} \\
-&\quad -k_BT\ln{\left[ \rho \left( \frac{2\pi Mk_BT}{h^2}\right)^{-1}  \right]}
-\end{split}
-\end{equation}
-Where $\rho$ is the concentration of molecule on surface.
-
-
-}
-
-\begin{figure*}[bt]
-\centering
-\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
-\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following ideal surface pathway. Levels shown with black color are states without additional entropy-related functions, whereas the dimgrey states are with a entropy correction at \SI{200}{\kelvin} temperature and grey states are at \SI{400}{\kelvin} temperature. In both two conditions, entropy correction are completed at \SI{e-10}{\milli\bar} UHV condition, and consistent with the reaction condition for Ullmann process~\cite{ullmann_147, ullmann_173, Ullmann_57}. The concentration of molecule is approximately 0.8 molecule per \si{\nano\metre\squared}, and it is verified by STM image~\cite{ullmann_67}}.
-\label{fig:entropy_ideal}
-\end{figure*}
-
-\begin{figure*}[bt]
-\centering
-\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
-\caption{Energy profile of the Ullmann reaction of bromobenzene on Cu(111) after applying entropy effects following phenyl-assisted adatom extraction pathway. Levels shown with red color are states without additional entropy-related functions, whereas the hotpink and lightpink are states at a experimental pressure and molecular concentration conditions with different temperature, respectively.whereas the hotpink states are with a entropy correction at \SI{200}{\kelvin} temperature and lightpink states are at \SI{400}{\kelvin} temperature. The pressure and molecule concentration are the same as in Fig.~\ref{fig:entropy_ideal}} 
-\label{fig:entropy_adatom}
-\end{figure*}
-
 
 
 \bibliographystyle{achemso}
