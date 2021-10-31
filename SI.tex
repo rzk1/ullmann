@@ -1,4 +1,5 @@
-\documentclass[aps,prl,reprint,amsmath,amssymb,floatfix,notitlepage]{revtex4-1}
+%\documentclass[aps,prb,reprint,amsmath,amssymb,floatfix]{revtex4-1}
+\documentclass[aps,prb,amsmath,amssymb,floatfix,notitlepage,11pt]{revtex4-1}
 %\documentclass[journal=ancac3,layout=twocolumn,manuscript=article]{achemso}
 
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
@@ -132,7 +133,7 @@ The calculated energies are in qualitative agreement with the trend in experimen
 The formation of carbon-metal-carbon organometallic intermediates (\textbf{CMC}) from two phenyl radicals (\textbf{DHAL-2}) is slightly endothermic with the energy ranging from \SIrange{0.17}{0.25}{\electronvolt} (Fig.~\ref{main-fig:completeenergy} and Table~\ref{table:bondlength}). Experimentally, the dehalogenation and formation of the bridge structure occur at the same temperature indicating that the two phenyl groups need to overcome only a small energy barrier to approach each other~\cite{ullmann_88}. 
 %REVIEW: Gold surface is an exception that C--Au--C intermediates are rarely observed in experiment due to fast proceeding to coupling product after dehalogenation~\cite{ullmann_93, ullmann_100, ullmann_101, ullmann_102, ullmann_103, jacs2011}.
 %
-The two phenyl groups in the \textbf{CMC} state lift their common copper atom \SI{0.53}{\angstrom} above its ideal-surface position, which noticeably higher than the \SI{0.12}{\angstrom} raise in the \textbf{DHAL-2} state (Table~\ref{table:bondlength}).
+The two phenyl groups in the \textbf{CMC} state lift their common copper atom \SI{0.53}{\angstrom} above its surface position, which noticeably higher than the \SI{0.12}{\angstrom} raise in the \textbf{DHAL-2} state (Table~\ref{table:bondlength}).
 
 %\textbf{DHAL-2} used here is well matched to the experimental STM image shown in Fig.~\ref{fig:organ}, the dissociated bromine atoms sit around in the formation of phenyl--Cu--phenyl structures. 
 %The distance between two carbon atoms in the C--Cu--C bridge is \SI{3.10}{\angstrom}, which is \SI{1.61}{\angstrom} longer than the length of the connecting C--C in biphenyl. The angle of two phenyl rings connected to the Cu atom with respect to the surface are both \SI{52}{\degree}, this angle is the same as the tilt of a single phenyl in DHAL (\SI{52}{\degree}).
@@ -144,6 +145,7 @@ The two phenyl groups in the \textbf{CMC} state lift their common copper atom \S
 
 \begin{table*}
 \centering
+\scriptsize
 \caption{Structural and energetic characteristics of the intermediates in the dehalogenation step on Cu(111). The energies are relative to \textbf{SURF}.}
 \label{table:bondlength}
 \begin{tabular}{ llccccc  }
@@ -180,7 +182,9 @@ The two phenyl groups in the \textbf{CMC} state lift their common copper atom \S
 
 
 \begin{table*}
-\centering\caption{Minimum experimentally measured temperatures (\si{\kelvin}) necessary for the completion of two Ullmann coupling steps.}
+\centering
+\scriptsize
+\caption{Minimum experimentally measured temperatures (\si{\kelvin}) necessary for the completion of two Ullmann coupling steps.}
 \begin{tabular}{ lcccccc }
  \hline
  \hline
@@ -200,6 +204,7 @@ The two phenyl groups in the \textbf{CMC} state lift their common copper atom \S
 
 \begin{table*}
 \centering
+\scriptsize
 \caption{Characterization of the intermediates in the ideal-surface pathway. %The states are labeled as in Fig.~\ref{fig:completeenergy}. 
 The energies are relative to \textbf{SURF}.
 %For the coupling step, the energy change and barrier for different halobenzenes are exactly same due to the absence of halogen atoms in this step.
@@ -236,6 +241,7 @@ The energies are relative to \textbf{SURF}.
 
 \begin{table*}
 \centering
+\scriptsize
 \caption{Characterization of the intermediates in the $[11\bar{2}]$ adatom pathway. The energies are relative to \textbf{SURF}. 
 }
 \label{table:adatom-longitude}
@@ -267,6 +273,7 @@ The energies are relative to \textbf{SURF}.
 
 \begin{table*}
 \centering
+\scriptsize
 \caption{Characterization of the intermediates in the $[1\bar{1}0]$ adatom pathway on Cu(111). Energies are reported relative to the \textbf{SURF} state.}
 \label{table:adatom-110}
 \begin{tabular}{ lccccccccccccc  }
@@ -320,7 +327,7 @@ In addition to the C--C bond formation mechanism describe above, we explored an 
 
 \begin{figure*}[bt]
 \centering
-\includegraphics[width=1.0\textwidth]{Fig/distance-energy-SI.pdf}
+\includegraphics[width=0.8\textwidth]{Fig/distance-energy-SI.pdf}
 \caption{Coupling of the phenyl groups on Cu(111) along the ideal-surface (black),  [11$\overline{2}$] adatom (red), and  [1$\overline{1}$0] adatom (yellow) pathways. (a) Nudged elastic band (NEB) energy profiles along the reaction coordinate represented by the distance between the two carbon atoms. The geometry of key intermediates is shown along the (b) ideal-surface, (c) [11$\overline{2}$] adatom, and (d) [1$\overline{1}$0] adatom pathways.}
 \label{fig:distance-energy}
 \end{figure*}
@@ -332,7 +339,7 @@ In addition to the C--C bond formation mechanism describe above, we explored an 
 \label{fig:AlterPath}
 \end{figure*} 
 
-\section{Approximate calculation of the free energy profiles}
+\section{Approximate calculation of the free energy profiles} \label{sec:free-en}
 
 In order to understand the role of the entropy in the on-surface reactions, the free energy of each state was estimated using the model of mobile rigid adsorbates~\cite{ullmann_174} described below.
 
@@ -389,7 +396,7 @@ Finally, the surface is assumed to be rigid and fixed in space, making its chemi
 \end{equation}
 %
 
-Figures~\ref{fig:entropy_ideal} and~\ref{fig:entropy_adatom} show the free energy profiles calculated for the ideal and adatom pathways, respectively. The temperature, surface concentration and pressure of gas-phase molecules are chosen to match experimental conditions. The pressure of \SI{e-13}{\bar} corresponds to the UHV condition~\cite{ullmann_147, ullmann_173, Ullmann_57}. The surface concentration of molecule is set to 0.08 molecules per \si{\nano\metre\squared} as shown in  STM images~\cite{ullmann_67}.
+Figures~\ref{fig:entropy_ideal} and~\ref{fig:entropy_adatom} show the free energy profiles calculated for the ideal-surface and adatom pathways, respectively. The temperature, surface concentration and pressure of gas-phase molecules are chosen to match experimental conditions. The pressure of \SI{e-13}{\bar} corresponds to the UHV condition~\cite{ullmann_147, ullmann_173, Ullmann_57}. The surface concentration of molecule is set to 0.08 molecules per \si{\nano\metre\squared} as shown in  STM images~\cite{ullmann_67}.
 
 The figures show that the model of freely moving species, leads to noticeable entropic contributions only for the elementary steps that proceed with the change in the number of mobile species on the surface. See, for example, the transitions from \textbf{PHYS} to \textbf{DHAL}, from \textbf{DHAL-2} to \textbf{CMC}, and from \textbf{X-DIM-A} to \textbf{X-DIM-B}. However, the adatom extraction and C--C bond formation steps -- the steps of interest in this work -- the entropy term plays only a minor role. While the entropy contribution is significant for individual states, it remains very similar for all states along the pathway. So the net effect of entropy does not exceed \SI{0.01}{\electronvolt}. Compare, for example, the free energy change from \textbf{CMC} to \textbf{X-CMC} at temperatures of \SI{0}{\kelvin} and \SI{400}{\kelvin}.
 
@@ -398,16 +405,18 @@ It should be noted that the model of localized adsorbates~\cite{ullmann_174} int
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
-\caption{The Gibbs free energy profile of the ideal-surface pathway of the Ullmann coupling of bromobenzene on Cu(111).}
+\caption{The Gibbs free energy profile of the ideal-surface pathway of the Ullmann coupling of bromobenzene on Cu(111) calculated using approximations described in Section~\ref{sec:free-en}.}
 \label{fig:entropy_ideal}
 \end{figure*}
 
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
-\caption{The Gibbs free energy profile of the adatom pathway of the Ullmann coupling of bromobenzene on Cu(111).} 
+\caption{The Gibbs free energy profile of the adatom pathway of the Ullmann coupling of bromobenzene on Cu(111) calculated using approximations described in Section~\ref{sec:free-en}.} 
 \label{fig:entropy_adatom}
 \end{figure*}
+
+\ifdefined\FALSE
 
 \section{Conditions for competitive adatom catalysis}
 
@@ -456,7 +465,7 @@ The established relations are required to determined the condition for the compe
 %
 \begin{equation} \label{eq:compete}
 \begin{split}
-\frac{r^{\text{adatom}} }{ r^{\text{ideal}} } &> 1
+\frac{r^{\text{adatom}} }{ r^{\text{ideal-surf}} } &> 1
 \end{split}
 \end{equation}
 %
@@ -464,7 +473,7 @@ where the rates of the product formation on the ideal surface and adatom are com
 %
 \begin{equation}
 \begin{split}
-r^{\text{ideal}} &= \frac{d[\text{DIM}]}{dt} = k^{\text{DIM}\ddagger} [\text{CMC}]   \\
+r^{\text{ideal-surf}} &= \frac{d[\text{DIM}]}{dt} = k^{\text{DIM}\ddagger} [\text{CMC}]   \\
 &= A \exp\left[ -\frac{B_0}{k_B T} \right] [\text{CMC}] 
 \end{split}
 \end{equation}
@@ -479,7 +488,7 @@ B_0 = E(\text{DIM}\ddagger) - E(\text{CMC})
 %
 It should be noted that the free energies, required to determine the rate and equilibrium constants are substituted by electronic energies, which can be obtained from DFT readily.
 
-The rate of the product formation along the ideal path can be obtained assuming that the adatom extraction step is fast
+The rate of the product formation along the adatom path can be obtained assuming that the adatom extraction step is fast
 %
 \begin{equation}
 \begin{split}
@@ -525,6 +534,7 @@ Y &< 1.026 - 0.478 X
 %
 This inequality defines the region shown in Fig.~\ref{main-fig:conclusion} in the main text.
 
+\fi
 
 \bibliographystyle{achemso}
 \bibliography{references}
