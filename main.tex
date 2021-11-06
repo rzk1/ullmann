@@ -1,5 +1,8 @@
-\documentclass[aps,prb,amsmath,amssymb,11pt]{revtex4-1}
-%\documentclass[journal=ancac3,layout=twocolumn,manuscript=article]{achemso}
+%\documentclass[aip,jcp,amsmath,amssymb,11pt]{revtex4-1}
+\documentclass[journal=jpccck,layout=traditional,manuscript=article]{achemso} 
+% JPCL = jpclcd - ?bug in TOC graphics?
+% JPCC = jpccck
+% ACS Nano = ancac3
 
 \newcommand*{\ACSNANO}{}
 
@@ -21,8 +24,9 @@
 \usepackage{xr} % referencing across multiple files
 \usepackage{cleveref} % cite figures in SI
 
-\usepackage[normalem]{ulem} %cross out the text, can be deleted later
+\usepackage[font=footnotesize]{caption}
 
+\usepackage[normalem]{ulem} %cross out the text, can be deleted later
 
 \newcommand{\comm}{\color{purple}} %comment
 %\newcommand{\comm}{\color{green}} %comment
@@ -32,11 +36,9 @@
 \externaldocument[SI-]{SI}
 
 % \newcommand{\lock}{\color{black}}
-\newcommand{\zhzh}{\color{blue}}
-%\newcommand{\zhzh}{\color{black}}
-%\renewcommand{\sout}[1]{\unskip}
-
-\begin{document}
+%\newcommand{\zhzh}{\color{blue}}
+\newcommand{\zhzh}{\color{black}}
+\renewcommand{\sout}[1]{\unskip}
 
 \title
 {Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}
@@ -50,30 +52,35 @@
  Department of Chemistry, McGill University, 801 Sherbrooke St West, Montreal, QC H3A 0B8, Canada
 }%
 
-%RZZK: Refer the reader to the barrier discussion in SI.
+\begin{document}
 
 \begin{abstract}
-%\textbf{Abstract.} 
-\sout{The o}{\zhzh O}n-surface Ullmann coupling of aromatic molecules has emerged as the most successful approach to synthesize atomically precise carbon nanostructures with unique electronic properties including molecular wires, graphene nanoribbons and two-dimensional conjugated polymers. Despite substantial progress in determining the mechanism of this reaction, the most fundamental question of whether the coupling is catalyzed directly by surface atoms or adatoms remains unanswered. In this work, the feasibility of the adatom creation and adatom-catalyzed Ullmann coupling of  iodo-, bromo- and chlorobenzene on Cu(111), Ag(111) and Au(111) surfaces is examined using density functional theory modeling. 
-\sout{Analysis of competing pathways reveals that two phenyl intermediates extract a silver atom from Ag(111) surface faster (energy barrier 0.43 eV) than they form the carbon-carbon bond (0.62 eV). However, on Cu(111) and Au(111), the extraction process is slower (0.71 eV Cu, 0.36 eV Au) than the C--C formation (0.49 eV Cu, 0.14 eV Au).} 
-{\zhzh Analysis of competing pathways reveals that the energy barrier for the extraction of a metal atom by two phenyl intermediates (0.71 eV Cu, 0.43 eV Ag, 0.36 eV Au) is reduced from that for the adatom formation without phenyl groups (2.04 eV Cu, 1.52 eV Ag, 1.72 eV Au) so significantly that it becomes comparable to that for the phenyl-phenyl bond formation (0.49 eV Cu, 0.62 eV Ag, 0.14 eV Au) and even lower on Ag(111).} 
-The {\zhzh phenyl-assisted} adatom creation is greatly facilitated by the strengthening of phenyl-metal bonds upon the extraction. However, if these bonds are too strong they create an insurmountable barrier for the subsequent adatom-catalyzed C--C coupling, as on Cu(111) and Ag(111) (1.78 eV Cu, 1.52 eV Ag). In contrast, Au adatoms that do not bind phenyl groups strongly can catalyze the C--C bond formation almost as efficiently (0.20 eV) as surface atoms (0.14 eV). Our results explain why adatoms are difficult to observe during surface-confined reactions and how their presence can lead to defects in the assembled nanostructures. The revealed trends can facilitate design of efficient on-surface reactions.
-%\textbf{Keywords.} Ullmann coupling; surface-confined polymerization; adatom; surface defect; coinage metal; density functional theory.
-%\begin{figure}[h!]
-%\centering
-%\caption{Table of content graphics.} 
-%\label{fig:tog}
-%\end{figure}
-
-%\vspace{4ex}
-\begin{center}
-\includegraphics[width=0.50\textwidth]{TOG/TOG-main.pdf}
-\end{center}
-
+\vspace{0.1ex}
+{\zhzh Despite the importance of the on-surface Ullmann coupling for synthesis of atomically precise carbon nanostructures, it is still unclear whether this reaction is catalyzed by surface atoms or adatoms. Here, the feasibility of the adatom creation and adatom-catalyzed Ullmann coupling of chloro-, bromo- and iodobenzene on Cu(111), Ag(111) and Au(111) surfaces is examined using density functional theory modeling. The extraction of a metal atom is found to be greatly facilitated by the formation of strong phenyl-metal bonds, making the extraction energy barrier comparable to, and in case of Ag(111) even lower than, that for the competing surface-catalyzed phenyl-phenyl bond formation. However, if the phenyl-adatom bonds are too strong, as on Cu(111) and Ag(111), they create an insurmountable barrier for the subsequent adatom-catalyzed C--C coupling. In contrast, Au adatoms do not bind phenyl groups strongly and can catalyze the C--C bond formation almost as efficiently as surface atoms.}
+%%\sout{The o}{\zhzh O}n-surface Ullmann coupling of aromatic molecules has emerged as the most successful approach to synthesize atomically precise carbon nanostructures with unique electronic properties including molecular wires, graphene nanoribbons and two-dimensional conjugated polymers. Despite substantial progress in determining the mechanism of this reaction, the most fundamental question of whether the coupling is catalyzed directly by surface atoms or adatoms remains unanswered. In this work, the feasibility of the adatom creation and adatom-catalyzed Ullmann coupling of  iodo-, bromo- and chlorobenzene on Cu(111), Ag(111) and Au(111) surfaces is examined using density functional theory modeling. 
+%%\sout{Analysis of competing pathways reveals that two phenyl intermediates extract a silver atom from Ag(111) surface faster (energy barrier 0.43 eV) than they form the carbon-carbon bond (0.62 eV). However, on Cu(111) and Au(111), the extraction process is slower (0.71 eV Cu, 0.36 eV Au) than the C--C formation (0.49 eV Cu, 0.14 eV Au).} 
+%%{\zhzh Analysis of competing pathways reveals that the energy barrier for the extraction of a metal atom by two phenyl intermediates (0.71 eV Cu, 0.43 eV Ag, 0.36 eV Au) is reduced from that for the adatom formation without phenyl groups (2.04 eV Cu, 1.52 eV Ag, 1.72 eV Au) so significantly that it becomes comparable to that for the phenyl-phenyl bond formation (0.49 eV Cu, 0.62 eV Ag, 0.14 eV Au) and even lower on Ag(111).} 
+%%The {\zhzh phenyl-assisted} adatom creation is greatly facilitated by the strengthening of phenyl-metal bonds upon the extraction. However, if these bonds are too strong they create an insurmountable barrier for the subsequent adatom-catalyzed C--C coupling, as on Cu(111) and Ag(111) (1.78 eV Cu, 1.52 eV Ag). In contrast, Au adatoms that do not bind phenyl groups strongly can catalyze the C--C bond formation almost as efficiently (0.20 eV) as surface atoms (0.14 eV). Our results explain why adatoms are difficult to observe during surface-confined reactions and how their presence can lead to defects in the assembled nanostructures. The revealed trends can facilitate design of efficient on-surface reactions.
+%%%\textbf{Keywords.} Ullmann coupling; surface-confined polymerization; adatom; surface defect; coinage metal; density functional theory.
+%%%\begin{figure}[h!]
+%%%\centering
+%%%\caption{Table of content graphics.} 
+%%%\label{fig:tog}
+%%%\end{figure}
 \end{abstract}
 
+%\vspace{1ex}
+\begin{center}
+TOC Graphic\\
+\includegraphics[width=3.25in]{TOG/TOG-main.pdf}
+\end{center}
+%\begin{tocentry}
+%\includegraphics[width=3.25in]{TOG/TOG-main.pdf}
+%\end{tocentry}
 
-\maketitle
+%\maketitle
+
+\newpage
 
 %\section{Introduction}
 
@@ -143,10 +150,10 @@ The coupling reaction on the Cu(111) surface is discussed in detail first. The c
 
 \begin{figure*}[bt]
 \centering
-\includegraphics[width=0.96\textwidth]{Fig/main-profile.pdf}
+\includegraphics[width=\textwidth]{Fig/main-profile.pdf}
 \caption{
-Energy profile of the Ullmann reaction of monohalogentated benzenes on Cu(111). {\zhzh The pictograms with the yellow background denote transition states.} In the pictograms, blue, red, and green shapes denote copper atoms, halogen atoms, and phenyl groups, respectively. %The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. 
-Energy levels shown with black are states with bromine as the halogen, whereas the grey upper and lower levels denote states with chlorine and iodine as the halogen, respectively. It is assumed that halogen atoms do not influence the reaction after the dehalogenation step (but see Refs.~\onlinecite{ullmann_52, Ullmann_168, Ullmann_169}) and, therefore, only the energy levels for bromine containing species are shown. The numerical values of all species are collected in Tables~\ref{SI-table:bondlength}, \ref{SI-table:idealsurface} and~\ref{SI-table:adatom-longitude}. {\zhzh The following abbreviations are used to denote states. \textbf{SURF} -- surface and gas-phase molecules, \textbf{PHYS} -- one precursor molecule is physisorbed, \textbf{DHAL} -- one molecule is dehalogenated, \textbf{DHAL-2} -- two molecules are dehalogenated, \textbf{CMC} -- carbon-metal-carbon bridge intermediate, \textbf{DIM} -- biphenyl product, \textbf{X-DIM-A} -- biphenyl product adsorbed on adatom, \textbf{X-DIM-B} -- biphenyl product adsorbed on the surface, \textbf{DSRB} --  biphenyl is desorbed, \textbf{PROD} -- all products are desorbed. \textbf{X} prefix in all abbreviations denotes eXtracted adatom.}}
+Energy profile of the Ullmann reaction of monohalogentated benzenes on Cu(111). In the pictograms, {\zhzh the yellow background marks transition states;} blue, red, and green shapes denote copper atoms, halogen atoms, and phenyl groups, respectively. %The energy of the ideal metal surface and two gas-phase monohalogenated benzene molecules, denoted here as \textbf{SURF}, was used as the zero-energy reference. 
+Energy levels shown with black are states with bromine as the halogen, whereas the grey upper and lower levels denote states with chlorine and iodine as the halogen, respectively. It is assumed that halogen atoms do not influence the reaction after the dehalogenation step (but see Refs.~\citenum{ullmann_52, Ullmann_168, Ullmann_169}) and, therefore, only the energy levels for bromine containing species are shown (see Tables~\ref{SI-table:bondlength}, \ref{SI-table:idealsurface} and~\ref{SI-table:adatom-longitude} for all numerical values). {\zhzh The following abbreviations are used to denote states. \textbf{SURF} -- surface and gas-phase molecules, \textbf{PHYS} -- one precursor molecule is physisorbed, \textbf{DHAL} -- one molecule is dehalogenated, \textbf{DHAL-2} -- two molecules are dehalogenated, \textbf{CMC} -- carbon-metal-carbon bridge intermediate, \textbf{DIM} -- biphenyl product, \textbf{X-DIM-A} -- biphenyl product adsorbed on adatom, \textbf{X-DIM-B} -- biphenyl product adsorbed on the surface, \textbf{DSRB} --  biphenyl is desorbed, \textbf{PROD} -- all products are desorbed. \textbf{X} prefix in all abbreviations denotes eXtracted adatom.}}
 \label{fig:completeenergy}
 \end{figure*}
 
@@ -222,14 +229,14 @@ Because of such \textbf{X-CMC} traps, the presence of adatoms during the Ullmann
 
 \begin{figure*}[bt]
 \centering
-\includegraphics[width=0.98\textwidth]{Fig/Ag_mainfile.pdf}
+\includegraphics[width=\textwidth]{Fig/Ag_mainfile.pdf}
 \caption{Energy profile of the Ullmann reaction of bromobenzene on Ag(111). Color coding and abbreviations are the same as in Fig.~\ref{fig:completeenergy}.}
 \label{fig:Ag_all}
 \end{figure*}
 
 \begin{figure*}[bt]
 \centering
-\includegraphics[width=0.98\textwidth]{Fig/Au_mainfile.pdf}
+\includegraphics[width=\textwidth]{Fig/Au_mainfile.pdf}
 \caption{Energy profile of the Ullmann reaction of bromobenzene on Au(111). Color coding and abbreviations are the same as in Fig.~\ref{fig:completeenergy}.}
 \label{fig:Au_all}
 \end{figure*}
@@ -294,50 +301,20 @@ This work have important implications. The systematic comparison of the reaction
 
 \fi
 
-\section*{Acknowledgement}
+%\section*{Acknowledgement}
 
+%\section*{\sinfo}
+
+\begin{acknowledgement}
 The research was funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) through Discovery Grant (RGPIN-2016-0505) and by Tri-agency Institutional Programs Secretariat through New Frontiers in Research Fund (NFRFE-2018-00852). The authors are grateful for computer resources allocated under the CFI John R. Evans Leaders Fund program.
+\end{acknowledgement}
 
-\section*{\sinfo}
-
-%The Supporting Information is available free of charge at (website)
+\begin{suppinfo}
 Formation of organometallic intermediates on Cu(111); characterization of the intermediates in the dehalogenation step on Cu(111); minimum experimentally measured temperatures necessary for the completion of the Ullmann coupling steps; comparison of the dehalogenation and C--C bond formation energy barriers; characterization of the intermediates in the C--C bond formation step along the ideal-surface and two adatoms pathways; alternative adatom pathways on Cu(111); approximate calculation of the free energy profiles. %; conditions for competitive adatom catalysis.
+\end{suppinfo}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%A listing of the contents of each file supplied as Supporting Information
-%%should be included. For instructions on what should be included in the
-%%Supporting Information as well as how to prepare this material for
-%%publications, refer to the journal's Instructions for Authors.
-
-%%The following files are available free of charge.
-%%\begin{itemize}
-%%  \item Filename: brief description
-%%  \item Filename: brief description
-%%\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\end{suppinfo}
-
-%\begin{tocentry}
-%
-%\includegraphics[width=0.62\textwidth]{Fig/conclusion.pdf}\newline
-%This TOG is temporary.
-%
-%\end{tocentry}
-
-%\nocite{*}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% The appropriate \bibliography command should be placed here.
-%% Notice that the class file automatically sets \bibliographystyle
-%% and also names the section correctly.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\pagebreak
-
-\bibliographystyle{achemso}
+%\bibliographystyle{achemso}
 \bibliography{references}
-
-\pagebreak
 
 \end{document}
 

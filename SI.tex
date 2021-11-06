@@ -1,6 +1,6 @@
 %\documentclass[aps,prb,reprint,amsmath,amssymb,floatfix]{revtex4-1}
-\documentclass[aps,prb,amsmath,amssymb,floatfix,notitlepage,11pt]{revtex4-1}
-%\documentclass[journal=ancac3,layout=twocolumn,manuscript=article]{achemso}
+%\documentclass[aps,prb,amsmath,amssymb,floatfix,notitlepage,11pt]{revtex4-1}
+\documentclass[journal=jpclcd,layout=traditional,manuscript=letter]{achemso} % JPCL
 
 \newcommand*\mycommand[1]{\texttt{\emph{#1}}}
 %\newcommand*{\INTERNAL}{}
@@ -26,16 +26,21 @@
 %\renewcommand{\tablename}{Supporting Table}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thepage}{S\arabic{page}}
 
 \newcommand{\sinfo}{Supporting Information}
 
 \newcommand{\lock}{\color{black}}
 \newcommand{\zhzh}{\color{blue}}
 
+\SectionsOn
+\SectionNumbersOn
+
+\setlength{\tabcolsep}{2pt} % distance between table columns
+\renewcommand{\arraystretch}{1.6} % distance between table rows
+
 % Use main text labels
 \externaldocument[main-]{main}
-
-\begin{document}
 
 \title{\sinfo\ for \\
 Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line breaks with \\
@@ -50,6 +55,8 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
  Department of Chemistry, McGill University, 801 Sherbrooke St West, Montreal, QC H3A 0B8, Canada
  %This line break forced with \textbackslash\textbackslash
 }%
+
+\begin{document}
 
 %\date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
@@ -82,7 +89,20 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 %\subsection{Dehalogenation}
 %\fi
 
-\begin{figure*}[bt]
+Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. 
+%REVIEW: Although the binding of chlorobenzene, bromobenzene and iodobenzene to Cu(111) calculated in this work (Fig.~\ref{fig:completeenergy}, \textbf{PHYS} state) is stronger than that obtained previously using the a different XC functional~\cite{jacs2013} the trends in the physisorption energies for different halogens are almost exactly the same (Table~\ref{SI-table:bondlength} in \sinfo).
+%REVIEW: The strong binding between the surface and halogenated benzenes is primarily due to the interaction of (a) the $\pi$-system (b) halogen (choose one) and the surface. This follows from the analysis of the interaction energy between biphenyl and the metal (\SI{1.72}{\electronvolt}) and the van derWaals interaction of Br$_2$ molecule with the surface (\SI{1000}{\electronvolts}).
+%
+Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition and final states for the debromination of the physisorbed bromobenzene on Cu(111). These states are labeled as \textbf{PHYS}, \textbf{DHAL$\ddagger$} and \textbf{DHAL}, respectively. Chlorobenzene and iodobenzene undergo similar structural transformation during the dehalogenation step (Figs.~\ref{fig:dissociation_Cl} and~\ref{fig:dissociation_I}).
+%
+%REVIEW (Numbers should be verified): Unlike analogous reactions in the solution, dehalogenation reactions on the copper surface are all exothermic. DFT results have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.18}{\electronvolt}~\cite{ullmann_86}.
+%
+The amount of energy released in the dehalogenation step on Cu(111) surface increases from chlorobenzene (\SI{0.58}{\electronvolt}) to bromobenzene (\SI{0.81}{\electronvolt}) and to iodobenzene (\SI{0.96}{\electronvolt}) (Fig.~\ref{main-fig:completeenergy} and Table~\ref{table:bondlength}).
+The energy barriers follow the opposite trend decreasing from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}), in agreement with the Bell-Evans-Polanyi principle.
+The calculated energies are in qualitative agreement with the trend in experimentally measured dehalogenation temperatures (Table~\ref{table:experimental-temperatures})~\cite{ullmann_52,ullmann_87,ullmann_67} and with the previous calculations on this~\cite{jacs2013} and similar systems.
+%{\comm REVIEW only becuase the trend is reproduced only roughly. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87} while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data the dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data on dihalogenated precursors (Table~\ref{table:exp-temp}) that chlorobenzene dissociates at significantly higher temperature than both bromobenzene and iodobenzene.}
+
+\begin{figure*}[b]
 \centering
 \includegraphics[width=1.0\textwidth]{Fig/dissociation_Br.pdf}
 \caption{Dissociation of the C--Br bond on Cu(111). The energy diagram shows the NEB profile of the debromination process. In the structural images, orange, cyan, white, red spheres represent copper, carbon, hydrogen, bromine atoms, respectively.} %The dissociation of the C--Cl and C--I bonds is shown in \sinfo.
@@ -102,19 +122,6 @@ Adatoms in the Surface-Confined Ullmann Coupling of Phenyl Groups}% Force line b
 \caption{Dissociation of the C--I bond on Cu(111). The energy diagram shows the NEB profile of the deiodination process. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
 \label{fig:dissociation_I}
 \end{figure*}
-
-Organic precursors are physisorbed on a metal surface before undergoing chemical transformations. 
-%REVIEW: Although the binding of chlorobenzene, bromobenzene and iodobenzene to Cu(111) calculated in this work (Fig.~\ref{fig:completeenergy}, \textbf{PHYS} state) is stronger than that obtained previously using the a different XC functional~\cite{jacs2013} the trends in the physisorption energies for different halogens are almost exactly the same (Table~\ref{SI-table:bondlength} in \sinfo).
-%REVIEW: The strong binding between the surface and halogenated benzenes is primarily due to the interaction of (a) the $\pi$-system (b) halogen (choose one) and the surface. This follows from the analysis of the interaction energy between biphenyl and the metal (\SI{1.72}{\electronvolt}) and the van derWaals interaction of Br$_2$ molecule with the surface (\SI{1000}{\electronvolts}).
-%
-Fig.~\ref{fig:dissociation_Br} shows the structures of the initial, transition and final states for the debromination of the physisorbed bromobenzene on Cu(111). These states are labeled as \textbf{PHYS}, \textbf{DHAL$\ddagger$} and \textbf{DHAL}, respectively. Chlorobenzene and iodobenzene undergo similar structural transformation during the dehalogenation step (Figs.~\ref{fig:dissociation_Cl} and~\ref{fig:dissociation_I}).
-%
-%REVIEW (Numbers should be verified): Unlike analogous reactions in the solution, dehalogenation reactions on the copper surface are all exothermic. DFT results have demonstrated that the energy barrier of nucleophilic substitution of chlorobenzene and bromobenzene in solution are \SI{1.11}{\electronvolt} and \SI{1.18}{\electronvolt}~\cite{ullmann_86}.
-%
-The amount of energy released in the dehalogenation step on Cu(111) surface increases from chlorobenzene (\SI{0.58}{\electronvolt}) to bromobenzene (\SI{0.81}{\electronvolt}) and to iodobenzene (\SI{0.96}{\electronvolt}) (Fig.~\ref{main-fig:completeenergy} and Table~\ref{table:bondlength}).
-The energy barriers follow the opposite trend decreasing from chlorobenzene (\SI{1.24}{\electronvolt}) to bromobenzene (\SI{0.89}{\electronvolt}) and to iodobenzene (\SI{0.63}{\electronvolt}), in agreement with the Bell-Evans-Polanyi principle.
-The calculated energies are in qualitative agreement with the trend in experimentally measured dehalogenation temperatures (Table~\ref{table:experimental-temperatures})~\cite{ullmann_52,ullmann_87,ullmann_67} and with the previous calculations on this~\cite{jacs2013} and similar systems.
-%{\comm REVIEW only becuase the trend is reproduced only roughly. On Cu(111), iodobenzene has been observed to dissociate at \SI{175}{\kelvin}~\cite{ullmann_87} while bromobenzene dissociates at \SI{160}{\kelvin}~\cite{ullmann_67}. There is no data the dehalogenation temperature of chlorobenzene, but it can be inferred from the existing data on dihalogenated precursors (Table~\ref{table:exp-temp}) that chlorobenzene dissociates at significantly higher temperature than both bromobenzene and iodobenzene.}
 
 %REVIEW: It should be noted that the dehalogenation of bromobenzene and iodobenzene on Cu(111) has been investigated previously~\cite{jacs2013} using optB86b exchange-correlation functional and smaller slab size, the molecular orientation on Cu(111) is identical with our model. The previous energy barrirer of this step are \SI{0.66}{\electronvolt} (bromobenzene), \SI{0.44}{\electronvolt} (iodobenzene). The previous energy change is \SI{-0.68}{\electronvolt} (bromobenzene) and \SI{-0.81}{\electronvolt} (iodobenzene). The slight difference in the energy value can be interpreted by different functional usage and our larger slab model for computation.
 
@@ -318,13 +325,6 @@ It should be noted that the calculated energy barriers for the dehalogenation of
 
 The reasons for this apparent mismatch between DFT modeling and experimentally measurements are not clear. It is possible that the disagreement arises from the incorrect mechanistic interpretation of the measurements. For example, the dehalogenation may occur on surface defects (e.g. step edges, kinks, adatoms), which are expected to lower the activation barrier of the dehalogenation compared to that on the ideal surface~\cite{chemeurope2017}. It is possible the reasons for the mismatch are purely computational. One source of error might be the approximate GGA exchange-correlation (XC) functionals used in this and all previous works~\cite{jacs2013, pccp2010}. In this case, the underestimation of the energy of covalent binding between the surface and organic groups by GGA functionals can be responsible for the incorrect relative barrier heights. This modeling error is not expected to alter key conclusions of the work because this study focuses entirely on the  C--C bond formation step. The relative heights of the barriers of this step along the ideal and adatom pathways are expected to be less affected by the errors in the organic-surface binding.
 
-\section{Alternative adatom pathways on Cu(111)}
-
-The adatom extraction from Cu(111) surface was considered along the two high-symmetry surface directions $[1\bar{1}0]$ and $[11\bar{2}]$ (Fig.~\ref{fig:distance-energy}). The product of the extraction -- an adatom bonded to two phenyl radicals -- is denoted \textbf{X-CMC}. The higher stability of the $[1\bar{1}0]$ \textbf{X-CMC} state is most likely due to the stronger interaction between the undercoordinated metal atoms at the vacancy edges and the nearby phenyl ring (Figure~\ref{fig:distance-energy}).
-However, the extraction along the $[11\bar{2}]$ direction has lower barrier (\SI{0.71}{\electronvolt} from \textbf{CMC} to \textbf{X-CMC}$\ddagger$) than that along the $[1\bar{1}0]$ direction (\SI{1.38}{\electronvolt}) because the adatom does not have to be lifted as high in the \textbf{X-CMC$\ddagger$} transition state in the former case (\SI{1.58}{\angstrom} \emph{vs} \SI{1.68}{\angstrom}, Table~\ref{table:adatom-longitude}). This difference in the barrier height is significant enough to consider only the $[11\bar{2}]$ extraction further.
-
-In addition to the C--C bond formation mechanism describe above, we explored an alternative pathway that proceeds from \textbf{X-CMC} directly to \textbf{X-DIM-B} without passing through \textbf{X-DIM-A}. In this pathway, the formation of the C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. It was found that this path has the activation energy of \SI{3.0}{\electronvolt} indicating that such a transformation is unrealistically slow (Figure~\ref{fig:AlterPath}).
-
 \begin{figure*}[bt]
 \centering
 \includegraphics[width=0.8\textwidth]{Fig/distance-energy-SI.pdf}
@@ -338,6 +338,28 @@ In addition to the C--C bond formation mechanism describe above, we explored an 
 \caption{Alternative pathway for the adatom-catalyzed C--C formation on Cu(111). In this pathway, the formation of C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. In the structural images, orange, cyan, white, purple spheres represent copper, carbon, hydrogen, iodine atoms, respectively.}
 \label{fig:AlterPath}
 \end{figure*} 
+
+\section{Alternative adatom pathways on Cu(111)}
+
+The adatom extraction from Cu(111) surface was considered along the two high-symmetry surface directions $[1\bar{1}0]$ and $[11\bar{2}]$ (Fig.~\ref{fig:distance-energy}). The product of the extraction -- an adatom bonded to two phenyl radicals -- is denoted \textbf{X-CMC}. The higher stability of the $[1\bar{1}0]$ \textbf{X-CMC} state is most likely due to the stronger interaction between the undercoordinated metal atoms at the vacancy edges and the nearby phenyl ring (Figure~\ref{fig:distance-energy}).
+However, the extraction along the $[11\bar{2}]$ direction has lower barrier (\SI{0.71}{\electronvolt} from \textbf{CMC} to \textbf{X-CMC}$\ddagger$) than that along the $[1\bar{1}0]$ direction (\SI{1.38}{\electronvolt}) because the adatom does not have to be lifted as high in the \textbf{X-CMC$\ddagger$} transition state in the former case (\SI{1.58}{\angstrom} \emph{vs} \SI{1.68}{\angstrom}, Table~\ref{table:adatom-longitude}). This difference in the barrier height is significant enough to consider only the $[11\bar{2}]$ extraction further.
+
+In addition to the C--C bond formation mechanism describe above, we explored an alternative pathway that proceeds from \textbf{X-CMC} directly to \textbf{X-DIM-B} without passing through \textbf{X-DIM-A}. In this pathway, the formation of the C--C bond and the separation of the adatom and biphenyl happen simultaneously rather than sequentially. It was found that this path has the activation energy of \SI{3.0}{\electronvolt} indicating that such a transformation is unrealistically slow (Figure~\ref{fig:AlterPath}).
+
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
+\caption{The Gibbs free energy profile of the ideal-surface pathway of the Ullmann coupling of bromobenzene on Cu(111) calculated using approximations described in Section~\ref{sec:free-en}.}
+\label{fig:entropy_ideal}
+\end{figure*}
+
+\begin{figure*}[bt]
+\centering
+\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
+\caption{The Gibbs free energy profile of the adatom pathway of the Ullmann coupling of bromobenzene on Cu(111) calculated using approximations described in Section~\ref{sec:free-en}.} 
+\label{fig:entropy_adatom}
+\end{figure*}
 
 \section{Approximate calculation of the free energy profiles} \label{sec:free-en}
 
@@ -401,20 +423,6 @@ Figures~\ref{fig:entropy_ideal} and~\ref{fig:entropy_adatom} show the free energ
 The figures show that the model of freely moving species, leads to noticeable entropic contributions only for the elementary steps that proceed with the change in the number of mobile species on the surface. See, for example, the transitions from \textbf{PHYS} to \textbf{DHAL}, from \textbf{DHAL-2} to \textbf{CMC}, and from \textbf{X-DIM-A} to \textbf{X-DIM-B}. However, the adatom extraction and C--C bond formation steps -- the steps of interest in this work -- the entropy term plays only a minor role. While the entropy contribution is significant for individual states, it remains very similar for all states along the pathway. So the net effect of entropy does not exceed \SI{0.01}{\electronvolt}. Compare, for example, the free energy change from \textbf{CMC} to \textbf{X-CMC} at temperatures of \SI{0}{\kelvin} and \SI{400}{\kelvin}.
 
 It should be noted that the model of localized adsorbates~\cite{ullmann_174} introduces an even smaller net entropy correction to the free energy profiles. Although in the real system the adsorbates are neither fully mobile nor completely localized, the entropy effects are expected to lie inbetween the two calculated values and will be small.
-
-\begin{figure*}[bt]
-\centering
-\includegraphics[width=0.96\textwidth]{Fig/Entropy_ideal.pdf}
-\caption{The Gibbs free energy profile of the ideal-surface pathway of the Ullmann coupling of bromobenzene on Cu(111) calculated using approximations described in Section~\ref{sec:free-en}.}
-\label{fig:entropy_ideal}
-\end{figure*}
-
-\begin{figure*}[bt]
-\centering
-\includegraphics[width=0.96\textwidth]{Fig/Entropy_adatom.pdf}
-\caption{The Gibbs free energy profile of the adatom pathway of the Ullmann coupling of bromobenzene on Cu(111) calculated using approximations described in Section~\ref{sec:free-en}.} 
-\label{fig:entropy_adatom}
-\end{figure*}
 
 \ifdefined\FALSE
 
@@ -536,7 +544,7 @@ This inequality defines the region shown in Fig.~\ref{main-fig:conclusion} in th
 
 \fi
 
-\bibliographystyle{achemso}
+%\bibliographystyle{achemso}
 \bibliography{references}
 
 \end{document}
